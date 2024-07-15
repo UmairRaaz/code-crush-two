@@ -1,0 +1,75 @@
+import React from 'react';
+import { IoPersonSharp } from "react-icons/io5";
+import { FaHouseChimney } from "react-icons/fa6";
+import { FcIdea } from "react-icons/fc";
+import { FcRating } from "react-icons/fc";
+import CountUp from 'react-countup';
+import { useInView } from 'react-intersection-observer';
+
+const JourneySection = () => {
+  const stats = [
+    {
+      icon: <IoPersonSharp size={50} className="text-blue-800" />,
+      label: "People onboard",
+      value: 900,
+      prefix: '+',
+    },
+    {
+      icon: <FaHouseChimney size={50} className="text-blue-800" />,
+      label: "Global offices",
+      value: 4,
+      prefix: '',
+    },
+    {
+      icon: <FcIdea size={50} />,
+      label: "Projects completed",
+      value: 550,
+      prefix: '+',
+    },
+    {
+      icon: <FcRating size={50} />,
+      label: "Clutch rating",
+      value: 4.9,
+      prefix: '',
+    },
+  ];
+
+  return (
+    <div className="min-h-[80vh] mt-10 mb-5 w-full">
+      <h1 className="text-5xl text-center pt-20 pb-10 font-bold">
+        A Journey of
+        <span className="text-blue-800 ml-2">15 years</span>
+      </h1>
+      <div className="w-[80%] mx-auto grid grid-cols-4 mt-2 min-h-44">
+        {stats.map((data, index) => (
+          <StatItem
+            key={index}
+            icon={data.icon}
+            label={data.label}
+            value={data.value}
+            prefix={data.prefix}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const StatItem = ({ icon, label, value, prefix }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  return (
+    <div ref={ref} className="flex border border-gray-200 items-center justify-center flex-col">
+      <div>{icon}</div>
+      <h1 className="text-gray-700 mt-2 text-4xl font-bold">
+        <CountUp start={0} end={inView ? value : 0} duration={5} />{prefix}
+      </h1>
+      <p className="text-gray-700">{label}</p>
+    </div>
+  );
+};
+
+export default JourneySection;
