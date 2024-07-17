@@ -35,12 +35,12 @@ const JourneySection = () => {
   ];
 
   return (
-    <div className="min-h-[80vh] relative mt-10 mb-5 w-full">
-      <h1 className="text-5xl text-center pt-20 pb-10 font-bold">
+    <div className="min-h-[80vh] relative  md:mt-10 mb-5 w-full">
+      <h1 className="text-5xl text-center px-4 md:px-0 pt-20 pb-10 font-bold">
         A Journey of
         <span className="text-blue-800 ml-2">15 years</span>
       </h1>
-      <div className="w-[80%] z-50 bg-white/70 mx-auto grid grid-cols-4 mt-2 min-h-44">
+      <div className="w-[80%] z-50 bg-white/70 mx-auto grid grid-cols-1 md:grid-cols-4 mt-2 min-h-44">
         {stats.map((data, index) => (
           <StatItem
             key={index}
@@ -51,7 +51,7 @@ const JourneySection = () => {
           />
         ))}
       </div>
-      <img src={worldMap} alt="world-image"  className='w-[50rem] absolute -bottom-20 left-[20%] -z-50'/>
+      <img src={worldMap} alt="world-image"  className='w-[50rem] absolute -bottom-20 md:left-[20%] -z-50'/>
     </div>
   );
 };
@@ -63,7 +63,7 @@ const StatItem = ({ icon, label, value, prefix }) => {
   });
 
   return (
-    <div ref={ref} className="flex border border-gray-200 items-center justify-center flex-col">
+    <div ref={ref} className="flex border py-10 md:py-0 border-gray-200 items-center justify-center flex-col">
       <div>{icon}</div>
       <h1 className="text-gray-700 mt-2 text-4xl font-bold">
         <CountUp start={0} end={inView ? value : 0} duration={5} />{prefix}

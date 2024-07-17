@@ -8,17 +8,17 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 const overlayVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 }
+  visible: { opacity: 1, y: 0 },
 };
 
 const Portfolio = () => {
   return (
-    <div className="min-h-screen w-full my-20 bg-[#f6fafd] text-black">
+    <div className="min-h-screen w-full py-10 my-20 bg-[#f6fafd] text-black">
       <div className="w-[90%] mx-auto">
         <h1 className="text-5xl pt-10 font-bold text-center font-googleFonts text-gray-700">
           Featured Projects
         </h1>
-        <div className="my-10 grid grid-cols-3 gap-4">
+        <div className="my-10 grid md:grid-cols-3 grid-cols-1 gap-14 md:gap-4">
           <motion.div
             whileHover="visible"
             initial="hidden"

@@ -13,14 +13,14 @@ const Industries = () => {
   ];
 
   return (
-    <div className='min-h-screen w-full text-white grid grid-cols-2'>
+    <div className='min-h-screen w-full text-white grid grid-cols-1 md:grid-cols-2'>
       {industries.map((industry, index) => (
         <div key={index} className='relative h-[70vh]'>
           <img src={industry.image} alt={industry.name} className='w-full h-full object-cover' />
-          <div className='absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center p-4 px-10'>
-            <h2 className='text-5xl font-bold mb-2'>{industry.name}</h2>
-            <p className='text-left pr-20 text-xl text-gray-300'>{industry.description}</p>
-            <button className="bg-white text-gray-700 mt-20 w-32 text-lg px-4 py-1 rounded-full">Learn More</button>
+          <div className='absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center p-4 px-4 md:px-10'>
+            <h2 className='md:text-5xl text-2xl font-bold mb-2'>{industry.name}</h2>
+            <p className='text-left md:pr-20 text-xl text-gray-300'>{industry.description}</p>
+            <button className="bg-white text-gray-700 mt-4 md:mt-20 w-28 md:w-32 md:text-lg text-sm px-4 py-1 rounded-full">Learn More</button>
           </div>
         </div>
       ))}

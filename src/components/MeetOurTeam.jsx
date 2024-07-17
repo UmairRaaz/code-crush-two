@@ -19,7 +19,7 @@ const MeetOurTeam = () => {
               and experience excellence in every project we undertake
             </p>
           </div>
-          <div className="mt-8 min-h-72 grid gap-8 grid-cols-3">
+          <div className="mt-8 min-h-72 grid gap-8 grid-cols-1 md:grid-cols-3">
             <div>
               <div className="h-[80%] w-full">
                 <img

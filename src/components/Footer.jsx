@@ -9,7 +9,7 @@ const Footer = () => {
           {/* First Column: Logo and Social Links */}
           <div className="flex flex-col items-start  ">
             <a href="#" className=' text-xl font-bold mb-4 uppercase'>Crush Codes</a>
-            <div className="flex gap-6 mt-4 flex-col items-center justify-center">
+            <div className="flex gap-6 mt-4 md:flex-col items-center justify-center">
               <a href="#" className=" hover:text-gray-400">
                 <FaFacebook size={24} />
               </a>

@@ -31,12 +31,12 @@ const Products = () => {
         },
       ];
   return (
-    <div className="min-h-screen w-full text-black grid grid-cols-2">
+    <div className="min-h-screen w-full text-black grid grid-cols-1 md:grid-cols-2">
       {products.map((product, index) => (
-        <div key={index} className="min-h-[70vh] border border-gray-200 font-googleFonts">
-          <div className="mt-10 mr-5 px-10">
+        <div key={index} className="min-h-[70vh] py-8 border border-gray-200 font-googleFonts">
+          <div className="mt-10 mr-5 px-4 md:px-10">
             <img src={product.image} alt="logos" className="w-28"/>
-            <h1 className="text-5xl mt-4 font-bold text-gray-700">{product.name}</h1>
+            <h1 className="text-2xl md:text-5xl mt-4 font-bold text-gray-700">{product.name}</h1>
             <p className="text-xl mt-4 text-gray-700">{product.description}</p>
             <button className="border flex items-center gap-2 border-blue-800 text-blue-800 text-lg px-4 py-2 mt-8 mb-8 rounded-full"><span>Explore {product.name}</span> <span className="mb-1"><GrShare/></span></button>
           </div>

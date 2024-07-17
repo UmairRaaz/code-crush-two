@@ -4,7 +4,8 @@ import { CiLocationOn } from "react-icons/ci";
 
 const GetInTouchSection = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center bg-gray-100 p-8 md:p-16">
+    <div className="w-full ">
+      <div className="flex  flex-col md:flex-row items-center bg-gray-100 p-8 md:p-16">
       <div className="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
         <h2 className="text-3xl font-bold text-gray-800 mb-4">Get in Touch</h2>
         <p className="text-gray-600 text-lg">
@@ -14,7 +15,7 @@ const GetInTouchSection = () => {
         </p>
       </div>
       <div className="w-full md:w-1/2 md:pl-8">
-        <div className=" p-6 rounded-lg ">
+        <div className=" md:p-6 rounded-lg ">
           <p className="text-gray-600 mb-4">
             <p className="font-semibold flex items-center gap-2">
               <MdOutlineMailOutline size={20} />
@@ -25,20 +26,22 @@ const GetInTouchSection = () => {
           <p className="text-gray-600 mb-4">
             <p className="font-semibold flex items-center gap-2">
               <CiPhone size={20} />
-              Phone:{" "}
-              <span className="font-light">+123 456 789</span>
+              Phone: <span className="font-light">+123 456 789</span>
             </p>
           </p>
           <p className="text-gray-600 mb-4">
-            <p className="font-semibold flex items-center gap-2">
+            <p className="font-semibold  flex items-center gap-2">
               <CiLocationOn size={20} />
               Location:{" "}
-              <span className="font-light"> 123 Software Street, Suite 100, Tech City, TC 12345</span>
+              <span className="font-light">
+                {" "}
+                123 Software Street,
+              </span>
             </p>
           </p>
-
         </div>
       </div>
+    </div>
     </div>
   );
 };

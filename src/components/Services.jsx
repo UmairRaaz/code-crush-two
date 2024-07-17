@@ -22,7 +22,7 @@ const Services = () => {
   };
 
   const getButtonClass = (component) => {
-    const baseClass = "text-2xl w-40 h-14 px-4 py-2 border-r border-l border-t border-gray-200";
+    const baseClass = "text-xl px-2 py-1 md:text-2xl md:w-40 md:h-14 md:px-4 md:py-2 border-r border-l border-t border-gray-200";
     const activeClass = "bg-[#0e3f8b] text-white";
     const inactiveClass = "border-gray-300 text-gray-700 bg-transparent";
 
@@ -32,8 +32,8 @@ const Services = () => {
   };
 
   return (
-    <div className="min-h-screen w-full font-googleFonts">
-      <div className="w-[90%] mx-auto flex space-x-4 my-4">
+    <div className="min-h-screen mt-28 md:mt-0 w-full font-googleFonts">
+      <div className="w-[90%] mx-auto flex md:space-x-4 my-4">
         <button
           className={getButtonClass("Industries")}
           onClick={() => setActiveComponent("Industries")}
@@ -53,7 +53,7 @@ const Services = () => {
           Products
         </button>
         <button
-          className="text-xl w-40 flex items-center justify-center h-14 text-[#4b7dc8] whitespace-nowrap px-4 py-2"
+          className="text-xl w-40 hidden md:visible md:flex items-center justify-center h-14 text-[#4b7dc8] whitespace-nowrap px-4 py-2"
           onClick={() => setActiveComponent("AllIndustries")}
         >
           <span>All Industries</span>

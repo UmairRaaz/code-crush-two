@@ -12,7 +12,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentHero((prevHero) => (prevHero + 1) % heroComponents.length);
-    }, 3000); 
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [heroComponents.length]);
@@ -32,7 +32,7 @@ const Hero = () => {
           </div>
         </CSSTransition>
       </TransitionGroup>
-      <div className="flex justify-center mt-4 absolute bottom-4 w-full z-50">
+      <div className="flex justify-center mt-4 absolute -bottom-8  md:bottom-4 w-full z-50">
         {heroComponents.map((_, index) => (
           <div
             key={index}
@@ -44,10 +44,6 @@ const Hero = () => {
         ))}
       </div>
     </div>
-    // // <HeroOne/>
-    // // <HeroTwo/>
-    // // <HeroThree/>
-    // <HeroFour/>
   );
 };
 

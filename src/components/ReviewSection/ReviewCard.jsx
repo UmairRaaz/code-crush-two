@@ -3,8 +3,8 @@ import comapnyLogo from "../../assets/ProductOne.png";
 
 const ReviewCard = () => {
   return (
-    <div className="mx-10 bg-white text-black">
-          <div className="flex items-center gap-4 px-8 py-6">
+    <div className="mx-10  bg-white text-black">
+          <div className="flex flex-col md:flex-row md:items-center gap-4 px-8 py-6">
             <img
               src={personImage}
               alt="image"
@@ -15,7 +15,7 @@ const ReviewCard = () => {
               <p>Project Coordinator, Web World</p>
             </div>
           </div>
-          <div className="my-4 px-8">
+          <div className="my-4 px-4 md:px-8">
             &rdquo;Crush Code Software Company excels in delivering
             cutting-edge, reliable software solutions tailored to diverse
             business needs. Their team is highly skilled, responsive, and
