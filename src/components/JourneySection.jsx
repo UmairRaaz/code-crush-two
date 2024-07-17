@@ -5,7 +5,7 @@ import { FcIdea } from "react-icons/fc";
 import { FcRating } from "react-icons/fc";
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
-
+import worldMap from "../assets/worldMap.png"
 const JourneySection = () => {
   const stats = [
     {
@@ -35,12 +35,12 @@ const JourneySection = () => {
   ];
 
   return (
-    <div className="min-h-[80vh] mt-10 mb-5 w-full">
+    <div className="min-h-[80vh] relative mt-10 mb-5 w-full">
       <h1 className="text-5xl text-center pt-20 pb-10 font-bold">
         A Journey of
         <span className="text-blue-800 ml-2">15 years</span>
       </h1>
-      <div className="w-[80%] mx-auto grid grid-cols-4 mt-2 min-h-44">
+      <div className="w-[80%] z-50 bg-white/70 mx-auto grid grid-cols-4 mt-2 min-h-44">
         {stats.map((data, index) => (
           <StatItem
             key={index}
@@ -51,6 +51,7 @@ const JourneySection = () => {
           />
         ))}
       </div>
+      <img src={worldMap} alt="world-image"  className='w-[50rem] absolute -bottom-20 left-[20%] -z-50'/>
     </div>
   );
 };
