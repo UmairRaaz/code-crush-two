@@ -5,6 +5,7 @@ import websitrSS from "../assets/portfolioThree.png";
 import laptopScreen from "../assets/portfolioTwo.png";
 import tabletScreen from "../assets/portfolioFour.png";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import ViewAllButton from "./Buttons/ViewAllButton";
 
 const overlayVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -18,6 +19,7 @@ const Portfolio = () => {
         <h1 className="text-5xl pt-10 font-bold text-center font-googleFonts text-gray-700">
           Featured Projects
         </h1>
+        <div className="flex justify-end"><ViewAllButton/></div>
         <div className="my-10 grid md:grid-cols-3 grid-cols-1 gap-14 md:gap-4">
           <motion.div
             whileHover="visible"

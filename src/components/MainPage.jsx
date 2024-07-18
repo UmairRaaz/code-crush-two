@@ -1,7 +1,6 @@
 import AboutUs from './AboutUs'
 import BlogsSection from './BlogsSection'
 import ClientReviews from './ClientReviews'
-import Footer from './Footer'
 import GetInTouchSection from './GetInTouchSection'
 import Hero from './Hero'
 import JourneySection from './JourneySection'
@@ -21,7 +20,7 @@ const MainPage = () => {
         <ClientReviews/>
         <BlogsSection/>
         <GetInTouchSection/>
-        <Footer/>
+        
     </div>
   )
 }

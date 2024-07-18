@@ -1,0 +1,29 @@
+import { FaChevronRight } from "react-icons/fa";
+
+const BlogCard = ({img}) => {
+  return (
+    <div>
+      <div className="h-[60%]">
+        <img
+          src={img}
+          alt="image"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="h-[40%]">
+        <h1 className="font-bold text-gray-600 mt-4 leading-relaxed">
+          29 Jan 2024 | 2 min read | 219 views
+        </h1>
+        <p className="text-sm text-gray-500">
+          Best Practices for Agile Software Development
+        </p>
+        <button className="text-sm  text-gray-700 mt-2 flex gap-2 items-center rounded-2xl ">
+          <span>Read More </span>
+          <FaChevronRight className="mt-1  text-gray-700 " size={10} />
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default BlogCard;

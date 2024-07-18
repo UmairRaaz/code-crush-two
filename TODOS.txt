@@ -1,0 +1,40 @@
+Services Section: (Box button shape) --> done
+	1. Services 
+		Website Development
+		App Development
+		AI Integrations
+		Social Media Marketing
+	2. Industries
+	3. R&D Projects
+	4. See all --> done
+Service Details Page (with good UI/UX)
+============================
+Projects need to be clickable
+Project details page (with good UI/UX)
+See More projects (button or tag to see all projects) --> done
+=============================
+Blogs section
+See More blogs (button or tag to see all blogs) --> done
+Blog Detail page
+==============================
+See all Members (Button or tag) --> done
+Social media handles (In, Fb, X, Email) --> done
+===============================
+Reviews --> done
+Icons need to be clickable --> done
+Boxes need to be rounded --> done
+===============================
+Footer Section --> done
+3 sections --> done
+Social media handles on the right side below contact us --> done
+================================
+
+More:
+Add More Team Members (See More) --> done
+Jobs/Internships
+Contact us form (Get in touch)
+R&D Projects
+Project Details Page
+Top menu working
+Services Details Page
+Company Detail Pages

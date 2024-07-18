@@ -6,25 +6,26 @@ import { SiBmcsoftware } from "react-icons/si";
 const ServicesSection = () => {
   const services = [
     {
-      name: "Data and AI",
-      image: <LuBrainCircuit size={70} />,
-      description:
-        "We can help you unlock your business potential with our cutting-edge Machine Learning and Artificial Intelligence capabilities.",
-    },
-    {
-      name: "Web Apps",
+      name: "Website Development",
       image: <CgWebsite size={70} />,
       description:
         "We provide custom-tailored solutions for each phase of development from designing to coding and implementation.",
     },
     {
-      name: "Mobile Apps",
+      name: "App Development",
       image: <FaAppStore size={70} />,
       description:
         "We build native apps optimized for iOS and Android to provide users with a seamless mobile experience that leverages the full power of the OS.",
     },
     {
-      name: "Enterprise software",
+      name: "AI Integrations",
+      image: <LuBrainCircuit size={70} />,
+      description:
+        "We can help you unlock your business potential with our cutting-edge Machine Learning and Artificial Intelligence capabilities.",
+    },
+   
+    {
+      name: "Social Media Marketing",
       image: <SiBmcsoftware size={70} />,
       description:
         "We bring your ideas to life with our turnkey solutions that are custom-designed to fit into your enterprise software ecosystem.",

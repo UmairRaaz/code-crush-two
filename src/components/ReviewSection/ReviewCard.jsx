@@ -3,7 +3,7 @@ import comapnyLogo from "../../assets/ProductOne.png";
 
 const ReviewCard = () => {
   return (
-    <div className="mx-10  bg-white text-black">
+    <div className="mx-10  bg-white text-black rounded-xl shadow-xl">
           <div className="flex flex-col md:flex-row md:items-center gap-4 px-8 py-6">
             <img
               src={personImage}

@@ -1,30 +1,11 @@
 import React from 'react';
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
-
+import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
 const Footer = () => {
   return (
     <div className=" text-[#0d4780] py-10">
       <div className="w-[90%] mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* First Column: Logo and Social Links */}
-          <div className="flex flex-col items-start  ">
-            <a href="#" className=' text-xl font-bold mb-4 uppercase'>Crush Codes</a>
-            <div className="flex gap-6 mt-4 md:flex-col items-center justify-center">
-              <a href="#" className=" hover:text-gray-400">
-                <FaFacebook size={24} />
-              </a>
-              <a href="#" className=" hover:text-gray-400">
-                <FaTwitter size={24} />
-              </a>
-              <a href="#" className=" hover:text-gray-400">
-                <FaLinkedin size={24} />
-              </a>
-              <a href="#" className=" hover:text-gray-400">
-                <FaInstagram size={24} />
-              </a>
-            </div>
-          </div>
-          
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Second Column: Website Sections */}
           <div>
             <h3 className="text-lg font-bold mb-4 uppercase">Company</h3>
@@ -69,6 +50,20 @@ const Footer = () => {
               <li>Phone: <a href="tel:+1234567890" className="hover:text-gray-400">+1 234 567 890</a></li>
               <li>Address: 1234 Street Name, City, State, Zip</li>
             </ul>
+            <div className="flex gap-6 mt-4 items-center">
+              <a href="#" className=" hover:text-gray-400">
+                <FaFacebook size={24} />
+              </a>
+              <a href="#" className=" hover:text-gray-400">
+                <BsTwitterX size={24} />
+              </a>
+              <a href="#" className=" hover:text-gray-400">
+                <FaLinkedin size={24} />
+              </a>
+              <a href="#" className=" hover:text-gray-400">
+                <FaInstagram size={24} />
+              </a>
+            </div>
           </div>
         </div>
       </div>

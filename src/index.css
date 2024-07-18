@@ -98,6 +98,7 @@
 /* Adjust the positioning of the dots */
 .slick-dots {
   bottom: -60px;
+ z-index: 1;
   /* Adjust this value as needed */
 }
 

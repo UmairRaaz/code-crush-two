@@ -30,14 +30,16 @@ const ClientReviews = () => {
   }, []);
 
   const NextArrow = ({ onClick }) => (
-    <div className="cursor-pointer absolute -bottom-20 right-0" onClick={onClick}>
-      <FaRegArrowAltCircleRight size={60} />
+    <div className="cursor-pointer absolute -bottom-20 z-50 right-0 "
+    onClick={onClick} >
+      <FaRegArrowAltCircleRight size={60}/>
     </div>
   );
 
   const PrevArrow = ({ onClick }) => (
-    <div className="cursor-pointer absolute -bottom-20" onClick={onClick}>
-      <FaRegArrowAltCircleLeft size={60} />
+    <div className="cursor-pointer absolute -bottom-20 z-50"
+    onClick={onClick}>
+      <FaRegArrowAltCircleLeft size={60}/>
     </div>
   );
 
