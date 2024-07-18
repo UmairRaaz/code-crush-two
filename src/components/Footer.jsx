@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
+import { NavLink } from 'react-router-dom';
 const Footer = () => {
   return (
     <div className=" text-[#0d4780] py-10">
@@ -10,15 +11,15 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4 uppercase">Company</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-gray-400">Home</a></li>
-              <li><a href="#" className="hover:text-gray-400">About Us</a></li>
-              <li><a href="#" className="hover:text-gray-400">Portfolio</a></li>
-              <li><a href="#" className="hover:text-gray-400">Reviews</a></li>
-              <li><a href="#" className="hover:text-gray-400">Our Partners</a></li>
-              <li><a href="#" className="hover:text-gray-400">Careers</a></li>
-              <li><a href="#" className="hover:text-gray-400">Blogs</a></li>
-              <li><a href="#" className="hover:text-gray-400">Case Studies</a></li>
-              <li><a href="#" className="hover:text-gray-400">Our Culture</a></li>
+              <li><a href="#home" className="hover:text-gray-400">Home</a></li>
+              <li><a href="#about" className="hover:text-gray-400">About Us</a></li>
+              <li><a href="#services" className="hover:text-gray-400">Portfolio</a></li>
+              <li><a href="#reviews" className="hover:text-gray-400">Reviews</a></li>
+              <li><NavLink to={"/all-members"} className="hover:text-gray-400">Our Partners</NavLink></li>
+              <li><NavLink to={"/careers"} className="hover:text-gray-400">Careers</NavLink></li>
+              <li><a href="#blogs" className="hover:text-gray-400">Blogs</a></li>
+              <li><a href="#services" className="hover:text-gray-400">Case Studies</a></li>
+              <li><a href="#services" className="hover:text-gray-400">Our Culture</a></li>
               <li><a href="#" className="hover:text-gray-400">Privacy and Policy</a></li>
               <li><a href="#" className="hover:text-gray-400">Terms and Condition</a></li>
             </ul>
@@ -28,17 +29,17 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4 uppercase">Services</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-gray-400">Custom Software Development</a></li>
-              <li><a href="#" className="hover:text-gray-400">Web Development</a></li>
-              <li><a href="#" className="hover:text-gray-400">Mobile App Development</a></li>
-              <li><a href="#" className="hover:text-gray-400">Cloud Solutions</a></li>
-              <li><a href="#" className="hover:text-gray-400">Enterprise Software Solutions</a></li>
-              <li><a href="#" className="hover:text-gray-400">E-commerce Website Development</a></li>
-              <li><a href="#" className="hover:text-gray-400">UI/UX Design and Prototyping </a></li>
-              <li><a href="#" className="hover:text-gray-400">Cloud Application Development </a></li>
-              <li><a href="#" className="hover:text-gray-400">SaaS (Software as a Service) Development </a></li>
-              <li><a href="#" className="hover:text-gray-400">API Development and Integration </a></li>
-              <li><a href="#" className="hover:text-gray-400">DevOps Services and Consulting </a></li>
+              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">Custom Software Development</NavLink></li>
+              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">Web Development</NavLink></li>
+              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">Mobile App Development</NavLink></li>
+              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">Cloud Solutions</NavLink></li>
+              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">Enterprise Software Solutions</NavLink></li>
+              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">E-commerce Website Development</NavLink></li>
+              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">UI/UX Design and Prototyping </NavLink></li>
+              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">Cloud Application Development </NavLink></li>
+              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">SaaS (Software as a Service) Development </NavLink></li>
+              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">API Development and Integration </NavLink></li>
+              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">DevOps Services and Consulting </NavLink></li>
             </ul>
           </div>
           
