@@ -12,7 +12,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#fafafa]">
+    <div className=" bg-[#fafafa]" id="contact">
       <div className="w-[90%] mx-auto flex flex-col md:flex-row">
       <div className="md:w-1/2 p-8 bg-[#fafafa] mt-20">
         <div className="">

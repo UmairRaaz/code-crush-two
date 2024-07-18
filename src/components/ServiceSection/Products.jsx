@@ -3,6 +3,7 @@ import ProductTwo from "../../assets/ProductTwo.png";
 import ProductThree from "../../assets/ProductThree.png";
 import ProductFour from "../../assets/ProductFour.png";
 import { GrShare } from "react-icons/gr";
+import { NavLink } from "react-router-dom";
 const Products = () => {
     const products = [
         {
@@ -36,9 +37,13 @@ const Products = () => {
         <div key={index} className="min-h-[70vh] py-8 border border-gray-200 font-googleFonts">
           <div className="mt-10 mr-5 px-4 md:px-10">
             <img src={product.image} alt="logos" className="w-28"/>
-            <h1 className="text-2xl md:text-5xl mt-4 font-bold text-gray-700">{product.name}</h1>
+            <h1 className="text-2xl whitespace-nowrap md:text-5xl mt-4 font-bold text-gray-700">{product.name}</h1>
             <p className="text-xl mt-4 text-gray-700">{product.description}</p>
-            <button className="border flex items-center gap-2 border-blue-800 text-blue-800 text-lg px-4 py-2 mt-8 mb-8 rounded-full"><span>Explore {product.name}</span> <span className="mb-1"><GrShare/></span></button>
+            <button className="hover:bg-blue-800 transition-all border border-blue-800 text-blue-800 hover:text-white text-lg px-4 py-2 mt-8 rounded-full">
+            <NavLink
+            to={"/view-service/:1"}
+            >Learn More</NavLink>
+            </button>
           </div>
         </div>
       ))}

@@ -24,7 +24,7 @@ const Hero = () => {
   const CurrentHeroComponent = heroComponents[currentHero];
 
   return (
-    <div className="relative h-screen">
+    <div className="relative h-screen" id="home">
       <TransitionGroup className="h-full">
         <CSSTransition key={currentHero} timeout={500} classNames="fade">
           <div className="absolute inset-0 w-full h-full">

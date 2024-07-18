@@ -3,6 +3,7 @@ import educationImage from "../../assets/education.jpg";
 import financeImage from "../../assets/finanace.jpg";
 import travelImage from "../../assets/travel.jpg";
 import healthcareImage from "../../assets/healthcare.jpg";
+import { NavLink } from 'react-router-dom';
 
 const Industries = () => {
   const industries = [
@@ -20,7 +21,9 @@ const Industries = () => {
           <div className='absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center p-4 px-4 md:px-10'>
             <h2 className='md:text-5xl text-2xl font-bold mb-2'>{industry.name}</h2>
             <p className='text-left md:pr-20 text-xl text-gray-300'>{industry.description}</p>
-            <button className="bg-white text-gray-700 mt-4 md:mt-20 w-28 md:w-32 md:text-lg text-sm px-4 py-1 rounded-full">Learn More</button>
+            <NavLink
+            to={"/view-service/:1"}
+             className="bg-white text-gray-700 mt-4 md:mt-20 w-28 md:w-32 md:text-lg text-sm px-4 py-1 rounded-full">Learn More</NavLink>
           </div>
         </div>
       ))}

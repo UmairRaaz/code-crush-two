@@ -15,7 +15,7 @@ const BlogsSection = () => {
             our expertise and successful projects in the software development
             field.
           </p>
-          <div className="flex justify-end"><ViewAllButton/></div>
+          <div className="flex justify-end"><ViewAllButton link={"/all-blogs"}/></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">

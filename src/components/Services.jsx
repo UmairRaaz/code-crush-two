@@ -3,6 +3,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import Industries from "./ServiceSection/Industries";
 import ServicesSection from "./ServiceSection/ServicesSection";
 import Products from "./ServiceSection/Products";
+import { NavLink } from "react-router-dom";
 const Services = () => {
   const [activeComponent, setActiveComponent] = useState("Services");
 
@@ -52,15 +53,15 @@ const Services = () => {
         >
           R&D Projects
         </button>
-        <a
+        <NavLink
           className="text-xl w-40 hidden md:visible md:flex items-center justify-center h-14 text-[#4b7dc8] whitespace-nowrap px-4 py-2"
-          href="all-services"
+          to="/all-services"
         >
           <p>View all</p>
           <span>
             <MdKeyboardArrowRight size={30} />
           </span>
-        </a>
+        </NavLink>
       </div>
       <div className="w-[90%] mx-auto flex space-x-4 mb-4 -mt-4">
         {renderComponent()}

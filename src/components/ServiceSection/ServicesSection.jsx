@@ -3,6 +3,7 @@ import { LuBrainCircuit } from "react-icons/lu";
 import { CgWebsite } from "react-icons/cg";
 import { FaAppStore } from "react-icons/fa";
 import { SiBmcsoftware } from "react-icons/si";
+import { NavLink } from "react-router-dom";
 const ServicesSection = () => {
   const services = [
     {
@@ -37,9 +38,14 @@ const ServicesSection = () => {
         <div key={index} className="min-h-[70vh] py-8 border border-gray-200 font-googleFonts">
           <div className="mt-10 mr-5 px-4 md:px-10">
             <div className="text-blue-800">{service.image}</div>
-            <h1 className="text-2xl md:text-5xl mt-4 font-bold text-gray-700">{service.name}</h1>
+            <h1 className="text-2xl whitespace-nowrap md:text-5xl mt-4 font-bold text-gray-700">{service.name}</h1>
             <p className="text-xl mt-4 text-gray-700">{service.description}</p>
-            <button className="hover:bg-blue-800 transition-all border border-blue-800 text-blue-800 hover:text-white text-lg px-4 py-2 mt-8 rounded-full">Learn More</button>
+            <button className="hover:bg-blue-800 transition-all border border-blue-800 text-blue-800 hover:text-white text-lg px-4 py-2 mt-8 rounded-full">
+            <NavLink
+            to={"/view-service/:1"}
+            >Learn More</NavLink>
+            </button>
+            
           </div>
         </div>
       ))}

@@ -1,4 +1,5 @@
 import { FaChevronRight } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const BlogCard = ({img}) => {
   return (
@@ -18,7 +19,7 @@ const BlogCard = ({img}) => {
           Best Practices for Agile Software Development
         </p>
         <button className="text-sm  text-gray-700 mt-2 flex gap-2 items-center rounded-2xl ">
-          <span>Read More </span>
+          <NavLink to={"/view-blog/:blogid"}>Read More </NavLink>
           <FaChevronRight className="mt-1  text-gray-700 " size={10} />
         </button>
       </div>

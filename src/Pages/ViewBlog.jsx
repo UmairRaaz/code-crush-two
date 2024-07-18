@@ -2,7 +2,7 @@
 
 const ViewBlog = () => {
   return (
-    <div>ViewBlog</div>
+    <div className="h-screen mt-20">ViewBlog</div>
   )
 }
 

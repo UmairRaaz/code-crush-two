@@ -2,7 +2,7 @@
 
 const AllBlogs = () => {
   return (
-    <div>AllBlogs</div>
+    <div className="h-screen mt-20">AllBlogs</div>
   )
 }
 
