@@ -1,6 +1,7 @@
 import AboutUs from './AboutUs'
 import BlogsSection from './BlogsSection'
 import ClientReviews from './ClientReviews'
+import ContactUs from './ContactUs'
 import GetInTouchSection from './GetInTouchSection'
 import Hero from './Hero'
 import JourneySection from './JourneySection'
@@ -20,7 +21,7 @@ const MainPage = () => {
         <ClientReviews/>
         <BlogsSection/>
         <GetInTouchSection/>
-        
+        <ContactUs/>
     </div>
   )
 }

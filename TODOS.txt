@@ -32,7 +32,7 @@ Social media handles on the right side below contact us --> done
 More:
 Add More Team Members (See More) --> done
 Jobs/Internships
-Contact us form (Get in touch)
+Contact us form (Get in touch) --> Done
 R&D Projects
 Project Details Page
 Top menu working
