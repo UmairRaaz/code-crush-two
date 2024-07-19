@@ -77,8 +77,8 @@ const ViewProject = () => {
         </div>
       </div>
       <div>
-        <div className="mt-10 w-[90%] relative mx-auto flex gap-10 p-6 bg-white rounded-lg text-[#06496b]">
-          <div className="w-[60%]">
+        <div className="mt-10 w-[90%] md:relative mx-auto flex md:flex-row flex-col gap-10 p-6 bg-white rounded-lg text-[#06496b]">
+          <div className="md:w-[60%] w-full">
             <h2 className="text-2xl font-bold mb-4 flex gap-2 items-center">
               <BsBoxes />
               {project.overview.title}
@@ -106,7 +106,7 @@ const ViewProject = () => {
             </h2>
             <p className="mb-6">{project.results.content}</p>
           </div>
-          <div className="w-[30%] shadow-2xl min-h-20 p-4 absolute top-0 right-0">
+          <div className="md:w-[30%] w-full shadow-2xl min-h-20 p-4 md:absolute top-0 right-0">
             <ul className="list-disc list-inside space-y-2">
               {project.features.map((feature, index) => (
                 <li key={index} className="">
@@ -127,12 +127,12 @@ const ViewProject = () => {
                 ))}
               </div>
             </div>
-            <div className="mt-6 flex gap-4">
+            <div className="mt-6 flex md:flex-row flex-col gap-4">
               <a
                 href={project.liveDemo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition"
+                className="bg-blue-500 whitespace-nowrap text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition"
               >
                 Live Demo
               </a>
@@ -140,7 +140,7 @@ const ViewProject = () => {
                 href={project.githubRepo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-800 text-white py-2 px-4 rounded-lg hover:bg-gray-900 transition"
+                className="bg-gray-800 whitespace-nowrap text-white py-2 px-4 rounded-lg hover:bg-gray-900 transition"
               >
                 GitHub Repo
               </a>

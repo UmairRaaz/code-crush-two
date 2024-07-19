@@ -1,24 +1,30 @@
 import { NavLink, useNavigate } from "react-router-dom";
-import close from "../assets/close.svg"
-import menu from "../assets/menu.svg"
-
-
+import close from "../assets/close.svg";
+import menu from "../assets/menu.svg";
 import { useState } from 'react';
 
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
-  
+  const navigate = useNavigate();
+
+  const handleNavigation = (hash) => {
+    setNavbar(false);
+    navigate('/');
+    setTimeout(() => {
+      window.location.hash = hash;
+    }, 0);
+  };
+
   return (
-    <div
-    >
-      <nav className="w-full backdrop-blur-xl shadow-md fixed top-0 left-0 z-[1000]  bg-white">
-        <div className="justify-between  px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-28">
-          <div >
+    <div>
+      <nav className="w-full backdrop-blur-xl shadow-md fixed top-0 left-0 z-[1000] bg-white">
+        <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-28">
+          <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               {/* LOGO */}
-              <a href="/">
-                <h2 className="text-2xl text-[#1a1b28] font-bold ">Code Crush</h2>
-              </a>
+              <div to={"/"}>
+                <h2 className="text-2xl text-[#1a1b28] font-bold">Code Crush</h2>
+              </div>
               {/* HAMBURGER BUTTON FOR MOBILE */}
               <div className="md:hidden">
                 <button
@@ -46,29 +52,29 @@ function NavBar() {
                 navbar ? 'p-12 md:p-0 block' : 'hidden'
               }`}
             >
-              <ul className="h-screen md:h-auto items-center justify-center md:flex text-[#1a1b28] ">
-                <li className="pb-6 text-base font-semibold  py-2 md:px-6 text-center border-b-2 md:border-b-0   md:hover:text-[#171a1f] md:hover:bg-transparent">
-                  <a href="/" onClick={() => setNavbar(!navbar)}>
+              <ul className="h-screen md:h-auto items-center justify-center md:flex text-[#1a1b28]">
+                <li className="pb-6 text-base font-semibold py-2 md:px-6 text-center border-b-2 md:border-b-0 md:hover:text-[#171a1f] md:hover:bg-transparent">
+                  <NavLink to={"/"} >
                     HOME
-                  </a>
+                  </NavLink>
                 </li>
-                <li className="pb-6 text-base font-semibold py-2 px-6 text-center  border-b-2 md:border-b-0   md:hover:text-[#171a1f] md:hover:bg-transparent">
-                  <a href="/#about" onClick={() => setNavbar(!navbar)}>
+                <li className="pb-6 text-base font-semibold py-2 px-6 text-center border-b-2 md:border-b-0 md:hover:text-[#171a1f] md:hover:bg-transparent">
+                  <a href="#about" onClick={() => handleNavigation('about')}>
                     ABOUT
                   </a>
                 </li>
-                <li className="pb-6 text-base font-semibold py-2 px-6 text-center  border-b-2 md:border-b-0  uppercase md:hover:text-[#171a1f] ">
-                  <a href="/#services" onClick={() => setNavbar(!navbar)}>
+                <li className="pb-6 text-base font-semibold py-2 px-6 text-center border-b-2 md:border-b-0 uppercase md:hover:text-[#171a1f]">
+                  <a href="#services" onClick={() => handleNavigation('services')}>
                     Services
                   </a>
                 </li>
-                <li className="pb-6 text-base font-semibold py-2 px-6 text-center  border-b-2 md:border-b-0 uppercase md:hover:text-[#171a1f] ">
-                  <a href="/#reviews" onClick={() => setNavbar(!navbar)}>
+                <li className="pb-6 text-base font-semibold py-2 px-6 text-center border-b-2 md:border-b-0 uppercase md:hover:text-[#171a1f]">
+                  <a href="#reviews" onClick={() => handleNavigation('reviews')}>
                     Reviews
                   </a>
                 </li>
-                <li className="pb-6 text-base font-semibold py-2 px-6 text-center  border-b-2 md:border-b-0 uppercase md:hover:text-[#171a1f] ">
-                  <a href="/#contact" onClick={() => setNavbar(!navbar)}>
+                <li className="pb-6 text-base font-semibold py-2 px-6 text-center border-b-2 md:border-b-0 uppercase md:hover:text-[#171a1f]">
+                  <a href="#contact" onClick={() => handleNavigation('contact')}>
                     Contact Us
                   </a>
                 </li>

@@ -69,14 +69,14 @@ const AllProjects = () => {
       </div>
       <div className="mt-10 w-[80%] mx-auto">
         <h1 className='text-4xl font-semibold my-5 text-center text-blue-500'>Our Latest Works</h1>
-        <div className="flex justify-center gap-4 mb-10">
+        <div className="flex flex-wrap justify-center gap-4 mb-10">
           {categories.map((category, index) => (
             <button
               key={index}
               onClick={() => setActiveCategory(category)}
               className={`py-2 px-4 rounded-full ${
                 activeCategory === category ? "bg-blue-500 text-white" : "bg-gray-200 text-gray-800"
-              } relative`}
+              } relative whitespace-nowrap`}
             >
               {category}
               {activeCategory === category && (

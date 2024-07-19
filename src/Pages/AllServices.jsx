@@ -37,7 +37,7 @@ const AllServices = () => {
           <div
             key={index}
             onClick={()=> navigate(service.link)}
-            className="bg-white p-6 rounded-lg shadow-lg relative overflow-hidden group transition-transform transform hover:scale-105 hover:bg-blue-500 hover:text-white"
+            className="bg-white p-6 rounded-lg shadow-lg relative overflow-hidden group transition-transform transform hover:scale-105 hover:bg-blue-500 hover:text-white cursor-pointer"
           >
             <div className=" z-10 flex items-center justify-center mb-4 text-blue-500 group-hover:text-white text-5xl">
               {service.icon}

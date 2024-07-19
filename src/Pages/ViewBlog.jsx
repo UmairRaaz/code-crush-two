@@ -20,7 +20,7 @@ const ViewBlog = () => {
               <img
                 src="https://images.unsplash.com/photo-1699004642520-b48fa2465840?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D"
                 alt="Blog Cover"
-                className="rounded-lg shadow-lg mb-4 h-96"
+                className="rounded-lg shadow-lg mb-4 h-44 object-cover md:h-96"
               />
               <p className="text-xl text-gray-800 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla

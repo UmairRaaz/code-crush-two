@@ -97,15 +97,15 @@ const AllTeamMembers = () => {
       >
         <div className="absolute inset-0 bg-black opacity-70"></div>
         <div className="relative z-10 flex items-center justify-center h-full">
-          <h1 className="text-white text-4xl font-bold">All Team Members</h1>
+          <h1 className="text-white text-2xl md:text-4xl font-bold">All Team Members</h1>
         </div>
       </div>
       <div className="w-[80%] mx-auto py-20">
-        <div className="grid grid-cols-2 gap-4 gap-y-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 gap-y-8">
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="team-member bg-white p-6 rounded-lg shadow-md flex"
+              className="team-member bg-white p-6 rounded-lg shadow-md flex md:flex-row flex-col gap-2 md:gap-0"
             >
               <img
                 src={member.imageUrl}
