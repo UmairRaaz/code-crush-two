@@ -1,17 +1,13 @@
 import { FaChevronRight } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
-const BlogCard = ({img}) => {
+const BlogCard = ({ img }) => {
   return (
-    <div>
-      <div className="h-[60%]">
-        <img
-          src={img}
-          alt="image"
-          className="w-full h-full object-cover"
-        />
+    <div className=" flex flex-col">
+      <div className="">
+        <img src={img} alt="image" className="w-full h-72 object-cover" />
       </div>
-      <div className="h-[40%]">
+      <div className="">
         <h1 className="font-bold text-gray-600 mt-4 leading-relaxed">
           29 Jan 2024 | 2 min read | 219 views
         </h1>

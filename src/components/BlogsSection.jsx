@@ -4,7 +4,7 @@ import ViewAllButton from "./Buttons/ViewAllButton";
 
 const BlogsSection = () => {
   return (
-    <div className="mt-20 w-full">
+    <div className="my-20 w-full">
       <div className="w-[80%] mx-auto">
         <div className="flex flex-col items-center justify-center">
           <h1 className="text-4xl font-bold my-4">

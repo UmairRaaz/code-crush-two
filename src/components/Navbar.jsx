@@ -1,3 +1,4 @@
+import { NavLink, useNavigate } from "react-router-dom";
 import close from "../assets/close.svg"
 import menu from "../assets/menu.svg"
 
@@ -6,6 +7,7 @@ import { useState } from 'react';
 
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
+  
   return (
     <div
     >
@@ -46,27 +48,27 @@ function NavBar() {
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex text-[#1a1b28] ">
                 <li className="pb-6 text-base font-semibold  py-2 md:px-6 text-center border-b-2 md:border-b-0   md:hover:text-[#171a1f] md:hover:bg-transparent">
-                  <a href="#home" onClick={() => setNavbar(!navbar)}>
+                  <a href="/" onClick={() => setNavbar(!navbar)}>
                     HOME
                   </a>
                 </li>
                 <li className="pb-6 text-base font-semibold py-2 px-6 text-center  border-b-2 md:border-b-0   md:hover:text-[#171a1f] md:hover:bg-transparent">
-                  <a href="#about" onClick={() => setNavbar(!navbar)}>
+                  <a href="/#about" onClick={() => setNavbar(!navbar)}>
                     ABOUT
                   </a>
                 </li>
                 <li className="pb-6 text-base font-semibold py-2 px-6 text-center  border-b-2 md:border-b-0  uppercase md:hover:text-[#171a1f] ">
-                  <a href="#services" onClick={() => setNavbar(!navbar)}>
+                  <a href="/#services" onClick={() => setNavbar(!navbar)}>
                     Services
                   </a>
                 </li>
                 <li className="pb-6 text-base font-semibold py-2 px-6 text-center  border-b-2 md:border-b-0 uppercase md:hover:text-[#171a1f] ">
-                  <a href="#reviews" onClick={() => setNavbar(!navbar)}>
+                  <a href="/#reviews" onClick={() => setNavbar(!navbar)}>
                     Reviews
                   </a>
                 </li>
                 <li className="pb-6 text-base font-semibold py-2 px-6 text-center  border-b-2 md:border-b-0 uppercase md:hover:text-[#171a1f] ">
-                  <a href="#contact" onClick={() => setNavbar(!navbar)}>
+                  <a href="/#contact" onClick={() => setNavbar(!navbar)}>
                     Contact Us
                   </a>
                 </li>

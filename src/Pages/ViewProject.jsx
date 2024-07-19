@@ -1,9 +1,174 @@
-
+import { motion } from "framer-motion";
+import { useParams } from "react-router-dom";
+import portfolioOne from "../assets/portfolioOne.png";
+import { BsBoxes } from "react-icons/bs";
+import { LiaFlagSolid } from "react-icons/lia";
+import { IoBulbOutline } from "react-icons/io5";
+import { TbReportAnalytics } from "react-icons/tb";
+const projectDetails = {
+  title: "Project 1",
+  description:
+    "This is a detailed description of Project 1. It includes all the key features and functionalities of the project. The project aims to solve specific problems and provide value to its users.",
+  features: [
+    "Feature 1: Responsive Design",
+    "Feature 2: E-commerce Integration",
+    "Feature 3: SEO Optimization",
+    "Feature 4: Custom Web Applications",
+  ],
+  technologies: ["HTML", "CSS", "JavaScript", "React", "Node.js"],
+  imgSrc: portfolioOne,
+  liveDemo: "https://example.com",
+  githubRepo: "https://github.com/example/project1",
+  overview: {
+    title: "Overview",
+    content:
+      "Wise Medical Billing, a trusted provider of medical billing services, partnered with Webicosoft to refine their brand identity. This case study explores the challenges Wise Medical Billing faced, the solutions implemented, and the resulting impact on brand perception and communication.",
+  },
+  challenges: {
+    title: "Challenges",
+    content:
+      "Their existing branding elements, including logo, letterhead, and business cards, may not have effectively conveyed their professionalism and expertise. So, brand identity was the biggest challenge to tackle because of the competitive medical billing market in the USA.",
+  },
+  solutions: {
+    title: "Solutions",
+    content:
+      "Webicosoft developed a brand identity solution that aimed to:\n\n" +
+      "- **Logo Design:** A new logo was designed to visually represent Wise Medical Billing’s core values. This could involve incorporating elements that symbolize efficiency, accuracy, and reliability, qualities crucial in the medical billing industry.",
+  },
+  results: {
+    title: "Results",
+    content:
+      "The revamped brand identity aimed to deliver a memorable and distinct logo, along with consistent visual elements, would enhance brand recognition and create a lasting impression on potential clients. Further, delivering a professional and cohesive brand identity would project an image of reliability and expertise,",
+  },
+  servicesOffered: {
+    title: "Services Offered",
+    content:
+      "Framework & Technology: Illustrator, Photoshop\n\n" +
+      "Plugins & Packages: No Plugins & Packages Used\n\n" +
+      "Business Industries: Medical Billing",
+  },
+  clientReview: {
+    title: "Client Review",
+    content:
+      "Webicosoft created a professional and user-friendly website for Wise Medical Billing that has significantly improved our online presence. The design is modern, responsive, and tailored to meet the specific needs of our business. The team at Webicosoft took the time to understand our requirements and incorporated features that enhance the user experience, such as easy navigation, a prominent inquiry form, informative content, and a seamless interface for potential clients to contact us.\n\n",
+  },
+};
 
 const ViewProject = () => {
-  return (
-    <div className="h-screen mt-20">ViewProject</div>
-  )
-}
+  const project = projectDetails;
 
-export default ViewProject
+  return (
+    <>
+      <div className="bg-[#3699c3] my-20">
+        <div className="w-[80%] mx-auto pt-10 text-white">
+          <div className="flex flex-col md:flex-row items-center gap-10">
+            <div className="md:w-1/2 flex flex-col ">
+              <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
+              <p className="text-lg mb-6">{project.description}</p>
+            </div>
+            <div className="md:w-1/2">
+              <img
+                src={project.imgSrc}
+                alt={project.title}
+                className="rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div className="mt-10 w-[90%] relative mx-auto flex gap-10 p-6 bg-white rounded-lg text-[#06496b]">
+          <div className="w-[60%]">
+            <h2 className="text-2xl font-bold mb-4 flex gap-2 items-center">
+              <BsBoxes />
+              {project.overview.title}
+            </h2>
+            <p className="mb-6">{project.overview.content}</p>
+
+            <h2 className="text-2xl font-bold mb-4 flex gap-2 items-center">
+              <LiaFlagSolid />
+              {project.challenges.title}
+            </h2>
+            <p className="mb-6">{project.challenges.content}</p>
+
+            <h2 className="text-2xl font-bold mb-4 flex gap-2 items-center">
+              <IoBulbOutline />
+              {project.solutions.title}
+            </h2>
+            <p
+              className="mb-6"
+              dangerouslySetInnerHTML={{ __html: project.solutions.content }}
+            />
+
+            <h2 className="text-2xl font-bold mb-4 flex gap-2 items-center">
+              <TbReportAnalytics />
+              {project.results.title}
+            </h2>
+            <p className="mb-6">{project.results.content}</p>
+          </div>
+          <div className="w-[30%] shadow-2xl min-h-20 p-4 absolute top-0 right-0">
+            <ul className="list-disc list-inside space-y-2">
+              {project.features.map((feature, index) => (
+                <li key={index} className="">
+                  {feature}
+                </li>
+              ))}
+            </ul>
+            <div className="mt-6">
+              <h2 className="text-2xl font-semibold mb-2">Technologies Used</h2>
+              <div className="flex flex-wrap gap-2">
+                {project.technologies.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="bg-blue-100 text-blue-800 py-1 px-3 rounded-full text-sm"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="mt-6 flex gap-4">
+              <a
+                href={project.liveDemo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition"
+              >
+                Live Demo
+              </a>
+              <a
+                href={project.githubRepo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-800 text-white py-2 px-4 rounded-lg hover:bg-gray-900 transition"
+              >
+                GitHub Repo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="w-[90%] mx-auto  bg-gray-100 p-4 my-4 mb-10 rounded-lg shadow-md">
+        <div className=" text-[#06496b] flex flex-col gap-4 items-center justify-center">
+          <h2 className="text-2xl font-bold mb-2">Client Review</h2>
+          <p className="mb-4 text-center">
+            After collaborating with Crush Codes Software for our latest
+            project, I can confidently say they exceeded all expectations. Their
+            support team was exceptionally responsive and knowledgeable, guiding
+            us seamlessly through any challenges. The products delivered were
+            not only robust but also elegantly designed, showcasing their
+            commitment to quality and innovation. Working with Crush Codes
+            Software has been a game-changer for our business, and I highly
+            recommend their services to anyone looking for reliable and
+            cutting-edge software solutions.
+          </p>
+          <div className="flex items-center">
+            <p className="text-yellow-500 text-xl mr-2">⭐️⭐️⭐️⭐️⭐️</p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default ViewProject;
