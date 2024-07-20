@@ -2,6 +2,7 @@
 import { FaRegCalendarAlt } from "react-icons/fa";
 import servicepagebg from "../assets/servicepagebg.jpg";
 import BlogCard from "../components/BlogSection/BlogCard"
+import LineEffect from "../components/Buttons/LineEffect";
 const AllBlogs = () => {
   const blogs = [
     {
@@ -87,10 +88,14 @@ const AllBlogs = () => {
       >
         <div className="absolute inset-0 bg-black opacity-70"></div>
         <div className="relative z-10 flex items-center justify-center h-full">
-          <h1 className="text-white text-4xl font-bold">All Blogs</h1>
+          <h1 className="text-white text-4xl font-bold">Blogs</h1>
         </div>
       </div>
       <div className="bg-[#f4f5fa] min-h-screen ">
+      <h1 className="text-5xl pt-10 mb-6 font-bold text-center font-googleFonts text-gray-700">
+        All Blogs
+      </h1>
+      <LineEffect />
       <div className="w-[80%] mx-auto py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-10">
           {blogs.map((blog, index) => (

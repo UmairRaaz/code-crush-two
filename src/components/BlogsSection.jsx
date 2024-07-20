@@ -1,16 +1,17 @@
 import { FaChevronRight } from "react-icons/fa";
 import BlogCard from "./BlogSection/BlogCard";
 import ViewAllButton from "./Buttons/ViewAllButton";
-
+import LineEffect from  "./Buttons/LineEffect"
 const BlogsSection = () => {
   return (
     <div className="my-20 w-full">
       <div className="w-[80%] mx-auto">
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-4xl font-bold my-4">
+          <h1 className="text-4xl font-bold my-4 mb-8">
             In-Depth Analysis and Case Studies
           </h1>
-          <p className=" text-gray-600 max-w-2xl text-center">
+          <LineEffect/>
+          <p className=" text-gray-600 max-w-2xl mt-4 text-center">
             Explore comprehensive articles and detailed case studies showcasing
             our expertise and successful projects in the software development
             field.

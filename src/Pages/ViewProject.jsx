@@ -59,7 +59,7 @@ const ViewProject = () => {
 
   return (
     <>
-      <div className="bg-[#3699c3] my-20">
+      <div className="bg-[#3699c3] my-20 rounded-t rounded-3xl">
         <div className="w-[80%] mx-auto pt-10 text-white">
           <div className="flex flex-col md:flex-row items-center gap-10">
             <div className="md:w-1/2 flex flex-col ">

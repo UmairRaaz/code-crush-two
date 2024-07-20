@@ -1,6 +1,4 @@
-import { MdOutlineMailOutline } from "react-icons/md";
-import { CiPhone } from "react-icons/ci";
-import { CiLocationOn } from "react-icons/ci";
+
 
 const GetInTouchSection = () => {
   return (
@@ -16,30 +14,7 @@ const GetInTouchSection = () => {
             all your questions.
           </p>
         </div>
-        <div className="w-full md:w-1/2 md:pl-8">
-          <div className=" md:p-6 rounded-lg ">
-            <p className="text-gray-600 mb-4">
-              <p className="font-semibold flex items-center gap-2">
-                <MdOutlineMailOutline size={20} />
-                Email:{" "}
-                <span className="font-light">contact@softwareagency.com</span>
-              </p>
-            </p>
-            <p className="text-gray-600 mb-4">
-              <p className="font-semibold flex items-center gap-2">
-                <CiPhone size={20} />
-                Phone: <span className="font-light">+123 456 789</span>
-              </p>
-            </p>
-            <p className="text-gray-600 mb-4">
-              <p className="font-semibold  flex items-center gap-2">
-                <CiLocationOn size={20} />
-                Location:{" "}
-                <span className="font-light"> 123 Software Street,</span>
-              </p>
-            </p>
-          </div>
-        </div>
+        
       </div>
     </div>
   );

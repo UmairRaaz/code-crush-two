@@ -109,3 +109,18 @@ html {
 .slick-next {
   display: none !important;
 }
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.dot {
+  animation: slide 2s infinite;
+}

@@ -7,6 +7,7 @@ import tabletScreen from "../assets/portfolioFour.png";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import ViewAllButton from "./Buttons/ViewAllButton";
 import { useNavigate } from "react-router-dom";
+import LineEffect from "./Buttons/LineEffect";
 
 const overlayVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -18,9 +19,10 @@ const Portfolio = () => {
   return (
     <div className="min-h-screen w-full py-10 my-20 bg-[#f6fafd] text-black" id="services">
       <div className="w-[90%] mx-auto">
-        <h1 className="text-5xl pt-10 font-bold text-center font-googleFonts text-gray-700">
+        <h1 className="text-5xl pt-10 mb-6 font-bold text-center font-googleFonts text-gray-700">
           Featured Projects
         </h1>
+        <LineEffect/>
         <div className="flex justify-end"><ViewAllButton link={"/all-projects"}/></div>
         <div className="my-10 grid md:grid-cols-3 grid-cols-1 gap-14 md:gap-4">
           <motion.div

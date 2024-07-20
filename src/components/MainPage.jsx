@@ -20,7 +20,6 @@ const MainPage = () => {
         <MeetOurTeam/>
         <ClientReviews/>
         <BlogsSection/>
-        <GetInTouchSection/>
         <ContactUs/>
     </div>
   )

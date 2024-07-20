@@ -2,21 +2,21 @@ import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 const TeamMemberCard = ({ image, name, role }) => {
   return (
-    <div>
-      <div className="h-[80%] w-full">
+    <div className="border shadow-xl pb-4 rounded-xl hover:scale-105 transition-all cursor-pointer">
+      <div className="w-full ">
         <img
           src={image}
           alt="portrait"
-          className="h-full w-full object-cover"
+          className="h-72 w-full object-cover rounded-t-xl"
         />
       </div>
-      <div className="mt-4 text-gray-700">
+      <div className="mt-4 text-gray-700 px-4">
         <h1 className="text-xl font-bold">{name}</h1>
         <p>
           <i>{role}</i>
         </p>
       </div>
-      <div className="flex gap-2 mt-4 items-center">
+      <div className="flex gap-2 mt-4 items-center px-4">
         <a href="#" className="text-gray-600 hover:text-gray-400">
           <FaFacebook size={20} />
         </a>

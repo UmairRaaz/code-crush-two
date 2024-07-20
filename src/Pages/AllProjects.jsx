@@ -8,6 +8,7 @@ import portfolioThree from '../assets/portfolioThree.png';
 import portfolioFour from '../assets/portfolioFour.png'; 
 import portfolioFive from '../assets/portfolioFIve.png'; 
 import { useNavigate } from 'react-router-dom';
+import LineEffect from '../components/Buttons/LineEffect';
 
 const projects = {
   "Custom Websites": [
@@ -64,12 +65,15 @@ const AllProjects = () => {
       >
         <div className="absolute inset-0 bg-black opacity-70"></div>
         <div className="relative z-10 flex items-center justify-center h-full">
-          <h1 className="text-white text-4xl font-bold">All Projects</h1>
+          <h1 className="text-white text-4xl font-bold">Projects</h1>
         </div>
       </div>
       <div className="mt-10 w-[80%] mx-auto">
-        <h1 className='text-4xl font-semibold my-5 text-center text-blue-500'>Our Latest Works</h1>
-        <div className="flex flex-wrap justify-center gap-4 mb-10">
+      <h1 className="text-5xl pt-10 mb-6 font-bold text-center font-googleFonts text-gray-700">
+          All Projects
+        </h1>
+        <LineEffect />
+        <div className="flex flex-wrap justify-center mt-10 gap-4 mb-10">
           {categories.map((category, index) => (
             <button
               key={index}

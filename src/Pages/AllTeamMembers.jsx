@@ -1,7 +1,8 @@
 import React from "react";
 import servicepagebg from "../assets/servicepagebg.jpg";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { BsTwitter } from "react-icons/bs"; 
+import { BsTwitter } from "react-icons/bs";
+import LineEffect from "../components/Buttons/LineEffect";
 
 const teamMembers = [
   {
@@ -97,15 +98,21 @@ const AllTeamMembers = () => {
       >
         <div className="absolute inset-0 bg-black opacity-70"></div>
         <div className="relative z-10 flex items-center justify-center h-full">
-          <h1 className="text-white text-2xl md:text-4xl font-bold">All Team Members</h1>
+          <h1 className="text-white text-2xl md:text-4xl font-bold">
+            Our Team
+          </h1>
         </div>
       </div>
+      <h1 className="text-5xl pt-10 mb-6 font-bold text-center font-googleFonts text-gray-700">
+        All Team Members
+      </h1>
+      <LineEffect />
       <div className="w-[80%] mx-auto py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 gap-y-8">
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="team-member bg-white p-6 rounded-lg shadow-md flex md:flex-row flex-col gap-2 md:gap-0"
+              className="team-member bg-white p-6 rounded-lg shadow-md flex md:flex-row flex-col gap-2 md:gap-0 hover:-translate-y-5 cursor-pointer transition-all"
             >
               <img
                 src={member.imageUrl}

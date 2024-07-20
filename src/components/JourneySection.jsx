@@ -6,6 +6,7 @@ import { FcRating } from "react-icons/fc";
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 import worldMap from "../assets/worldMap.png"
+import LineEffect from './Buttons/LineEffect';
 const JourneySection = () => {
   const stats = [
     {
@@ -36,11 +37,12 @@ const JourneySection = () => {
 
   return (
     <div className="min-h-[80vh] relative  md:mt-10 mb-5 w-full">
-      <h1 className="text-5xl text-center px-4 md:px-0 pt-20 pb-10 font-bold">
+      <h1 className="text-5xl text-center px-4 md:px-0 pt-20 pb-8 font-bold">
         A Journey of
         <span className="text-blue-800 ml-2">15 years</span>
       </h1>
-      <div className="w-[80%] z-50 bg-white/70 mx-auto grid grid-cols-1 md:grid-cols-4 mt-2 min-h-44">
+      <LineEffect/>
+      <div className="w-[80%] z-50 bg-white/70 mx-auto grid grid-cols-1 md:grid-cols-4 mt-10 min-h-44">
         {stats.map((data, index) => (
           <StatItem
             key={index}
@@ -51,7 +53,7 @@ const JourneySection = () => {
           />
         ))}
       </div>
-      <img src={worldMap} alt="world-image"  className='w-[50rem] absolute -bottom-20 md:left-[20%] -z-50'/>
+      <img src={worldMap} alt="world-image"  className='w-[50rem] absolute -bottom-28 md:left-[20%] -z-50'/>
     </div>
   );
 };

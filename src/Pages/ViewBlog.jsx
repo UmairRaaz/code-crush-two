@@ -15,7 +15,7 @@ const ViewBlog = () => {
         {/* Main Content */}
         <main className=" px-4 pb-10">
           <div className="w-[80%] mx-auto">
-            {/* Blog Content */}
+           
             <article className="mt-8">
               <img
                 src="https://images.unsplash.com/photo-1699004642520-b48fa2465840?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D"

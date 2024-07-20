@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 
 const BlogCard = ({ img }) => {
   return (
-    <div className=" flex flex-col">
-      <div className="">
+    <div className="flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all pb-8">
+      <div className="rounded-t-xl">
         <img src={img} alt="image" className="w-full h-72 object-cover" />
       </div>
-      <div className="">
+      <div className="px-4">
         <h1 className="font-bold text-gray-600 mt-4 leading-relaxed">
           29 Jan 2024 | 2 min read | 219 views
         </h1>

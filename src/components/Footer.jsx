@@ -4,7 +4,7 @@ import { BsTwitterX } from "react-icons/bs";
 import { NavLink } from 'react-router-dom';
 const Footer = () => {
   return (
-    <div className=" text-[#0d4780] py-10 border-t border-gray-400">
+    <div className=" text-[#0d4780] py-10 border-t border-gray-200">
       <div className="w-[90%] mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Second Column: Website Sections */}
