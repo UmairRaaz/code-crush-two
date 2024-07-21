@@ -6,15 +6,15 @@ import TeamMemberCard from "./TeamSection/TeamMemberCard";
 import ViewAllButton from "./Buttons/ViewAllButton";
 const MeetOurTeam = () => {
   return (
-    <div className="min-h-screen my-20 mt-28 w-full">
+    <div className="my-20 mt-28 w-full">
       <div className="w-[80%] mx-auto">
         <div>
           <div className="flex justify-between">
             <div>
               <h1 className="text-4xl font-bold mb-8">
-                Meet our team of <i>creators</i>, <br /> <i>designers</i>, and
+                Meet our team of creators, <br /> designers, and
                 world-class <br />
-                <i>problem solvers</i>
+               problem solvers
               </h1>
               <p className="text-xl text-gray-600">
                 Discover the talent behind our innovative solutions

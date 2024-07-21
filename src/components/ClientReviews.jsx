@@ -61,7 +61,7 @@ const ClientReviews = () => {
   const reviews = Array(10).fill(<ReviewCard />);
 
   return (
-    <div className="mt-20 pb-20 min-h-screen bg-[#223555] text-white" id='reviews'>
+    <div className="mt-20 pb-20  bg-[#223555] text-white" id='reviews'>
       <h1 className="text-center px-2 md:px-0 pb-10 pt-14 text-5xl font-bold">
         What our clients say
       </h1>

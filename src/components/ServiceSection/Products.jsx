@@ -32,9 +32,9 @@ const Products = () => {
         },
       ];
   return (
-    <div className="min-h-screen w-full text-black grid grid-cols-1 md:grid-cols-2">
+    <div className=" w-full text-black grid grid-cols-1 md:grid-cols-2">
       {products.map((product, index) => (
-        <div key={index} className="min-h-[70vh] py-8 border border-gray-200 font-googleFonts">
+        <div key={index} className="py-8 border border-gray-200 font-googleFonts">
           <div className="mt-10 mr-5 px-4 md:px-10">
             <img src={product.image} alt="logos" className="w-28"/>
             <h1 className="text-2xl whitespace-nowrap md:text-5xl mt-4 font-bold text-gray-700">{product.name}</h1>

@@ -2,7 +2,7 @@ import ThirdHeroImage from "../../assets/ThirdHeroImage.png";
 import backgroundGlobe from "../../assets/backgroundGlobe.png";
 const HeroFour = () => {
   return (
-    <div className="h-[90vh] w-full">
+    <div className="h-full w-full">
       <div className="flex md:flex-row flex-col">
       <div className="absolute top-20 -z-50  invisible md:visible">
           <img src={backgroundGlobe} alt="" className="w-[17rem] opacity-70" />

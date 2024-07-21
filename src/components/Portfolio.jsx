@@ -17,7 +17,7 @@ const overlayVariants = {
 const Portfolio = () => {
   const navigate = useNavigate()
   return (
-    <div className="min-h-screen w-full py-10 my-20 bg-[#f6fafd] text-black" id="services">
+    <div className="w-full py-10 my-20 bg-[#f6fafd] text-black" id="services">
       <div className="w-[90%] mx-auto">
         <h1 className="text-5xl pt-10 mb-6 font-bold text-center font-googleFonts text-gray-700">
           Featured Projects
@@ -28,7 +28,7 @@ const Portfolio = () => {
           <motion.div
             whileHover="visible"
             initial="hidden"
-            className="group bg-white rounded-3xl shadow-2xl flex items-center justify-center h-[90vh] hover:bg-[#ADD8E6] relative transition-all cursor-pointer"
+            className="group bg-white rounded-3xl shadow-2xl flex items-center justify-center hover:bg-[#ADD8E6] relative transition-all cursor-pointer"
             onClick={()=> navigate("/view-project/:1")}
           >
             <img src={mobileImage} alt="portfolio-img" className="w-72" />
@@ -47,7 +47,7 @@ const Portfolio = () => {
               </p>
             </motion.div>
           </motion.div>
-          <div className="flex flex-col gap-10 h-[90vh]">
+          <div className="flex flex-col justify-between gap-10">
             <motion.div
             onClick={()=> navigate("/view-project/:1")}
               whileHover="visible"
@@ -93,7 +93,7 @@ const Portfolio = () => {
               </motion.div>
             </motion.div>
           </div>
-          <div className="flex flex-col gap-10 h-[90vh]">
+          <div className="flex justify-between flex-col gap-10 ">
             <motion.div
               whileHover="visible"
               initial="hidden"

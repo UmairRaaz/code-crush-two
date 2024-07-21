@@ -6,7 +6,7 @@ import HeroThree from "./HeroSections/HeroThree";
 import HeroFour from "./HeroSections/HeroFour";
 
 const Hero = () => {
-  const [currentHero, setCurrentHero] = useState(0);
+  const [currentHero, setCurrentHero] = useState(1);
   const heroComponents = [HeroOne, HeroTwo, HeroThree, HeroFour];
 
   useEffect(() => {
@@ -24,15 +24,15 @@ const Hero = () => {
   const CurrentHeroComponent = heroComponents[currentHero];
 
   return (
-    <div className="relative h-[90vh]" id="home">
-      <TransitionGroup className="h-full">
+    <div className="h-[60vh] md:h-[90vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] relative py-10" id="home">
+      <TransitionGroup>
         <CSSTransition key={currentHero} timeout={500} classNames="fade">
-          <div className="absolute inset-0 w-full h-full">
+          <div className="absolute inset-0 w-full">
             <CurrentHeroComponent />
           </div>
         </CSSTransition>
       </TransitionGroup>
-      <div className="flex justify-center mt-4 absolute -bottom-8  md:-bottom-8 w-full z-50">
+      <div className="flex justify-center mt-4 absolute -bottom-8 md:-bottom-10 w-full z-50">
         {heroComponents.map((_, index) => (
           <div
             key={index}
