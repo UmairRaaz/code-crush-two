@@ -3,7 +3,7 @@ import backgroundImage from "../../assets/backgroundImage.jpg";
 const HeroOne = () => {
   return (
     <div
-      className="h-screen  bg-cover bg-center relative"
+      className="h-[90vh] bg-cover bg-center relative"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="absolute bg-contain inset-0 bg-gradient-to-r from-black/95 to-transparent"></div>

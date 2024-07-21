@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import HeroOne from "./HeroSections/HeroOne";
 import HeroTwo from "./HeroSections/HeroTwo";
@@ -24,7 +24,7 @@ const Hero = () => {
   const CurrentHeroComponent = heroComponents[currentHero];
 
   return (
-    <div className="relative h-screen" id="home">
+    <div className="relative h-[90vh]" id="home">
       <TransitionGroup className="h-full">
         <CSSTransition key={currentHero} timeout={500} classNames="fade">
           <div className="absolute inset-0 w-full h-full">
@@ -32,7 +32,7 @@ const Hero = () => {
           </div>
         </CSSTransition>
       </TransitionGroup>
-      <div className="flex justify-center mt-4 absolute -bottom-8  md:bottom-4 w-full z-50">
+      <div className="flex justify-center mt-4 absolute -bottom-8  md:-bottom-8 w-full z-50">
         {heroComponents.map((_, index) => (
           <div
             key={index}

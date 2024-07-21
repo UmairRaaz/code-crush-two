@@ -36,7 +36,7 @@ const JourneySection = () => {
   ];
 
   return (
-    <div className="min-h-[80vh] relative  md:mt-10 mb-5 w-full">
+    <div className=" relative  md:mt-10 mb-5 w-full">
       <h1 className="text-5xl text-center px-4 md:px-0 pt-20 pb-8 font-bold">
         A Journey of
         <span className="text-blue-800 ml-2">15 years</span>
