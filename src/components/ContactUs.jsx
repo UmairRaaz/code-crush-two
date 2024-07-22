@@ -3,6 +3,7 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import { CiPhone } from "react-icons/ci";
 import { CiLocationOn } from "react-icons/ci";
 import LineEffect from "./Buttons/LineEffect";
+import { motion } from "framer-motion";
 const ContactUs = () => {
   const {
     register,
@@ -15,10 +16,16 @@ const ContactUs = () => {
   };
 
   return (
-    <div className=" bg-[#fafafa]" id="contact">
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "linear" }}
+      className=" bg-[#fafafa]"
+      id="contact"
+    >
       <div className="w-[90%] mx-auto py-10">
         <h1 className="text-4xl font-bold mb-8 text-center">Contact Us</h1>
-        <LineEffect/>
+        <LineEffect />
         <p className="text-base text-center max-w-2xl mt-4 mx-auto">
           We would love to hear from you! Please fill out the form on the right
           to get in touch with us. Whether you have a question, feedback, or
@@ -155,7 +162,7 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

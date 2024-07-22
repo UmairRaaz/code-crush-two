@@ -7,7 +7,14 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import worldMap from "../assets/worldMap.png";
 import LineEffect from "./Buttons/LineEffect";
+import { motion } from "framer-motion";
+
 const JourneySection = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
   const stats = [
     {
       icon: <IoPersonSharp size={50} className="text-blue-800" />,
@@ -36,8 +43,13 @@ const JourneySection = () => {
   ];
 
   return (
-    <div className="">
-      <div className="relative  md:mt-10 mb-5 w-full">
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "linear" }}
+      className=""
+    >
+      <div className="relative md:mt-10 mb-5 w-full">
         <h1 className="text-5xl text-center px-4 md:px-0 pt-20 pb-8 font-bold">
           A Journey of
           <span className="text-blue-800 ml-2">15 years</span>
@@ -60,7 +72,7 @@ const JourneySection = () => {
           className="w-[50rem] absolute -bottom-28 md:left-[20%] -z-50"
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
