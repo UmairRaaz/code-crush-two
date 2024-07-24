@@ -4,14 +4,40 @@ import { CiPhone } from "react-icons/ci";
 import { CiLocationOn } from "react-icons/ci";
 import LineEffect from "./Buttons/LineEffect";
 import { motion } from "framer-motion";
+import axios from "axios";
+import toast from "react-hot-toast";
+import { useState } from "react";
 const ContactUs = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
-
-  const onSubmit = (data) => {
+  const [loading, setloading] = useState(false);
+  const onSubmit = async (data) => {
+    try {
+      setloading(true)
+      const response = await axios.get("http://localhost:5000/contact", {
+        params: {
+          name: data.name,
+          email: data.email,
+          phone: data.phone,
+          message: data.message,
+          subject: data.message,
+        },
+      });
+      setloading(false)
+      console.log("Successfully sent: ", response.data);
+      toast.success("Message Sent Suceesfully");
+    } catch (error) {
+      setloading(false)
+      console.error("Failed to send: ", error);
+      toast.error("Message Sent Suceesfully");
+    } finally {
+      setloading(false)
+      reset();
+    }
     console.log(data);
   };
 
@@ -24,12 +50,10 @@ const ContactUs = () => {
       id="contact"
     >
       <div className="w-[90%] mx-auto py-10">
-        <h1 className="text-4xl font-bold mb-8 text-center">Contact Us</h1>
+        <h1 className="text-4xl font-bold mb-8 text-center">Get in Touch with Code Crush Technology</h1>
         <LineEffect />
-        <p className="text-base text-center max-w-2xl mt-4 mx-auto">
-          We would love to hear from you! Please fill out the form on the right
-          to get in touch with us. Whether you have a question, feedback, or
-          need support, our team is here to help you.
+        <p className="text-base text-center max-w-4xl mt-4 mx-auto">
+        We’re here to assist you! Whether you have inquiries, feedback, or need support, our dedicated team is ready to help. Fill out the form on the right to reach out to us, and we’ll get back to you promptly. Let’s connect and explore how Code Crush Technology can drive your business forward.
         </p>
         <div className="flex flex-col md:items-center md:flex-row">
           <div className="md:w-1/2 px-8 bg-[#fafafa]">
@@ -151,10 +175,11 @@ const ContactUs = () => {
                 </div>
                 <div>
                   <button
+                  disabled={loading}
                     type="submit"
                     className="w-full py-2 px-4 bg-[#ed2639] text-white rounded-full shadow-sm hover:bg-indigo-700 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mt-4"
                   >
-                    Send Message
+                    {loading ? `Sending Message` : `Send Message`}
                   </button>
                 </div>
               </form>

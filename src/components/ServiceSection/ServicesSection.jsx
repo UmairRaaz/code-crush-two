@@ -4,37 +4,22 @@ import { CgWebsite } from "react-icons/cg";
 import { FaAppStore } from "react-icons/fa";
 import { SiBmcsoftware } from "react-icons/si";
 import { NavLink } from "react-router-dom";
+
+import { services } from "../../Content/Services";
 const ServicesSection = () => {
-  const services = [
-    {
-      name: "Website Development",
-      image: <CgWebsite size={70} />,
-      description:
-        "We provide custom-tailored solutions for each phase of development from designing to coding and implementation.",
-    },
-    {
-      name: "App Development",
-      image: <FaAppStore size={70} />,
-      description:
-        "We build native apps optimized for iOS and Android to provide users with a seamless mobile experience that leverages the full power of the OS.",
-    },
-    {
-      name: "AI Integrations",
-      image: <LuBrainCircuit size={70} />,
-      description:
-        "We can help you unlock your business potential with our cutting-edge Machine Learning and Artificial Intelligence capabilities.",
-    },
-   
-    {
-      name: "Social Media Marketing",
-      image: <SiBmcsoftware size={70} />,
-      description:
-        "We bring your ideas to life with our turnkey solutions that are custom-designed to fit into your enterprise software ecosystem.",
-    },
+  const icons = [
+    <LuBrainCircuit size={70}  key={0}/>,
+    <CgWebsite size={70}  key={1}/>,
+    <FaAppStore size={70}  key={2}/>,
+    <SiBmcsoftware size={70} key={3} />,
   ];
+
+  const updatedServices = services.slice(0, 4).map((service, index) => {
+    return { ...service, image: icons[index] };
+  });
   return (
     <div className="w-full text-black  grid grid-cols-1 md:grid-cols-2">
-      {services.map((service, index) => (
+      {updatedServices.map((service, index) => (
         <div key={index} className=" py-8 border border-gray-200 font-googleFonts">
           <div className="mt-10 mr-5 px-4 md:px-10">
             <div className="text-blue-800">{service.image}</div>

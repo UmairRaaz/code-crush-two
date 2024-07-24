@@ -35,16 +35,14 @@ const AboutUs = () => {
         </div>
         <div className="md:w-1/2 w-full h-full bg-[#f4f5f7] text-[#203653]">
           <div className="max-w-[70%] mx-auto md:mt-20 py-10 md:py-10">
-            <h1 className="text-4xl font-bold">We are our people</h1>
+            <h1 className="text-4xl font-bold">Experts Behind Your Digital Success </h1>
+            
             <p className="text-lg mt-4">
-              Our team of over 900 blends the skills of engineers, developers,
-              UX architects, and designers to craft impactful solutions.
-              Together, we have aided businesses in their journey toward digital
-              transformation by delivering custom software that drives change.
+            Our team of seasoned developers, designers, and tech specialists is committed to pushing the boundaries of technology. We work together to deliver bespoke software and strategic solutions that drive success and transform your business.
             </p>
-            <button className="bg-blue-500 text-white text-lg px-4 py-1 mt-4 rounded-full">
+            {/* <button className="bg-blue-500 text-white text-lg px-4 py-1 mt-4 rounded-full">
               Learn More
-            </button>
+            </button> */}
           </div>
         </div>
       </motion.div>

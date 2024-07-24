@@ -107,6 +107,7 @@ const AllTeamMembers = () => {
         All Team Members
       </h1>
       <LineEffect />
+      <p className="text-center max-w-4xl mt-2 mx-auto">Get to know the brilliant minds at Code Crush Technology who turn ideas into reality. Our team of visionary creators, expert designers, and skilled problem solvers brings a wealth of knowledge and creativity to every project. Explore their profiles to see how their dedication and expertise contribute to delivering innovative and effective solutions that exceed expectations.</p>
       <div className="w-[80%] mx-auto py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 gap-y-8">
           {teamMembers.map((member) => (

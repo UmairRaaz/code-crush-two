@@ -4,22 +4,21 @@ import financeImage from "../../assets/finanace.jpg";
 import travelImage from "../../assets/travel.jpg";
 import healthcareImage from "../../assets/healthcare.jpg";
 import { NavLink } from 'react-router-dom';
-
+import { industries } from '../../Content/Services';
+industries
 const Industries = () => {
-  const industries = [
-    { name: 'Education', image: educationImage, description: 'We have partnered with some of the leading education and financial institutions.' },
-    { name: 'Finance', image: financeImage, description: 'We provide cutting-edge financial solutions to drive innovation in the financial sector.' },
-    { name: 'Travel', image: travelImage, description: 'Our solutions help transform the travel industry by enhancing the traveler experience.' },
-    { name: 'Healthcare', image: healthcareImage, description: 'We deliver healthcare innovations to improve patient outcomes and streamline operations.' }
-  ];
+  const updatedIndustries = industries.slice(0, 4).map((industry, index) => {
+    const images = [educationImage, financeImage, travelImage, healthcareImage];
+    return { ...industry, image: images[index] };
+  });
 
   return (
     <div className=' w-full text-white grid grid-cols-1 md:grid-cols-2'>
-      {industries.map((industry, index) => (
+      {updatedIndustries.map((industry, index) => (
         <div key={index} className='relative'>
           <img src={industry.image} alt={industry.name} className='w-full h-full object-cover' />
           <div className='absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center py-8 px-4 md:px-10 '>
-            <h2 className='md:text-5xl text-2xl font-bold mb-2'>{industry.name}</h2>
+            <h2 className='md:text-5xl text-2xl font-bold mb-2'>{industry.title}</h2>
             <p className='text-left md:pr-20 text-xl text-gray-300'>{industry.description}</p>
             <NavLink
             to={"/view-service/:1"}

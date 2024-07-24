@@ -4,6 +4,7 @@ import portraitThree from "../assets/portraitTen.jpg";
 import { motion } from "framer-motion";
 import TeamMemberCard from "./TeamSection/TeamMemberCard";
 import ViewAllButton from "./Buttons/ViewAllButton";
+import { Link } from "react-router-dom";
 const MeetOurTeam = () => {
   return (
     <motion.div
@@ -17,15 +18,10 @@ const MeetOurTeam = () => {
           <div className="flex justify-between">
             <div>
               <h1 className="text-4xl font-bold mb-8">
-                Meet our team of creators, <br /> designers, and world-class{" "}
-                <br />
-                problem solvers
+              Meet Our Expert Team of Creators, <br /> Designers, and Innovators
               </h1>
-              <p className="text-xl text-gray-600">
-                Discover the talent behind our innovative solutions
-              </p>
-              <p className="text-xl text-gray-600">
-                and experience excellence in every project we undertake
+              <p className="text-base text-gray-600">
+              Get to know the brilliant minds at Code Crush Technology who turn ideas into reality. Our team of visionary creators, expert designers, and skilled problem solvers brings a wealth of knowledge and creativity to every project. <Link className="text-blue-500">Read More</Link>
               </p>
             </div>
             <ViewAllButton link={"/all-members"} />

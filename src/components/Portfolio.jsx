@@ -6,7 +6,7 @@ import laptopScreen from "../assets/portfolioTwo.png";
 import tabletScreen from "../assets/portfolioFour.png";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import ViewAllButton from "./Buttons/ViewAllButton";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import LineEffect from "./Buttons/LineEffect";
 
 const overlayVariants = {
@@ -26,9 +26,12 @@ const Portfolio = () => {
     >
       <div className="w-[90%] mx-auto">
         <h1 className="text-5xl pt-10 mb-6 font-bold text-center font-googleFonts text-gray-700">
-          Featured Projects
+        Showcasing Our Success Stories
         </h1>
         <LineEffect />
+        <p className="text-center max-w-3xl mt-3 mx-auto">Explore our featured projects to see how Code Crush Technology transforms ideas into impactful solutions. Each project highlights our commitment to innovation, quality, and excellence. <Link 
+        to={"/all-projects"}
+        className="text-blue-500">Read More</Link></p>
         <div className="flex justify-end">
           <ViewAllButton link={"/all-projects"} />
         </div>

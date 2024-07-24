@@ -8,6 +8,7 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
+
 import MainPage from "./components/MainPage.jsx";
 import AllServices from "./Pages/AllServices.jsx";
 import ViewService from "./Pages/ViewService.jsx";
@@ -18,6 +19,9 @@ import ViewBlog from "./Pages/ViewBlog.jsx";
 import AllTeamMembers from "./Pages/AllTeamMembers.jsx";
 import Careers from "./Pages/Careers.jsx";
 import CareersApply from "./Pages/CareersApply.jsx";
+import { Toaster } from "react-hot-toast";
+import PrivacyPolicy from "./Pages/PrivacyPolicy.jsx";
+import TermsAndCondition from "./Pages/TermsAndCondition.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -32,12 +36,15 @@ const router = createBrowserRouter(
       <Route path="all-members" element={<AllTeamMembers />} />
       <Route path="careers" element={<Careers />} />
       <Route path="careers/apply" element={<CareersApply />} />
+      <Route path="privacypolicy" element={<PrivacyPolicy />} />
+      <Route path="termsandcondition" element={<TermsAndCondition />} />
     </Route>
   )
 );
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    <Toaster/>
     <RouterProvider router={router} />
   </React.StrictMode>
 );

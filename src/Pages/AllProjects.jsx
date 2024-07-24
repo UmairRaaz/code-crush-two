@@ -73,6 +73,7 @@ const AllProjects = () => {
           All Projects
         </h1>
         <LineEffect />
+        <p className="text-center max-w-4xl mt-2 mx-auto">Explore our featured projects to see how Code Crush Technology transforms ideas into impactful solutions. Each project highlights our commitment to innovation, quality, and excellence. From cutting-edge app development to sophisticated web solutions, our portfolio demonstrates the breadth and depth of our expertise. Dive into our case studies and witness the difference our technology makes in real-world applications. </p>
         <div className="flex flex-wrap justify-center mt-10 gap-4 mb-10">
           {categories.map((category, index) => (
             <button

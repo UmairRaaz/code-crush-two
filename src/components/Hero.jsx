@@ -6,7 +6,7 @@ import HeroThree from "./HeroSections/HeroThree";
 import HeroFour from "./HeroSections/HeroFour";
 
 const Hero = () => {
-  const [currentHero, setCurrentHero] = useState(0);
+  const [currentHero, setCurrentHero] = useState(3);
   const heroComponents = [HeroOne, HeroTwo, HeroThree, HeroFour];
 
   useEffect(() => {

@@ -9,14 +9,18 @@ const HeroThree = () => {
         </div>
         <div className="w-full md:w-1/2 pt-28 px-4  md:pt-52 md:ml-20 z-10">
           <h1 className="md:text-5xl text-2xl font-bold uppercase ">
-            From Concept to Completion, We Code Your Success
+            Innovative Software Development
           </h1>
           <p className="mt-6 text-lg">
-            Custom Software Development Services for Every Industry
+            Delivering and scalable software solutions for your unique needs.
           </p>
         </div>
         <div className="w-full md:w-1/2   flex items-center justify-center md:mt-32 px-2 md:px-0 mt-4 ">
-          <img src={SecondHeroImage} alt="hero image" className="w-56 md:w-[20rem]" />
+          <img
+            src={SecondHeroImage}
+            alt="hero image"
+            className="w-56 md:w-[20rem]"
+          />
         </div>
       </div>
     </div>
