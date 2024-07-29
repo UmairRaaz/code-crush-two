@@ -1,19 +1,21 @@
 import { useNavigate } from "react-router-dom";
 import servicepagebg from "../assets/servicepagebg.jpg";
-import {
-  FaRegLightbulb,
-  FaCode,
-  FaMobileAlt,
-  FaChartLine,
-  FaSearch,
-  FaLock,
-  FaPaintBrush,
-  FaServer,
-  FaHeadset,
-  FaShoppingCart,
-} from "react-icons/fa";
+// import {
+//   FaRegLightbulb,
+//   FaCode,
+//   FaMobileAlt,
+//   FaChartLine,
+//   FaSearch,
+//   FaLock,
+//   FaPaintBrush,
+//   FaServer,
+//   FaHeadset,
+//   FaShoppingCart,
+// } from "react-icons/fa";
+
 import LineEffect from "../components/Buttons/LineEffect";
-import { industries, rAndDProjects, services } from "../Content/Services";
+import { industries, rAndDProjects, services } from "../Content/ServicesContent.jsx";
+import AllServiceCard from "../components/ServiceSection/AllServicesCard.jsx";
 
 
 
@@ -39,23 +41,11 @@ const AllServices = () => {
         All Services
       </h1>
       <LineEffect />
-      <div className="w-[80%] mx-auto my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="mt-4">
         {allupdatesServices.map((service, index) => (
-          <div
-            key={index}
-            onClick={() => navigate(`/view-service/${service.id}`)}
-            className="bg-white p-6 rounded-lg shadow-lg relative overflow-hidden group  transform hover:scale-105 hover:bg-blue-500 hover:text-white cursor-pointer transition-all"
-          >
-            <div className=" z-10 flex items-center justify-center mb-4 text-blue-500 group-hover:text-white text-5xl">
-              <FaCode />
-            </div>
-            <h3 className="z-10 text-xl text-center font-semibold mb-2 group-hover:text-white">
-              {service.title}
-            </h3>
-            <p className=" z-10 text-gray-600 text-center group-hover:text-white">
-              {service.description}
-            </p>
-          </div>
+          <AllServiceCard key={index} image={service.image}  heading={service.title} desc={service.description}
+          reverse={index % 2 === 0}
+          />
         ))}
       </div>
     </div>

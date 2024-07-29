@@ -1,7 +1,10 @@
 import { useForm } from "react-hook-form";
-import { MdOutlineMailOutline } from "react-icons/md";
-import { CiPhone } from "react-icons/ci";
-import { CiLocationOn } from "react-icons/ci";
+
+
+import email from "../assets/website_icons/email.svg";
+import location from "../assets/website_icons/location.svg";
+import phone from "../assets/website_icons/phone.svg";
+
 import LineEffect from "./Buttons/LineEffect";
 import { motion } from "framer-motion";
 import axios from "axios";
@@ -17,7 +20,7 @@ const ContactUs = () => {
   const [loading, setloading] = useState(false);
   const onSubmit = async (data) => {
     try {
-      setloading(true)
+      setloading(true);
       const response = await axios.get("http://localhost:5000/contact", {
         params: {
           name: data.name,
@@ -27,15 +30,15 @@ const ContactUs = () => {
           subject: data.message,
         },
       });
-      setloading(false)
+      setloading(false);
       console.log("Successfully sent: ", response.data);
       toast.success("Message Sent Suceesfully");
     } catch (error) {
-      setloading(false)
+      setloading(false);
       console.error("Failed to send: ", error);
       toast.error("Message Sent Suceesfully");
     } finally {
-      setloading(false)
+      setloading(false);
       reset();
     }
     console.log(data);
@@ -50,55 +53,48 @@ const ContactUs = () => {
       id="contact"
     >
       <div className="w-[90%] mx-auto py-10">
-        <h1 className="text-4xl font-bold mb-8 text-center">Get in Touch with Code Crush Technology</h1>
+        <h1 className="text-4xl font-bold mb-8 text-center">
+          Get in Touch with Code Crush Technology
+        </h1>
         <LineEffect />
         <p className="text-base text-center max-w-4xl mt-4 mx-auto">
-        We’re here to assist you! Whether you have inquiries, feedback, or need support, our dedicated team is ready to help. Fill out the form on the right to reach out to us, and we’ll get back to you promptly. Let’s connect and explore how Code Crush Technology can drive your business forward.
+          We’re here to assist you! Whether you have inquiries, feedback, or
+          need support, our dedicated team is ready to help. Fill out the form
+          on the right to reach out to us, and we’ll get back to you promptly.
+          Let’s connect and explore how Code Crush Technology can drive your
+          business forward.
         </p>
         <div className="flex flex-col md:items-center md:flex-row">
           <div className="md:w-1/2 px-8 bg-[#fafafa]">
             <div className="w-full md:pl-8">
-              <div className=" md:p-6 rounded-lg ">
-                <div className="text-gray-600 mb-4">
-                  <div className="font-semibold flex flex-col text-2xl">
-                    <div className="flex items-center gap-4">
-                      <MdOutlineMailOutline
-                        size={40}
-                        className="bg-gray-400 text-white rounded-full p-2"
-                      />
-                      Email:{" "}
-                    </div>
-                    <span className="font-light ml-14 text-xl">
+              <div className="md:p-6  rounded-lg mt-10 md:mt-0  border-black">
+                <div className="flex gap-x-4 mb-4 ">
+                  <div>
+                    <img src={email} alt="icon" className="w-[40px]" />
+                  </div>
+                  <div className="text-gray-600">
+                    <h1 className="text-2xl">Email :</h1>
+                    <h1 className="font-light text-base md:text-xl ">
                       contact@softwareagency.com
-                    </span>
+                    </h1>
                   </div>
                 </div>
-                <div className="text-gray-600 mb-4">
-                  <div className="font-semibold flex flex-col text-2xl">
-                    <div className="flex items-center gap-4">
-                      <CiPhone
-                        size={40}
-                        className="bg-gray-400 text-white rounded-full p-2"
-                      />
-                      Phone :{" "}
-                    </div>
-                    <span className="font-light ml-14 text-xl">
-                      +123 456 789
-                    </span>
+                <div className="flex gap-x-4 mb-4">
+                  <div>
+                    <img src={phone} alt="icon" className="w-[40px]" />
+                  </div>
+                  <div className="text-gray-600">
+                    <h1 className="text-2xl">Phone :</h1>
+                    <h1 className="font-light text-xl">+123 456 789</h1>
                   </div>
                 </div>
-                <div className="text-gray-600 mb-4">
-                  <div className="font-semibold flex flex-col text-2xl">
-                    <div className="flex items-center gap-4">
-                      <CiLocationOn
-                        size={40}
-                        className="bg-gray-400 text-white rounded-full p-2"
-                      />
-                      Location :{" "}
-                    </div>
-                    <span className="font-light ml-14 text-xl">
-                      123 Software Street
-                    </span>
+                <div className="flex gap-x-4 mb-4">
+                  <div>
+                    <img src={location} alt="icon" className="w-[40px]" />
+                  </div>
+                  <div className="text-gray-600">
+                    <h1 className="text-2xl">Location :</h1>
+                    <h1 className="font-light text-xl">123 Software Street</h1>
                   </div>
                 </div>
               </div>
@@ -175,7 +171,7 @@ const ContactUs = () => {
                 </div>
                 <div>
                   <button
-                  disabled={loading}
+                    disabled={loading}
                     type="submit"
                     className="w-full py-2 px-4 bg-[#ed2639] text-white rounded-full shadow-sm hover:bg-indigo-700 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mt-4"
                   >

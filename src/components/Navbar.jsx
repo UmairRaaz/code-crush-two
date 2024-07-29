@@ -2,7 +2,7 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import close from "../assets/close.svg";
 import menu from "../assets/menu.svg";
 import { useState } from 'react';
-
+import logo from "../assets/ServicesSection/logo.webp"
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
   const navigate = useNavigate();
@@ -23,7 +23,7 @@ function NavBar() {
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               {/* LOGO */}
               <Link to={"/"}>
-                <h2 className="text-2xl text-[#1a1b28] font-bold">Code Crush</h2>
+                <img src={logo} alt="logo"  className="w-14"/>
               </Link>
               {/* HAMBURGER BUTTON FOR MOBILE */}
               <div className="md:hidden">

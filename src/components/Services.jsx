@@ -39,7 +39,7 @@ const Services = () => {
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease:"linear" }}
-      className="min-h-screen mt-28 md:mt-0 w-full font-googleFonts"
+      className=" mt-28 md:mt-0 w-full font-googleFonts"
     >
       <div className="w-[90%] mx-auto flex md:space-x-4 my-4">
         <button

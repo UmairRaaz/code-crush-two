@@ -37,7 +37,7 @@ const Hero = () => {
           <div
             key={index}
             className={`w-3 h-3 mx-2 rounded-full cursor-pointer ${
-              index === currentHero ? "bg-red-800" : "bg-gray-400"
+              index === currentHero ? "bg-blue-800" : "bg-blue-300"
             }`}
             onClick={() => handleDotClick(index)}
           ></div>

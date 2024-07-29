@@ -93,7 +93,7 @@ html {
 
 /* Style for the active dot */
 .slick-dots li.slick-active button:before {
-  color: #a39b99;
+  color: blue;
   /* Color for active dot */
 }
 

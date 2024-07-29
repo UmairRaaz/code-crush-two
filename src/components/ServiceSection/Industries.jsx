@@ -5,7 +5,7 @@ import travelImage from "../../assets/ServicesSection/Industries/Travel.webp";
 
 
 import { NavLink } from 'react-router-dom';
-import { industries } from '../../Content/Services';
+import { industries } from '../../Content/ServicesContent';
 industries
 const Industries = () => {
   const updatedIndustries = industries.slice(0, 4).map((industry, index) => {

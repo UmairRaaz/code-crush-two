@@ -1,11 +1,10 @@
-import React from "react";
-import { IoPersonSharp } from "react-icons/io5";
-import { FaHouseChimney } from "react-icons/fa6";
-import { FcIdea } from "react-icons/fc";
-import { FcRating } from "react-icons/fc";
+import peopleOnboard from "../assets/website_icons/peopleOnboard.svg";
+import clutchRating from "../assets/website_icons/clutchRating.svg";
+import projectsCompleted from "../assets/website_icons/projectsCompleted.svg";
+import globalOffice from "../assets/website_icons/globalOffice.svg";
+
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
-import worldMap from "../assets/worldMap.png";
 import LineEffect from "./Buttons/LineEffect";
 import { motion } from "framer-motion";
 
@@ -17,25 +16,25 @@ const JourneySection = () => {
 
   const stats = [
     {
-      icon: <IoPersonSharp size={50} className="text-blue-800" />,
+      icon: peopleOnboard,
       label: "People onboard",
       value: 900,
       prefix: "+",
     },
     {
-      icon: <FaHouseChimney size={50} className="text-blue-800" />,
+      icon: globalOffice,
       label: "Global offices",
       value: 4,
       prefix: "",
     },
     {
-      icon: <FcIdea size={50} />,
+      icon: projectsCompleted,
       label: "Projects completed",
       value: 550,
       prefix: "+",
     },
     {
-      icon: <FcRating size={50} />,
+      icon: clutchRating,
       label: "Clutch rating",
       value: 4.9,
       prefix: "",
@@ -80,9 +79,9 @@ const StatItem = ({ icon, label, value, prefix }) => {
   return (
     <div
       ref={ref}
-      className="flex border py-10 md:py-0 border-gray-200 items-center justify-center flex-col"
+      className="flex border py-10 md:py-0 border-gray-200 items-center justify-center flex-col cursor-pointer"
     >
-      <div>{icon}</div>
+      <img src={icon} alt="icon" className="w-[70px]" />
       <h1 className="text-gray-700 mt-2 text-4xl font-bold">
         <CountUp start={0} end={inView ? value : 0} duration={5} />
         {prefix}
