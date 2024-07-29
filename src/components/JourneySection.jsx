@@ -49,7 +49,7 @@ const JourneySection = () => {
       transition={{ duration: 1, ease: "linear" }}
       className=""
     >
-      <div className="relative md:mt-10 mb-5 w-full">
+      <div className="md:mt-10 mb-5 w-full">
         <h1 className="text-5xl text-center px-4 md:px-0 pt-20 pb-8 font-bold">
           A Journey of
           <span className="text-blue-800 ml-2">15 years</span>
@@ -66,11 +66,6 @@ const JourneySection = () => {
             />
           ))}
         </div>
-        <img
-          src={worldMap}
-          alt="world-image"
-          className="w-[50rem] absolute -bottom-28 md:left-[20%] -z-50"
-        />
       </div>
     </motion.div>
   );

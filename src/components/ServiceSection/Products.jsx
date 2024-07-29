@@ -1,31 +1,29 @@
-import ProductOne from "../../assets/ProductOne.png";
-import ProductTwo from "../../assets/ProductTwo.png";
-import ProductThree from "../../assets/ProductThree.png";
-import ProductFour from "../../assets/ProductFour.png";
-import { GrShare } from "react-icons/gr";
+import ArtificialIntelligence from "../../assets/ServicesSection/R&D/ArtificialIntelligence.webp";
+import MachineLearning from "../../assets/ServicesSection/R&D/MachineLearning.webp";
+import BlockchainTechnology from "../../assets/ServicesSection/R&D/BlockchainTechnology.webp";
+import NaturalLanguageProcessing from "../../assets/ServicesSection/R&D/NaturalLanguageProcessing.webp";
 import { NavLink } from "react-router-dom";
 import { rAndDProjects } from "../../Content/Services";
 
 const Products = () => {
-  const productImages = [ProductOne, ProductTwo, ProductThree, ProductFour];
-
-  const updatedProducts = rAndDProjects.slice(0, 4).map((product, index) => {
-    return { ...product, image: productImages[index] };
+  const updatedProducts = rAndDProjects.slice(0, 4).map((project, index) => {
+    const images = [ArtificialIntelligence, MachineLearning, BlockchainTechnology, NaturalLanguageProcessing];
+    return { ...project, image: images[index] };
   });
-  
   return (
-    <div className=" w-full text-black grid grid-cols-1 md:grid-cols-2">
+    <div className='w-full text-white grid grid-cols-1 md:grid-cols-2'>
       {updatedProducts.map((product, index) => (
-        <div key={index} className="py-8 border border-gray-200 font-googleFonts">
-          <div className="mt-10 mr-5 px-4 md:px-10">
-            <img src={product.image} alt="logos" className="w-28"/>
-            <h1 className="text-2xl whitespace-nowrap md:text-3xl mt-4 font-bold text-gray-700">{product.title}</h1>
-            <p className="text-xl mt-4 text-gray-700">{product.description}</p>
-            <button className="hover:bg-blue-800 transition-all border border-blue-800 text-blue-800 hover:text-white text-lg px-4 py-2 mt-8 rounded-full">
+        <div key={index} className='relative min-h-24'>
+          <img src={product.image} alt={product.name} 
+          className="w-full h-full object-cover"
+          style={{ minHeight: "400px" }}
+          />
+          <div className='absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center py-8 px-4 md:px-10 '>
+            <h2 className='text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-2'>{product.title}</h2>
+            <p className='text-left md:pr-20 text-lg text-gray-300'>{product.description}</p>
             <NavLink
             to={"/view-service/:1"}
-            >Learn More</NavLink>
-            </button>
+             className="bg-white text-gray-700 mt-4 md:mt-10 w-28 md:w-32 md:text-lg text-sm px-4 py-1 rounded-full">Learn More</NavLink>
           </div>
         </div>
       ))}

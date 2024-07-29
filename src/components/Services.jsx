@@ -25,7 +25,7 @@ const Services = () => {
 
   const getButtonClass = (component) => {
     const baseClass =
-      "text-xl px-2 py-1 md:text-xl rounded-t-2xl md:w-40 md:h-14 md:px-4 md:py-2 border-r border-l border-t border-gray-400 whitespace-nowrap ";
+      "text-xl px-2 py-1 md:text-xl rounded-t-xl md:rounded-t-2xl md:w-40 md:h-14 md:px-4 md:py-2 border-r border-l border-t border-gray-400 whitespace-nowrap ";
     const activeClass = "bg-[#0e3f8b] text-white";
     const inactiveClass = "border-gray-300 text-gray-700 bg-transparent";
 
