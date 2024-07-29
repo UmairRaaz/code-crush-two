@@ -1,17 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import servicepagebg from "../assets/servicepagebg.jpg";
-// import {
-//   FaRegLightbulb,
-//   FaCode,
-//   FaMobileAlt,
-//   FaChartLine,
-//   FaSearch,
-//   FaLock,
-//   FaPaintBrush,
-//   FaServer,
-//   FaHeadset,
-//   FaShoppingCart,
-// } from "react-icons/fa";
+
 
 import LineEffect from "../components/Buttons/LineEffect";
 import { industries, rAndDProjects, services } from "../Content/ServicesContent.jsx";
@@ -25,7 +14,7 @@ const AllServices = () => {
   return (
     <div className="mt-20">
       <div
-        className="relative h-[50vh] border"
+        className="relative h-[50vh] sm:h-[50vh] md:h-[30vh] lg:h-[40vh] xl:h-[40vh] 2xl:h-[40vh] border"
         style={{
           backgroundImage: `url(${servicepagebg})`,
           backgroundSize: "cover",

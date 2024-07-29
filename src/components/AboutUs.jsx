@@ -17,7 +17,7 @@ const AboutUs = () => {
   return (
     <div
       ref={ref}
-      className="w-[90%] my-20 mb-28 mx-auto font-googleFonts"
+      className="md:max-w:4xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl px-3 md:px-0  my-20 mb-28 mx-auto font-googleFonts"
       id="about"
     >
       <motion.div

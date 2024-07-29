@@ -13,7 +13,7 @@ const MeetOurTeam = () => {
       transition={{ duration: 1, ease: "linear" }}
       className="my-20 mt-28 w-full"
     >
-      <div className="w-[80%] mx-auto">
+      <div className="md:max-w:4xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl px-3 md:px-0  mx-auto">
         <div>
           <div className="flex justify-between">
             <div>

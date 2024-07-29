@@ -48,7 +48,7 @@ const JourneySection = () => {
       transition={{ duration: 1, ease: "linear" }}
       className=""
     >
-      <div className="md:mt-10 mb-5 w-full">
+      <div className="md:max-w:4xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl px-3 md:px-0  mx-auto md:mt-10 mb-5 w-full">
         <h1 className="text-5xl text-center px-4 md:px-0 pt-20 pb-8 font-bold">
           A Journey of
           <span className="text-blue-800 ml-2">15 years</span>

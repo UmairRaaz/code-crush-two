@@ -25,7 +25,7 @@ const Services = () => {
 
   const getButtonClass = (component) => {
     const baseClass =
-      "text-xl px-2 py-1 md:text-xl rounded-t-xl md:rounded-t-2xl md:w-40 md:h-14 md:px-4 md:py-2 border-r border-l border-t border-gray-400 whitespace-nowrap ";
+      "text-base px-1 md:text-xl rounded-t-xl md:rounded-t-2xl md:w-40 md:h-14 md:px-4 md:py-2 border-r border-l border-t border-gray-400 whitespace-nowrap ";
     const activeClass = "bg-[#0e3f8b] text-white";
     const inactiveClass = "border-gray-300 text-gray-700 bg-transparent";
 
@@ -41,7 +41,7 @@ const Services = () => {
       transition={{ duration: 1, ease:"linear" }}
       className=" mt-28 md:mt-0 w-full font-googleFonts"
     >
-      <div className="w-[90%] mx-auto flex md:space-x-4 my-4">
+      <div className="md:max-w:4xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl px-3 md:px-0  mx-auto flex md:space-x-4 my-4">
         <button
           className={getButtonClass("Services")}
           onClick={() => setActiveComponent("Services")}
@@ -61,7 +61,7 @@ const Services = () => {
           R&D Projects
         </button>
         <NavLink
-          className="text-xl w-40 hidden md:visible md:flex items-center justify-center h-14 text-[#4b7dc8] whitespace-nowrap px-4 py-2"
+          className="md:text-xl text-sm  md:w-40  flex items-center justify-center md:h-14 text-[#4b7dc8] flex-row whitespace-nowrap  px-4 py-2"
           to="/all-services"
         >
           <p>View all</p>
@@ -70,7 +70,7 @@ const Services = () => {
           </span>
         </NavLink>
       </div>
-      <div className="w-[90%] mx-auto flex space-x-4 mb-4 -mt-4">
+      <div className="md:max-w:4xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl px-3 md:px-0  mx-auto flex space-x-4 mb-4 -mt-4">
         {renderComponent()}
       </div>
     </motion.div>

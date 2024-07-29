@@ -52,7 +52,7 @@ const ContactUs = () => {
       className=" bg-[#fafafa]"
       id="contact"
     >
-      <div className="w-[90%] mx-auto py-10">
+      <div className="md:max-w:4xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl px-3 md:px-0  mx-auto py-10">
         <h1 className="text-4xl font-bold mb-8 text-center">
           Get in Touch with Code Crush Technology
         </h1>
@@ -65,34 +65,34 @@ const ContactUs = () => {
           business forward.
         </p>
         <div className="flex flex-col md:items-center md:flex-row">
-          <div className="md:w-1/2 px-8 bg-[#fafafa]">
+          <div className="md:w-1/2 px-2 bg-[#fafafa]">
             <div className="w-full md:pl-8">
               <div className="md:p-6  rounded-lg mt-10 md:mt-0  border-black">
-                <div className="flex gap-x-4 mb-4 ">
-                  <div>
+                <div className="flex  mb-4 ">
+                  <div className="w-[15%]">
                     <img src={email} alt="icon" className="w-[40px]" />
                   </div>
-                  <div className="text-gray-600">
+                  <div className="text-gray-600 w-[70%]">
                     <h1 className="text-2xl">Email :</h1>
-                    <h1 className="font-light text-base md:text-xl ">
+                    <h1 className="font-light text-xl ">
                       contact@softwareagency.com
                     </h1>
                   </div>
                 </div>
-                <div className="flex gap-x-4 mb-4">
-                  <div>
+                <div className="flex mb-4">
+                  <div className="w-[15%]">
                     <img src={phone} alt="icon" className="w-[40px]" />
                   </div>
-                  <div className="text-gray-600">
+                  <div className="text-gray-600 w-[70%]">
                     <h1 className="text-2xl">Phone :</h1>
                     <h1 className="font-light text-xl">+123 456 789</h1>
                   </div>
                 </div>
-                <div className="flex gap-x-4 mb-4">
-                  <div>
+                <div className="flex mb-4">
+                  <div className="w-[15%]">
                     <img src={location} alt="icon" className="w-[40px]" />
                   </div>
-                  <div className="text-gray-600">
+                  <div className="text-gray-600 w-[70%]">
                     <h1 className="text-2xl">Location :</h1>
                     <h1 className="font-light text-xl">123 Software Street</h1>
                   </div>
@@ -101,7 +101,7 @@ const ContactUs = () => {
             </div>
           </div>
           <div className="md:w-1/2 bg-[#fafafa] ">
-            <div className="px-8  py-8 flex items-center justify-center ">
+            <div className="px-2  py-8 flex items-center justify-center ">
               <form
                 onSubmit={handleSubmit(onSubmit)}
                 className="space-y-4 w-96 px-10 rounded-md p-5 bg-white shadow-xl"

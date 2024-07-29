@@ -11,7 +11,7 @@ const BlogsSection = () => {
       transition={{ duration: 1, ease: "linear" }}
       className="my-20 w-full"
     >
-      <div className="w-[80%] mx-auto">
+      <div className="md:max-w:4xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl px-3 md:px-0  mx-auto">
         <div className="flex flex-col items-center justify-center">
           <h1 className="text-4xl font-bold my-4 mb-8">
             In-Depth Analysis and Case Studies

@@ -24,7 +24,7 @@ const Portfolio = () => {
       className="w-full py-10 my-20 bg-[#f6fafd] text-black"
       id="services"
     >
-      <div className="w-[90%] mx-auto">
+      <div className="md:max-w:4xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl px-3 md:px-0 mx-auto">
         <h1 className="text-5xl pt-10 mb-6 font-bold text-center font-googleFonts text-gray-700">
         Showcasing Our Success Stories
         </h1>
