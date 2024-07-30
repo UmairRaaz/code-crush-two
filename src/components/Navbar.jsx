@@ -22,8 +22,9 @@ function NavBar() {
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               {/* LOGO */}
-              <Link to={"/"}>
+              <Link to={"/"} className="flex items-center gap-x-4">
                 <img src={logo} alt="logo"  className="w-14"/>
+                <h1 className="text-xl font-semibold">Code Crush</h1>
               </Link>
               {/* HAMBURGER BUTTON FOR MOBILE */}
               <div className="md:hidden">
