@@ -3,7 +3,7 @@ import MachineLearning from "../../assets/ServicesSection/R&D/MachineLearning.we
 import BlockchainTechnology from "../../assets/ServicesSection/R&D/BlockchainTechnology.webp";
 import NaturalLanguageProcessing from "../../assets/ServicesSection/R&D/NaturalLanguageProcessing.webp";
 import { NavLink } from "react-router-dom";
-import { rAndDProjects } from "../../Content/ServicesContent";
+import { rAndDProjects } from "../../Content/ServiceContent";
 
 const Products = () => {
   const updatedProducts = rAndDProjects.slice(0, 4).map((project, index) => {

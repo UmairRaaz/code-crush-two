@@ -54,7 +54,7 @@ const AllProjects = () => {
   };
 
   return (
-    <div className="min-h-screen my-20">
+    <div className="min-h-screen md:mt-20 my-20">
       <div
         className="relative h-[50vh] border"
         style={{
@@ -68,7 +68,7 @@ const AllProjects = () => {
           <h1 className="text-white text-4xl font-bold">Projects</h1>
         </div>
       </div>
-      <div className="mt-10 w-[80%] mx-auto">
+      <div className="w-[80%] mx-auto">
       <h1 className="text-5xl pt-10 mb-6 font-bold text-center font-googleFonts text-gray-700">
           All Projects
         </h1>

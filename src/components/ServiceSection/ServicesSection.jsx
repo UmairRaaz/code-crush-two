@@ -3,7 +3,7 @@ import webDevlopment from "../../assets/ServicesSection/services/webDevelopment.
 import socialMediaMarketing from "../../assets/ServicesSection/services/socialMediaMarketing.webp";
 import UIUX from "../../assets/ServicesSection/services/UIUX.webp";
 import { NavLink } from "react-router-dom";
-import { services } from "../../Content/ServicesContent";
+import { services } from "../../Content/ServiceContent";
 
 const ServicesSection = () => {
   const updatedServices = services.slice(0, 4).map((service, index) => {

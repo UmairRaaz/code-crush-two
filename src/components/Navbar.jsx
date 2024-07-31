@@ -3,6 +3,7 @@ import close from "../assets/close.svg";
 import menu from "../assets/menu.svg";
 import { useState } from 'react';
 import logo from "../assets/ServicesSection/logo.webp"
+import { HashLink } from "react-router-hash-link";
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
   const navigate = useNavigate();
@@ -15,6 +16,11 @@ function NavBar() {
     }, 0);
   };
 
+  const handleClick = (e) => {
+    e.preventDefault();
+    navigate('/');
+    window.scrollTo(0, 0);
+  };
   return (
     <div>
       <nav className="w-full backdrop-blur-xl shadow-md fixed top-0 left-0 z-[1000] bg-white">
@@ -22,7 +28,7 @@ function NavBar() {
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               {/* LOGO */}
-              <Link to={"/"} className="flex items-center gap-x-4">
+              <Link to={"/"} onClick={handleClick} className="flex items-center gap-x-4">
                 <img src={logo} alt="logo"  className="w-14"/>
                 <h1 className="text-xl font-semibold">Code Crush</h1>
               </Link>
@@ -55,12 +61,12 @@ function NavBar() {
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex text-[#1a1b28]">
                 <li className="pb-6 text-base font-semibold py-2 md:px-6 text-center border-b-2 md:border-b-0 md:hover:text-[#171a1f] md:hover:bg-transparent">
-                  <NavLink to={"/"} >
+                  <NavLink to={"/"} onClick={handleClick} >
                     HOME
                   </NavLink>
                 </li>
                 <li className="pb-6 text-base font-semibold py-2 px-6 text-center border-b-2 md:border-b-0 md:hover:text-[#171a1f] md:hover:bg-transparent">
-                  <a href="#about" onClick={() => handleNavigation('about')}>
+                  <a href="#about"  onClick={() => handleNavigation('about')}>
                     ABOUT
                   </a>
                 </li>

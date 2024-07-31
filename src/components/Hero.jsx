@@ -24,7 +24,7 @@ const Hero = () => {
   const CurrentHeroComponent = heroComponents[currentHero];
 
   return (
-    <div className="h-[70vh] sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] relative py-10" id="home">
+    <div className="h-[70vh] md:mt-20 sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] relative py-10" id="home">
       <TransitionGroup>
         <CSSTransition key={currentHero} timeout={500} classNames="fade">
           <div className="absolute inset-0 w-full">
@@ -32,7 +32,7 @@ const Hero = () => {
           </div>
         </CSSTransition>
       </TransitionGroup>
-      <div className="flex justify-center mt-4 invisible md:visible absolute -bottom-10 md:-bottom-10 w-full z-50">
+      <div className="flex justify-center mt-4 invisible md:visible absolute -bottom-10 md:-bottom-6 w-full z-50">
         {heroComponents.map((_, index) => (
           <div
             key={index}

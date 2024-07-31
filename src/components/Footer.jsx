@@ -1,8 +1,15 @@
 import React from 'react';
 import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 const Footer = () => {
+  const navigate = useNavigate();
+  const handleNavigation = (hash) => {
+    navigate('/');
+    setTimeout(() => {
+      window.location.hash = hash;
+    }, 0);
+  };
   return (
     <div className=" text-[#0d4780] py-10 border-t border-gray-200">
       <div className="md:max-w:4xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl px-3 md:px-0  mx-auto">
@@ -11,15 +18,12 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4 uppercase">Company</h3>
             <ul className="space-y-2">
-              <li><a href="#home" className="hover:text-gray-400">Home</a></li>
-              <li><a href="#about" className="hover:text-gray-400">About Us</a></li>
-              <li><a href="#services" className="hover:text-gray-400">Portfolio</a></li>
-              <li><a href="#reviews" className="hover:text-gray-400">Reviews</a></li>
+              <li><NavLink to={"/all-projects"} className="hover:text-gray-400">Portfolio</NavLink></li>
               <li><NavLink to={"/all-members"} className="hover:text-gray-400">Our Partners</NavLink></li>
               <li><NavLink to={"/careers"} className="hover:text-gray-400">Careers</NavLink></li>
-              <li><a href="#blogs" className="hover:text-gray-400">Blogs</a></li>
-              <li><a href="#services" className="hover:text-gray-400">Case Studies</a></li>
-              <li><a href="#services" className="hover:text-gray-400">Our Culture</a></li>
+              <li><NavLink to={"/all-blogs"} className="hover:text-gray-400">Blogs</NavLink></li>
+              <li><NavLink to={"/all-projects"}  className="hover:text-gray-400">Case Studies</NavLink></li>
+              <li><NavLink to={"/all-members"} className="hover:text-gray-400">Our Culture</NavLink></li>
               <li><NavLink to="/privacypolicy" className="hover:text-gray-400">Privacy and Policy</NavLink></li>
               <li><NavLink to="/termsandcondition" className="hover:text-gray-400">Terms and Condition</NavLink></li>
             </ul>

@@ -3,7 +3,7 @@ import servicepagebg from "../assets/servicepagebg.jpg";
 
 
 import LineEffect from "../components/Buttons/LineEffect";
-import { industries, rAndDProjects, services } from "../Content/ServicesContent.jsx";
+import { industries, rAndDProjects, services } from "../Content/ServiceContent.jsx";
 import AllServiceCard from "../components/ServiceSection/AllServicesCard.jsx";
 
 

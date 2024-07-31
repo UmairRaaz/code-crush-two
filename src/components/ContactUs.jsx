@@ -49,7 +49,7 @@ const ContactUs = () => {
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "linear" }}
-      className=" bg-[#fafafa]"
+      className=" bg-[#fafafa] py-40"
       id="contact"
     >
       <div className="md:max-w:4xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl px-3 md:px-0  mx-auto py-10">
