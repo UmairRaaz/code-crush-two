@@ -29,9 +29,11 @@ const Portfolio = () => {
         Showcasing Our Success Stories
         </h1>
         <LineEffect />
-        <p className="text-center max-w-3xl mt-3 mx-auto">Explore our featured projects to see how Code Crush Technology transforms ideas into impactful solutions. Each project highlights our commitment to innovation, quality, and excellence. <Link 
+        <p className="text-center max-w-3xl mt-3 mx-auto">Explore our featured projects to see how Code Crush Technology transforms ideas into impactful solutions. Each project highlights our commitment to innovation, quality, and excellence.
+           {/* <Link 
         to={"/all-projects"}
-        className="text-blue-500">Read More</Link></p>
+        className="text-blue-500">Read More</Link> */}
+        </p>
         <div className="flex justify-end">
           <ViewAllButton link={"/all-projects"} />
         </div>
@@ -50,12 +52,12 @@ const Portfolio = () => {
               className="absolute bottom-10 bg-white/80 w-full text-gray-700 py-5 px-10"
             >
               <h1 className="text-2xl font-bold">Mobile App</h1>
-              <p className="flex items-center gap-1 text-sm mt-2">
+              {/* <p className="flex items-center gap-1 text-sm mt-2">
                 <span>View Project</span>
                 <span className="mt-1">
                   <IoIosArrowRoundForward size={20} />
                 </span>
-              </p>
+              </p> */}
             </motion.div>
           </motion.div>
           <div className="flex flex-col justify-between gap-10">
@@ -73,12 +75,12 @@ const Portfolio = () => {
                 className="absolute bottom-10 bg-white/80 w-full text-gray-700 py-5 px-10"
               >
                 <h1 className="text-2xl font-bold">Web App</h1>
-                <p className="flex items-center gap-1 text-sm mt-2">
+                {/* <p className="flex items-center gap-1 text-sm mt-2">
                   <span>View Project</span>
                   <span className="mt-1">
                     <IoIosArrowRoundForward size={20} />
                   </span>
-                </p>
+                </p> */}
               </motion.div>
             </motion.div>
             <motion.div
@@ -95,12 +97,12 @@ const Portfolio = () => {
                 className="absolute bottom-10 bg-white/80 w-full text-gray-700 py-5 px-10"
               >
                 <h1 className="text-2xl font-bold">Web App</h1>
-                <p className="flex items-center gap-1 text-sm mt-2">
+                {/* <p className="flex items-center gap-1 text-sm mt-2">
                   <span>View Project</span>
                   <span className="mt-1">
                     <IoIosArrowRoundForward size={20} />
                   </span>
-                </p>
+                </p> */}
               </motion.div>
             </motion.div>
           </div>
@@ -119,12 +121,12 @@ const Portfolio = () => {
                 className="absolute bottom-10 bg-white/80 w-full text-gray-700 py-5 px-10"
               >
                 <h1 className="text-2xl font-bold">Web App</h1>
-                <p className="flex items-center gap-1 text-sm mt-2">
+                {/* <p className="flex items-center gap-1 text-sm mt-2">
                   <span>View Project</span>
                   <span className="mt-1">
                     <IoIosArrowRoundForward size={20} />
                   </span>
-                </p>
+                </p> */}
               </motion.div>
             </motion.div>
             <motion.div
@@ -141,12 +143,12 @@ const Portfolio = () => {
                 className="absolute bottom-10 bg-white/80 w-full text-gray-700 py-5 px-10"
               >
                 <h1 className="text-2xl font-bold">Web App</h1>
-                <p className="flex items-center gap-1 text-sm mt-2">
+                {/* <p className="flex items-center gap-1 text-sm mt-2">
                   <span>View Project</span>
                   <span className="mt-1">
                     <IoIosArrowRoundForward size={20} />
                   </span>
-                </p>
+                </p> */}
               </motion.div>
             </motion.div>
           </div>

@@ -42,7 +42,10 @@ const ClientReviews = () => {
   );
 
   const PrevArrow = ({ onClick }) => (
-    <div className="cursor-pointer absolute -bottom-20 z-50 left-10" onClick={onClick}>
+    <div
+      className="cursor-pointer absolute -bottom-20 z-50 left-10"
+      onClick={onClick}
+    >
       <FaRegArrowAltCircleLeft size={60} />
     </div>
   );
@@ -65,7 +68,20 @@ const ClientReviews = () => {
   };
 
   const reviews = Array(10).fill(<ReviewCard />);
-
+  const reviewContent = [
+    {
+      desc: "Working with Code Crush Technologies was a game-changer for our business. Their team delivered a top-notch app that exceeded our expectations. Highly professional and always available to answer our queries.",
+    },
+    {
+      desc: "Code Crush Technologies provided exceptional service and innovative solutions for our e-commerce platform. Their attention to detail and commitment to quality were evident in every step of the project.",
+    },
+    {
+      desc: "Code Crush Technologies transformed our digital presence with their exceptional UX/UI design. Their creative approach and understanding of our needs resulted in a highly engaging website.",
+    },
+    {
+      desc: "From start to finish, Code Crush Technologies was a pleasure to work with. Their professionalism, technical expertise, and commitment to customer satisfaction make them a top choice for any tech project.",
+    },
+  ];
   return (
     <motion.div
       initial={{ opacity: 0, y: 10 }}
@@ -80,8 +96,10 @@ const ClientReviews = () => {
       <div className="mx-auto px-1 md:px-0 md:max-w-7xl">
         <div className="md:w-[90%] mx-auto pb-20 ">
           <Slider {...settings}>
-            {reviews.map((review, index) => (
-              <div key={index}>{review}</div>
+            {reviewContent.map((review, index) => (
+              <div key={index}>
+                <ReviewCard desc={review.desc} />
+              </div>
             ))}
           </Slider>
         </div>

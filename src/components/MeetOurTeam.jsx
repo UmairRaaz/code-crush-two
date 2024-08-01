@@ -1,6 +1,8 @@
-import portraitOne from "../assets/portraitTwo.jpg";
-import portraitTwo from "../assets/portraitThree.jpg";
-import portraitThree from "../assets/portraitTen.jpg";
+import drAkhter from "../assets/drAkhter.jpg";
+import engrFazal from "../assets/engrFazal.png";
+import habib from "../assets/habib.png";
+
+
 import { motion } from "framer-motion";
 import TeamMemberCard from "./TeamSection/TeamMemberCard";
 import ViewAllButton from "./Buttons/ViewAllButton";
@@ -21,26 +23,27 @@ const MeetOurTeam = () => {
               Meet Our Expert Team of Creators, <br /> Designers, and Innovators
               </h1>
               <p className="text-base text-gray-600">
-              Get to know the brilliant minds at Code Crush Technology who turn ideas into reality. Our team of visionary creators, expert designers, and skilled problem solvers brings a wealth of knowledge and creativity to every project. <Link className="text-blue-500">Read More</Link>
+              Get to know the brilliant minds at Code Crush Technology who turn ideas into reality. Our team of visionary creators, expert designers, and skilled problem solvers brings a wealth of knowledge and creativity to every project. 
+              {/* <Link className="text-blue-500">Read More</Link> */}
               </p>
             </div>
             <ViewAllButton link={"/all-members"} />
           </div>
           <div className="mt-8 min-h-72 grid gap-8 grid-cols-1 md:grid-cols-3">
             <TeamMemberCard
-              image={portraitOne}
-              name={"Ahmed Khan"}
-              role={"Lead Software Engineer"}
+              image={habib}
+              name={"Dr. Habib Shah"}
+              role={"Chief Executive Officer (CEO)"}
             />
             <TeamMemberCard
-              image={portraitTwo}
-              name={"Ahmed Khan"}
-              role={"Lead Software Engineer"}
+              image={engrFazal}
+              name={"Engr. Fazli Mola"}
+              role={"Chief Technology Officer (CTO)"}
             />
             <TeamMemberCard
-              image={portraitThree}
-              name={"Ahmed Khan"}
-              role={"Lead Software Engineer"}
+              image={drAkhter}
+              name={"Dr. Akhtar Badshah"}
+              role={"Chief Finance Officer (CFO)"}
             />
           </div>
         </div>

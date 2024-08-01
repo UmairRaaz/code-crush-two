@@ -92,7 +92,7 @@ const ContactUs = () => {
                   <div className="text-gray-600 w-[70%]">
                     <h1 className="text-2xl">Email :</h1>
                     <h1 className="font-light text-xl ">
-                      contact@softwareagency.com
+                    codecrushtech@gmail.com
                     </h1>
                   </div>
                 </div>
@@ -102,7 +102,7 @@ const ContactUs = () => {
                   </div>
                   <div className="text-gray-600 w-[70%]">
                     <h1 className="text-2xl">Phone :</h1>
-                    <h1 className="font-light text-xl">+123 456 789</h1>
+                    <h1 className="font-light text-xl">+966 59 059 6656</h1>
                   </div>
                 </div>
                 <div className="flex mb-4">
@@ -111,7 +111,7 @@ const ContactUs = () => {
                   </div>
                   <div className="text-gray-600 w-[70%]">
                     <h1 className="text-2xl">Location :</h1>
-                    <h1 className="font-light text-xl">123 Software Street</h1>
+                    <h1 className="font-light text-xl">Al-Nawaz Arcade, Adjacent to Rawalpindi Urology Hospital, Murree Road, Rawalpindi</h1>
                   </div>
                 </div>
               </div>

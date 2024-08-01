@@ -7,7 +7,7 @@ const TeamMemberCard = ({ image, name, role }) => {
         <img
           src={image}
           alt="portrait"
-          className="h-72 w-full object-cover rounded-t-xl"
+          className="h-[23rem] w-full object-cover rounded-t-xl"
         />
       </div>
       <div className="mt-4 text-gray-700 px-4">

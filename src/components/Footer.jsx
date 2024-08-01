@@ -19,11 +19,9 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4 uppercase">Company</h3>
             <ul className="space-y-2">
               <li><NavLink to={"/all-projects"} className="hover:text-gray-400">Portfolio</NavLink></li>
-              <li><NavLink to={"/all-members"} className="hover:text-gray-400">Our Partners</NavLink></li>
-              <li><NavLink to={"/careers"} className="hover:text-gray-400">Careers</NavLink></li>
+              <li><NavLink to={"/all-members"} className="hover:text-gray-400">Our Team</NavLink></li>
               <li><NavLink to={"/all-blogs"} className="hover:text-gray-400">Blogs</NavLink></li>
               <li><NavLink to={"/all-projects"}  className="hover:text-gray-400">Case Studies</NavLink></li>
-              <li><NavLink to={"/all-members"} className="hover:text-gray-400">Our Culture</NavLink></li>
               <li><NavLink to="/privacypolicy" className="hover:text-gray-400">Privacy and Policy</NavLink></li>
               <li><NavLink to="/termsandcondition" className="hover:text-gray-400">Terms and Condition</NavLink></li>
             </ul>
@@ -51,9 +49,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold uppercase mb-4">Contact Us</h3>
             <ul className="space-y-2">
-              <li>Email: <a href="mailto:crushcodes@gmail.com" className="hover:text-gray-400">crushcodes@gmail.com</a></li>
-              <li>Phone: <a href="tel:+1234567890" className="hover:text-gray-400">+1 234 567 890</a></li>
-              <li>Address: 1234 Street Name, City, State, Zip</li>
+              <li>Email: <a href="mailto:codecrushtech@gmail.com" className="hover:text-gray-400">codecrushtech@gmail.com</a></li>
+              <li>Phone: <a href="tel:+1234567890" className="hover:text-gray-400">+966 59 059 6656</a></li>
+              <li>Al-Nawaz Arcade, Adjacent to Rawalpindi Urology Hospital, Murree Road, Rawalpindi</li>
             </ul>
             <div className="flex gap-6 mt-4 items-center">
               <a href="#" className=" hover:text-gray-400">

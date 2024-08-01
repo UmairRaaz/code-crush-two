@@ -76,6 +76,11 @@ function NavBar() {
                   </HashLink>
                 </li>
                 <li className="pb-6 text-base font-semibold py-2 px-6 text-center border-b-2 md:border-b-0 uppercase md:hover:text-[#171a1f]">
+                  <HashLink to="/careers" onClick={() => setNavbar(false)}>
+                  Careers
+                  </HashLink>
+                </li>
+                <li className="pb-6 text-base font-semibold py-2 px-6 text-center border-b-2 md:border-b-0 uppercase md:hover:text-[#171a1f]">
                   <HashLink to="/#contact" onClick={() => setNavbar(false)}>
                     Contact Us
                   </HashLink>

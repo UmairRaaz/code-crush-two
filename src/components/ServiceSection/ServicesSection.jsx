@@ -28,12 +28,12 @@ const ServicesSection = () => {
             <p className="text-left md:pr-20 text-lg  text-gray-300">
               {service.description}
             </p>
-            <NavLink
+            {/* <NavLink
               to={`/view-service/${index + 1}`}
               className="bg-white text-gray-700 mt-4 md:mt-20 w-28 md:w-32 md:text-lg text-sm px-4 py-1 rounded-full"
             >
               Learn More
-            </NavLink>
+            </NavLink> */}
           </div>
         </div>
       ))}

@@ -23,9 +23,9 @@ const Industries = () => {
           <div className='absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center py-8 px-4 md:px-10 '>
             <h2 className='text-2xl md:text-4xl lg:text-5xl xl:text-6xl  font-bold mb-2'>{industry.title}</h2>
             <p className='text-left md:pr-20 text-lg text-gray-300'>{industry.description}</p>
-            <NavLink
+            {/* <NavLink
             to={"/view-service/:1"}
-             className="bg-white text-gray-700 mt-4 md:mt-20 w-28 md:w-32 md:text-lg text-sm px-4 py-1 rounded-full">Learn More</NavLink>
+             className="bg-white text-gray-700 mt-4 md:mt-20 w-28 md:w-32 md:text-lg text-sm px-4 py-1 rounded-full">Learn More</NavLink> */}
           </div>
         </div>
       ))}
