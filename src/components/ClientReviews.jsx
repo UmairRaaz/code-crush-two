@@ -68,10 +68,10 @@ const ClientReviews = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 100 }}
+      initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "linear" }}
-      className="mt-20 py-40  bg-[#223555] text-white"
+      className=" pt-10 md:py-14  bg-[#223555] text-white"
       id="reviews"
     >
       <h1 className="text-center px-2 md:px-0 pb-10 pt-14 text-5xl font-bold">

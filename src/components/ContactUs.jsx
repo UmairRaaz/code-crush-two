@@ -9,8 +9,24 @@ import LineEffect from "./Buttons/LineEffect";
 import { motion } from "framer-motion";
 import axios from "axios";
 import toast from "react-hot-toast";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const ContactUs = () => {
+  const [navbarHeight, setNavbarHeight] = useState(0);
+
+  useEffect(() => {
+    // Calculate navbar height on mount and resize
+    const updateNavbarHeight = () => {
+      const navbar = document.querySelector('nav'); 
+      if (navbar) {
+        setNavbarHeight(navbar.offsetHeight);
+      }
+    };
+
+    updateNavbarHeight();
+    window.addEventListener('resize', updateNavbarHeight);
+    return () => window.removeEventListener('resize', updateNavbarHeight);
+  }, []);
+
   const {
     register,
     handleSubmit,
@@ -46,13 +62,14 @@ const ContactUs = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 100 }}
+      initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "linear" }}
-      className=" bg-[#fafafa] py-40"
+      className=" bg-[#fafafa]"
+      style={{ paddingTop: navbarHeight }}
       id="contact"
     >
-      <div className="md:max-w:4xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl px-3 md:px-0  mx-auto py-10">
+      <div className="md:max-w:4xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl px-3 md:px-0  mx-auto py-4">
         <h1 className="text-4xl font-bold mb-8 text-center">
           Get in Touch with Code Crush Technology
         </h1>

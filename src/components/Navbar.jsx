@@ -2,34 +2,28 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import close from "../assets/close.svg";
 import menu from "../assets/menu.svg";
 import { useState } from 'react';
-import logo from "../assets/ServicesSection/logo.webp"
+import logo from "../assets/ServicesSection/logo.webp";
 import { HashLink } from "react-router-hash-link";
+
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
   const navigate = useNavigate();
-
-  const handleNavigation = (hash) => {
-    setNavbar(false);
-    navigate('/');
-    setTimeout(() => {
-      window.location.hash = hash;
-    }, 0);
-  };
 
   const handleClick = (e) => {
     e.preventDefault();
     navigate('/');
     window.scrollTo(0, 0);
   };
+
   return (
     <div>
-      <nav className="w-full backdrop-blur-xl shadow-md fixed top-0 left-0 z-[1000] bg-white">
+      <nav className="w-full nav backdrop-blur-xl shadow-md fixed top-0 left-0 z-[1000] bg-white">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-28">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               {/* LOGO */}
-              <Link to={"/"} onClick={handleClick} className="flex items-center gap-x-4">
-                <img src={logo} alt="logo"  className="w-14"/>
+              <Link to="/" onClick={handleClick} className="flex items-center gap-x-4">
+                <img src={logo} alt="logo" className="w-14" />
                 <h1 className="text-xl font-semibold">Code Crush</h1>
               </Link>
               {/* HAMBURGER BUTTON FOR MOBILE */}
@@ -39,13 +33,13 @@ function NavBar() {
                   onClick={() => setNavbar(!navbar)}
                 >
                   {navbar ? (
-                    <img src={close} width={30} height={30} alt="logo" />
+                    <img src={close} width={30} height={30} alt="close" />
                   ) : (
                     <img
                       src={menu}
                       width={30}
                       height={30}
-                      alt="logo"
+                      alt="menu"
                       className="focus:border-none active:border-none"
                     />
                   )}
@@ -61,29 +55,29 @@ function NavBar() {
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex text-[#1a1b28]">
                 <li className="pb-6 text-base font-semibold py-2 md:px-6 text-center border-b-2 md:border-b-0 md:hover:text-[#171a1f] md:hover:bg-transparent">
-                  <NavLink to={"/"} onClick={handleClick} >
+                  <NavLink to="/" onClick={handleClick}>
                     HOME
                   </NavLink>
                 </li>
                 <li className="pb-6 text-base font-semibold py-2 px-6 text-center border-b-2 md:border-b-0 md:hover:text-[#171a1f] md:hover:bg-transparent">
-                  <a href="#about"  onClick={() => handleNavigation('about')}>
+                  <HashLink to="#about" onClick={() => setNavbar(false)}>
                     ABOUT
-                  </a>
+                  </HashLink>
                 </li>
                 <li className="pb-6 text-base font-semibold py-2 px-6 text-center border-b-2 md:border-b-0 uppercase md:hover:text-[#171a1f]">
-                  <a href="#services" onClick={() => handleNavigation('services')}>
+                  <HashLink to="#services" onClick={() => setNavbar(false)}>
                     Services
-                  </a>
+                  </HashLink>
                 </li>
                 <li className="pb-6 text-base font-semibold py-2 px-6 text-center border-b-2 md:border-b-0 uppercase md:hover:text-[#171a1f]">
-                  <a href="#reviews" onClick={() => handleNavigation('reviews')}>
+                  <HashLink to="#reviews" onClick={() => setNavbar(false)}>
                     Reviews
-                  </a>
+                  </HashLink>
                 </li>
                 <li className="pb-6 text-base font-semibold py-2 px-6 text-center border-b-2 md:border-b-0 uppercase md:hover:text-[#171a1f]">
-                  <a href="#contact" onClick={() => handleNavigation('contact')}>
+                  <HashLink to="#contact" onClick={() => setNavbar(false)}>
                     Contact Us
-                  </a>
+                  </HashLink>
                 </li>
               </ul>
             </div>
