@@ -13,6 +13,7 @@ function NavBar() {
     e.preventDefault();
     navigate('/');
     window.scrollTo(0, 0);
+    setNavbar(false)
   };
 
   return (
@@ -20,7 +21,7 @@ function NavBar() {
       <nav className="w-full nav backdrop-blur-xl shadow-md fixed top-0 left-0 z-[1000] bg-white">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-28">
           <div>
-            <div className="flex items-center justify-between py-3 md:py-5 md:block">
+            <div className="flex items-center justify-between py-3 md:pt-5 md:block">
               {/* LOGO */}
               <Link to="/" onClick={handleClick} className="flex items-center gap-x-4">
                 <img src={logo} alt="logo" className="w-14" />
@@ -60,22 +61,22 @@ function NavBar() {
                   </NavLink>
                 </li>
                 <li className="pb-6 text-base font-semibold py-2 px-6 text-center border-b-2 md:border-b-0 md:hover:text-[#171a1f] md:hover:bg-transparent">
-                  <HashLink to="#about" onClick={() => setNavbar(false)}>
+                  <HashLink to="/#about" onClick={() => setNavbar(false)}>
                     ABOUT
                   </HashLink>
                 </li>
                 <li className="pb-6 text-base font-semibold py-2 px-6 text-center border-b-2 md:border-b-0 uppercase md:hover:text-[#171a1f]">
-                  <HashLink to="#services" onClick={() => setNavbar(false)}>
+                  <HashLink to="/#services" onClick={() => setNavbar(false)}>
                     Services
                   </HashLink>
                 </li>
                 <li className="pb-6 text-base font-semibold py-2 px-6 text-center border-b-2 md:border-b-0 uppercase md:hover:text-[#171a1f]">
-                  <HashLink to="#reviews" onClick={() => setNavbar(false)}>
+                  <HashLink to="/#reviews" onClick={() => setNavbar(false)}>
                     Reviews
                   </HashLink>
                 </li>
                 <li className="pb-6 text-base font-semibold py-2 px-6 text-center border-b-2 md:border-b-0 uppercase md:hover:text-[#171a1f]">
-                  <HashLink to="#contact" onClick={() => setNavbar(false)}>
+                  <HashLink to="/#contact" onClick={() => setNavbar(false)}>
                     Contact Us
                   </HashLink>
                 </li>

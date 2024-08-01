@@ -39,7 +39,7 @@ const Services = () => {
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease:"linear" }}
-      className="mt-28 md:mt-0 py-1 md:pt-32  w-full  font-googleFonts"
+      className=" md:mt-0 py-1 pt-28 md:pt-32  w-full  font-googleFonts"
        id="services"
     >
       <div className="md:max-w:4xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl px-3 md:px-0  mx-auto flex md:space-x-4 my-4 ">

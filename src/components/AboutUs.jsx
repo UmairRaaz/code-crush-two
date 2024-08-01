@@ -17,7 +17,7 @@ const AboutUs = () => {
     <section
       id="about"
       ref={ref}
-      className="md:max-w:4xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl px-3 md:px-0   md:pt-32 mx-auto font-googleFonts"
+      className="md:max-w:4xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl px-3 md:px-0   md:pt-32 pt-20 md:mt-0 mx-auto font-googleFonts"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
