@@ -1,6 +1,6 @@
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useRef, useEffect } from "react";
-import meetingImage from "../assets/meetingImage.jpg";
+import aboutUs from "../assets/aboutUs.webp";
 
 const AboutUs = () => {
   const ref = useRef(null);
@@ -28,7 +28,7 @@ const AboutUs = () => {
       >
         <div className="md:w-1/2 w-full">
           <img
-            src={meetingImage}
+            src={aboutUs}
             alt="image"
             className="w-full h-full object-cover"
           />
