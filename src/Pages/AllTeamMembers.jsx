@@ -3,7 +3,7 @@ import servicepagebg from "../assets/servicepagebg.jpg";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { BsTwitter } from "react-icons/bs";
 import LineEffect from "../components/Buttons/LineEffect";
-import drAkhter from "../assets/drAkhter.jpg";
+import drAkhter from "../assets/drAkhter.png";
 import engrFazal from "../assets/engrFazal.png";
 import habib from "../assets/habib.png";
 const teamMembers = [
@@ -51,9 +51,9 @@ const teamMembers = [
 
 const AllTeamMembers = () => {
   return (
-    <div className="bg-[#f4f5fa] min-h-screen mt-20">
+    <div className="bg-[#f4f5fa] mt-20">
       <div
-        className="relative h-[50vh] border"
+        className="relative h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
         style={{
           backgroundImage: `url(${servicepagebg})`,
           backgroundSize: "cover",
@@ -62,7 +62,7 @@ const AllTeamMembers = () => {
       >
         <div className="absolute inset-0 bg-black opacity-70"></div>
         <div className="relative z-10 flex items-center justify-center h-full">
-          <h1 className="text-white text-2xl md:text-4xl font-bold">
+          <h1 className="text-white tracking-widest uppercase text-2xl md:text-4xl font-bold">
             Our Team
           </h1>
         </div>
@@ -82,7 +82,7 @@ const AllTeamMembers = () => {
               <img
                 src={member.imageUrl}
                 alt={member.name}
-                className="rounded-full w-20 h-20 object-cover flex-shrink-0"
+                className="rounded-full w-20 h-20 object-cover object-center flex-shrink-0"
               />
               <div className="flex flex-col justify-between">
                 <div>

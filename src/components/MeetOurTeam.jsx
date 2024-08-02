@@ -1,4 +1,4 @@
-import drAkhter from "../assets/drAkhter.jpg";
+import drAkhter from "../assets/drAkhter.png";
 import engrFazal from "../assets/engrFazal.png";
 import habib from "../assets/habib.png";
 

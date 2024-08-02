@@ -42,7 +42,7 @@ const CareersApply = () => {
       toast.success("Application Submitted")
       setloading(false)
     } catch (error) {
-      toast.success("Application Submitting Failed")
+      toast.error("Application Submitting Failed")
       setloading(false)
     }
     finally{

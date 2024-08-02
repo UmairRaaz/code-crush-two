@@ -77,9 +77,9 @@ const AllBlogs = () => {
     },
   ];
   return (
-    <div className="min-h-screen mt-20">
+    <div className=" mt-20">
       <div
-        className="relative h-[50vh] border"
+        className="relative h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
         style={{
           backgroundImage: `url(${servicepagebg})`,
           backgroundSize: "cover",
@@ -88,7 +88,7 @@ const AllBlogs = () => {
       >
         <div className="absolute inset-0 bg-black opacity-70"></div>
         <div className="relative z-10 flex items-center justify-center h-full">
-          <h1 className="text-white text-4xl font-bold">Blogs</h1>
+          <h1 className="text-white text-4xl tracking-widest uppercase font-bold">Blogs</h1>
         </div>
       </div>
       <div className="bg-[#f4f5fa] min-h-screen ">

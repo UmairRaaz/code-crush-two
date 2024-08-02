@@ -52,7 +52,7 @@ const ContactUs = () => {
     } catch (error) {
       setloading(false);
       console.error("Failed to send: ", error);
-      toast.error("Message Sent Suceesfully");
+      toast.error("Message Sending Failed");
     } finally {
       setloading(false);
       reset();

@@ -28,7 +28,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<App />}>
       <Route path="" element={<MainPage />} />
       <Route path="all-services" element={<AllServices />} />
-      <Route path='view-service/:serviceid' element={<ViewService/>}/>
+      <Route path='all-services/view-service/:serviceid' element={<ViewService/>}/>
       <Route path="all-projects" element={<AllProjects />} />
       <Route path='view-project/:projectid' element={<ViewProject/>}/>
       <Route path="all-blogs" element={<AllBlogs />} />

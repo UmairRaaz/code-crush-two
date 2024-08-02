@@ -78,7 +78,7 @@ const CareerPage = () => {
   return (
     <div className="mt-20 bg-gray-100">
       <div
-        className="relative h-[50vh] border"
+        className="relative relative h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
         style={{
           backgroundImage: `url(${servicepagebg})`,
           backgroundSize: "cover",
@@ -87,7 +87,7 @@ const CareerPage = () => {
       >
         <div className="absolute inset-0 bg-black opacity-70"></div>
         <div className="relative z-10 flex items-center justify-center h-full">
-          <h1 className="text-white text-4xl font-bold">Work With Us</h1>
+          <h1 className="text-white tracking-widest uppercase text-4xl font-bold">Work With Us</h1>
         </div>
       </div>
       <div className="min-h-screen w-[80%] mx-auto">

@@ -31,17 +31,17 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4 uppercase">Services</h3>
             <ul className="space-y-2">
-              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">WEB DEVELOPMENT</NavLink></li>
-              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">APP DEVELOPMENT</NavLink></li>
-              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">UX/UI DESIGN</NavLink></li>
-              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">SOCIAL MEDIA MARKETING</NavLink></li>
-              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">CONTENT MANAGEMENT SYSTEMS (CMS)</NavLink></li>
-              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">TECHNICAL SUPPORT</NavLink></li>
-              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">SEO SERVICES</NavLink></li>
-              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">CUSTOM SOFTWARE DEVELOPMENT</NavLink></li>
-              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">E-COMMERCE SOLUTIONS</NavLink></li>
-              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">DIGITAL MARKETING</NavLink></li>
-              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">IT CONSULTING</NavLink></li>
+              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">Web Development</NavLink></li>
+              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">App Development</NavLink></li>
+              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">UX/UI Design</NavLink></li>
+              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">Social Media Marketing</NavLink></li>
+              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">Content Management Systems (CMS)</NavLink></li>
+              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">Technical Support</NavLink></li>
+              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">SEO Services</NavLink></li>
+              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">Custom Software Development</NavLink></li>
+              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">E-Commerce Solutions</NavLink></li>
+              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">Digital Marketing</NavLink></li>
+              <li><NavLink to={"/view-service/:1"} className="hover:text-gray-400">IT Consulting</NavLink></li>
             </ul>
           </div>
           
