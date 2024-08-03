@@ -124,3 +124,31 @@ html {
 .dot {
   animation: slide 2s infinite;
 }
+
+
+.active-link {
+  position: relative;
+  color: #1a1b28;
+}
+
+.active-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #1b9cd4;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.active-link-active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.active-link-active {
+  color: #171a1f;
+}

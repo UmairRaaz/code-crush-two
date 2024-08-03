@@ -1,19 +1,20 @@
 import { Link, NavLink, useNavigate } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+import { useState } from 'react';
 import close from "../assets/close.svg";
 import menu from "../assets/menu.svg";
-import { useState } from 'react';
 import logo from "../assets/ServicesSection/logo.webp";
-import { HashLink } from "react-router-hash-link";
 
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
+  const [activeLink, setActiveLink] = useState('/');
   const navigate = useNavigate();
 
-  const handleClick = (e) => {
-    e.preventDefault();
-    navigate('/');
+  const handleClick = (path) => {
+    setActiveLink(path);
+    navigate(path);
     window.scrollTo(0, 0);
-    setNavbar(false)
+    setNavbar(false);
   };
 
   return (
@@ -23,7 +24,7 @@ function NavBar() {
           <div>
             <div className="flex items-center justify-between py-3 md:pt-5 md:block">
               {/* LOGO */}
-              <Link to="/" onClick={handleClick} className="flex items-center gap-x-4">
+              <Link to="/" onClick={() => handleClick('/')} className="flex items-center gap-x-4">
                 <img src={logo} alt="logo" className="w-14" />
                 <h1 className="text-xl font-semibold">Code Crush</h1>
               </Link>
@@ -51,40 +52,31 @@ function NavBar() {
           <div>
             <div
               className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-1 md:pt-6 md:mt-0 ${
-                navbar ? 'p-12 md:p-0 block' : 'hidden'
+                navbar ? 'px-4 py-1 md:p-0 block' : 'hidden'
               }`}
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex text-[#1a1b28]">
-                <li className="pb-6 text-base font-semibold py-2 md:px-6 text-center border-b-2 md:border-b-0 md:hover:text-[#171a1f] md:hover:bg-transparent">
-                  <NavLink to="/" onClick={handleClick}>
-                    HOME
-                  </NavLink>
-                </li>
-                <li className="pb-6 text-base font-semibold py-2 px-6 text-center border-b-2 md:border-b-0 md:hover:text-[#171a1f] md:hover:bg-transparent">
-                  <HashLink to="/#about" onClick={() => setNavbar(false)}>
-                    ABOUT
-                  </HashLink>
-                </li>
-                <li className="pb-6 text-base font-semibold py-2 px-6 text-center border-b-2 md:border-b-0 uppercase md:hover:text-[#171a1f]">
-                  <HashLink to="/#services" onClick={() => setNavbar(false)}>
-                    Services
-                  </HashLink>
-                </li>
-                <li className="pb-6 text-base font-semibold py-2 px-6 text-center border-b-2 md:border-b-0 uppercase md:hover:text-[#171a1f]">
-                  <HashLink to="/#reviews" onClick={() => setNavbar(false)}>
-                    Reviews
-                  </HashLink>
-                </li>
-                <li className="pb-6 text-base font-semibold py-2 px-6 text-center border-b-2 md:border-b-0 uppercase md:hover:text-[#171a1f]">
-                  <HashLink to="/careers" onClick={() => setNavbar(false)}>
-                  Careers
-                  </HashLink>
-                </li>
-                <li className="pb-6 text-base font-semibold py-2 px-6 text-center border-b-2 md:border-b-0 uppercase md:hover:text-[#171a1f]">
-                  <HashLink to="/#contact" onClick={() => setNavbar(false)}>
-                    Contact Us
-                  </HashLink>
-                </li>
+                {[
+                  { to: '/', label: 'HOME' },
+                  { to: '/#about', label: 'ABOUT' },
+                  { to: '/#services', label: 'SERVICES' },
+                  { to: '/#reviews', label: 'REVIEWS' },
+                  { to: '/careers', label: 'CAREERS' },
+                  { to: '/#contact', label: 'CONTACT US' }
+                ].map(link => (
+                  <li
+                    key={link.to}
+                    className={`pb-3 text-base font-semibold py-2 md:px-6 text-center border-b-2 md:border-b-0 uppercase md:hover:text-[#171a1f] ${activeLink === link.to ? 'active-link-active' : ''}`}
+                  >
+                    <HashLink
+                      to={link.to}
+                      onClick={() => handleClick(link.to)}
+                      className={`active-link ${activeLink === link.to ? 'active-link-active' : ''}`}
+                    >
+                      {link.label}
+                    </HashLink>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

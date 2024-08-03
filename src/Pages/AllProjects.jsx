@@ -7,33 +7,40 @@ import portfolioTwo from '../assets/portfolioTwo.png';
 import portfolioThree from '../assets/portfolioThree.png'; 
 import portfolioFour from '../assets/portfolioFour.png'; 
 import portfolioFive from '../assets/portfolioFIve.png'; 
+
+import projectOne from "../assets/projectImages/one.webp"
+import projectTwo from "../assets/projectImages/two.webp"
+import projectThree from "../assets/projectImages/three.webp"
+import projectFour from "../assets/projectImages/four.webp"
+import projectFive from "../assets/projectImages/five.webp"
+
 import { useNavigate } from 'react-router-dom';
 import LineEffect from '../components/Buttons/LineEffect';
 
 const projects = {
   "Custom Websites": [
-    { id: 1, title: "Project 1", imgSrc: portfolioOne },
-    { id: 2, title: "Project 2", imgSrc: portfolioTwo },
+    { id: 1, title: "Project 1", imgSrc: projectOne },
+    { id: 2, title: "Project 2", imgSrc: projectTwo },
   ],
   "Custom Software": [
-    { id: 3, title: "Project 3", imgSrc: portfolioTwo },
-    { id: 4, title: "Project 4", imgSrc: portfolioThree },
+    { id: 3, title: "Project 3", imgSrc: projectTwo },
+    { id: 4, title: "Project 4", imgSrc: projectThree },
   ],
   "Mobile Apps": [
-    { id: 5, title: "Project 5", imgSrc: portfolioThree },
-    { id: 6, title: "Project 6", imgSrc: portfolioTwo },
+    { id: 5, title: "Project 5", imgSrc: projectThree },
+    { id: 6, title: "Project 6", imgSrc: projectTwo },
   ],
   "Custom API": [
-    { id: 7, title: "Project 7", imgSrc: portfolioFour },
-    { id: 8, title: "Project 8", imgSrc: portfolioThree },
+    { id: 7, title: "Project 7", imgSrc: projectFour },
+    { id: 8, title: "Project 8", imgSrc: projectThree },
   ],
   "Themes Dev..": [
-    { id: 9, title: "Project 9", imgSrc: portfolioFive },
-    { id: 10, title: "Project 10", imgSrc: portfolioFour },
+    { id: 9, title: "Project 9", imgSrc: projectFive },
+    { id: 10, title: "Project 10", imgSrc: projectFour },
   ],
   "Game development": [
-    { id: 11, title: "Project 11", imgSrc: portfolioFive },
-    { id: 12, title: "Project 12", imgSrc: portfolioFive },
+    { id: 11, title: "Project 11", imgSrc: projectFive },
+    { id: 12, title: "Project 12", imgSrc: projectTwo },
   ],
 };
 
@@ -100,10 +107,10 @@ const AllProjects = () => {
               whileHover="visible"
               initial="hidden"
               onClick={() => handleNavigate(`/view-project/${project.id}`)}
-              className="group flex bg-white pt-10 py-4 rounded-3xl shadow-2xl items-center justify-center hover:bg-[#E6E6FA] transition-all relative cursor-pointer"
+              className="group flex bg-white  py-4 rounded-3xl shadow-2xl items-center justify-center hover:bg-[#E6E6FA] transition-all relative cursor-pointer"
               key={project.id}
             >
-              <img src={project.imgSrc} alt="portfolio-img" className="w-64" />
+              <img src={project.imgSrc} alt="portfolio-img" className="w-72 rounded-xl" />
               <motion.div
                 variants={overlayVariants}
                 transition={{ duration: 0.5 }}

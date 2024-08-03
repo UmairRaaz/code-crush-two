@@ -4,6 +4,12 @@ import monitorImage from "../assets/portfolioOne.png";
 import websitrSS from "../assets/portfolioThree.png";
 import laptopScreen from "../assets/portfolioTwo.png";
 import tabletScreen from "../assets/portfolioFour.png";
+
+import projectOne from "../assets/projectImages/one.webp"
+import projectTwo from "../assets/projectImages/two.webp"
+import projectThree from "../assets/projectImages/three.webp"
+import projectFour from "../assets/projectImages/four.webp"
+import projectFive from "../assets/projectImages/five.webp"
 import { IoIosArrowRoundForward } from "react-icons/io";
 import ViewAllButton from "./Buttons/ViewAllButton";
 import { Link, useNavigate } from "react-router-dom";
@@ -44,7 +50,7 @@ const Portfolio = () => {
             className="group bg-white rounded-3xl shadow-2xl flex items-center justify-center hover:bg-[#ADD8E6] relative transition-all cursor-pointer"
             onClick={() => navigate("/view-project/:1")}
           >
-            <img src={mobileImage} alt="portfolio-img" className="w-72" />
+            <img src={projectFive} alt="portfolio-img" className="w-72" />
             <motion.div
               variants={overlayVariants}
               transition={{ duration: 0.5 }}
@@ -65,9 +71,9 @@ const Portfolio = () => {
               onClick={() => navigate("/view-project/:1")}
               whileHover="visible"
               initial="hidden"
-              className="group bg-white py-4 pt-10 rounded-3xl shadow-2xl flex items-center justify-center hover:bg-[#90EE90] transition-all relative"
+              className="group bg-white py-4 pt-4  rounded-3xl shadow-2xl flex items-center justify-center hover:bg-[#90EE90] transition-all relative"
             >
-              <img src={monitorImage} alt="portfolio-img" className="w-72" />
+              <img src={projectOne} alt="portfolio-img" className="w-72 rounded-xl" />
               <motion.div
                 variants={overlayVariants}
                 onClick={() => navigate("/view-project/:1")}
@@ -87,9 +93,9 @@ const Portfolio = () => {
               whileHover="visible"
               onClick={() => navigate("/view-project/:1")}
               initial="hidden"
-              className="group bg-white py-4 rounded-3xl h-full shadow-2xl flex items-center justify-center hover:bg-[#87CEFA] transition-all relative"
+              className="group bg-white py-4 rounded-3xl h-full shadow-2xl flex items-center justify-center  hover:bg-[#87CEFA] transition-all relative"
             >
-              <img src={websitrSS} alt="portfolio-img" className="w-72" />
+              <img src={projectTwo} alt="portfolio-img" className="w-72 rounded-xl" />
               <motion.div
                 variants={overlayVariants}
                 onClick={() => navigate("/view-project/:1")}
@@ -111,9 +117,9 @@ const Portfolio = () => {
               whileHover="visible"
               initial="hidden"
               onClick={() => navigate("/view-project/:1")}
-              className="group flex bg-white pt-10 py-4 rounded-3xl shadow-2xl items-center justify-center hover:bg-[#E6E6FA] transition-all relative"
+              className="group flex bg-white pt-4 py-4 rounded-3xl shadow-2xl items-center justify-center hover:bg-[#E6E6FA] transition-all relative"
             >
-              <img src={laptopScreen} alt="portfolio-img" className="w-64" />
+              <img src={projectThree} alt="portfolio-img" className="w-72 rounded-xl" />
               <motion.div
                 variants={overlayVariants}
                 onClick={() => navigate("/view-project/:1")}
@@ -135,7 +141,7 @@ const Portfolio = () => {
               initial="hidden"
               className="group flex bg-white h-full rounded-3xl shadow-2xl items-center justify-center hover:bg-[#FFA07A] transition-all relative"
             >
-              <img src={tabletScreen} alt="portfolio-img" className="w-52" />
+              <img src={projectFour} alt="portfolio-img" className="w-72 rounded-xl"  />
               <motion.div
                 variants={overlayVariants}
                 transition={{ duration: 0.5 }}
