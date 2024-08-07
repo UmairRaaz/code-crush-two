@@ -13,7 +13,7 @@ const Products = () => {
   return (
     <div className='w-full text-white grid grid-cols-1 md:grid-cols-2'>
       {updatedProducts.map((product, index) => (
-        <div key={index} className='relative min-h-24'>
+        <div key={index} className='relative border border-gray-100 min-h-24'>
           <img src={product.image} alt={product.name} 
           className="w-full h-full object-cover"
           style={{ minHeight: "400px" }}

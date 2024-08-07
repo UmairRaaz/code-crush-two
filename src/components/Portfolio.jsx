@@ -1,9 +1,5 @@
 import { motion } from "framer-motion";
-import mobileImage from "../assets/portfolioFIve.png";
-import monitorImage from "../assets/portfolioOne.png";
-import websitrSS from "../assets/portfolioThree.png";
-import laptopScreen from "../assets/portfolioTwo.png";
-import tabletScreen from "../assets/portfolioFour.png";
+
 
 import projectOne from "../assets/projectImages/one.webp"
 import projectTwo from "../assets/projectImages/two.webp"
@@ -12,7 +8,7 @@ import projectFour from "../assets/projectImages/four.webp"
 import projectFive from "../assets/projectImages/five.webp"
 import { IoIosArrowRoundForward } from "react-icons/io";
 import ViewAllButton from "./Buttons/ViewAllButton";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import LineEffect from "./Buttons/LineEffect";
 
 const overlayVariants = {
@@ -50,7 +46,7 @@ const Portfolio = () => {
             className="group bg-white rounded-3xl shadow-2xl flex items-center justify-center hover:bg-[#ADD8E6] relative transition-all cursor-pointer"
             onClick={() => navigate("/view-project/:1")}
           >
-            <img src={projectFive} alt="portfolio-img" className="w-72" />
+            <img src={projectFive} alt="portfolio-img" className="w-52" />
             <motion.div
               variants={overlayVariants}
               transition={{ duration: 0.5 }}

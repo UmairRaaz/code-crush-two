@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import servicepagebg from "../assets/servicepagebg.jpg";
-
+import serviceBG from "../assets/serviceBG.webp"
 
 import LineEffect from "../components/Buttons/LineEffect";
 import { industries, rAndDProjects, services } from "../Content/ServiceContent.jsx";
@@ -16,12 +15,12 @@ const AllServices = () => {
       <div
         className="relative h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
         style={{
-          backgroundImage: `url(${servicepagebg})`,
+          backgroundImage: `url(${serviceBG})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-black opacity-70"></div>
+        <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="relative z-10 flex items-center justify-center h-full">
           <h1 className="text-white text-4xl tracking-widest uppercase font-bold">Services</h1>
         </div>

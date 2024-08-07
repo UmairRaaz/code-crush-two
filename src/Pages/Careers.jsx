@@ -2,7 +2,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import "tailwindcss/tailwind.css";
-import servicepagebg from "../assets/servicepagebg.jpg";
+import workWiuthUsBG from "../assets/workWiuthUsBG.webp"
 import { NavLink } from "react-router-dom";
 const CareerPage = () => {
   const {
@@ -78,14 +78,14 @@ const CareerPage = () => {
   return (
     <div className="mt-20 bg-gray-100">
       <div
-        className="relative relative h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
+        className="relative h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
         style={{
-          backgroundImage: `url(${servicepagebg})`,
+          backgroundImage: `url(${workWiuthUsBG})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-black opacity-70"></div>
+        <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="relative z-10 flex items-center justify-center h-full">
           <h1 className="text-white tracking-widest uppercase text-4xl font-bold">Work With Us</h1>
         </div>

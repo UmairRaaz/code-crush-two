@@ -22,6 +22,7 @@ import CareersApply from "./Pages/CareersApply.jsx";
 import { Toaster } from "react-hot-toast";
 import PrivacyPolicy from "./Pages/PrivacyPolicy.jsx";
 import TermsAndCondition from "./Pages/TermsAndCondition.jsx";
+import RemoteResources from "./Pages/RemoteResources.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -34,6 +35,7 @@ const router = createBrowserRouter(
       <Route path="all-blogs" element={<AllBlogs />} />
       <Route path='view-blog/:blogid' element={<ViewBlog/>}/>
       <Route path="all-members" element={<AllTeamMembers />} />
+      <Route path="remote-resources" element={<RemoteResources />} />
       <Route path="careers" element={<Careers />} />
       <Route path="careers/apply" element={<CareersApply />} />
       <Route path="privacypolicy" element={<PrivacyPolicy />} />

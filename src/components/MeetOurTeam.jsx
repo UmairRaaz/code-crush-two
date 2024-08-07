@@ -6,7 +6,6 @@ import habib from "../assets/habib.png";
 import { motion } from "framer-motion";
 import TeamMemberCard from "./TeamSection/TeamMemberCard";
 import ViewAllButton from "./Buttons/ViewAllButton";
-import { Link } from "react-router-dom";
 const MeetOurTeam = () => {
   return (
     <motion.div
@@ -19,11 +18,11 @@ const MeetOurTeam = () => {
         <div>
           <div className="flex justify-between">
             <div>
-              <h1 className="text-4xl font-bold mb-8">
-              Meet Our Expert Team of Creators, <br /> Designers, and Innovators
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              Our Leadership
               </h1>
               <p className="text-base text-gray-600">
-              Get to know the brilliant minds at Code Crush Technology who turn ideas into reality. Our team of visionary creators, expert designers, and skilled problem solvers brings a wealth of knowledge and creativity to every project. 
+              Meet the driving forces behind Code Crush Technologies. Get to know the visionary leaders who guide our company with expertise and innovation.
               {/* <Link className="text-blue-500">Read More</Link> */}
               </p>
             </div>
@@ -32,16 +31,19 @@ const MeetOurTeam = () => {
           <div className="mt-8 min-h-72 grid gap-8 grid-cols-1 md:grid-cols-3">
             <TeamMemberCard
               image={habib}
+              status={"Founder"}
               name={"Dr. Habib Shah"}
               role={"Chief Executive Officer (CEO)"}
             />
             <TeamMemberCard
               image={engrFazal}
+              status={"Co-Founder"}
               name={"Engr. Fazli Mola"}
               role={"Chief Technology Officer (CTO)"}
             />
             <TeamMemberCard
               image={drAkhter}
+              status={"Co-Founder"}
               name={"Dr. Akhtar Badshah"}
               role={"Chief Finance Officer (CFO)"}
             />

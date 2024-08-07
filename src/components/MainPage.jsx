@@ -1,6 +1,7 @@
 import AboutUs from "./AboutUs";
 import BlogsSection from "./BlogsSection";
 import ClientReviews from "./ClientReviews";
+import ContactSection from "./ContactSection";
 import ContactUs from "./ContactUs";
 import Hero from "./Hero";
 import JourneySection from "./JourneySection";
@@ -18,9 +19,10 @@ const MainPage = () => {
       <Services />
       <Portfolio />
       <MeetOurTeam />
-      <ClientReviews />
+      {/* <ClientReviews /> */}
       {/* <BlogsSection /> */}
       <ContactUs />
+      <ContactSection/>
     </div>
   );
 };

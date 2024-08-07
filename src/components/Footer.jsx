@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaInstagram, FaYoutube, FaTiktok } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { NavLink, useNavigate } from 'react-router-dom';
 const Footer = () => {
@@ -31,17 +31,17 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4 uppercase">Services</h3>
             <ul className="space-y-2">
-              <li><NavLink to={"/all-services/view-service/:1"} className="hover:text-gray-400">Web Development</NavLink></li>
-              <li><NavLink to={"/all-services/view-service/:1"} className="hover:text-gray-400">App Development</NavLink></li>
-              <li><NavLink to={"/all-services/view-service/:1"} className="hover:text-gray-400">UX/UI Design</NavLink></li>
-              <li><NavLink to={"/all-services/view-service/:1"} className="hover:text-gray-400">Social Media Marketing</NavLink></li>
-              <li><NavLink to={"//all-servicesview-service/:1"} className="hover:text-gray-400">Content Management Systems (CMS)</NavLink></li>
-              <li><NavLink to={"/all-services/view-service/:1"} className="hover:text-gray-400">Technical Support</NavLink></li>
-              <li><NavLink to={"/all-services/view-service/:1"} className="hover:text-gray-400">SEO Services</NavLink></li>
+              <li><NavLink to={"/all-services/view-service/:1"} className="hover:text-gray-400">Web & App Development</NavLink></li>
+              <li><NavLink to={"/all-services/view-service/:1"} className="hover:text-gray-400">Cyber Security Solutions</NavLink></li>
+              <li><NavLink to={"/all-services/view-service/:1"} className="hover:text-gray-400">Custom Software & CMS Solutions</NavLink></li>
+              <li><NavLink to={"/all-services/view-service/:1"} className="hover:text-gray-400">E-Commerce Solutions</NavLink></li>
+              <li><NavLink to={"//all-servicesview-service/:1"} className="hover:text-gray-400">Digital Marketing & SEO</NavLink></li>
+              <li><NavLink to={"/all-services/view-service/:1"} className="hover:text-gray-400">IT Consulting & Support</NavLink></li>
+              {/* <li><NavLink to={"/all-services/view-service/:1"} className="hover:text-gray-400">SEO Services</NavLink></li>
               <li><NavLink to={"/all-services/view-service/:1"} className="hover:text-gray-400">Custom Software Development</NavLink></li>
               <li><NavLink to={"/all-services/view-service/:1"} className="hover:text-gray-400">E-Commerce Solutions</NavLink></li>
               <li><NavLink to={"/all-services/view-service/:1"} className="hover:text-gray-400">Digital Marketing</NavLink></li>
-              <li><NavLink to={"/all-services/view-service/:1"} className="hover:text-gray-400">IT Consulting</NavLink></li>
+              <li><NavLink to={"/all-services/view-service/:1"} className="hover:text-gray-400">IT Consulting</NavLink></li> */}
             </ul>
           </div>
           
@@ -53,18 +53,23 @@ const Footer = () => {
               <li>Phone: <a href="tel:+1234567890" className="hover:text-gray-400">+966 59 059 6656</a></li>
               <li>Al-Nawaz Arcade, Adjacent to Rawalpindi Urology Hospital, Murree Road, Rawalpindi</li>
             </ul>
-            <div className="flex gap-6 mt-4 items-center">
-              <a href="#" className=" hover:text-gray-400">
+            <div className="flex gap-4 mt-4 items-center">
+              <a href="https://www.facebook.com/@codecrushtech" target='_blank' className=" hover:text-gray-400">
                 <FaFacebook size={24} />
               </a>
-              <a href="#" className=" hover:text-gray-400">
-                <BsTwitterX size={24} />
-              </a>
-              <a href="#" className=" hover:text-gray-400">
+              <a href="https://www.linkedin.com/company/codecrushtech/"
+              target='_blank'
+              className=" hover:text-gray-400">
                 <FaLinkedin size={24} />
               </a>
-              <a href="#" className=" hover:text-gray-400">
+              <a href="https://www.instagram.com/codecrushtech/" target='_blank' className=" hover:text-gray-400">
                 <FaInstagram size={24} />
+              </a>
+              <a href="https://www.youtube.com/@codecrushtec" target='_blank' className=" hover:text-gray-400">
+                <FaYoutube size={24} />
+              </a>
+              <a href="https://www.tiktok.com/@codecrushtech" target='_blank' className=" hover:text-gray-400">
+                <FaTiktok size={24} />
               </a>
             </div>
           </div>

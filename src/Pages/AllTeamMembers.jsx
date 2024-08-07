@@ -1,5 +1,4 @@
-import React from "react";
-import servicepagebg from "../assets/servicepagebg.jpg";
+import ourTeamBG from "../assets/ourTeamBG.webp";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { BsTwitter } from "react-icons/bs";
 import LineEffect from "../components/Buttons/LineEffect";
@@ -48,19 +47,18 @@ const teamMembers = [
   },
 ];
 
-
 const AllTeamMembers = () => {
   return (
     <div className="bg-[#f4f5fa] mt-20">
       <div
         className="relative h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
         style={{
-          backgroundImage: `url(${servicepagebg})`,
+          backgroundImage: `url(${ourTeamBG})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-black opacity-70"></div>
+        <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 flex items-center justify-center h-full">
           <h1 className="text-white tracking-widest uppercase text-2xl md:text-4xl font-bold">
             Our Team
@@ -71,10 +69,17 @@ const AllTeamMembers = () => {
         All Team Members
       </h1>
       <LineEffect />
-      <p className="text-center max-w-4xl mt-2 mx-auto">Get to know the brilliant minds at Code Crush Technology who turn ideas into reality. Our team of visionary creators, expert designers, and skilled problem solvers brings a wealth of knowledge and creativity to every project. Explore their profiles to see how their dedication and expertise contribute to delivering innovative and effective solutions that exceed expectations.</p>
+      <p className="text-center max-w-4xl mt-2 mx-auto">
+        Get to know the brilliant minds at Code Crush Technology who turn ideas
+        into reality. Our team of visionary creators, expert designers, and
+        skilled problem solvers brings a wealth of knowledge and creativity to
+        every project. Explore their profiles to see how their dedication and
+        expertise contribute to delivering innovative and effective solutions
+        that exceed expectations.
+      </p>
       <div className="w-[80%] mx-auto py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 gap-y-8">
-        {teamMembers.map((member) => (
+          {teamMembers.map((member) => (
             <div
               key={member.id}
               className="team-member bg-white p-6 rounded-lg shadow-md flex md:flex-row flex-col gap-4 cursor-pointer transition-all"
@@ -86,21 +91,18 @@ const AllTeamMembers = () => {
               />
               <div className="flex flex-col justify-between">
                 <div>
-                  <h2 className="text-xl font-bold">{member.name}</h2>
+                  <div className="flex gap-2 mt-4 items-center justify-between">
+                    <h2 className="text-xl font-bold">{member.name}</h2>
+                    <a
+                      href={member.social.linkedin}
+                      className="text-gray-600 hover:text-gray-400"
+                    >
+                      <FaLinkedin size={20} />
+                    </a>
+                  </div>
                   <p className="text-gray-600 mb-2">{member.role}</p>
                   <div className="border-b border-gray-300 mb-2"></div>
                   <p className="text-gray-700 mb-4">{member.description}</p>
-                </div>
-                <div className="flex gap-2 mt-4 items-center">
-                  <a href={member.social.twitter} className="text-gray-600 hover:text-gray-400">
-                    <BsTwitter size={20} />
-                  </a>
-                  <a href={member.social.linkedin} className="text-gray-600 hover:text-gray-400">
-                    <FaLinkedin size={20} />
-                  </a>
-                  <a href={member.social.dribbble || member.social.github} className="text-gray-600 hover:text-gray-400">
-                    <FaInstagram size={20} />
-                  </a>
                 </div>
               </div>
             </div>

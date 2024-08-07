@@ -1,0 +1,117 @@
+import axios from "axios";
+import React, { useState } from "react";
+import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
+
+const ContactSection = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
+  const [loading, setloading] = useState(false);
+  const onSubmit = async (data) => {
+    try {
+      setloading(true);
+      const response = await axios.get("http://localhost:5000/contact", {
+        params: {
+          name: data.name,
+          email: data.email,
+          phone: data.phone,
+          message: data.message,
+          subject: data.message,
+        },
+      });
+      setloading(false);
+      console.log("Successfully sent: ", response.data);
+      toast.success("Message Sent Suceesfully");
+    } catch (error) {
+      setloading(false);
+      console.error("Failed to send: ", error);
+      toast.error("Message Sending Failed");
+    } finally {
+      setloading(false);
+      reset();
+    }
+    console.log(data);
+  };
+  return (
+    <div className="py-20">
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="space-y-4 max-w-2xl mx-auto px-10 rounded-md p-5 border border-gray-200 bg-white shadow-xl"
+      >
+        <div>
+          <input
+            {...register("name", { required: "Name is required" })}
+            className="mt-1 block w-full p-2 border-b border-gray-300 focus:ring-indigo-500 font-light outline-none focus:border-indigo-500"
+            placeholder="Name"
+          />
+          {errors.name && (
+            <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>
+          )}
+        </div>
+        <div>
+          <input
+            {...register("email", {
+              required: "Email is required",
+              pattern: {
+                value: /^\S+@\S+$/i,
+                message: "Invalid email address",
+              },
+            })}
+            className="mt-1 block w-full p-2 border-b outline-none border-gray-300  focus:ring-indigo-500 font-light focus:border-indigo-500"
+            placeholder="Email"
+          />
+          {errors.email && (
+            <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
+          )}
+        </div>
+        <div>
+          <input
+            {...register("phone", {
+              required: "Phone is required",
+              pattern: {
+                value: /^[0-9]+$/,
+                message: "Invalid phone number",
+              },
+            })}
+            className="mt-1 block w-full p-2 border-b outline-none border-gray-300 focus:ring-indigo-500 font-light focus:border-indigo-500"
+            placeholder="Phone Number"
+          />
+          {errors.phone && (
+            <p className="text-red-500 text-sm mt-1">{errors.phone.message}</p>
+          )}
+        </div>
+        <div>
+          <textarea
+            {...register("message", {
+              required: "Message is required",
+            })}
+            
+            className="mt-1 block w-full p-2 border-b outline-none border-gray-300  focus:ring-indigo-500 font-light focus:border-indigo-500"
+            rows="3"
+            placeholder="Tell us about your project"
+          ></textarea>
+          {errors.message && (
+            <p className="text-red-500 text-sm mt-1">
+              {errors.message.message}
+            </p>
+          )}
+        </div>
+        <div className="flex items-center justify-center">
+          <button
+            disabled={loading}
+            type="submit"
+            className="w-44 mx-auto py-2 px-4 bg-[#ed2639] text-white rounded-full shadow-sm hover:bg-indigo-700 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mt-4"
+          >
+            {loading ? `Sending Message` : `Send Message`}
+          </button>
+        </div>
+      </form>
+    </div>
+  );
+};
+
+export default ContactSection;

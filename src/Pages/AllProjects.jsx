@@ -2,17 +2,14 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import servicepagebg from "../assets/servicepagebg.jpg";
 import { IoIosArrowRoundForward } from 'react-icons/io';
-import portfolioOne from '../assets/portfolioOne.png'; 
-import portfolioTwo from '../assets/portfolioTwo.png'; 
-import portfolioThree from '../assets/portfolioThree.png'; 
-import portfolioFour from '../assets/portfolioFour.png'; 
-import portfolioFive from '../assets/portfolioFIve.png'; 
+import projectBG from "../assets/projectBG.webp"
 
 import projectOne from "../assets/projectImages/one.webp"
 import projectTwo from "../assets/projectImages/two.webp"
 import projectThree from "../assets/projectImages/three.webp"
 import projectFour from "../assets/projectImages/four.webp"
 import projectFive from "../assets/projectImages/five.webp"
+import projectSix from "../assets/projectImages/six.webp"
 
 import { useNavigate } from 'react-router-dom';
 import LineEffect from '../components/Buttons/LineEffect';
@@ -35,11 +32,11 @@ const projects = {
     { id: 8, title: "Project 8", imgSrc: projectThree },
   ],
   "Themes Dev..": [
-    { id: 9, title: "Project 9", imgSrc: projectFive },
+    { id: 9, title: "Project 9", imgSrc: projectSix },
     { id: 10, title: "Project 10", imgSrc: projectFour },
   ],
   "Game development": [
-    { id: 11, title: "Project 11", imgSrc: projectFive },
+    { id: 11, title: "Project 11", imgSrc: projectSix },
     { id: 12, title: "Project 12", imgSrc: projectTwo },
   ],
 };
@@ -65,12 +62,12 @@ const AllProjects = () => {
       <div
         className="relative h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
         style={{
-          backgroundImage: `url(${servicepagebg})`,
+          backgroundImage: `url(${projectBG})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-black opacity-70"></div>
+        <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 flex items-center justify-center h-full">
           <h1 className="text-white text-4xl tracking-widest uppercase font-bold">Projects</h1>
         </div>
