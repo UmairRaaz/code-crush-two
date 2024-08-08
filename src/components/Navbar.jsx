@@ -73,7 +73,7 @@ function NavBar() {
               {[
                 { to: "/", label: "HOME" },
                 { to: "/about", label: "ABOUT" },
-                { to: "/services", label: "SERVICES" },
+                { to: "/#services", label: "SERVICES" },
                 { to: "/careers", label: "CAREERS" },
                 { to: "/remote-resources", label: "REMOTE RESOURCES" },
                 { to: "/#contact", label: "CONTACT" },
