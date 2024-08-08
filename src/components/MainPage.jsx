@@ -15,7 +15,7 @@ const MainPage = () => {
     <div>
       <Hero />
       <JourneySection />
-      <AboutUs />
+      {/* <AboutUs /> */}
       <Services />
       <Portfolio />
       <MeetOurTeam />

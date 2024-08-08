@@ -23,11 +23,13 @@ import { Toaster } from "react-hot-toast";
 import PrivacyPolicy from "./Pages/PrivacyPolicy.jsx";
 import TermsAndCondition from "./Pages/TermsAndCondition.jsx";
 import RemoteResources from "./Pages/RemoteResources.jsx";
+import AboutUs from "./Pages/AboutUs.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route path="" element={<MainPage />} />
+      <Route path="/about" element={<AboutUs />} />
       <Route path="all-services" element={<AllServices />} />
       <Route path='all-services/view-service/:serviceid' element={<ViewService/>}/>
       <Route path="all-projects" element={<AllProjects />} />

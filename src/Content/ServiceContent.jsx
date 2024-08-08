@@ -94,7 +94,13 @@ export const services = [
       image: technicalSupport,
       title: "IT Consulting",
       description: "Providing expert advice and strategic recommendations to optimize your technology infrastructure and align it with your business goals."
-    }
+    },
+    {
+      id: 12,
+      image: Cybersecurity,
+      title: "Cybersecurity",
+      description: "Studying advanced techniques to protect systems and data from cyber threats, ensuring the integrity and confidentiality of information."
+    },
   ];
   
   export const industries = [

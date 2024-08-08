@@ -34,18 +34,21 @@ const MeetOurTeam = () => {
               status={"Founder"}
               name={"Dr. Habib Shah"}
               role={"Chief Executive Officer (CEO)"}
+              links={"https://www.linkedin.com/in/drhabibshah/"}
             />
             <TeamMemberCard
               image={engrFazal}
               status={"Co-Founder"}
               name={"Engr. Fazli Mola"}
               role={"Chief Technology Officer (CTO)"}
+              links={"https://www.linkedin.com/in/fazalbhai/"}
             />
             <TeamMemberCard
               image={drAkhter}
               status={"Co-Founder"}
               name={"Dr. Akhtar Badshah"}
               role={"Chief Finance Officer (CFO)"}
+              links={"https://www.linkedin.com/in/akhtar-badshah-41813638/"}
             />
           </div>
         </div>

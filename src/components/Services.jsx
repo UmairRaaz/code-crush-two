@@ -60,7 +60,7 @@ const Services = () => {
           className={getButtonClass("Products")}
           onClick={() => setActiveComponent("Products")}
         >
-          R&D Projects
+          R&D
         </button>
         </div>
         <NavLink

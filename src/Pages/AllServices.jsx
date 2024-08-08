@@ -48,7 +48,7 @@ const AllServices = () => {
         ))}
       </div>
       <h1 className="text-5xl pt-10 mb-6 font-bold text-center font-googleFonts text-gray-700">
-        Research and Development Projects
+        Research & Development
       </h1>
       <LineEffect />
       <div className="w-[90%] md:max-w-6xl lg:max-w-7xl mx-auto gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4">

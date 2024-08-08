@@ -65,7 +65,7 @@ const Footer = () => {
               <a href="https://www.instagram.com/codecrushtech/" target='_blank' className=" hover:text-gray-400">
                 <FaInstagram size={24} />
               </a>
-              <a href="https://www.youtube.com/@codecrushtec" target='_blank' className=" hover:text-gray-400">
+              <a href="https://www.youtube.com/@codecrushtech" target='_blank' className=" hover:text-gray-400">
                 <FaYoutube size={24} />
               </a>
               <a href="https://www.tiktok.com/@codecrushtech" target='_blank' className=" hover:text-gray-400">
