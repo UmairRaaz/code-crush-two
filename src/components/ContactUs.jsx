@@ -30,7 +30,7 @@ const ContactUs = () => {
       style={{ paddingTop: navbarHeight }}
       id="contact"
     >
-      <div className="md:max-w-4xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl px-3 md:px-0 mx-auto py-4">
+      <div className="md:max-w-4xl overflow-hidden lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl px-3 md:px-0 mx-auto py-4">
         <h1 className="text-4xl font-bold mb-8 text-center">
           Get in Touch with Code Crush Technology
         </h1>
@@ -43,7 +43,7 @@ const ContactUs = () => {
           business forward.
         </p>
         <div className="flex flex-col md:items-center md:flex-row">
-          <div className="md:w-1/2 px-2 bg-[#fafafa]">
+          <div className="w-full  md:w-1/2 px-2 bg-[#fafafa]">
             <div className="w-full md:pl-8">
               <div className="md:p-6 rounded-lg mt-10 md:mt-0 border-black">
                 <div className="flex mb-4">
@@ -81,16 +81,20 @@ const ContactUs = () => {
               </div>
             </div>
           </div>
-          <div className="md:w-1/2 bg-[#fafafa]">
+          <div className="w-full md:w-1/2 bg-[#fafafa]">
             <div className="px-2 py-8 flex items-center justify-center">
-              <div >
-                <iframe
-                  width="520"
-                  height="400"
-                  src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Al-Nawaz%20Arcade,%20Adjacent%20to%20Rawalpindi%20Urology%20Hospital,%20Murree%20Road,%20Rawalpindi+(Code%20Crush)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-                >
-                  <a href="https://www.gps.ie/">gps trackers</a>
-                </iframe>
+              <div>
+                <div className="w-full">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1660.7103299499302!2d73.07590788843936!3d33.646260576199985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86380c2749d67e11%3A0x3706cda58c9b54f0!2sCode%20Crush%20Technologies!5e0!3m2!1sen!2s!4v1723099403527!5m2!1sen!2s"
+                    width="500"
+                    height="300"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
               </div>
             </div>
           </div>
