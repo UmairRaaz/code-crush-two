@@ -49,8 +49,8 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold uppercase mb-4">Contact Us</h3>
             <ul className="space-y-2">
-              <li>Email: <a href="mailto:codecrushtech@gmail.com" className="hover:text-gray-400">codecrushtech@gmail.com</a></li>
-              <li>Phone: <a href="tel:+1234567890" className="hover:text-gray-400">+966 59 059 6656</a></li>
+              <li>Email: <a href="mailto:contact@codecrushtech.com" className="hover:text-gray-400">contact@codecrushtech.com</a></li>
+              <li>Phone: <a href="tel:+1234567890" className="hover:text-gray-400">+92 314 5857 970</a></li>
               <li>Al-Nawaz Arcade, Adjacent to Rawalpindi Urology Hospital, Murree Road, Rawalpindi</li>
             </ul>
             <div className="flex gap-4 mt-4 items-center">
