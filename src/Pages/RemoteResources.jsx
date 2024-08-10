@@ -34,7 +34,7 @@ function RemoteResources() {
       <div className="text-center mb-12">
         <button
           onClick={handleHireClick}
-          className="px-8 py-4 bg-blue-600 text-white text-xl font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
+          className="px-8 py-4 bg-[#4e148d] text-white text-xl font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
         >
           Hire
         </button>
@@ -161,7 +161,7 @@ function RemoteResources() {
             <div className="text-center mt-6">
               <button
                 type="submit"
-                className="px-8 py-4 bg-blue-600 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
+                className="px-8 py-4 bg-[#4e148d] text-white text-lg font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
               >
                 Submit
               </button>

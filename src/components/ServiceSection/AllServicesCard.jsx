@@ -19,7 +19,7 @@ const AllServicesCard = ({ image, heading, desc }) => {
       animate={controls}
       transition={{ duration: 0.5 }}
     >
-      <div className="rounded-xl bg-gray-100/70 mx-auto md:pb-2 my-8 overflow-hidden shadow-lg h-96 cursor-pointer" onClick={()=>navigate("view-service/1")}>
+      <div className="rounded-xl bg-gray-100/70 mx-auto md:pb-2  overflow-hidden shadow-lg h-96 cursor-pointer" onClick={()=>navigate("view-service/1")}>
         <div className="flex flex-col h-full">
           <div className="h-1/2" ref={ref}>
             <img
@@ -29,7 +29,7 @@ const AllServicesCard = ({ image, heading, desc }) => {
             />
           </div>
           <div className="h-1/2 px-4 py-2 pb-1">
-            <h1 className="text-2xl my-2  text-blue-800 font-bold">
+            <h1 className="text-2xl my-2  text-[#4e148d] font-bold">
               {heading}
             </h1>
             <p className="text-base text-gray-700">{desc}</p>

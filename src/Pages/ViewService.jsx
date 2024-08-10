@@ -71,7 +71,7 @@ const ViewService = () => {
     },
   ];
   return (
-    <div className="min-h-screen md:mt-20">
+    <div className="min-h-screen md:mt-20 bg-white">
       <div className="rounded-b-3xl py-10 bg-[#1588b7] text-white">
         <div className="w-[80%] mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-10">

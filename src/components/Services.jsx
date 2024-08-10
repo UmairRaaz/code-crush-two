@@ -26,7 +26,7 @@ const Services = () => {
   const getButtonClass = (component) => {
     const baseClass =
       "text-base px-1 md:text-xl rounded-t-xl md:rounded-t-2xl md:w-40 md:h-14 md:px-4 md:py-2 border-r border-l border-t border-gray-400 whitespace-nowrap ";
-    const activeClass = "bg-[#0e3f8b] text-white";
+    const activeClass = "bg-[#4e148d] text-white";
     const inactiveClass = "border-gray-300 text-gray-700 bg-transparent";
 
     return `${baseClass} ${
@@ -64,10 +64,10 @@ const Services = () => {
         </button>
         </div>
         <NavLink
-          className="md:text-xl text-sm  md:w-40  flex items-center justify-center md:h-14 text-[#4b7dc8] flex-row whitespace-nowrap mr-14  px-4 py-2"
+          className="md:text-xl text-sm  md:w-40  flex items-center justify-center md:h-14 text-[#4e148d] font-semibold flex-row whitespace-nowrap mr-14  px-4 py-2"
           to="/all-services"
         >
-          <p>View all</p>
+          <p>View All</p>
           <span>
             <MdKeyboardArrowRight size={30} />
           </span>

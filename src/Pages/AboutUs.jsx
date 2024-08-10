@@ -5,7 +5,7 @@ import LineEffect from "../components/Buttons/LineEffect";
 
 const AboutUs = () => {
   return (
-    <div className="mt-20">
+    <div className="mt-20 bg-white">
       <div
         className="relative h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
         style={{

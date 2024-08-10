@@ -29,7 +29,7 @@ const BackToTopButton = () => {
       onClick={scrollToTop}
       className={`fixed bottom-6 right-6 p-3 rounded-full bg-[#4E148D] text-white shadow-lg transition-opacity duration-300 ease-in-out ${
         isVisible ? 'opacity-100' : 'opacity-0'
-      } hover:bg-[#7229c0]`}
+      }  hover:bg-blue-700 transition duration-300`}
       aria-label="Back to top"
     >
       <FaArrowUp size={24} />

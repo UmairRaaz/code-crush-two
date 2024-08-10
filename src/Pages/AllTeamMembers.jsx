@@ -10,39 +10,36 @@ const teamMembers = [
     id: 1,
     name: "Dr. Habib Shah",
     role: "Chief Executive Officer (CEO)",
+    status: "Founder",
     description:
       "Dr. Habib Shah leads our company with a strategic vision and unwavering commitment to excellence. With extensive experience in executive leadership, he ensures that our organization achieves its goals and delivers exceptional value to our clients.",
     imageUrl: habib,
     social: {
-      twitter: "https://twitter.com",
-      linkedin: "https://linkedin.com",
-      github: "https://github.com",
+      linkedin: "https://www.linkedin.com/in/drhabibshah/",
     },
   },
   {
     id: 2,
     name: "Engr. Fazli Mola",
     role: "Chief Technology Officer (CTO)",
+    status: "Co-Founder",
     description:
       "Engr. Fazli Mola oversees our technology strategy, driving innovation and ensuring the highest standards in our tech solutions. His expertise in engineering and technology leadership is key to our company's success in delivering cutting-edge products.",
     imageUrl: engrFazal,
     social: {
-      twitter: "https://twitter.com",
-      linkedin: "https://linkedin.com",
-      dribbble: "https://dribbble.com",
+      linkedin: "https://www.linkedin.com/in/fazalbhai/",
     },
   },
   {
     id: 3,
     name: "Dr. Akhtar Badshah",
     role: "Chief Finance Officer (CFO)",
+    status: "Co-Founder",
     description:
       "Dr. Akhtar Badshah manages our financial operations with precision and insight. His leadership in financial planning and analysis ensures our company's fiscal health, supporting sustainable growth and long-term success.",
     imageUrl: drAkhter,
     social: {
-      twitter: "https://twitter.com",
-      linkedin: "https://linkedin.com",
-      github: "https://github.com",
+      linkedin: "https://www.linkedin.com/in/akhtar-badshah-41813638/",
     },
   },
 ];
@@ -184,33 +181,40 @@ const AllTeamMembers = () => {
         that exceed expectations.
       </p>
       <div className="w-[80%] mx-auto py-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 gap-y-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 gap-y-8">
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="team-member bg-white p-6 rounded-lg shadow-md flex flex-col gap-4 cursor-pointer transition-all"
+              className="team-member bg-white py-6 px-3 rounded-lg shadow-md flex flex-col gap-4 cursor-pointer transition-all"
             >
-              <img
-                src={member.imageUrl}
-                alt={member.name}
-                className="rounded-full mx-auto w-20 h-20 object-cover object-center flex-shrink-0"
-              />
-              <div className="flex flex-col justify-between">
-                <div>
-                  <div className="flex gap-2 mt-4 items-center justify-between">
+              <div className="flex  gap-4 items-center">
+                <img
+                  src={member.imageUrl}
+                  alt={member.name}
+                  className="rounded-full  w-20 h-20 object-cover object-center flex-shrink-0 border border-blue-600"
+                />
+                <div className="">
+                  <div className="flex gap-2 items-center">
                     <h2 className="text-xl font-bold">{member.name}</h2>
                     <a
                       href={member.social.linkedin}
+                      target="_blank"
                       className="text-gray-600 hover:text-gray-400"
                     >
                       <FaLinkedin size={20} />
                     </a>
                   </div>
-                  <p className="text-gray-600 mb-2">{member.role}</p>
-                  <div className="border-b border-gray-300 mb-2"></div>
-                  <p className="text-gray-700 mb-4">{member.description}</p>
+                  <p className="text-sm">
+                    <i>
+                      <span className="text-red-600">{member.status}</span> & {member.role}
+                    </i>
+                  </p>
                 </div>
               </div>
+              <div className="border-b border-gray-300 mb-2"></div>
+              <p className="text-gray-700 mb-4 text-justify px-3">
+                {member.description}
+              </p>
             </div>
           ))}
         </div>
@@ -238,7 +242,9 @@ const AllTeamMembers = () => {
                   </div>
                   <p className="text-gray-600 mb-2 text-xs">{member.role}</p>
                   <div className="border-b border-gray-300 mb-2"></div>
-                  <p className="text-gray-700 mb-4 text-xs">{member.description}</p>
+                  <p className="text-gray-700 mb-4 text-xs">
+                    {member.description}
+                  </p>
                 </div>
               </div>
             </div>

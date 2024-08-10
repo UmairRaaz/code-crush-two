@@ -2,7 +2,8 @@
 
 const PrivacyPolicy = () => {
   return (
-    <div className="max-w-4xl mt-20 mx-auto py-10 p-6 text-gray-800">
+    <div className="bg-white">
+      <div className="max-w-4xl mt-20 mx-auto py-10 p-6 bg-white text-gray-800">
       <h1 className="text-4xl font-bold mb-4">Privacy Policy for Code Crush Technology</h1>
       <p className="text-gray-600 mb-2">Effective Date: 1st July 2024</p>
       <p className="mb-6">
@@ -67,6 +68,7 @@ const PrivacyPolicy = () => {
       </p>
       <p className="font-bold">Code Crush Technology</p>
       <p className="mb-6">info@codecrushtech.com</p>
+    </div>
     </div>
   );
 };

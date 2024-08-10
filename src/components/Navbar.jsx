@@ -137,7 +137,7 @@ function NavBar() {
               <GrLanguage size={20} />
             </button>
             <ul
-              className={`absolute right-0 mt-28 mr-10 w-32 overflow-hidden bg-white border rounded-lg shadow-lg ${
+              className={`absolute  mt-28 mr-10 w-28 overflow-hidden bg-white border rounded-lg shadow-lg ${
                 navbar ? "block" : "hidden"
               }`}
             >

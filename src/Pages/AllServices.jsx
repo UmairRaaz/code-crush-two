@@ -11,7 +11,7 @@ const AllServices = () => {
   const navigate = useNavigate();
   const allupdatesServices = [...services, ...industries, ...rAndDProjects]
   return (
-    <div className="mt-20">
+    <div className="mt-20 bg-white">
       <div
         className="relative h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
         style={{
@@ -29,7 +29,7 @@ const AllServices = () => {
         All Services
       </h1>
       <LineEffect />
-      <div className="w-[90%] md:max-w-6xl lg:max-w-7xl mx-auto gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4">
+      <div className="w-[90%] md:max-w-6xl lg:max-w-7xl mx-auto gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10">
         {services.map((service, index) => (
           <AllServiceCard key={index} image={service.image}  heading={service.title} desc={service.description}
           reverse={index % 2 === 0}
@@ -40,7 +40,7 @@ const AllServices = () => {
         Industires
       </h1>
       <LineEffect />
-      <div className="w-[90%] md:max-w-6xl lg:max-w-7xl mx-auto gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4">
+      <div className="w-[90%] md:max-w-6xl lg:max-w-7xl mx-auto gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10">
         {industries.map((service, index) => (
           <AllServiceCard key={index} image={service.image}  heading={service.title} desc={service.description}
           reverse={index % 2 === 0}
@@ -51,7 +51,7 @@ const AllServices = () => {
         Research & Development
       </h1>
       <LineEffect />
-      <div className="w-[90%] md:max-w-6xl lg:max-w-7xl mx-auto gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4">
+      <div className="w-[90%] md:max-w-6xl lg:max-w-7xl mx-auto gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10">
         {rAndDProjects.map((service, index) => (
           <AllServiceCard key={index} image={service.image}  heading={service.title} desc={service.description}
           reverse={index % 2 === 0}

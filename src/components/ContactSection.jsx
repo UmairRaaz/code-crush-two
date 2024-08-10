@@ -37,10 +37,10 @@ const ContactSection = () => {
     console.log(data);
   };
   return (
-    <div className="pb-20 bg-[#fafafa]">
+    <div className="pb-20 bg-[#fafafa] ">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="space-y-4 max-w-4xl mx-auto px-10 rounded-md p-5 border border-gray-200 bg-white shadow-xl"
+        className="space-y-4 max-w-4xl mx-auto px-10 rounded-md p-5 border border-gray-200 bg-white shadow-xl "
       >
         <div>
           <input
@@ -104,7 +104,7 @@ const ContactSection = () => {
           <button
             disabled={loading}
             type="submit"
-            className="w-44 mx-auto py-2 px-4 bg-[#ed2639] text-white rounded-full shadow-sm hover:bg-indigo-700 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mt-4"
+            className="w-44 mx-auto py-2 px-4 bg-[#4e148d] text-white rounded-full shadow-sm  hover:bg-blue-700 transition duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mt-4"
           >
             {loading ? `Sending Message` : `Send Message`}
           </button>

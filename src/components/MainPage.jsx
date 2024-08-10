@@ -12,7 +12,7 @@ import Services from "./Services";
 
 const MainPage = () => {
   return (
-    <div>
+    <div className="bg-white">
       <Hero />
       <JourneySection />
       {/* <AboutUs /> */}

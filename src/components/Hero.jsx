@@ -24,7 +24,7 @@ const Hero = () => {
   const CurrentHeroComponent = heroComponents[currentHero];
 
   return (
-    <div className="md:mt-20 h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] relative py-10" id="home">
+    <div className="md:mt-20 h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] relative py-10 overlay-component" id="home">
       <TransitionGroup>
         <CSSTransition key={currentHero} timeout={500} classNames="fade">
           <div className="absolute inset-0 w-full">
@@ -37,7 +37,7 @@ const Hero = () => {
           <div
             key={index}
             className={`w-3 h-3 mx-2 rounded-full cursor-pointer ${
-              index === currentHero ? "bg-blue-800" : "bg-blue-300"
+              index === currentHero ? "bg-[#4e148d]" : "bg-blue-300"
             }`}
             onClick={() => handleDotClick(index)}
           ></div>
