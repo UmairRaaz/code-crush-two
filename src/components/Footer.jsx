@@ -20,12 +20,12 @@ const Footer = () => {
 
   return (
     <div
-      className="relative h-[800px] md:h-[350px]"
+      className="relative h-[840px] md:h-[350px]"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
-      <div className="relative h-[calc(100vh+800px)] md:h-[calc(100vh+350px)] -top-[100vh]">
-        <div className='h-[800px] md:h-[350px] sticky top-[calc(100vh-800px)]  md:top-[calc(100vh-350px)]'>
-          <div className="w-full text-[#4e148d]  py-20 md:py-4  pt-10 border-t border-gray-200 ">
+      <div className="relative h-[calc(130vh+840px)] md:h-[calc(100vh+350px)] -top-[130vh] md:-top-[100vh]">
+        <div className='h-[840px] md:h-[350px] sticky top-[calc(130vh-840px)]  md:top-[calc(100vh-350px)]'>
+          <div className="w-full text-[#4e148d] pt-8 md:py-4  md:pt-10 border-t border-gray-200 ">
             <div className="md:max-w-4xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl px-3 md:px-0 mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* Second Column: Website Sections */}
