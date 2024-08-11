@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-
+import remoteResourceImage from "../assets/remoteResourcesBg.png"
 function RemoteResources() {
   const [showForm, setShowForm] = useState(false);
   const { register, handleSubmit, reset } = useForm();
@@ -16,9 +16,24 @@ function RemoteResources() {
   };
   console.log("show-form", showForm)
   return (
-    <div className="mt-20 min-h-screen bg-gray-100 p-6 md:p-12">
+    <div className="mt-20 pb-20 min-h-screen bg-gray-100 ">
+      <div
+        className="relative h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
+        style={{
+          backgroundImage: `url(${remoteResourceImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-black opacity-60"></div>
+        <div className="relative z-10 flex items-center justify-center h-full">
+          <h1 className="text-white text-4xl text-center tracking-widest uppercase font-bold">
+          Remote Resources
+          </h1>
+        </div>
+      </div>
       {/* Heading */}
-      <h1 className="text-3xl text-gray-700 md:text-5xl font-bold text-center mb-8">
+      <h1 className="text-3xl pt-10 text-gray-700 md:text-5xl font-bold text-center mb-8">
         We Provide On-Demand Remote Resources
       </h1>
 
@@ -31,7 +46,7 @@ function RemoteResources() {
       </p>
 
       {/* Hire Button */}
-      <div className="text-center mb-12">
+      <div className="text-center pb-12">
         <button
           onClick={handleHireClick}
           className="px-8 py-4 bg-[#4e148d] text-white text-xl font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
