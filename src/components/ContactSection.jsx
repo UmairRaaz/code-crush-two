@@ -104,7 +104,7 @@ const ContactSection = () => {
           <button
             disabled={loading}
             type="submit"
-            className="w-44 mx-auto py-2 px-4 bg-[#4e148d] text-white rounded-full shadow-sm  hover:bg-blue-700 transition duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mt-4"
+            className="w-44 mx-auto py-2 px-4 bg-[#4e148d] text-white rounded-full shadow-sm  hover:bg-[#6828E8] transition duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mt-4"
           >
             {loading ? `Sending Message` : `Send Message`}
           </button>

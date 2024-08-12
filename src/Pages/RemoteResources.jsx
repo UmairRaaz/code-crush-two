@@ -38,7 +38,7 @@ function RemoteResources() {
       </h1>
 
       {/* Mission Statement */}
-      <p className="text-lg md:text-xl text-center max-w-2xl mx-auto mb-8">
+      <p className="text-lg md:text-xl px-3 text-center max-w-4xl mx-auto mb-8">
         Our mission is to revolutionize work practices and eliminate distance
         barriers. Our Remote Resource service is designed to deliver exceptional
         IT services globally, empowering your business with top-quality support
@@ -49,7 +49,7 @@ function RemoteResources() {
       <div className="text-center pb-12">
         <button
           onClick={handleHireClick}
-          className="px-8 py-4 bg-[#4e148d] text-white text-xl font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
+          className="px-4 text-lg py-2 bg-[#4e148d] text-white font-semibold rounded-lg shadow-md hover:bg-[#6828E8] transition duration-300"
         >
           Hire
         </button>
@@ -176,7 +176,7 @@ function RemoteResources() {
             <div className="text-center mt-6">
               <button
                 type="submit"
-                className="px-8 py-4 bg-[#4e148d] text-white text-lg font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
+                className="px-8 py-4 bg-[#4e148d] text-white text-lg font-semibold rounded-lg shadow-md hover:bg-[#6828E8] transition duration-300"
               >
                 Submit
               </button>
