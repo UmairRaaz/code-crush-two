@@ -71,7 +71,7 @@ const ContactUs = () => {
                     <img src={location} alt="icon" className="w-[40px]" />
                   </div>
                   <div className="text-gray-600 w-[70%]">
-                    <h1 className="text-2xl">Location :</h1>
+                    <h1 className="text-2xl">Address :</h1>
                     <h1 className="font-light text-xl">
                       Al-Nawaz Arcade, Adjacent to Rawalpindi Urology Hospital,
                       Murree Road, Rawalpindi

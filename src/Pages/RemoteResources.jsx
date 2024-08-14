@@ -1,20 +1,20 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import remoteResourceImage from "../assets/remoteResourcesBg.png"
+import remoteResourceImage from "../assets/remoteResourcesBg.png";
 function RemoteResources() {
   const [showForm, setShowForm] = useState(false);
   const { register, handleSubmit, reset } = useForm();
 
   const onSubmit = (data) => {
     console.log(data);
-    reset(); 
-    setShowForm(true); 
+    reset();
+    setShowForm(true);
   };
 
   const handleHireClick = () => {
     setShowForm(true);
   };
-  console.log("show-form", showForm)
+  console.log("show-form", showForm);
   return (
     <div className="mt-20 pb-20 min-h-screen bg-gray-100 ">
       <div
@@ -28,28 +28,30 @@ function RemoteResources() {
         <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="relative z-10 flex items-center justify-center h-full">
           <h1 className="text-white text-4xl text-center tracking-widest uppercase font-bold">
-          Remote Resources
+            Remote Resources
           </h1>
         </div>
       </div>
       {/* Heading */}
-      <h1 className="text-3xl pt-10 text-gray-700 md:text-5xl font-bold text-center mb-8">
-        We Provide On-Demand Remote Resources
-      </h1>
+      <div className="md:w-[70%] mx-auto ">
+        <h1 className="text-3xl pt-10  text-center mx-auto text-gray-700 md:text-5xl font-bold mb-8">
+          We Provide On-Demand Remote Resources
+        </h1>
 
-      {/* Mission Statement */}
-      <p className="text-lg md:text-xl px-3 text-center max-w-4xl mx-auto mb-8">
-        Our mission is to revolutionize work practices and eliminate distance
-        barriers. Our Remote Resource service is designed to deliver exceptional
-        IT services globally, empowering your business with top-quality support
-        tailored to your specific needs.
-      </p>
+        {/* Mission Statement */}
+        <p className="text-lg md:text-xl px-3 text-justify mx-auto mb-8">
+          Our mission is to revolutionize work practices and eliminate distance
+          barriers. Our Remote Resource service is designed to deliver
+          exceptional IT services globally, empowering your business with
+          top-quality support tailored to your specific needs.
+        </p>
+      </div>
 
       {/* Hire Button */}
       <div className="text-center pb-12">
         <button
           onClick={handleHireClick}
-          className="px-4 text-lg py-2 bg-[#4e148d] text-white font-semibold rounded-lg shadow-md hover:bg-[#6828E8] transition duration-300"
+          className="px-6 text-xl py-3 uppercase bg-[#4e148d] text-white font-semibold rounded-lg shadow-md hover:bg-[#6828E8] transition duration-300"
         >
           Hire
         </button>
@@ -57,7 +59,7 @@ function RemoteResources() {
 
       {/* Form Section */}
       {showForm && (
-        <div className="bg-white p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
+        <div className="bg-white p-6 rounded-lg shadow-lg md:w-[70%] mx-auto">
           {/* Form Heading */}
           <h2 className="text-2xl font-semibold mb-6 text-center">
             Connect With Our Exceptionally Talented Remote Resources!
@@ -85,7 +87,9 @@ function RemoteResources() {
 
             {/* Email */}
             <div>
-              <label className="block text-gray-700 font-semibold">Email:</label>
+              <label className="block text-gray-700 font-semibold">
+                Email:
+              </label>
               <input
                 type="email"
                 {...register("email", { required: true })}
@@ -95,7 +99,9 @@ function RemoteResources() {
 
             {/* Phone Number */}
             <div>
-              <label className="block text-gray-700 font-semibold">Phone Number:</label>
+              <label className="block text-gray-700 font-semibold">
+                Phone Number:
+              </label>
               <input
                 type="text"
                 {...register("phoneNumber", { required: true })}
@@ -105,7 +111,9 @@ function RemoteResources() {
 
             {/* Company Name */}
             <div>
-              <label className="block text-gray-700 font-semibold">Company Name:</label>
+              <label className="block text-gray-700 font-semibold">
+                Company Name:
+              </label>
               <input
                 type="text"
                 {...register("companyName", { required: true })}
@@ -115,7 +123,9 @@ function RemoteResources() {
 
             {/* Project Description */}
             <div>
-              <label className="block text-gray-700 font-semibold">Project Description:</label>
+              <label className="block text-gray-700 font-semibold">
+                Project Description:
+              </label>
               <textarea
                 {...register("projectDescription", { required: true })}
                 className="w-full p-2 border border-gray-300 rounded-md"
@@ -125,7 +135,9 @@ function RemoteResources() {
 
             {/* Required Expertise */}
             <div>
-              <label className="block text-gray-700 font-semibold">Required Expertise:</label>
+              <label className="block text-gray-700 font-semibold">
+                Required Expertise:
+              </label>
               <select
                 {...register("requiredExpertise", { required: true })}
                 className="w-full p-2 border border-gray-300 rounded-md"
@@ -140,7 +152,9 @@ function RemoteResources() {
 
             {/* Duration of Hire */}
             <div>
-              <label className="block text-gray-700 font-semibold">Duration of Hire:</label>
+              <label className="block text-gray-700 font-semibold">
+                Duration of Hire:
+              </label>
               <select
                 {...register("durationOfHire", { required: true })}
                 className="w-full p-2 border border-gray-300 rounded-md"
@@ -154,7 +168,9 @@ function RemoteResources() {
 
             {/* Start Date */}
             <div>
-              <label className="block text-gray-700 font-semibold">Start Date:</label>
+              <label className="block text-gray-700 font-semibold">
+                Start Date:
+              </label>
               <input
                 type="date"
                 {...register("startDate", { required: true })}
@@ -164,7 +180,9 @@ function RemoteResources() {
 
             {/* Additional Requirements */}
             <div>
-              <label className="block text-gray-700 font-semibold">Additional Requirements:</label>
+              <label className="block text-gray-700 font-semibold">
+                Additional Requirements:
+              </label>
               <textarea
                 {...register("additionalRequirements")}
                 className="w-full p-2 border border-gray-300 rounded-md"

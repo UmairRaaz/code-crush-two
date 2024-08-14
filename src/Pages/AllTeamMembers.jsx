@@ -206,7 +206,7 @@ const AllTeamMembers = () => {
                   </div>
                   <p className="text-sm">
                     <i>
-                      <span className="text-red-600">{member.status}</span> & {member.role}
+                      <span className="">{member.status}</span> & {member.role}
                     </i>
                   </p>
                 </div>

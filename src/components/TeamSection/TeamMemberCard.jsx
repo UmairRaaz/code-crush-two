@@ -20,7 +20,7 @@ const TeamMemberCard = ({links, status, image, name, role }) => {
 
         <p>
           <i>
-            <span className="text-red-600">{status}</span> & {role}
+            <span className="">{status}</span> & {role}
           </i>
         </p>
       </div>
