@@ -10,7 +10,7 @@ const HeroFive = () => {
         <h1 className="md:text-6xl text-4xl font-bold uppercase leading-snug text-white">
           Vision
         </h1>
-        <p className="mt-4 text-lg md:text-xl text-white">
+        <p className="mt-4 text-lg md:text-2xl text-white">
           To be the largest & innovative IT Development Company till 2030.
         </p>
       </div>
