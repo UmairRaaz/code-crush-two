@@ -26,15 +26,16 @@ const ContactUs = () => {
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "linear" }}
-      className="bg-[#fafafa]"
+      className="bg-[#4e148d] pb-10 text-white"
       style={{ paddingTop: navbarHeight }}
+
       id="contact"
     >
-      <div className="md:max-w-4xl overflow-hidden lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl px-3 md:px-0 mx-auto py-4">
+      <div className="md:max-w-4xl overflow-hidden  lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl px-3 md:px-0 mx-auto py-4">
         <h1 className="text-4xl font-bold mb-8 text-center">
           Get in Touch with Code Crush Technology
         </h1>
-        <LineEffect />
+        {/* <LineEffect /> */}
         <p className="text-base text-center max-w-4xl mt-4 mx-auto">
           We’re here to assist you! Whether you have inquiries, feedback, or
           need support, our dedicated team is ready to help. Fill out the form
@@ -43,14 +44,14 @@ const ContactUs = () => {
           business forward.
         </p>
         <div className="flex flex-col md:items-center md:flex-row">
-          <div className="w-full  md:w-1/2 px-2 bg-[#fafafa]">
+          <div className="w-full  md:w-1/2 px-2 ">
             <div className="w-full md:pl-8">
               <div className="md:p-6 rounded-lg mt-10 md:mt-0 border-black">
                 <div className="flex mb-4">
                   <div className="w-[15%]">
-                    <img src={email} alt="icon" className="w-[40px]" />
+                    <img src={email} alt="icon" className="w-[40px] border rounded-full" />
                   </div>
-                  <div className="text-gray-600 w-[70%]">
+                  <div className="text-gray-100 w-[70%] ">
                     <h1 className="text-2xl">Email :</h1>
                     <h1 className="font-light text-xl">
                       contact@codecrushtech.com
@@ -59,18 +60,18 @@ const ContactUs = () => {
                 </div>
                 <div className="flex mb-4">
                   <div className="w-[15%]">
-                    <img src={phone} alt="icon" className="w-[40px]" />
+                    <img src={phone} alt="icon" className="w-[40px] border rounded-full" />
                   </div>
-                  <div className="text-gray-600 w-[70%]">
+                  <div className="text-gray-100 w-[70%]">
                     <h1 className="text-2xl">Phone :</h1>
                     <h1 className="font-light text-xl">+92 314 5857 970</h1>
                   </div>
                 </div>
                 <div className="flex mb-4">
                   <div className="w-[15%]">
-                    <img src={location} alt="icon" className="w-[40px]" />
+                    <img src={location} alt="icon" className="w-[40px] border rounded-full" />
                   </div>
-                  <div className="text-gray-600 w-[70%]">
+                  <div className="text-gray-100 w-[70%]">
                     <h1 className="text-2xl">Address :</h1>
                     <h1 className="font-light text-xl">
                       Al-Nawaz Arcade, Adjacent to Rawalpindi Urology Hospital,
@@ -81,7 +82,7 @@ const ContactUs = () => {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-1/2 bg-[#fafafa]">
+          <div className="w-full md:w-1/2 ">
             <div className="px-2 py-8 flex items-center justify-center">
               <div>
                 <div className="w-full">

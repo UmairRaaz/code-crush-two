@@ -14,7 +14,7 @@ const Industries = () => {
   });
 
   return (
-    <div className='w-full text-white grid grid-cols-1 md:grid-cols-2'>
+    <div className='w-full text-white gap-2 md:gap-5 grid grid-cols-1 md:grid-cols-2'>
       {updatedIndustries.map((industry, index) => (
         <div key={index} className='relative border border-gray-100 min-h-24'>
           <img src={industry.image} alt={industry.name}

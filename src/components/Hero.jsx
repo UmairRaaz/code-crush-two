@@ -24,7 +24,9 @@ const Hero = () => {
   const CurrentHeroComponent = heroComponents[currentHero];
 
   return (
-    <div className="md:mt-20 h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] relative py-10 overlay-component" id="home">
+    <div className="md:mt-20 h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] relative py-10 overlay-component"
+    style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
+    id="home">
       <TransitionGroup>
         <CSSTransition key={currentHero} timeout={500} classNames="fade">
           <div className="absolute inset-0 w-full">

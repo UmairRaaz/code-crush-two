@@ -24,15 +24,15 @@ const Footer = () => {
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
       <div className="relative h-[calc(130vh+840px)] md:h-[calc(100vh+350px)] -top-[130vh] md:-top-[100vh]">
-        <div className='h-[840px] md:h-[350px] sticky top-[calc(130vh-840px)]  md:top-[calc(100vh-350px)]'>
-          <div className="w-full text-[#4e148d] pt-8 md:py-4  md:pt-10 border-t border-gray-200 ">
+        <div className="h-[840px] md:h-[350px] sticky top-[calc(130vh-840px)] md:top-[calc(100vh-350px)]">
+          <div className="w-full h-full bg-[#4e148d] pb-10 text-white pt-8 md:py-4 md:pt-10 border-t border-gray-200">
             <div className="md:max-w-4xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl px-3 md:px-0 mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* Second Column: Website Sections */}
                 <div>
                   <h3 className="text-lg font-bold mb-4 uppercase">Company</h3>
-                  <ul className="space-y-2">
-                    <li>
+                  <ul className="space-y-2 list-disc list-inside">
+                    <li className="underline underline-offset-4 decoration-white">
                       <NavLink
                         to={"/all-projects"}
                         className="hover:text-gray-400"
@@ -40,7 +40,7 @@ const Footer = () => {
                         Portfolio
                       </NavLink>
                     </li>
-                    <li>
+                    <li className="underline underline-offset-4 decoration-white">
                       <NavLink
                         to={"/all-members"}
                         className="hover:text-gray-400"
@@ -48,7 +48,7 @@ const Footer = () => {
                         Our Team
                       </NavLink>
                     </li>
-                    <li>
+                    <li className="underline underline-offset-4 decoration-white">
                       <NavLink
                         to={"/all-blogs"}
                         className="hover:text-gray-400"
@@ -56,7 +56,7 @@ const Footer = () => {
                         Blogs
                       </NavLink>
                     </li>
-                    <li>
+                    <li className="underline underline-offset-4 decoration-white">
                       <NavLink
                         to={"/all-projects"}
                         className="hover:text-gray-400"
@@ -64,7 +64,7 @@ const Footer = () => {
                         Case Studies
                       </NavLink>
                     </li>
-                    <li>
+                    <li className="underline underline-offset-4 decoration-white">
                       <NavLink
                         to="/privacypolicy"
                         className="hover:text-gray-400"
@@ -72,7 +72,7 @@ const Footer = () => {
                         Privacy and Policy
                       </NavLink>
                     </li>
-                    <li>
+                    <li className="underline underline-offset-4 decoration-white">
                       <NavLink
                         to="/termsandcondition"
                         className="hover:text-gray-400"
@@ -86,8 +86,8 @@ const Footer = () => {
                 {/* Third Column: Services */}
                 <div>
                   <h3 className="text-lg font-bold mb-4 uppercase">Services</h3>
-                  <ul className="space-y-2">
-                    <li>
+                  <ul className="space-y-2 list-disc list-inside">
+                    <li className="underline underline-offset-4 decoration-white">
                       <NavLink
                         to={"/all-services/view-service/:1"}
                         className="hover:text-gray-400"
@@ -95,7 +95,7 @@ const Footer = () => {
                         Web & App Development
                       </NavLink>
                     </li>
-                    <li>
+                    <li className="underline underline-offset-4 decoration-white">
                       <NavLink
                         to={"/all-services/view-service/:1"}
                         className="hover:text-gray-400"
@@ -103,7 +103,7 @@ const Footer = () => {
                         Cyber Security Solutions
                       </NavLink>
                     </li>
-                    <li>
+                    <li className="underline underline-offset-4 decoration-white">
                       <NavLink
                         to={"/all-services/view-service/:1"}
                         className="hover:text-gray-400"
@@ -111,7 +111,7 @@ const Footer = () => {
                         Custom Software & CMS Solutions
                       </NavLink>
                     </li>
-                    <li>
+                    <li className="underline underline-offset-4 decoration-white">
                       <NavLink
                         to={"/all-services/view-service/:1"}
                         className="hover:text-gray-400"
@@ -119,15 +119,15 @@ const Footer = () => {
                         E-Commerce Solutions
                       </NavLink>
                     </li>
-                    <li>
+                    <li className="underline underline-offset-4 decoration-white">
                       <NavLink
-                        to={"//all-servicesview-service/:1"}
+                        to={"/all-services/view-service/:1"}
                         className="hover:text-gray-400"
                       >
                         Digital Marketing & SEO
                       </NavLink>
                     </li>
-                    <li>
+                    <li className="underline underline-offset-4 decoration-white">
                       <NavLink
                         to={"/all-services/view-service/:1"}
                         className="hover:text-gray-400"
@@ -143,28 +143,28 @@ const Footer = () => {
                   <h3 className="text-lg font-bold uppercase mb-4">
                     Contact Us
                   </h3>
-                  <ul className="space-y-2">
-                    <li>
+                  <ul className="space-y-2 list-disc">
+                    <li className="decoration-white ">
                       Email:{" "}
                       <a
                         href="mailto:contact@codecrushtech.com"
-                        className="hover:text-gray-400"
+                        className="hover:text-gray-400 underline underline-offset-4"
                       >
                         contact@codecrushtech.com
                       </a>
                     </li>
-                    <li>
+                    <li className=" decoration-white">
                       Phone:{" "}
-                      <a href="tel:+1234567890" className="hover:text-gray-400">
+                      <a href="tel:+1234567890 " className="underline underline-offset-4 hover:text-gray-400">
                         +92 314 5857 970
                       </a>
                     </li>
-                    <li>
+                    <li className="underline underline-offset-4 decoration-white">
                       Al-Nawaz Arcade, Adjacent to Rawalpindi Urology Hospital,
                       Murree Road, Rawalpindi
                     </li>
                   </ul>
-                  <div className="flex gap-4 mt-4 items-center">
+                  <div className="inline-flex px-4 py-1 rounded-xl gap-4 bg-white text-gray-600  mt-4 items-center">
                     <a
                       href="https://www.facebook.com/@codecrushtech"
                       target="_blank"
