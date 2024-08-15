@@ -36,7 +36,7 @@ const Portfolio = () => {
         to={"/all-projects"}
         className="text-blue-500">Read More</Link> */}
         </p>
-        <div className="flex justify-end">
+        <div className="flex justify-center md:justify-end">
           <ViewAllButton link={"/all-projects"} />
         </div>
         <div className="my-10 grid md:grid-cols-3 grid-cols-1 gap-14 md:gap-4">

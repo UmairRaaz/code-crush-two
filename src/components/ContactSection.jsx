@@ -37,7 +37,7 @@ const ContactSection = () => {
     console.log(data);
   };
   return (
-    <div className="pb-20 bg-[#fafafa] ">
+    <div className="py-20 bg-[#fafafa] ">
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="space-y-4 max-w-4xl mx-auto px-10 rounded-md p-5 border border-gray-200 bg-white shadow-xl "

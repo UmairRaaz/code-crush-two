@@ -29,7 +29,7 @@ const Footer = () => {
             <div className="md:max-w-4xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl px-3 md:px-0 mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* Second Column: Website Sections */}
-                <div>
+                <div className="pl-4 md:pl-0">
                   <h3 className="text-lg font-bold mb-4 uppercase">Company</h3>
                   <ul className="space-y-2 list-disc list-inside">
                     <li className="underline underline-offset-4 decoration-white">
@@ -84,7 +84,7 @@ const Footer = () => {
                 </div>
 
                 {/* Third Column: Services */}
-                <div>
+                <div className="pl-4 md:pl-0">
                   <h3 className="text-lg font-bold mb-4 uppercase">Services</h3>
                   <ul className="space-y-2 list-disc list-inside">
                     <li className="underline underline-offset-4 decoration-white">
@@ -139,7 +139,7 @@ const Footer = () => {
                 </div>
 
                 {/* Fourth Column: Contact Us */}
-                <div>
+                <div className="pl-4 md:pl-0 ">
                   <h3 className="text-lg font-bold uppercase mb-4">
                     Contact Us
                   </h3>
