@@ -31,7 +31,7 @@ const MeetOurTeam = () => {
               <ViewAllButton link={"/all-members"} />
             </div>
           </div>
-          <div className="mt-8 min-h-72 grid gap-8 grid-cols-1 md:grid-cols-3">
+          <div className="mt-8 px-4 md:px-0 min-h-72 grid gap-8 grid-cols-1 md:grid-cols-3">
             <TeamMemberCard
               image={habib}
               status={"Founder"}

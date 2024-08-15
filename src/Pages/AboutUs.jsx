@@ -83,7 +83,9 @@ const AboutUs = () => {
               to your company&apos;s needs.
             </p>
 
-            <h4 className="text-lg text-gray-800 mb-2 mt-8 font-semibold">Code Crush Technologies</h4>
+            <h4 className="text-lg text-gray-800 mb-2 mt-8 font-semibold">
+              Code Crush Technologies
+            </h4>
             <p className="text-gray-500">
               Code Crush Technologies provides innovative software solutions
               through sophisticated, Reliable and Secure technological tools for
@@ -92,38 +94,44 @@ const AboutUs = () => {
               commitment to quality and customer satisfaction.
             </p>
 
-            <h4 className="text-lg text-gray-800 mb-2 mt-8 font-semibold">Mission</h4>
+            <h4 className="text-lg text-gray-800 mb-2 mt-8 font-semibold">
+              Mission
+            </h4>
             <p className="text-gray-500">
               Our mission is to develop innovative Ideas and maintain their
               highest quality standards and best practices in the current
               Digital Marketplace.
             </p>
 
-            <h4 className="text-lg text-gray-800 mb-2 mt-8  font-semibold">Objective</h4>
-            <p className="text-gray-500 md:text-nowrap">
-              To provide fast solutions to our customers using emerging
-              technologies tools.
-            </p>
-            <p className="text-gray-500 md:text-nowrap">
-              To continuously improve the developed models based on customer
-              satisfactions.
-            </p>
-            <p className="text-gray-500 md:text-nowrap">
-              To train the interested students in the field of IT and their
-              Solutions.
-            </p>
-            <p className="text-gray-500 md:text-nowrap">
-              To share innovative ideas, solutions, and business models with
-              interested investors.
-            </p>
-            <p className="text-gray-500 md:text-nowrap">
-              To establish strong communication and collaboration with local and
-              business industries.
-            </p>
-            <p className="text-gray-500 md:text-nowrap">
-              To support the government and private organizations in the digital
-              transformation process.
-            </p>
+            <h4 className="text-lg text-gray-800 mb-2 mt-8  font-semibold">
+              Objective
+            </h4>
+            <ul className="list-disc">
+              <li className="text-gray-500 md:text-nowrap">
+                To provide fast solutions to our customers using emerging
+                technologies tools.
+              </li>
+              <li className="text-gray-500 md:text-nowrap">
+                To continuously improve the developed models based on customer
+                satisfactions.
+              </li>
+              <li className="text-gray-500 md:text-nowrap">
+                To train the interested students in the field of IT and their
+                Solutions.
+              </li>
+              <li className="text-gray-500 md:text-nowrap">
+                To share innovative ideas, solutions, and business models with
+                interested investors.
+              </li>
+              <li className="text-gray-500 md:text-nowrap">
+                To establish strong communication and collaboration with local
+                and business industries.
+              </li>
+              <li className="text-gray-500 md:text-nowrap">
+                To support the government and private organizations in the
+                digital transformation process.
+              </li>
+            </ul>
           </div>
           <div className="w-full md:w-1/2 flex justify-center ">
             <img

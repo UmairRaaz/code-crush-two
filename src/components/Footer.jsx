@@ -32,7 +32,7 @@ const Footer = () => {
                 <div className="pl-4 md:pl-0">
                   <h3 className="text-lg font-bold mb-4 uppercase">Company</h3>
                   <ul className="space-y-2 list-disc list-inside">
-                    <li className="underline underline-offset-4 decoration-white">
+                    <li className="    ">
                       <NavLink
                         to={"/all-projects"}
                         className="hover:text-gray-400"
@@ -40,7 +40,7 @@ const Footer = () => {
                         Portfolio
                       </NavLink>
                     </li>
-                    <li className="underline underline-offset-4 decoration-white">
+                    <li className="    ">
                       <NavLink
                         to={"/all-members"}
                         className="hover:text-gray-400"
@@ -48,7 +48,7 @@ const Footer = () => {
                         Our Team
                       </NavLink>
                     </li>
-                    <li className="underline underline-offset-4 decoration-white">
+                    <li className="    ">
                       <NavLink
                         to={"/all-blogs"}
                         className="hover:text-gray-400"
@@ -56,7 +56,7 @@ const Footer = () => {
                         Blogs
                       </NavLink>
                     </li>
-                    <li className="underline underline-offset-4 decoration-white">
+                    <li className="    ">
                       <NavLink
                         to={"/all-projects"}
                         className="hover:text-gray-400"
@@ -64,7 +64,7 @@ const Footer = () => {
                         Case Studies
                       </NavLink>
                     </li>
-                    <li className="underline underline-offset-4 decoration-white">
+                    <li className="    ">
                       <NavLink
                         to="/privacypolicy"
                         className="hover:text-gray-400"
@@ -72,7 +72,7 @@ const Footer = () => {
                         Privacy and Policy
                       </NavLink>
                     </li>
-                    <li className="underline underline-offset-4 decoration-white">
+                    <li className="    ">
                       <NavLink
                         to="/termsandcondition"
                         className="hover:text-gray-400"
@@ -87,7 +87,7 @@ const Footer = () => {
                 <div className="pl-4 md:pl-0">
                   <h3 className="text-lg font-bold mb-4 uppercase">Services</h3>
                   <ul className="space-y-2 list-disc list-inside">
-                    <li className="underline underline-offset-4 decoration-white">
+                    <li className="    ">
                       <NavLink
                         to={"/all-services/view-service/:1"}
                         className="hover:text-gray-400"
@@ -95,7 +95,7 @@ const Footer = () => {
                         Web & App Development
                       </NavLink>
                     </li>
-                    <li className="underline underline-offset-4 decoration-white">
+                    <li className="    ">
                       <NavLink
                         to={"/all-services/view-service/:1"}
                         className="hover:text-gray-400"
@@ -103,7 +103,7 @@ const Footer = () => {
                         Cyber Security Solutions
                       </NavLink>
                     </li>
-                    <li className="underline underline-offset-4 decoration-white">
+                    <li className="    ">
                       <NavLink
                         to={"/all-services/view-service/:1"}
                         className="hover:text-gray-400"
@@ -111,7 +111,7 @@ const Footer = () => {
                         Custom Software & CMS Solutions
                       </NavLink>
                     </li>
-                    <li className="underline underline-offset-4 decoration-white">
+                    <li className="    ">
                       <NavLink
                         to={"/all-services/view-service/:1"}
                         className="hover:text-gray-400"
@@ -119,7 +119,7 @@ const Footer = () => {
                         E-Commerce Solutions
                       </NavLink>
                     </li>
-                    <li className="underline underline-offset-4 decoration-white">
+                    <li className="    ">
                       <NavLink
                         to={"/all-services/view-service/:1"}
                         className="hover:text-gray-400"
@@ -127,7 +127,7 @@ const Footer = () => {
                         Digital Marketing & SEO
                       </NavLink>
                     </li>
-                    <li className="underline underline-offset-4 decoration-white">
+                    <li className="    ">
                       <NavLink
                         to={"/all-services/view-service/:1"}
                         className="hover:text-gray-400"
@@ -144,22 +144,25 @@ const Footer = () => {
                     Contact Us
                   </h3>
                   <ul className="space-y-2 list-disc">
-                    <li className="decoration-white ">
+                    <li className=" ">
                       Email:{" "}
                       <a
                         href="mailto:contact@codecrushtech.com"
-                        className="hover:text-gray-400 underline underline-offset-4"
+                        className="hover:text-gray-400    "
                       >
                         contact@codecrushtech.com
                       </a>
                     </li>
-                    <li className=" decoration-white">
+                    <li className=" ">
                       Phone:{" "}
-                      <a href="tel:+1234567890 " className="underline underline-offset-4 hover:text-gray-400">
+                      <a
+                        href="tel:+1234567890 "
+                        className="    hover:text-gray-400"
+                      >
                         +92 314 5857 970
                       </a>
                     </li>
-                    <li className="underline underline-offset-4 decoration-white">
+                    <li className="    ">
                       Al-Nawaz Arcade, Adjacent to Rawalpindi Urology Hospital,
                       Murree Road, Rawalpindi
                     </li>

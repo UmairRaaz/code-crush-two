@@ -80,7 +80,7 @@ const StatItem = ({ icon, label, value, prefix }) => {
   return (
     <div
       ref={ref}
-      className="flex py-10 md:py-0 items-center justify-center flex-col cursor-pointer"
+      className="flex  py-10 md:py-0 items-center justify-center flex-col cursor-pointer"
     >
       <img src={icon} alt="icon" className="w-[100px] border-2 mb-4 rounded-full shadow-xl p-4" />
       <h1 className="text-gray-700 mt-2 text-4xl font-bold">

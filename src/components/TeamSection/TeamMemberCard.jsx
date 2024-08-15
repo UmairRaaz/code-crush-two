@@ -2,15 +2,15 @@ import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 const TeamMemberCard = ({ links, status, image, name, role }) => {
   return (
-    <div className="border shadow-xl pb-4 rounded-xl hover:scale-105 transition-all cursor-pointer">
+    <div className="border shadow-xl pb-4 rounded-xl hover:scale-105 transition-all cursor-pointer py-6">
       <div className="w-full ">
         <img
           src={image}
           alt="portrait"
-          className="h-[15rem] w-[15rem] rounded-full mx-auto "
+          className="h-[10rem] md:h-[13rem] w-[10rem] md:w-[13rem]  rounded-full mx-auto "
         />
       </div>
-      <div className="mt-4 text-gray-700 px-4">
+      <div className="mt-4 px-4 text-gray-700">
         <div className="flex justify-between mb-1">
           <h1 className="text-xl font-bold">{name}</h1>
           <a
