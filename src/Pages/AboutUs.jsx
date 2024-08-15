@@ -2,6 +2,7 @@ import aboutUs from "../assets/aboutUs.webp";
 import aboutImage from "../assets/aboutImage.webp";
 import habibImage from "../assets/habib.png";
 import LineEffect from "../components/Buttons/LineEffect";
+import { FaLinkedin } from "react-icons/fa";
 
 const AboutUs = () => {
   return (
@@ -29,28 +30,21 @@ const AboutUs = () => {
         <div className="w-[80%] mx-auto flex flex-col md:flex-row gap-8 justify-between">
           <div className="w-full md:w-1/2 text-justify">
             <h4 className="text-xl font-semibold mb-2">
-              Dear Stakeholders, Partners, and Employees,
+            CEO Code Crush Technologies
             </h4>
             <p className="text-gray-500 mb-4">
-              As we navigate the ever-evolving software industry, I am proud of
-              the code crush technologies team&rsquo;s resilience and
-              innovation. Our focus on cutting-edge technology, customer-centric
-              solutions, novel business ideas, and sustainable practices
-              positions us well for the future. Innovation is at the heart of
-              everything we do. We are not just developing software; we are
-              shaping the future of industries, technologies and business
-              sections according to the market. Our commitment to pushing
-              boundaries and embracing new technologies sets us apart and allows
-              us to deliver high quality solutions that exceed expectations.
-              Looking forward,we must remain agile and adaptable with the
-              cutting edge technologies. Thank you for your continued support,
-              hard work, dedication, and passion for excellence. Our journey is
-              just beginning, and I am honored to lead this exceptional team.The
-              future is bright, and I am excited to see where our collective
-              efforts will take us. Sincerely,
+            Firstly, I am proud to be the founder CEO of Code Crush Technologies, the ever-evolving software industry in Pakistan. I am also proud of our resilience, expertise and professional team. Our focus on cutting-edge technologies, customer-centric solutions, novel business ideas, qualitative products and sustainable practices will grow up our company. Our uniqueness is to commercialize young ideas and innovative e-commerce projects along with academics and intelligent domains. Innovation is at the heart of everything we focus on. We are not just developing software but shaping the future of industries, technologies and business sections according to the up-to-date market with the help of research and development industrial and academic board members. The future is bright, and I am excited to see where our collective efforts will take us. Thank you for your continued support, hard work, dedication, and passion for excellence.
             </p>
-            <h4 className="text-xl">Professor Dr.Habib Shah</h4>
-            <p className="text-xl">CEO of Code Crush Technologies, Pakistan</p>
+            <div className="flex gap-2 items-center">
+            <h4 className="text-xl">Dr. Habib Shah (PhD IT, Gold Medalist)</h4>
+            <a
+            href={"https://www.linkedin.com/in/drhabibshah/"}
+            target="_blank"
+            className="text-gray-600 hover:text-gray-400"
+          >
+            <FaLinkedin size={20} />
+          </a>
+            </div>
           </div>
           <div className="w-full md:w-1/2 flex justify-center ">
             <img
