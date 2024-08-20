@@ -123,7 +123,7 @@ const CareerPage = () => {
               {positions.map((position, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-between p-6 bg-gray-100 border-b border-gray-300"
+                  className="flex items-center flex-col gap-8 md:gap-0 md:flex-row justify-between p-6 bg-gray-100 border-b border-gray-300"
                 >
                   <div className="flex flex-col">
                     <h3 className="text-2xl font-semibold ">

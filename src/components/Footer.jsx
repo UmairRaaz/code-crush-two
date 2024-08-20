@@ -31,7 +31,7 @@ const Footer = () => {
                 {/* Second Column: Website Sections */}
                 <div className="pl-4 md:pl-0">
                   <h3 className="text-lg font-bold mb-4 uppercase">Company</h3>
-                  <ul className="space-y-2 list-disc list-inside">
+                  <ul className="space-y-2 ">
                     <li className="    ">
                       <NavLink
                         to={"/all-projects"}
@@ -86,7 +86,7 @@ const Footer = () => {
                 {/* Third Column: Services */}
                 <div className="pl-4 md:pl-0">
                   <h3 className="text-lg font-bold mb-4 uppercase">Services</h3>
-                  <ul className="space-y-2 list-disc list-inside">
+                  <ul className="space-y-2 ">
                     <li className="    ">
                       <NavLink
                         to={"/all-services/view-service/:1"}
@@ -143,7 +143,7 @@ const Footer = () => {
                   <h3 className="text-lg font-bold uppercase mb-4">
                     Contact Us
                   </h3>
-                  <ul className="space-y-2 list-disc">
+                  <ul className="space-y-2 ">
                     <li className=" ">
                       Email:{" "}
                       <a

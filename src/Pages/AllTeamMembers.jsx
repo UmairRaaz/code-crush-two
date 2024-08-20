@@ -2,9 +2,14 @@ import ourTeamBG from "../assets/ourTeamBG.webp";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { BsTwitter } from "react-icons/bs";
 import LineEffect from "../components/Buttons/LineEffect";
-import drAkhter from "../assets/drAkhter.png";
-import engrFazal from "../assets/engrFazal.png";
-import habib from "../assets/habib.png";
+// import drAkhter from "../assets/drAkhter.png";
+// import engrFazal from "../assets/engrFazal.png";
+// import habib from "../assets/habib.png";
+
+import drAkhter from "../assets/drAkhtertwo.png";
+import engrFazal from "../assets/engrFazaltwo.png";
+import habib from "../assets/habibtwo.png";
+
 const teamMembers = [
   {
     id: 1,

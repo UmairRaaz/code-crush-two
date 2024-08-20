@@ -1,6 +1,9 @@
-import drAkhter from "../assets/drAkhter.png";
-import engrFazal from "../assets/engrFazal.png";
-import habib from "../assets/habib.png";
+// import drAkhter from "../assets/drAkhter.png";
+// import engrFazal from "../assets/engrFazal.png";
+// import habib from "../assets/habib.png";
+import drAkhter from "../assets/drAkhtertwo.png";
+import engrFazal from "../assets/engrFazaltwo.png";
+import habib from "../assets/habibtwo.png";
 
 import { motion } from "framer-motion";
 import TeamMemberCard from "./TeamSection/TeamMemberCard";
