@@ -151,19 +151,63 @@ function RemoteResources() {
             </div>
 
             {/* Duration of Hire */}
-            <div>
-              <label className="block text-gray-700 font-semibold">
-                Duration of Hire:
-              </label>
-              <select
-                {...register("durationOfHire", { required: true })}
-                className="w-full p-2 border border-gray-300 rounded-md"
-              >
-                <option>Less than 1 month</option>
-                <option>1-3 months</option>
-                <option>3-6 months</option>
-                <option>More than 6 months</option>
-              </select>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {/* Name of Expertise */}
+              <div>
+                <label className="block text-gray-700 font-semibold">
+                  Name of Expertise:
+                </label>
+                <select
+                  {...register("nameOfExpertise", { required: true })}
+                  className="w-full p-2 border border-gray-300 rounded-md"
+                >
+                  <option>Web Developer</option>
+                  <option>App Developer</option>
+                  <option>UI/UX Designer</option>
+                  <option>Social Media Marketer</option>
+                  <option>Content Management System</option>
+                  <option>Technical Supporter</option>
+                  <option>SEO Service</option>
+                  <option>Custom Software Developer</option>
+                  <option>Ecommerce Solution</option>
+                  <option>Digital Marketer</option>
+                  <option>IT Consultant</option>
+                  <option>Cyber Securitist</option>
+                </select>
+              </div>
+
+              {/* Number of Expertise */}
+              <div>
+                <label className="block text-gray-700 font-semibold">
+                  Number of Expertise:
+                </label>
+                <select
+                  {...register("numberOfExpertise", { required: true })}
+                  className="w-full p-2 border border-gray-300 rounded-md"
+                >
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+
+              {/* Duration of Hire */}
+              <div>
+                <label className="block text-gray-700 font-semibold">
+                  Duration of Hire:
+                </label>
+                <select
+                  {...register("durationOfHire", { required: true })}
+                  className="w-full p-2 border border-gray-300 rounded-md"
+                >
+                  <option>Less than 1 month</option>
+                  <option>1-3 months</option>
+                  <option>3-6 months</option>
+                  <option>More than 6 months</option>
+                </select>
+              </div>
             </div>
 
             {/* Start Date */}

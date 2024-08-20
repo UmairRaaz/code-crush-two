@@ -18,7 +18,7 @@ const TeamMemberCard = ({ links, status, image, name, role }) => {
             target="_blank"
             className="text-gray-600 hover:text-gray-400"
           >
-            <FaLinkedin size={20} />
+            <FaLinkedin size={23} />
           </a>
         </div>
 
