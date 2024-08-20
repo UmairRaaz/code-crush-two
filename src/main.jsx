@@ -24,6 +24,7 @@ import PrivacyPolicy from "./Pages/PrivacyPolicy.jsx";
 import TermsAndCondition from "./Pages/TermsAndCondition.jsx";
 import RemoteResources from "./Pages/RemoteResources.jsx";
 import AboutUs from "./Pages/AboutUs.jsx";
+import ViewServicesUpdated from "./Pages/ViewServicesUpdated.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -31,7 +32,7 @@ const router = createBrowserRouter(
       <Route path="" element={<MainPage />} />
       <Route path="/about" element={<AboutUs />} />
       <Route path="all-services" element={<AllServices />} />
-      <Route path='all-services/view-service/:serviceid' element={<ViewService/>}/>
+      <Route path='all-services/view-service/:serviceid' element={<ViewServicesUpdated/>}/>
       <Route path="all-projects" element={<AllProjects />} />
       <Route path='view-project/:projectid' element={<ViewProject/>}/>
       <Route path="all-blogs" element={<AllBlogs />} />

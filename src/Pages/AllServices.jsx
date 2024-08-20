@@ -9,7 +9,6 @@ import AllServiceCard from "../components/ServiceSection/AllServicesCard.jsx";
 
 const AllServices = () => {
   const navigate = useNavigate();
-  const allupdatesServices = [...services, ...industries, ...rAndDProjects]
   return (
     <div className="mt-20 bg-white">
       <div
@@ -31,7 +30,7 @@ const AllServices = () => {
       <LineEffect />
       <div className="w-[90%] md:max-w-6xl lg:max-w-7xl mx-auto gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10">
         {services.map((service, index) => (
-          <AllServiceCard key={index} image={service.image}  heading={service.title} desc={service.description}
+          <AllServiceCard deatiledServiceId={service.deatiledServiceId} key={index} image={service.image}  heading={service.title} desc={service.description}
           reverse={index % 2 === 0}
           />
         ))}

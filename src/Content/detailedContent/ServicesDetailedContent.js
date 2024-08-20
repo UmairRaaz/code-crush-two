@@ -1,4 +1,4 @@
-const servicesContent = [
+export const detailedservicesContent = [
   {
     id: 1,
     title: "UX/UI Design",

@@ -75,7 +75,7 @@ const ContactUs = () => {
                     <h1 className="text-2xl">Address :</h1>
                     <h1 className="font-light text-xl">
                       Al-Nawaz Arcade, Adjacent to Rawalpindi Urology Hospital,
-                      Murree Road, Rawalpindi
+                      Murree Road, Rawalpindi, Islamabad, Pakistan
                     </h1>
                   </div>
                 </div>

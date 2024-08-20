@@ -32,12 +32,14 @@ export const services = [
     {
       id: 1,
       image: webDevelopment,
+      deatiledServiceId: 3,
       title: "Web Development",
       description: "Creating responsive and dynamic websites that enhance user experience and drive engagement across all devices."
     },
     {
       id: 2,
       image: appDevelopment,
+      deatiledServiceId: 2,
       title: "App Development",
       description: "Designing and building intuitive mobile and web applications that meet your specific business needs and goals."
     },
@@ -45,23 +47,27 @@ export const services = [
       id: 3,
       image: UIUX,
       title: "UX/UI Design",
+      deatiledServiceId: 1,
       description: "Crafting intuitive and visually appealing interfaces that improve user satisfaction and interaction with your digital products."
     },
     {
       id: 4,
       image: socialMediaMarketing,
+      deatiledServiceId: 4,
       title: "Social Media Marketing",
       description: "Creating and managing targeted social media campaigns to build brand awareness, engage with your audience, and drive conversions."
     },
     {
       id: 5,
       image: cms,
+      deatiledServiceId: 8,
       title: "Content Management Systems (CMS)",
       description: "Developing and maintaining CMS platforms that simplify content management, publishing, and updates for your website."
     },
     {
       id: 6,
       image: technicalSupport,
+      deatiledServiceId: 1, //remaining
       title: "Technical Support",
       description: "Providing ongoing technical support to resolve issues promptly, ensuring the reliability and smooth operation of your systems."
     },
@@ -69,35 +75,41 @@ export const services = [
       id: 7,
       image: servicesImage,
       title: "SEO Services",
+      deatiledServiceId: 4, 
       description: "Enhancing your website’s search engine ranking with effective SEO techniques to drive organic traffic and improve visibility."
     },
     {
       id: 8,
       image: ecommerceSolution,
+      deatiledServiceId: 8, 
       title: "Custom Software Development",
       description: "Developing bespoke software solutions tailored to address unique business challenges and optimize operations."
     },
     {
       id: 9,
       image: ecommerceSolution,
+      deatiledServiceId: 7, 
       title: "E-Commerce Solutions",
       description: "Building and optimizing online stores with seamless shopping experiences to boost sales and customer loyalty."
     },
     {
       id: 10,
       image: socialMediaMarketing,
+      deatiledServiceId: 4, //remaing
       title: "Digital Marketing",
       description: "Implementing comprehensive digital strategies to increase your online presence, attract new customers, and drive growth."
     },
     {
       id: 11,
       image: technicalSupport,
+      deatiledServiceId: 6,
       title: "IT Consulting",
       description: "Providing expert advice and strategic recommendations to optimize your technology infrastructure and align it with your business goals."
     },
     {
       id: 12,
       image: Cybersecurity,
+      deatiledServiceId: 5,
       title: "Cybersecurity",
       description: "Studying advanced techniques to protect systems and data from cyber threats, ensuring the integrity and confidentiality of information."
     },
