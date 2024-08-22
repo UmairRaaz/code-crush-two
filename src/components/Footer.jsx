@@ -173,35 +173,35 @@ const Footer = () => {
                       target="_blank"
                       className=" hover:text-gray-400"
                     >
-                      <FaFacebook size={24} />
+                      <FaFacebook size={24} className="text-[#1877F2]"/>
                     </a>
                     <a
                       href="https://www.linkedin.com/company/codecrushtech/"
                       target="_blank"
                       className=" hover:text-gray-400"
                     >
-                      <FaLinkedin size={24} />
+                      <FaLinkedin size={24} className="text-[#0A66C2]" />
                     </a>
                     <a
                       href="https://www.instagram.com/codecrushtech/"
                       target="_blank"
                       className=" hover:text-gray-400"
                     >
-                      <FaInstagram size={24} />
+                      <FaInstagram size={24} className="text-[#E4405F]" />
                     </a>
                     <a
                       href="https://www.youtube.com/@codecrushtech"
                       target="_blank"
                       className=" hover:text-gray-400"
                     >
-                      <FaYoutube size={24} />
+                      <FaYoutube size={24} className="text-[#FF0000]" />
                     </a>
                     <a
                       href="https://www.tiktok.com/@codecrushtech"
                       target="_blank"
                       className=" hover:text-gray-400"
                     >
-                      <FaTiktok size={24} />
+                      <FaTiktok size={24} className="text-[#000000]" />
                     </a>
                   </div>
                 </div>

@@ -133,7 +133,7 @@ const CareerPage = () => {
                     <p className="text-gray-700">{position.description}</p>
                   </div>
                   <div>
-                    <NavLink to="/careers/apply" className="mt-4 text-white bg-[#4E148D] hover:bg-[#6828E8] rounded-full px-4 py-2">
+                    <NavLink to="/careers/apply" className="mt-4 text-white bg-[#4E148D] hover:bg-[#6828E8] outline-none rounded-full px-4 py-2">
                       Apply Now
                     </NavLink>
                   </div>
