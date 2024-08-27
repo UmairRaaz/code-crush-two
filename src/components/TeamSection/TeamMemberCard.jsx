@@ -12,7 +12,7 @@ const TeamMemberCard = ({ links, status, image, name, role }) => {
       </div>
       <div className="mt-4 px-4 text-gray-700">
         <div className="flex justify-between mb-1">
-          <h1 className="text-xl font-bold">{name}</h1>
+          <h1 className="text-xl font-bold text-center flex-1">{name}</h1>
           <a
             href={links}
             target="_blank"
@@ -22,10 +22,8 @@ const TeamMemberCard = ({ links, status, image, name, role }) => {
           </a>
         </div>
 
-        <p>
-          <i>
-            <span className="">{status}</span> & {role}
-          </i>
+        <p className="text-center">
+          {status} & {role}
         </p>
       </div>
     </div>
