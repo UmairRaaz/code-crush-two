@@ -31,13 +31,13 @@ function NavBar() {
   return (
     <div>
       <nav className="w-full nav backdrop-blur-xl py-4 shadow-md fixed top-0 left-0 z-[1000] bg-white">
-        <div className="flex justify-between flex-col md:flex-row items-center px-4 md:mx-auto lg:max-w-7xl md:px-10">
+        <div className="flex justify-between flex-col md:flex-row items-center px-4 md:px-0 md:mx-auto md:max-w:4xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl ">
           <div className="flex w-full md:w-auto justify-between items-center">
             {/* Logo */}
             <Link
               to="/"
               onClick={() => handleClick("/")}
-              className="flex items-center gap-x-4"
+              className="flex items-center "
             >
               <img src={NavbarLogo} alt="logo" className="w-[180px]" />
             </Link>

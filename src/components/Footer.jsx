@@ -164,7 +164,7 @@ const Footer = () => {
                     </li>
                     <li className="    ">
                       Al-Nawaz Arcade, Adjacent to Rawalpindi Urology Hospital,
-                      Murree Road, Rawalpindi
+                      Murree Road, Rawalpindi, Islamabad, Pakistan
                     </li>
                   </ul>
                   <div className="inline-flex px-4 py-1 rounded-xl gap-4 bg-white text-gray-600  mt-4 items-center">

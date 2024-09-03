@@ -64,7 +64,7 @@ function RemoteResources() {
           <h2 className="text-2xl font-semibold mb-6 text-center">
             Connect With Our Exceptionally Talented Remote Resources!
           </h2>
-          <p className="text-gray-600 mb-8 text-center">
+          <p className="text-gray-900 mb-8  text-justify">
             Codecrush Technologies leads the industry in offering exceptional remote resources across various sectors. We provide customized resources to meet your project requirements. Our flexible model allows you to specify the level of expertise and the timeframe you need. We will match you with an expert whose goals align perfectly with yours, no matter where you are located.
           </p>
 
