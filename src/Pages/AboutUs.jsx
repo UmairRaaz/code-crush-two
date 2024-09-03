@@ -1,12 +1,13 @@
 import aboutUs from "../assets/aboutUs.webp";
 import aboutImage from "../assets/aboutImage.webp";
-import habibImage from "../assets/habib.png";
+import habibImage from "../assets/habibtwo.png";
 import LineEffect from "../components/Buttons/LineEffect";
+import codeCrushLogo from "../assets/navbarLogo.svg"
 import { FaLinkedin } from "react-icons/fa";
 
 const AboutUs = () => {
   return (
-    <div className="mt-20 bg-white">
+    <div className="py-20 bg-gray-100">
       <div
         className="relative h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
         style={{
@@ -27,13 +28,13 @@ const AboutUs = () => {
       </h1>
       <LineEffect />
       <div className="mb-20 mt-10">
-        <div className="w-[80%] mx-auto ">
+        <div className="w-[90%] md:max-w:4xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mx-auto ">
           <div className="w-full flex md:flex-row flex-col gap-x-10  text-justify">
             <div className="w-full md:w-[30%] ">
               <img
                 src={habibImage}
                 alt="CEO-Image"
-                className="w-72 rounded-md shadow-2xl"
+                className="w-72 rounded-full object-cover shadow-2xl"
               />
             </div>
             <div className="w-full mt-5 md:mt-0 md:w-[70%]">
@@ -89,14 +90,15 @@ const AboutUs = () => {
                 to your company&apos;s needs.
               </p>
             </div>
-            <h1 className=" w-full md:w-[70%] text-5xl pt-10 mb-6 font-bold text-center font-googleFonts text-gray-700">
+            <h1 className=" w-full md:w-[70%] text-6xl pt-10 mb-6 font-bold text-center font-googleFonts text-gray-700">
               Why Partner with Code Crush Tech?
             </h1>
           </div>
           <div className="flex my-8 md:my-20  flex-col md:flex-row gap-x-12">
-            <h4 className=" w-full md:w-[30%] text-5xl text-black  font-semibold">
-              Code Crush Technologies
-            </h4>
+            <div className=" w-full md:w-[30%] text-5xl text-black  font-semibold">
+              <img src={codeCrushLogo} alt="logo" className="w-full h-full" />
+            </div>
+            
             <div className="flex w-full mt-4 md:mt-0 md:w-[70%] items-center justify-center ">
               <p className="text-black text-justify">
                 Code Crush Technologies provides innovative software solutions
@@ -109,7 +111,7 @@ const AboutUs = () => {
           </div>
           <div className="flex my-8 md:my-20 gap-y-8 md:gap-y-0 flex-col md:flex-row gap-x-12">
             <div className="w-full md:w-[70%]">
-              <h4 className="text-5xl text-gray-800  font-semibold">Mission</h4>
+              <h4 className="text-6xl text-gray-800  font-semibold">Mission</h4>
               <p className="text-black text-lg mt-4 text-justify">
                 Our mission is to develop innovative Ideas and maintain their
                 highest quality standards and best practices in the current
@@ -126,7 +128,7 @@ const AboutUs = () => {
           </div>
           <div className="flex my-8 md:my-20  flex-col md:flex-row gap-x-12">
             <div className="w-full md:w-[30%]">
-              <h4 className="text-5xl text-gray-800 mb-2 mt-8  font-semibold">
+              <h4 className="text-6xl text-gray-800 mb-2 mt-8  font-semibold">
                 Objective
               </h4>
             </div>
