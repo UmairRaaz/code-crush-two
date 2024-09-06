@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
-const AllServicesCard = ({ image, heading, desc, deatiledServiceId }) => {
+const AllServicesCard = ({ image, heading, desc, deatiledServiceId, page }) => {
   const controls = useAnimation();
   const { ref, inView } = useInView();
   useEffect(() => {
@@ -20,7 +20,7 @@ const AllServicesCard = ({ image, heading, desc, deatiledServiceId }) => {
     >
       <div
         className="rounded-xl bg-gray-100/70 mx-auto md:pb-2  overflow-hidden shadow-lg h-96 cursor-pointer"
-        onClick={() => navigate(`view-service/${deatiledServiceId}`)}
+        onClick={() => navigate(`${page}/${deatiledServiceId}`)}
       >
         <div className="flex flex-col h-full">
           <div className="h-1/2" ref={ref}>

@@ -169,54 +169,63 @@ export const services = [
   export const rAndDProjects = [
     {
       id: 20,
+      linkid : 0,
       image: ArtificialIntelligence,
       title: "Artificial Intelligence (AI)",
       description: "Exploring advanced algorithms and models to create intelligent systems that can learn, reason, and make decisions autonomously."
     },
     {
       id: 21,
+      linkid : 1,
       image: MachineLearning,
       title: "Machine Learning (ML)",
       description: "Developing techniques for algorithms to analyze data, recognize patterns, and make predictions without explicit programming."
     },
     {
       id: 22,
+      linkid : 2,
       image: NaturalLanguageProcessing,
       title: "Natural Language Processing (NLP)",
       description: "Researching methods for computers to understand, interpret, and generate human language, improving communication between people and machines."
     },
     {
       id: 23,
+      linkid : 3,
       image: BlockchainTechnology,
       title: "Blockchain Technology",
       description: "Investigating decentralized ledger systems to enhance security, transparency, and trust in digital transactions and data management."
     },
     {
       id: 24,
+      linkid : 4,
       image: Cybersecurity,
       title: "Cybersecurity",
       description: "Studying advanced techniques to protect systems and data from cyber threats, ensuring the integrity and confidentiality of information."
     },
     {
       id: 25,
+      linkid : 5,
       image: RoboticProcessAutomation,
       title: "Robotic Process Automation (RPA)",
       description: "Studying automation of repetitive tasks through software robots to increase efficiency and reduce operational costs."
     },
     {
       id: 26,
+      linkid : 6,
       image: QuantumComputing,
       title: "Quantum Computing",
       description: "Exploring quantum mechanics-based computing technologies to solve complex problems beyond the capabilities of classical computers."
     },
     {
       id: 27,
+      linkid : 7,
       image: InternetofThings,
       title: "Internet of Things (IoT)",
       description: "Researching the integration of smart devices and sensors to create interconnected systems that enable data collection and automation."
     },
     {
       id: 28,
+      linkid : 8,
       image: EdgeComputing,
       title: "Edge Computing",
       description: "Researching decentralized processing of data closer to its source to reduce latency and improve performance in real-time applications."

@@ -10,7 +10,7 @@ import AllServiceCard from "../components/ServiceSection/AllServicesCard.jsx";
 const AllServices = () => {
   const navigate = useNavigate();
   return (
-    <div className="mt-20 bg-white">
+    <div className="my-20 bg-white">
       <div
         className="relative h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
         style={{
@@ -30,7 +30,7 @@ const AllServices = () => {
       <LineEffect />
       <div className="w-[90%] md:max-w-6xl lg:max-w-7xl mx-auto gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10">
         {services.map((service, index) => (
-          <AllServiceCard deatiledServiceId={service.deatiledServiceId} key={index} image={service.image}  heading={service.title} desc={service.description}
+          <AllServiceCard page={"view-service"} deatiledServiceId={service.deatiledServiceId} key={index} image={service.image}  heading={service.title} desc={service.description}
           reverse={index % 2 === 0}
           />
         ))}
@@ -41,7 +41,7 @@ const AllServices = () => {
       <LineEffect />
       <div className="w-[90%] md:max-w-6xl lg:max-w-7xl mx-auto gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10">
         {industries.map((service, index) => (
-          <AllServiceCard key={index} image={service.image}  heading={service.title} desc={service.description}
+          <AllServiceCard page={"view-industries"} key={index} image={service.image}  heading={service.title} desc={service.description}
           reverse={index % 2 === 0}
           />
         ))}
@@ -52,7 +52,7 @@ const AllServices = () => {
       <LineEffect />
       <div className="w-[90%] md:max-w-6xl lg:max-w-7xl mx-auto gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10">
         {rAndDProjects.map((service, index) => (
-          <AllServiceCard key={index} image={service.image}  heading={service.title} desc={service.description}
+          <AllServiceCard key={index} page={"view-research-and-development"} deatiledServiceId={service.linkid} image={service.image}  heading={service.title} desc={service.description}
           reverse={index % 2 === 0}
           />
         ))}
