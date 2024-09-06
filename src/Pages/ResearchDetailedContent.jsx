@@ -61,17 +61,17 @@ const ResearchDetailedContent = () => {
             {data.howHelp.list.map((item, index) => (
               <div
                 key={index}
-                className="bg-white py-8  px-6 shadow-lg rounded-lg"
+                className="bg-white py-8 h-80  px-6 shadow-lg rounded-lg"
               >
                 <img
                   src={item.image}
                   alt={item.heading}
-                  className=" w-16 mx-auto  mb-4 rounded-2xl p-1  shadow-xl object-contain"
+                  className="w-16 h-[20%] mx-auto  mb-4 rounded-2xl p-1  shadow-xl object-contain"
                 />
-                <h3 className="text-xl font-medium text-center">
+                <h3 className="text-xl  h-[20%] font-medium text-center">
                   {item.heading}
                 </h3>
-                <p className="text-base mt-2 text-center">{item.description}</p>
+                <p className="text-base mt-2 h-[60%] text-center">{item.description}</p>
               </div>
             ))}
           </div>

@@ -176,11 +176,6 @@ export const researhAndDevelopmentContent = [
             "Our highly professional developer and expert assists in crafting optimized software designs and automates portions of the coding process, accelerating development and reducing errors for efficient and scalable solutions.",
         },
         {
-          title: "Design and Development",
-          heading:
-            "Our highly professional developer and expert assists in crafting optimized software designs and automates portions of the coding process, accelerating development and reducing errors for efficient and scalable solutions.",
-        },
-        {
           title: "Testing",
           heading:
             "We implement AI-driven testing frameworks to simulate diverse scenarios, ensuring rigorous quality assurance by identifying and resolving issues in real-time.",

@@ -2,7 +2,7 @@ import aboutUs from "../assets/aboutUs.webp";
 import aboutImage from "../assets/aboutImage.webp";
 import habibImage from "../assets/habibtwo.png";
 import LineEffect from "../components/Buttons/LineEffect";
-import codeCrushLogo from "../assets/navbarLogo.svg"
+import codeCrushLogo from "../assets/navbarLogo.svg";
 import { FaLinkedin } from "react-icons/fa";
 
 const AboutUs = () => {
@@ -74,7 +74,7 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="flex my-4 md:my-20 flex-col-reverse md:flex-row gap-x-8">
-            <div className="w-full md:w-[70%]">
+            <div className="w-full md:w-[50%]">
               <p className="text-md text-justify text-black mb-2">
                 With our dynamic and professional development team and their
                 high quality services, the excellent soft solution can be
@@ -90,15 +90,15 @@ const AboutUs = () => {
                 to your company&apos;s needs.
               </p>
             </div>
-            <h1 className=" w-full md:w-[70%] text-6xl pt-10 mb-6 font-bold text-center font-googleFonts text-gray-700">
-              Why Partner with Code Crush Tech?
+            <h1 className="border border-gray-700 flex items-center justify-center rounded-full w-full md:w-[50%] text-6xl  mb-6 font-bold text-center font-googleFonts text-gray-700">
+              Why Code Crush Tech?
             </h1>
           </div>
           <div className="flex my-8 md:my-20  flex-col md:flex-row gap-x-12">
             <div className=" w-full md:w-[30%] text-5xl text-black  font-semibold">
               <img src={codeCrushLogo} alt="logo" className="w-full h-full" />
             </div>
-            
+
             <div className="flex w-full mt-4 md:mt-0 md:w-[70%] items-center justify-center ">
               <p className="text-black text-justify">
                 Code Crush Technologies provides innovative software solutions
