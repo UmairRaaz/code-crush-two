@@ -1,7 +1,21 @@
+import appdevelopment from "../../assets/serviceContentSection/appdevelopment.png"
+import cms from "../../assets/serviceContentSection/cms.png"
+import customsoftwaresuloutojn from "../../assets/serviceContentSection/customsoftwaresuloutojn.png"
+import cybersecurity from "../../assets/serviceContentSection/cybersecurity.png"
+import digitalmarketing2 from "../../assets/serviceContentSection/digitalmarketing-2.png"
+import Itconsulting from "../../assets/serviceContentSection/Itconsulting.png"
+import onlinestoreecommerece from "../../assets/serviceContentSection/onlinestoreecommerece.png"
+import seo from "../../assets/serviceContentSection/seo.png"
+import socialmediamarketing from "../../assets/serviceContentSection/socialmediamarketing.png"
+import technicalsupport from "../../assets/serviceContentSection/technicalsupport.png"
+import uiuxdesign from "../../assets/serviceContentSection/uiuxdesign.png"
+import webdevelopment from "../../assets/serviceContentSection/webdevelopment.png"
+
 export const detailedservicesContent = [
   {
     id: 1,
     title: "UX/UI Design",
+    banner: uiuxdesign,
     headline: "Bringing Ideas to Life—From Concept to Launch",
     description:
       "At Codecrush Technologies, we turn visionary concepts into exceptional digital experiences. Our UX/UI design services are built on scalable, sustainable, and innovative solutions tailored to your unique needs.",
@@ -43,6 +57,7 @@ export const detailedservicesContent = [
   },
   {
     id: 2,
+    banner : appdevelopment,
     title: "Mobile App Development",
     heading: "Transform Your Idea into a Reality",
     description:
@@ -80,6 +95,7 @@ export const detailedservicesContent = [
   {
     id: 3,
     title: "Web Development",
+    banner: webdevelopment,
     heading: "Crafting Digital Experiences That Drive Results",
     description:
       "Our web development team is dedicated to delivering exceptional digital solutions that align with your business objectives. We combine strategic thinking, design excellence, and cutting-edge technology to create websites and web applications that captivate audiences and drive growth.",
@@ -116,6 +132,7 @@ export const detailedservicesContent = [
   {
     id: 4,
     title: "Digital Marketing & SEO",
+    banner : seo,
     heading: "Driving Growth Through Digital Transformation",
     description:
       "Our digital marketing and SEO experts are dedicated to helping businesses achieve their online goals. We offer a comprehensive range of services to increase brand visibility, drive traffic, and generate leads.",
@@ -151,6 +168,7 @@ export const detailedservicesContent = [
   {
     id: 5,
     title: "Cyber Security Solutions",
+    banner : cybersecurity,
     heading: "Fortifying Your Digital Fortress",
     description:
       "In today's threat-filled digital landscape, robust cybersecurity is paramount. Our team of experts provides comprehensive security solutions to safeguard your organization's critical assets.",
@@ -185,6 +203,7 @@ export const detailedservicesContent = [
   {
     id: 6,
     title: "IT Consulting & Support Services",
+    banner: Itconsulting,
     heading: "Optimize Your IT Infrastructure for Success",
     description:
       "Our IT consulting and support services are designed to empower your business through effective technology solutions. We offer a comprehensive range of services to help you achieve your strategic goals.",
@@ -218,6 +237,7 @@ export const detailedservicesContent = [
   {
     id: 7,
     title: "E-commerce Solutions",
+    banner : onlinestoreecommerece,
     heading: "Drive Sales and Growth with Exceptional Online Stores",
     description:
       "Our e-commerce solutions help businesses of all sizes thrive in the digital marketplace. We combine strategic thinking, design expertise, and technical proficiency to create online stores that deliver exceptional customer experiences and drive revenue growth.",
@@ -252,6 +272,7 @@ export const detailedservicesContent = [
   {
     id: 8,
     title: "Custom Software & CMS Solutions",
+    banner: cms,
     heading: "Tailored Technology for Your Unique Needs",
     description:
       "Our team of skilled software engineers specializes in crafting custom software and content management systems (CMS) that perfectly align with your business objectives. We deliver innovative solutions that streamline operations, enhance efficiency, and drive growth.",

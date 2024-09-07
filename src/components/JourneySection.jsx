@@ -23,20 +23,20 @@ const JourneySection = () => {
     },
     {
       icon: globalOffice,
-      label: "Global offices",
+      label: "Local offices",
       value: 4,
       prefix: "",
     },
     {
       icon: projectsCompleted,
       label: "Projects completed",
-      value: 30,
+      value: 10,
       prefix: "+",
     },
     {
       icon: clutchRating,
       label: "Clutch rating",
-      value: 4.9,
+      value: 4,
       prefix: "",
     },
   ];

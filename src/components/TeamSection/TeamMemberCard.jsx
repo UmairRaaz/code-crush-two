@@ -22,7 +22,7 @@ const TeamMemberCard = ({ links, status, image, name, role }) => {
           </a>
         </div>
 
-        <p className="text-center">
+        <p className="text-center text-nowrap">
           {status} & {role}
         </p>
       </div>
