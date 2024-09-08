@@ -36,25 +36,31 @@ const ViewServicesUpdated = () => {
           </p>
         </div>
 
-        {serviceContent.sections.map((section) => (
-          <div
-            key={section.title}
-            id={section.title.toLowerCase()}
-            className=""
-          >
-            <p className="mt-10 text-3xl text-center text-black font-bold">
-              {section.description}
-            </p>
-            <ul className="mt-6 space-y-4">
-              {section.details.map((detail, index) => (
-                <li key={index} className="text-black text-xl flex items-start">
-                  <span className="mr-2 text-indigo-500">•</span>
-                  {detail}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+        {serviceContent &&
+          serviceContent.sections &&
+          serviceContent.sections.length > 0 &&
+          serviceContent.sections.map((section) => (
+            <div
+              key={section.title}
+              id={section.title.toLowerCase()}
+              className=""
+            >
+              <p className="mt-10 text-3xl text-center text-black font-bold">
+                {section.description}
+              </p>
+              <ul className="mt-6 space-y-4">
+                {section.details.map((detail, index) => (
+                  <li
+                    key={index}
+                    className="text-black text-xl flex items-start"
+                  >
+                    <span className="mr-2 text-indigo-500">•</span>
+                    {detail}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
 
         <div className="bg-indigo-50 p-6 mt-20 rounded-lg shadow-lg text-center">
           <p className="text-lg font-semibold text-[#4E148D]">

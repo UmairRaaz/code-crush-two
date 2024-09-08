@@ -4,7 +4,10 @@ import habibImage from "../assets/habibtwo.png";
 import LineEffect from "../components/Buttons/LineEffect";
 import codeCrushLogo from "../assets/navbarLogo.svg";
 import { FaLinkedin } from "react-icons/fa";
-
+import logo from "../assets/aboutUs/logo.svg"
+import mission from "../assets/aboutUs/mission.svg"
+import objective from "../assets/aboutUs/objective.svg"
+import whycodecrush from "../assets/aboutUs/whycodecrush.svg"
 const AboutUs = () => {
   return (
     <div className="py-20 bg-gray-100">
@@ -27,7 +30,7 @@ const AboutUs = () => {
         CEO Message
       </h1>
       <LineEffect />
-      <div className="mb-20 mt-10">
+      <div className="mb-20 mt-10 px-4 md:px-0">
         <div className="w-[90%] md:max-w:4xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mx-auto ">
           <div className="w-full flex md:flex-row flex-col gap-x-10  text-justify">
             <div className="w-full md:w-[30%] ">
@@ -90,13 +93,13 @@ const AboutUs = () => {
                 to your company&apos;s needs.
               </p>
             </div>
-            <h1 className="border border-gray-700 flex items-center justify-center rounded-full w-full md:w-[50%] text-6xl  mb-6 font-bold text-center font-googleFonts text-gray-700">
-              Why Code Crush Tech?
-            </h1>
+            <div className="w-full flex items-center justify-center my-4 md:my-0 md:w-[50%]">
+              <img src={whycodecrush} alt="whycodecrush"  className="w-72"/>
+            </div>
           </div>
           <div className="flex my-8 md:my-20  flex-col md:flex-row gap-x-12">
             <div className=" w-full md:w-[30%] text-5xl text-black  font-semibold">
-              <img src={codeCrushLogo} alt="logo" className="w-full h-full" />
+              <img src={logo} alt="logo" className="w-80" />
             </div>
 
             <div className="flex w-full mt-4 md:mt-0 md:w-[70%] items-center justify-center ">
@@ -110,8 +113,7 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="flex my-8 md:my-20 gap-y-8 md:gap-y-0 flex-col md:flex-row gap-x-12">
-            <div className="w-full md:w-[70%]">
-              <h4 className="text-6xl text-gray-800  font-semibold">Mission</h4>
+            <div className="w-full md:w-[70%] flex items-center justify-center">
               <p className="text-black text-lg mt-4 text-justify">
                 Our mission is to develop innovative Ideas and maintain their
                 highest quality standards and best practices in the current
@@ -120,19 +122,21 @@ const AboutUs = () => {
             </div>
             <div className="w-full md:w-1/2 flex justify-center ">
               <img
-                src={aboutImage}
+                src={mission}
                 alt="ceo-image"
-                className="w-full md:w-60 max-h-72 object-cover rounded shadow-xl"
+                className="w-full md:w-60 max-h-72 "
               />
             </div>
           </div>
           <div className="flex my-8 md:my-20  flex-col md:flex-row gap-x-12">
             <div className="w-full md:w-[30%]">
-              <h4 className="text-6xl text-gray-800 mb-2 mt-8  font-semibold">
-                Objective
-              </h4>
+            <img
+                src={objective}
+                alt="ceo-image"
+                className="w-full md:w-60 max-h-72 "
+              />
             </div>
-            <div className="w-full md:w-[70%] mt-4 md:mt-0  flex justify-center ">
+            <div className="w-full md:w-[70%] mt-4 md:mt-8  flex justify-center ">
               <ul className="list-disc text-justify">
                 <li className="text-black ">
                   To provide fast solutions to our customers using emerging

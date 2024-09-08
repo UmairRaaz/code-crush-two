@@ -1,15 +1,15 @@
-import appdevelopment from "../../assets/serviceContentSection/appdevelopment.png"
-import cms from "../../assets/serviceContentSection/cms.png"
-import customsoftwaresuloutojn from "../../assets/serviceContentSection/customsoftwaresuloutojn.png"
-import cybersecurity from "../../assets/serviceContentSection/cybersecurity.png"
-import digitalmarketing2 from "../../assets/serviceContentSection/digitalmarketing-2.png"
-import Itconsulting from "../../assets/serviceContentSection/Itconsulting.png"
-import onlinestoreecommerece from "../../assets/serviceContentSection/onlinestoreecommerece.png"
-import seo from "../../assets/serviceContentSection/seo.png"
-import socialmediamarketing from "../../assets/serviceContentSection/socialmediamarketing.png"
-import technicalsupport from "../../assets/serviceContentSection/technicalsupport.png"
-import uiuxdesign from "../../assets/serviceContentSection/uiuxdesign.png"
-import webdevelopment from "../../assets/serviceContentSection/webdevelopment.png"
+import appdevelopment from "../../assets/serviceContentSection/appdevelopment.webp"
+import cms from "../../assets/serviceContentSection/cms.webp"
+import customsoftwaresuloutojn from "../../assets/serviceContentSection/customsoftwaresuloutojn.webp"
+import cybersecurity from "../../assets/serviceContentSection/cybersecurity.webp"
+import digitalmarketing2 from "../../assets/serviceContentSection/digitalmarketing.webp"
+import Itconsulting from "../../assets/serviceContentSection/itconsulting.webp"
+import onlinestoreecommerece from "../../assets/serviceContentSection/onlinestoreecommerece.webp"
+import seo from "../../assets/serviceContentSection/seo.webp"
+import socialmediamarketing from "../../assets/serviceContentSection/socialmediamarketing.webp"
+import technicalsupport from "../../assets/serviceContentSection/technicalsupport.webp"
+import uiuxdesign from "../../assets/serviceContentSection/uiuxdesign.webp"
+import webdevelopment from "../../assets/serviceContentSection/webdevelopment.webp"
 
 export const detailedservicesContent = [
   {
@@ -302,6 +302,71 @@ export const detailedservicesContent = [
     callToAction: "Contact Us",
     partnerWithUs:
       "We are committed to delivering software solutions that drive your business forward. Let us transform your ideas into reality.",
+  },
+  {
+    id: 9,
+    title: "Technical Services",
+    banner: technicalsupport,
+    heading: "Tailored Technology for Your Unique Needs",
+    description:
+      "CodeCrush Technologies Technical Support and Services provide businesses with reliable, end-to-end assistance for managing their IT infrastructure and resolving technical issues efficiently. Our expert team offers proactive monitoring, troubleshooting, and maintenance to ensure that your systems run smoothly and securely. We deliver customized solutions, from software updates and hardware support to network optimization and cybersecurity management, tailored to meet the specific needs of your business. With CodeCrush, you can minimize downtime, enhance system performance, and receive 24/7 support to address technical challenges swiftly and effectively.",
+    // sections: [
+    //   {
+    //     title: "Our Approach",
+    //     details: [
+    //       "Requirements Analysis: Gathering and analyzing your business requirements to define the project scope.",
+    //       "Software Design and Architecture: Designing scalable and flexible software architecture.",
+    //       "Custom Software Development: Building custom software solutions tailored to your specific needs.",
+    //       "CMS Development: Developing and customizing content management systems for efficient content management.",
+    //       "Integration: Integrating the software with existing systems and third-party applications.",
+    //       "Quality Assurance and Testing: Rigorous testing to ensure software quality and reliability.",
+    //       "Deployment and Support: Seamlessly deploying the software and providing ongoing support and maintenance.",
+    //     ],
+    //   },
+    //   {
+    //     title: "Core Competencies",
+    //     details: [
+    //       "Web Application Development: Creating dynamic and interactive web applications.",
+    //       "Mobile App Development: Developing mobile apps that complement your software solutions.",
+    //       "Database Design and Development: Designing and implementing efficient databases.",
+    //       "Cloud Integration: Leveraging cloud platforms for scalability and performance.",
+    //     ],
+    //   },
+    // ],
+    callToAction: "Contact Us",
+    partnerWithUs:
+      "Questions? Don’t Hesitate Let’s talk.Contact our advisor to get the assistance and solutions you’re looking for",
+  },
+  {
+    id: 10,
+    title: "Social Media consulting & development services",
+    banner: socialmediamarketing,
+    heading: "Social Media consulting & development services",
+    description:
+      "Social media consulting and development services help businesses leverage the power of social platforms to build brand awareness, engage with customers, and drive growth. Our team crafts customized social media strategies, develops tailored content, and optimizes campaigns to reach your target audience effectively. We provide solutions for social media management, analytics, and automation, ensuring a seamless experience across platforms like Facebook, Instagram, LinkedIn, and more. With CodeCrush, you can boost your online presence, foster meaningful customer relationships, and turn social engagement into measurable business success.",
+    sections: [
+      {
+        title: "Our Approach",
+        details: [
+          "Our team of experts begin by understanding your business goals, target audience, and brand identity. Based on this, we craft a tailored social media strategy designed to maximize engagement, reach, and growth across the most relevant platforms.",
+          "Our team creates compelling, platform-specific content and implements targeted ad campaigns to ensure your message resonates with your audience, driving meaningful interactions and conversions.",
+          "Our experts continuously monitor performance metrics, analyze results, and adjust strategies to optimize engagement, maximize ROI, and ensure your social media efforts align with your evolving business objectives",
+        ],
+      },
+      {
+        title: "How CodeCrush Technologies can help your business using social media",
+        details: [
+          "Our team creates tailored social media strategies to increase your brand’s visibility across key platforms, ensuring that your business reaches the right audience effectively",
+          "Our team develops engaging content and manages interactions to foster meaningful relationships with your customers, improving loyalty and satisfaction",
+          "We analyze performance metrics to optimize social media campaigns, ensuring maximum ROI through targeted ads and organic growth strategies.",
+          "CodeCrush provides tools and services to automate content scheduling, monitor engagement, and manage multiple accounts efficiently, saving your team time and effort.",
+          "By leveraging social media marketing, we help you attract new customers, increase conversions, and drive measurable business outcomes from your social media presence",
+        ],
+      },
+    ],
+    callToAction: "Contact Us",
+    partnerWithUs:
+      "Contact our social media experts",
   },
 ];
 

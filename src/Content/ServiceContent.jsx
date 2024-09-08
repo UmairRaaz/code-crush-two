@@ -67,7 +67,7 @@ export const services = [
     {
       id: 6,
       image: technicalSupport,
-      deatiledServiceId: 1, //remaining
+      deatiledServiceId: 9, // complete
       title: "Technical Support",
       description: "Providing ongoing technical support to resolve issues promptly, ensuring the reliability and smooth operation of your systems."
     },
@@ -95,7 +95,7 @@ export const services = [
     {
       id: 10,
       image: socialMediaMarketing,
-      deatiledServiceId: 4, //remaing
+      deatiledServiceId: 10, //remaing
       title: "Digital Marketing",
       description: "Implementing comprehensive digital strategies to increase your online presence, attract new customers, and drive growth."
     },
@@ -119,23 +119,27 @@ export const services = [
     {
       id: 12,
       image: Travel,
+      deatiledServiceId: 1,
       title: "Travel",
       description: "Enhancing travel experiences with innovative solutions for booking, itinerary management, and personalized recommendations."
     },
     {
       id: 13,
       image: Healthcare,
+      deatiledServiceId: 2,
       title: "Healthcare",
       description: "Delivering advanced technology to improve patient care, streamline administrative processes, and support medical research."
     },
     {
       id: 14,
       image: Education,
+      deatiledServiceId: 3,
       title: "Education",
       description: "Transforming learning environments with e-learning platforms, interactive tools, and digital resources to engage students and educators."
     },
     {
       id: 15,
+      deatiledServiceId: 4,
       image: Retail,
       title: "Retail",
       description: "Optimizing retail operations with e-commerce platforms, inventory management systems, and customer engagement tools."
@@ -143,6 +147,7 @@ export const services = [
     {
       id: 16,
       image: Healthcare,
+      deatiledServiceId: 5,
       title: "Hospitality",
       description: "Enhancing guest experiences with booking systems, property management solutions, and personalized service tools."
     },
@@ -150,17 +155,20 @@ export const services = [
       id: 17,
       image: realState,
       title: "Real Estate",
+      deatiledServiceId: 6,
       description: "Enhancing property management and sales with digital tools for listings, virtual tours, and customer relationship management."
     },
     {
       id: 18,
       image: food,
+      deatiledServiceId: 7,
       title: "Food & Beverage",
       description: "Streamlining operations with inventory management, supply chain solutions, and customer engagement tools to boost efficiency and customer satisfaction."
     },
     {
       id: 19,
       image: Fashion,
+      deatiledServiceId: 8,
       title: "Fashion",
       description: "Revolutionizing the fashion industry with e-commerce platforms, virtual fitting rooms, and trend analysis tools to enhance customer experience and market responsiveness."
     }

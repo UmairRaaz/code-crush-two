@@ -26,6 +26,7 @@ import RemoteResources from "./Pages/RemoteResources.jsx";
 import AboutUs from "./Pages/AboutUs.jsx";
 import ViewServicesUpdated from "./Pages/ViewServicesUpdated.jsx";
 import ResearchDetailedContent from "./Pages/ResearchDetailedContent.jsx";
+import IndustriesDetailedPage from "./Pages/IndustriesDetailed.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -34,6 +35,7 @@ const router = createBrowserRouter(
       <Route path="/about" element={<AboutUs />} />
       <Route path="all-services" element={<AllServices />} />
       <Route path='all-services/view-service/:serviceid' element={<ViewServicesUpdated/>}/>
+      <Route path='all-services/view-industries/:serviceid' element={<IndustriesDetailedPage/>}/>
       <Route path='all-services/view-research-and-development/:serviceid' element={<ResearchDetailedContent/>}/>
       <Route path="all-projects" element={<AllProjects />} />
       <Route path='view-project/:projectid' element={<ViewProject/>}/>
