@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 import logo from "../assets/aboutUs/companyLogo.svg"
 import mission from "../assets/aboutUs/missionLogo.svg"
 import objective from "../assets/aboutUs/objectiveLogo.svg"
-import whycodecrush from "../assets/aboutUs/whyCodeCrush.svg"
+import whycodecrush from "../assets/aboutUs/whycodecrush.svg"
 const AboutUs = () => {
   return (
     <div className="py-1 bg-gray-100">
