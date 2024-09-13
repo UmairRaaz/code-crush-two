@@ -1,16 +1,14 @@
 import aboutUs from "../assets/aboutUs.webp";
-import aboutImage from "../assets/aboutImage.webp";
-import habibImage from "../assets/habibtwo.png";
+import habibImage from "../assets/aboutUs/ceoImage.svg";
 import LineEffect from "../components/Buttons/LineEffect";
-import codeCrushLogo from "../assets/navbarLogo.svg";
 import { FaLinkedin } from "react-icons/fa";
-import logo from "../assets/aboutUs/logo.svg"
-import mission from "../assets/aboutUs/mission.svg"
-import objective from "../assets/aboutUs/objective.svg"
-import whycodecrush from "../assets/aboutUs/whycodecrush.svg"
+import logo from "../assets/aboutUs/companyLogo.svg"
+import mission from "../assets/aboutUs/missionLogo.svg"
+import objective from "../assets/aboutUs/objectiveLogo.svg"
+import whycodecrush from "../assets/aboutUs/whyCodeCrush.svg"
 const AboutUs = () => {
   return (
-    <div className="py-20 bg-gray-100">
+    <div className="py-1 bg-gray-100">
       <div
         className="relative h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
         style={{
@@ -30,14 +28,14 @@ const AboutUs = () => {
         CEO Message
       </h1>
       <LineEffect />
-      <div className="mb-20 mt-10 px-4 md:px-0">
+      <div className="mb-14 mt-10 px-4 md:px-0">
         <div className="w-[90%] md:max-w:4xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mx-auto ">
           <div className="w-full flex md:flex-row flex-col gap-x-10  text-justify">
             <div className="w-full md:w-[30%] ">
               <img
                 src={habibImage}
                 alt="CEO-Image"
-                className="w-72 rounded-full object-cover shadow-2xl"
+                className="w-72 "
               />
             </div>
             <div className="w-full mt-5 md:mt-0 md:w-[70%]">
@@ -76,7 +74,7 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-          <div className="flex my-4 md:my-20 flex-col-reverse md:flex-row gap-x-8">
+          <div className="flex my-4 md:my-10 md:mt-20 flex-col-reverse md:flex-row gap-x-8">
             <div className="w-full md:w-[50%]">
               <p className="text-md text-justify text-black mb-2">
                 With our dynamic and professional development team and their
@@ -97,7 +95,7 @@ const AboutUs = () => {
               <img src={whycodecrush} alt="whycodecrush"  className="w-72"/>
             </div>
           </div>
-          <div className="flex my-8 md:my-20  flex-col md:flex-row gap-x-12">
+          <div className="flex my-8 md:my-10  flex-col md:flex-row gap-x-12">
             <div className=" w-full md:w-[30%] text-5xl text-black  font-semibold">
               <img src={logo} alt="logo" className="w-80" />
             </div>
@@ -112,7 +110,7 @@ const AboutUs = () => {
               </p>
             </div>
           </div>
-          <div className="flex my-8 md:my-20 gap-y-8 md:gap-y-0 flex-col md:flex-row gap-x-12">
+          <div className="flex my-8 md:my-10 gap-y-8 md:gap-y-0 flex-col md:flex-row gap-x-12">
             <div className="w-full md:w-[70%] flex items-center justify-center">
               <p className="text-black text-lg mt-4 text-justify">
                 Our mission is to develop innovative Ideas and maintain their
@@ -128,7 +126,7 @@ const AboutUs = () => {
               />
             </div>
           </div>
-          <div className="flex my-8 md:my-20  flex-col md:flex-row gap-x-12">
+          <div className="flex my-8 md:my-10  flex-col md:flex-row gap-x-12">
             <div className="w-full md:w-[30%]">
             <img
                 src={objective}
@@ -136,7 +134,7 @@ const AboutUs = () => {
                 className="w-full md:w-60 max-h-72 "
               />
             </div>
-            <div className="w-full md:w-[70%] mt-4 md:mt-8  flex justify-center ">
+            <div className="w-full md:w-[70%] mt-4 md:mt-8   flex justify-center ">
               <ul className="list-disc text-justify">
                 <li className="text-black ">
                   To provide fast solutions to our customers using emerging

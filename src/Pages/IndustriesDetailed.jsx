@@ -68,10 +68,10 @@ const IndustriesDetailedPage = () => {
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-3">
             {data.offering.list.map((item, index) => (
               <div key={index} className="border rounded-lg p-4 shadow-lg">
-                <h3 className="text-2xl text-left font-bold text-[#4e148d]  mb-2">
+                <h3 className="text-2xl text-center font-bold text-[#4e148d]  mb-2">
                   {item.title}
                 </h3>
-                <p className="text-gray-700">{item.description}</p>
+                <p className="text-gray-700 text-center">{item.description}</p>
               </div>
             ))}
           </div>

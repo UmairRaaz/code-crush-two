@@ -157,20 +157,6 @@ export const services = [
       title: "Real Estate",
       deatiledServiceId: 6,
       description: "Enhancing property management and sales with digital tools for listings, virtual tours, and customer relationship management."
-    },
-    {
-      id: 18,
-      image: food,
-      deatiledServiceId: 7,
-      title: "Food & Beverage",
-      description: "Streamlining operations with inventory management, supply chain solutions, and customer engagement tools to boost efficiency and customer satisfaction."
-    },
-    {
-      id: 19,
-      image: Fashion,
-      deatiledServiceId: 8,
-      title: "Fashion",
-      description: "Revolutionizing the fashion industry with e-commerce platforms, virtual fitting rooms, and trend analysis tools to enhance customer experience and market responsiveness."
     }
   ];
   

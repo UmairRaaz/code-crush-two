@@ -2,7 +2,8 @@ import React from "react";
 import LineEffect from "../components/Buttons/LineEffect";
 import { detailedservicesContent } from "../Content/detailedContent/ServicesDetailedContent";
 import { useParams } from "react-router-dom";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 const ViewServicesUpdated = () => {
   const { serviceid } = useParams();
   const serviceContent = detailedservicesContent.find(
@@ -11,7 +12,7 @@ const ViewServicesUpdated = () => {
   console.log(serviceContent);
   return (
     <div className="min-h-screen py-10  bg-white">
-      <div
+      {/* <div
         className="relative h-[70vh] sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
         style={{
           backgroundImage: `url(${serviceContent.banner})`,
@@ -25,15 +26,32 @@ const ViewServicesUpdated = () => {
             {serviceContent.title}
           </h1>
         </div>
-      </div>
-      <div className="max-w-6xl  mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mt-10">
+      </div> */}
+      <div className="max-w-6xl mt-20  mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center my-10">
+          <h1 className="text-4xl text-center tracking-widest uppercase font-bold">
+            {serviceContent.title}
+          </h1>
           <p className="mt-6 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl">
             {serviceContent.heading}
           </p>
           <p className="mt-8  text-justify text-xl text-gray-700 mx-auto">
             {serviceContent.description}
           </p>
+        </div>
+        <div>
+          {/* <img
+            src={serviceContent.banner}
+            alt={serviceContent.banner}
+            className="rounded-xl"
+          /> */}
+          <LazyLoadImage
+            alt="Lazy loaded image"
+            src={serviceContent.banner}
+            effect="blur"
+            placeholderSrc={serviceContent.banner}
+            className="rounded-xl"
+          />
         </div>
 
         {serviceContent &&

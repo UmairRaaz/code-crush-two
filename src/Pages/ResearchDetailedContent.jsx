@@ -43,14 +43,14 @@ const ResearchDetailedContent = () => {
       >
         <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="relative z-10 flex items-center justify-center h-full">
-          <h1 className="text-white text-4xl text-center tracking-widest uppercase font-bold">
+          <h1 className="text-white px-2 md:px-0  text-4xl text-center tracking-widest uppercase font-bold">
             {data.name}
           </h1>
         </div>
       </div>
-      <div className="w-[90%] text-justify md:max-w:4xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mx-auto mt-8 md:p-6">
-        <h1 className="text-4xl text-center font-bold mb-4">{data?.subname}</h1>
-        <p className="text-lg mb-6">{data?.description}</p>
+      <div className="w-[90%]  md:max-w:4xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mx-auto mt-8 md:p-6">
+        <h1 className="text-4xl text-center font-bold mb-8">{data?.subname}</h1>
+        <p className="text-lg mb-8">{data?.description}</p>
 
         {/* How we help section */}
         <section>
@@ -88,8 +88,8 @@ const ResearchDetailedContent = () => {
                 key={index}
                 className="bg-white shadow-lg px-8 md:px-4 py-8 p-4 rounded-lg"
               >
-                <h3 className="text-xl text-left font-medium">{item.title}</h3>
-                <p className="text-base mt-2">{item.heading}</p>
+                <h3 className="text-xl text-center font-medium">{item.title}</h3>
+                <p className="text-base text-center mt-2">{item.heading}</p>
               </div>
             ))}
           </div>

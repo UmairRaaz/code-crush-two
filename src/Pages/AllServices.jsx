@@ -29,7 +29,7 @@ const AllServices = () => {
       <LineEffect />
       <div className="w-[90%] md:max-w-6xl lg:max-w-7xl mx-auto gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10">
         {services.map((service, index) => (
-          <AllServiceCard page={"view-industries"} deatiledServiceId={service.deatiledServiceId} key={index} image={service.image}  heading={service.title} desc={service.description}
+          <AllServiceCard page={"view-service"} deatiledServiceId={service.deatiledServiceId} key={index} image={service.image}  heading={service.title} desc={service.description}
           reverse={index % 2 === 0}
           />
         ))}
