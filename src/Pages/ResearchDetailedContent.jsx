@@ -71,7 +71,9 @@ const ResearchDetailedContent = () => {
                 <h3 className="text-xl  h-[20%] font-medium text-center">
                   {item.heading}
                 </h3>
-                <p className="text-base mt-2 h-[60%] text-center">{item.description}</p>
+                <p className="text-base mt-2 h-[60%] text-justify">
+                  {item.description}
+                </p>
               </div>
             ))}
           </div>
@@ -83,15 +85,25 @@ const ResearchDetailedContent = () => {
             {data.approachForDevelopment.heading}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {data.approachForDevelopment.list.map((item, index) => (
-              <div
-                key={index}
-                className="bg-white shadow-lg px-8 md:px-4 py-8 p-4 rounded-lg"
-              >
-                <h3 className="text-xl text-center font-medium">{item.title}</h3>
-                <p className="text-base text-center mt-2">{item.heading}</p>
-              </div>
-            ))}
+            {data.approachForDevelopment.list.map((item, index) => {
+              const isOdd = data.approachForDevelopment.list.length % 2 !== 0; // Check if the number of items is odd
+              const isLastItem =
+                index === data.approachForDevelopment.list.length - 1; // Check if this is the last item
+
+              return (
+                <div
+                  key={index}
+                  className={`bg-white shadow-lg px-8 md:px-4 py-8 p-4 rounded-lg ${
+                    isOdd && isLastItem ? "md:col-span-2 w-full md:max-w-2xl md:mx-auto" : ""
+                  }`}
+                >
+                  <h3 className="text-xl text-bold text-center font-medium">
+                    {item.title}
+                  </h3>
+                  <p className="text-base text-justify mt-2">{item.heading}</p>
+                </div>
+              );
+            })}
           </div>
         </section>
 

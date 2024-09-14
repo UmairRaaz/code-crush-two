@@ -42,7 +42,7 @@ const AboutUs = () => {
               <h4 className="text-xl font-semibold mb-2">
                 CEO Code Crush Technologies
               </h4>
-              <p className="text-black mt-2 text-base">
+              <p className="text-black mt-2 text-lg">
                 Firstly, I am proud to be the founder CEO of Code Crush
                 Technologies, the ever-evolving software industry in Pakistan. I
                 am also proud of our resilience, expertise and professional
@@ -74,9 +74,9 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-          <div className="flex my-4 md:my-10 md:mt-20 flex-col-reverse md:flex-row gap-x-8">
+          <div className="flex my-4 md:my-10 md:mt-20 flex-col-reverse md:flex-row gap-x-8 ">
             <div className="w-full md:w-[50%]">
-              <p className="text-md text-justify text-black mb-2">
+              <p className="text-lg text-justify  text-black mb-2">
                 With our dynamic and professional development team and their
                 high quality services, the excellent soft solution can be
                 provided based on the cutting-edge computing tools and methods
@@ -91,17 +91,17 @@ const AboutUs = () => {
                 to your company&apos;s needs.
               </p>
             </div>
-            <div className="w-full flex items-center justify-center my-4 md:my-0 md:w-[50%]">
+            <div className="w-full md:-mt-10 flex  justify-center my-4 md:my-0 md:w-[50%]">
               <img src={whycodecrush} alt="whycodecrush"  className="w-72"/>
             </div>
           </div>
           <div className="flex my-8 md:my-10  flex-col md:flex-row gap-x-12">
             <div className=" w-full md:w-[30%] text-5xl text-black  font-semibold">
-              <img src={logo} alt="logo" className="w-80" />
+              <img src={logo} alt="logo" className="w-72" />
             </div>
 
             <div className="flex w-full mt-4 md:mt-0 md:w-[70%] items-center justify-center ">
-              <p className="text-black text-justify">
+              <p className="text-black text-lg text-justify">
                 Code Crush Technologies provides innovative software solutions
                 through sophisticated, Reliable and Secure technological tools
                 for individuals, businesses, and communities, aiming to drive
@@ -122,7 +122,7 @@ const AboutUs = () => {
               <img
                 src={mission}
                 alt="ceo-image"
-                className="w-full md:w-60 max-h-72 "
+                className="w-full md:w-72 max-h-72 "
               />
             </div>
           </div>
@@ -131,11 +131,11 @@ const AboutUs = () => {
             <img
                 src={objective}
                 alt="ceo-image"
-                className="w-full md:w-60 max-h-72 "
+                className="w-full md:w-72 max-h-72 "
               />
             </div>
             <div className="w-full md:w-[70%] mt-4 md:mt-8   flex justify-center ">
-              <ul className="list-disc text-justify">
+              <ul className="list-disc text-justify  text-lg">
                 <li className="text-black ">
                   To provide fast solutions to our customers using emerging
                   technologies tools.
