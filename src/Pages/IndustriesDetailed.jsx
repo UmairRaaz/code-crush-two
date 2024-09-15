@@ -62,18 +62,32 @@ const IndustriesDetailedPage = () => {
 
         {/* Offerings Section */}
         <div className="mt-8">
-          <h2 className="text-3xl font-bold text-gray-900 text-center">
+          <h2 className="text-4xl uppercase font-bold text-gray-900 text-center">
             {data.offering.title}
           </h2>
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-3">
-            {data.offering.list.map((item, index) => (
-              <div key={index} className="border rounded-lg p-4 shadow-lg">
-                <h3 className="text-2xl text-center font-bold text-[#4e148d]  mb-2">
-                  {item.title}
-                </h3>
-                <p className="text-gray-700 text-center">{item.description}</p>
-              </div>
-            ))}
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+            {data.offering.list.map((item, index) => {
+              const isOdd = data.offering.list.length % 2 !== 0; 
+              const isLastItem = index === data.offering.list.length - 1; 
+
+              return (
+                <div
+                  key={index}
+                  className={`border rounded-lg p-4 shadow-lg ${
+                    isOdd && isLastItem
+                      ? "md:col-span-2 w-full md:max-w-2xl md:mx-auto"
+                      : ""
+                  }`}
+                >
+                  <h3 className="text-2xl text-center font-bold text-[#4e148d] mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-700 text-center">
+                    {item.description}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
 

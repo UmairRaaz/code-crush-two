@@ -581,12 +581,6 @@ export const researhAndDevelopmentContent = [
           description:
             "Integrate security best practices into the software development lifecycle, ensuring that your applications are built with strong defenses against vulnerabilities",
         },
-        {
-          image: cybersecuritySeven,
-          heading: "Employee Training and Awareness",
-          description:
-            "Automate business processes with smart contracts that execute transactions automatically when predefined conditions are met, reducing the need for intermediaries",
-        },
       ],
     },
 
@@ -884,12 +878,6 @@ export const researhAndDevelopmentContent = [
           heading: "Enhance Security and Compliance ",
           description:
             "Our experts take security measures to protect connected devices and ensure compliance with industry regulations, safeguarding your business against cyber threats ",
-        },
-        {
-          image: iotSeven,
-          heading: "Drive Innovation and New Revenue Streams",
-          description:
-            "Explore new business models and revenue opportunities by integrating IoT technology into your products and services, staying ahead of the competition",
         },
       ],
     },

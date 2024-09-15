@@ -81,7 +81,7 @@ const ResearchDetailedContent = () => {
 
         {/* Approach for development section */}
         <section className="mt-10">
-          <h2 className="text-2xl font-semibold my-8 text-center">
+          <h2 className="text-4xl uppercase font-bold my-8 text-center">
             {data.approachForDevelopment.heading}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
