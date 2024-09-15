@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { researhAndDevelopmentContent } from "../Content/ResearchContent";
 import { IoMdArrowDroprightCircle } from "react-icons/io";
@@ -9,7 +9,6 @@ const ResearchDetailedContent = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate a fetch operation with a timeout
     const fetchData = () => {
       setLoading(true);
       const fetchedData = researhAndDevelopmentContent.find(
@@ -49,12 +48,12 @@ const ResearchDetailedContent = () => {
         </div>
       </div>
       <div className="w-[90%]  md:max-w:4xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mx-auto mt-8 md:p-6">
-        <h1 className="text-4xl text-center font-bold mb-8">{data?.subname}</h1>
+        <h1 className="text-4xl uppercase text-center font-bold mb-8">{data?.subname}</h1>
         <p className="text-lg mb-8">{data?.description}</p>
 
         {/* How we help section */}
         <section>
-          <h2 className="text-2xl font-semibold mb-8 text-center">
+          <h2 className="text-4xl font-bold uppercase mb-8 text-center">
             {data.howHelp.heading}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -109,7 +108,7 @@ const ResearchDetailedContent = () => {
 
         {/* Industries section */}
         <section className="mt-10">
-          <h2 className="text-3xl font-semibold mb-4 text-center">
+          <h2 className="text-4xl uppercase font-bold mb-4 text-center">
             {data.industires.name}
           </h2>
           <p className="mb-6">{data.industires?.title}</p>

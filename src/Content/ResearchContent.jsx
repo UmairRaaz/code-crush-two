@@ -53,7 +53,7 @@ import cybersecurityThree from "../assets/researchSection/cybrsecurity/three.png
 import cybersecurityFour from "../assets/researchSection/cybrsecurity/four.png";
 import cybersecurityFive from "../assets/researchSection/cybrsecurity/five.png";
 import cybersecuritySix from "../assets/researchSection/cybrsecurity/six.png";
-import cybersecuritySeven from "../assets/researchSection/cybrsecurity/seven.png";
+// import cybersecuritySeven from "../assets/researchSection/cybrsecurity/seven.png";
 
 //RPA
 import rpaOne from "../assets/researchSection/rpa/one.png";
@@ -78,7 +78,7 @@ import iotThree from "../assets/researchSection/iot/three.png";
 import iotFour from "../assets/researchSection/iot/four.png";
 import iotFive from "../assets/researchSection/iot/five.png";
 import iotSix from "../assets/researchSection/iot/six.png";
-import iotSeven from "../assets/researchSection/iot/seven.png";
+// import iotSeven from "../assets/researchSection/iot/seven.png";
 
 //edge
 import edgeOne from "../assets/researchSection/edge/one.png";
@@ -464,12 +464,6 @@ export const researhAndDevelopmentContent = [
           heading: "Tokenization of Assets",
           description:
             "Convert physical or digital assets into blockchain tokens, enabling new business models and increasing liquidity in asset trading",
-        },
-        {
-          image: blockChainSeven,
-          heading: "Smart Contracts Automation",
-          description:
-            "Automate business processes with smart contracts that execute transactions automatically when predefined conditions are met, reducing the need for intermediaries",
         },
       ],
     },
