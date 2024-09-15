@@ -41,19 +41,18 @@ const ViewServicesUpdated = () => {
           serviceContent.sections &&
           serviceContent.sections.length > 0 &&
           serviceContent.sections.map((section) => (
-            <div key={section.title} id={section.title.toLowerCase()}>
+            <div key={section.title} id={section.title.toLowerCase()} className="-mb-7">
               <p className="mt-10 text-3xl text-center text-black font-bold">
                 {section.description}
               </p>
-              <ul className="mt-6 space-y-4 text-justify">
+              <div className="mt-6 space-y-4 text-justify">
                 {section.details.map((detail, index) => {
-                  // Split the text into two parts at the first colon if it exists
                   const [boldText, ...rest] = detail.includes(":")
                     ? detail.split(/:(.+)/)
                     : [null, detail];
 
                   return (
-                    <li
+                    <p
                       key={index}
                       className="text-black text-xl flex items-start"
                     >
@@ -70,10 +69,10 @@ const ViewServicesUpdated = () => {
                           detail
                         )}
                       </span>
-                    </li>
+                    </p>
                   );
                 })}
-              </ul>
+              </div>
             </div>
           ))}
         {/* Call to Action */}
