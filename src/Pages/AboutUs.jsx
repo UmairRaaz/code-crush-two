@@ -2,15 +2,15 @@ import aboutUs from "../assets/aboutUs.webp";
 import habibImage from "../assets/aboutUs/ceoImage.svg";
 import LineEffect from "../components/Buttons/LineEffect";
 import { FaLinkedin } from "react-icons/fa";
-import logo from "../assets/aboutUs/companyLogo.svg"
-import mission from "../assets/aboutUs/missionLogo.svg"
-import objective from "../assets/aboutUs/objectiveLogo.svg"
-import whycodecrush from "../assets/aboutUs/whycodecrush.svg"
+import logo from "../assets/aboutUs/companyLogo.svg";
+import mission from "../assets/aboutUs/missionLogo.svg";
+import objective from "../assets/aboutUs/objectiveLogo.svg";
+import whycodecrush from "../assets/aboutUs/whycodecrush.svg";
 const AboutUs = () => {
   return (
     <div className="py-1 bg-gray-100">
       <div
-        className="relative h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
+        className="relative h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[30vh] border"
         style={{
           backgroundImage: `url(${aboutUs})`,
           backgroundSize: "cover",
@@ -24,6 +24,7 @@ const AboutUs = () => {
           </h1>
         </div>
       </div>
+      <div className="max-w-6xl mx-auto 2xl:max-w-7xl">
       <h1 className="text-5xl pt-10 mb-6 font-bold text-center font-googleFonts text-gray-700">
         CEO Message
       </h1>
@@ -32,11 +33,7 @@ const AboutUs = () => {
         <div className="w-[90%] md:max-w:4xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mx-auto ">
           <div className="w-full flex md:flex-row flex-col gap-x-10  text-justify">
             <div className="w-full md:w-[30%] ">
-              <img
-                src={habibImage}
-                alt="CEO-Image"
-                className="w-72 "
-              />
+              <img src={habibImage} alt="CEO-Image" className="w-72 " />
             </div>
             <div className="w-full mt-5 md:mt-0 md:w-[70%]">
               <h4 className="text-xl font-semibold mb-2">
@@ -74,96 +71,100 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-          <div className="flex my-4 md:my-10 md:mt-20 flex-col-reverse md:flex-row gap-x-8 ">
-            <div className="w-full md:w-[50%]">
-              <p className="text-lg text-justify  text-black mb-2">
+          <div className="flex  border-t border-gray-400 pt-8 my-4 md:my-10 md:mt-20 flex-col-reverse md:flex-row gap-x-8">
+            <div className="w-full md:w-[65%] ">
+              <p className="text-xl text-justify text-black mb-2">
                 With our dynamic and professional development team and their
-                high quality services, the excellent soft solution can be
+                high-quality services, the excellent soft solution can be
                 provided based on the cutting-edge computing tools and methods
                 for maintaining and improving your local and international
-                business.The code crush team will also assist you to validate
+                business. The Code Crush team will also assist you in validating
                 your idea and provide the business-oriented solutions that align
                 with your company needs, reflect the core values of your brand
-                and attract the customers. The codecrush are very professional,
-                cooperative and have expertise in different domains such as
-                digital marketing, website development, Artificial Intelligence
-                based projects, smart apps and other services which are required
-                to your company&apos;s needs.
+                and attract customers. The Code Crush team is very professional,
+                cooperative, and has expertise in various domains such as
+                digital marketing, website development, Artificial
+                Intelligence-based projects, smart apps, and other services
+                required for your company's needs.
               </p>
             </div>
-            <div className="w-full md:-mt-10 flex  justify-center my-4 md:my-0 md:w-[50%]">
-              <img src={whycodecrush} alt="whycodecrush"  className="w-72"/>
+            <div className="w-full  justify-end md:-mt-6 flex my-4 md:my-0 md:w-[35%]">
+              <img src={whycodecrush} alt="whycodecrush" className="w-72 " />
             </div>
           </div>
-          <div className="flex my-8 md:my-10  flex-col md:flex-row gap-x-12">
-            <div className=" w-full md:w-[30%] text-5xl text-black  font-semibold">
+
+          <div className="flex border-y border-gray-400 my-8 md:my-10 flex-col md:flex-row gap-x-12">
+            <div className="w-full md:w-[30%] text-5xl text-black font-semibold flex items-center justify-center">
               <img src={logo} alt="logo" className="w-72" />
             </div>
 
-            <div className="flex w-full mt-4 md:mt-0 md:w-[70%] items-center justify-center ">
-              <p className="text-black text-lg text-justify">
+            <div className="flex w-full mt-4 md:mt-0 md:w-[70%] items-center justify-center">
+              <p className="text-black  text-xl text-justify">
                 Code Crush Technologies provides innovative software solutions
-                through sophisticated, Reliable and Secure technological tools
+                through sophisticated, reliable, and secure technological tools
                 for individuals, businesses, and communities, aiming to drive
                 efficiency, profit, and growth through an expert team and
                 commitment to quality and customer satisfaction.
               </p>
             </div>
           </div>
-          <div className="flex my-8 md:my-10 gap-y-8 md:gap-y-0 flex-col md:flex-row gap-x-12">
-            <div className="w-full md:w-[70%] flex items-center justify-center">
-              <p className="text-black text-lg mt-4 text-justify">
-                Our mission is to develop innovative Ideas and maintain their
+
+          <div className="flex items-center border-b border-gray-400 my-8 md:my-10 gap-y-8 md:gap-y-0 flex-col md:flex-row gap-x-12">
+            <div className="w-full md:w-[65%] flex items-center justify-center">
+              <p className="text-black text-2xl mt-4 text-justify">
+                Our mission is to develop innovative ideas and maintain the
                 highest quality standards and best practices in the current
-                Digital Marketplace.
+                digital marketplace.
               </p>
             </div>
-            <div className="w-full md:w-1/2 flex justify-center ">
+            <div className="w-full md:w-[35%]  flex justify-end">
               <img
                 src={mission}
-                alt="ceo-image"
+                alt="mission-image"
                 className="w-full md:w-72 max-h-72 "
               />
             </div>
           </div>
-          <div className="flex my-8 md:my-10  flex-col md:flex-row gap-x-12">
-            <div className="w-full md:w-[30%]">
-            <img
+
+          <div className="flex my-8 md:my-10 flex-col md:flex-row gap-x-12">
+            <div className="w-full md:w-[30%] flex justify-center">
+              <img
                 src={objective}
-                alt="ceo-image"
-                className="w-full md:w-72 max-h-72 "
+                alt="objective-image"
+                className="w-full md:w-72 max-h-72"
               />
             </div>
-            <div className="w-full md:w-[70%] mt-4 md:mt-8   flex justify-center ">
-              <ul className="list-disc text-justify  text-lg">
-                <li className="text-black ">
+            <div className="w-full md:w-[70%] mt-4 md:mt-8 flex items-center justify-center">
+              <ul className=" text-xl  text-justify">
+                <li className="text-black">
                   To provide fast solutions to our customers using emerging
                   technologies tools.
                 </li>
                 <li className="text-black">
                   To continuously improve the developed models based on customer
-                  satisfactions.
+                  satisfaction.
                 </li>
-                <li className="text-black ">
-                  To train the interested students in the field of IT and their
-                  Solutions.
+                <li className="text-black">
+                  To train interested students in the field of IT and their
+                  solutions.
                 </li>
-                <li className="text-black ">
+                <li className="text-black">
                   To share innovative ideas, solutions, and business models with
                   interested investors.
                 </li>
-                <li className="text-black ">
+                <li className="text-black">
                   To establish strong communication and collaboration with local
                   and business industries.
                 </li>
                 <li className="text-black">
-                  To support the government and private organizations in the
-                  digital transformation process.
+                  To support government and private organizations in the digital
+                  transformation process.
                 </li>
               </ul>
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

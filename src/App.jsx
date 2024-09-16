@@ -7,7 +7,7 @@ import BackToTopButton from "./components/Buttons/BackToTopButton";
 
 function App() {
   return (
-    <div className="">
+    <div className="font-googleFonts">
       <NavBar />
       <ScrollToTop/>
       <Outlet/>

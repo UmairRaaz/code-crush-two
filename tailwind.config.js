@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      googleFonts : ["Roboto", "sans-serif"]
+      googleFonts : ["Outfit", "sans-serif"]
     }
   },
   plugins: [],

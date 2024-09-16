@@ -1,10 +1,8 @@
-import React from "react";
-import LineEffect from "../components/Buttons/LineEffect";
 import { detailedservicesContent } from "../Content/detailedContent/ServicesDetailedContent";
 import { useParams } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
-
+import { FaArrowRight } from "react-icons/fa";
 const ViewServicesUpdated = () => {
   const { serviceid } = useParams();
   const serviceContent = detailedservicesContent.find(
@@ -16,10 +14,10 @@ const ViewServicesUpdated = () => {
       {/* Header Section */}
       <div className="md:mx-auto md:max-w:4xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mt-20 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center my-10">
-          <h1 className="text-4xl tracking-widest uppercase font-bold">
+          <span className="text-4xl tracking-widest uppercase font-bold border-l-8 border-red-500 pl-2 drop-shadow-md text-gray-700">
             {serviceContent.title}
-          </h1>
-          <p className="mt-6 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl">
+          </span>
+          <p className="mt-6 underline text-gray-800 text-3xl leading-8 font-bold tracking-tight md:text-4xl">
             {serviceContent.heading}
           </p>
           <p className="mt-8 text-justify text-xl text-gray-700 mx-auto">
@@ -41,11 +39,15 @@ const ViewServicesUpdated = () => {
           serviceContent.sections &&
           serviceContent.sections.length > 0 &&
           serviceContent.sections.map((section) => (
-            <div key={section.title} id={section.title.toLowerCase()} className="-mb-7">
-              <p className="mt-10 text-3xl text-center text-black font-bold">
+            <div
+              key={section.title}
+              id={section.title.toLowerCase()}
+              className="-mb-7"
+            >
+              <p className="mt-10 text-3xl uppercase max-w-3xl  text-black font-bold">
                 {section.description}
               </p>
-              <div className="mt-6 space-y-4 text-justify">
+              <div className="mt-6 max-w-7xl mx-auto space-y-4 text-justify">
                 {section.details.map((detail, index) => {
                   const [boldText, ...rest] = detail.includes(":")
                     ? detail.split(/:(.+)/)
@@ -54,20 +56,27 @@ const ViewServicesUpdated = () => {
                   return (
                     <p
                       key={index}
-                      className="text-black text-xl flex items-start"
+                      className="text-black text-xl hover:bg-gray-100 hover:scale-105 px-4 cursor-pointer transition-all hover:border-r hover:border-l hover:rounded-md py-4 gap-y-4 md:gap-y-0 border-r border-l md:border-r-0 md:border-l-0 flex md:flex-row flex-col items-center gap-x-10 border-t border-b border-gray-400 relative group"
                     >
-                      <span className="mr-2 text-indigo-500">•</span>
-                      <span>
-                        {boldText ? (
-                          <>
-                            <strong className="">
-                              {boldText}: {" "}
-                            </strong>
+                      {boldText ? (
+                        <>
+                          <strong className="uppercase text-left mr-4 md:w-[35%]">
+                            {boldText}
+                          </strong>
+                          <span className="flex-1 max-w-sm md:w-[65%] text-lg">
                             {rest.join("")}
-                          </>
-                        ) : (
-                          detail
-                        )}
+                          </span>
+                        </>
+                      ) : (
+                        <span className="flex-1 max-w-2xl md:w-full text-lg">
+                          {detail}
+                        </span>
+                      )}
+                      {/* Arrow icon */}
+                      <span className="md:block hidden absolute right-24 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span className="bg-gray-700 text-white p-2 rounded-full transform -rotate-45 flex items-center justify-center">
+                          <FaArrowRight />
+                        </span>
                       </span>
                     </p>
                   );
