@@ -56,7 +56,7 @@ const ViewServicesUpdated = () => {
                   return (
                     <p
                       key={index}
-                      className="text-black text-xl hover:bg-gray-100 hover:scale-105 px-4 cursor-pointer transition-all hover:border-r hover:border-l hover:rounded-md py-4 gap-y-4 md:gap-y-0 border-r border-l md:border-r-0 md:border-l-0 flex md:flex-row flex-col items-center gap-x-10 border-t border-b border-gray-400 relative group"
+                      className="text-black text-xl hover:bg-[#C4DAD2] hover:text-gray-700 hover:scale-105 px-4 cursor-pointer transition-all hover:border-r hover:border-l hover:rounded-md py-4 gap-y-4 md:gap-y-0 border-r border-l md:border-r-0 md:border-l-0 md:border-t-0 md:border-b-0 hover:border-t hover:border-b flex md:flex-row flex-col items-center gap-x-10 border-t border-b border-gray-400 relative group"
                     >
                       {boldText ? (
                         <>

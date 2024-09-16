@@ -90,9 +90,9 @@ const CareerPage = () => {
             </div>
             <div className="w-full md:w-[60%]">
               <h1 className="text-5xl  font-semibold mb-4">
-                Diversity, equity <br />& inclusion
+                Diversity, equity & inclusion
               </h1>
-              <p className="text-justify">
+              <p className="text-justify mt-6 text-lg">
                 At Code Crush Technology, we believe that diversity fuels
                 innovation, equity fosters growth, and inclusion drives success.
                 We are committed to building a workplace where every individual

@@ -48,7 +48,9 @@ const ResearchDetailedContent = () => {
         </div>
       </div>
       <div className="w-[90%]  md:max-w:4xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mx-auto mt-8 md:p-6">
-        <h1 className="text-4xl uppercase text-center font-bold mb-8">{data?.subname}</h1>
+        <h1 className="text-4xl uppercase text-center font-bold mb-8">
+          {data?.subname}
+        </h1>
         <p className="text-lg mb-8">{data?.description}</p>
 
         {/* How we help section */}
@@ -60,13 +62,16 @@ const ResearchDetailedContent = () => {
             {data.howHelp.list.map((item, index) => (
               <div
                 key={index}
-                className="bg-white py-8 h-80  px-6 shadow-lg rounded-lg"
+                className="bg-white hover:bg-[#BF2EF0] transition-all hover:text-white cursor-pointer hover:scale-105 py-8 h-80  px-6 shadow-lg rounded-lg"
               >
-                <img
-                  src={item.image}
-                  alt={item.heading}
-                  className="w-16 h-[20%] mx-auto  mb-4 rounded-2xl p-1  shadow-xl object-contain"
-                />
+                <div className="">
+                  <img
+                    src={item.image}
+                    alt={item.heading}
+                    className="w-12 h-12 max-h-[20%] mx-auto bg-white mb-4 rounded-2xl  shadow-xl object-fill"
+                  />
+                </div>
+
                 <h3 className="text-xl  h-[20%] font-medium text-center">
                   {item.heading}
                 </h3>
@@ -92,8 +97,10 @@ const ResearchDetailedContent = () => {
               return (
                 <div
                   key={index}
-                  className={`bg-white shadow-lg px-8 md:px-4 py-8 p-4 rounded-lg ${
-                    isOdd && isLastItem ? "md:col-span-2 w-full md:max-w-2xl md:mx-auto" : ""
+                  className={`bg-white cursor-pointer hover:bg-[#86AB89] hover:text-white hover:scale-105 transition-all shadow-lg px-8 md:px-4 py-8 p-4 rounded-lg ${
+                    isOdd && isLastItem
+                      ? "md:col-span-2 w-full md:max-w-2xl md:mx-auto"
+                      : ""
                   }`}
                 >
                   <h3 className="text-xl text-bold text-center font-medium">

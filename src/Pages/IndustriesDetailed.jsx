@@ -73,13 +73,13 @@ const IndustriesDetailedPage = () => {
               return (
                 <div
                   key={index}
-                  className={`border rounded-lg p-4 shadow-lg ${
+                  className={`border hover:bg-[#7BC9FF] hover:text-white cursor-pointer transition-all hover:scale-105 rounded-lg p-4 shadow-lg ${
                     isOdd && isLastItem
                       ? "md:col-span-2 w-full md:max-w-2xl md:mx-auto"
                       : ""
                   }`}
                 >
-                  <h3 className="text-2xl text-center font-bold text-[#4e148d] mb-2">
+                  <h3 className="text-2xl text-center font-bold text-[#4e148d]   mb-2">
                     {item.title}
                   </h3>
                   <p className="text-gray-700 text-center">
