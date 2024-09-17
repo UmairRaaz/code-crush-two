@@ -89,7 +89,7 @@ const Footer = () => {
                   <ul className="space-y-2 ">
                     <li className="    ">
                       <NavLink
-                        to={"/all-services/view-service/:1"}
+                        to={"/all-services/view-service/3"}
                         className="hover:text-gray-400"
                       >
                         Web & App Development
@@ -97,7 +97,7 @@ const Footer = () => {
                     </li>
                     <li className="    ">
                       <NavLink
-                        to={"/all-services/view-service/:1"}
+                        to={"/all-services/view-service/5"}
                         className="hover:text-gray-400"
                       >
                         Cyber Security Solutions
@@ -105,7 +105,7 @@ const Footer = () => {
                     </li>
                     <li className="    ">
                       <NavLink
-                        to={"/all-services/view-service/:1"}
+                        to={"/all-services/view-service/8"}
                         className="hover:text-gray-400"
                       >
                         Custom Software & CMS Solutions
@@ -113,7 +113,7 @@ const Footer = () => {
                     </li>
                     <li className="    ">
                       <NavLink
-                        to={"/all-services/view-service/:1"}
+                        to={"/all-services/view-service/7"}
                         className="hover:text-gray-400"
                       >
                         E-Commerce Solutions
@@ -121,7 +121,7 @@ const Footer = () => {
                     </li>
                     <li className="    ">
                       <NavLink
-                        to={"/all-services/view-service/:1"}
+                        to={"/all-services/view-service/10"}
                         className="hover:text-gray-400"
                       >
                         Digital Marketing & SEO
@@ -129,7 +129,7 @@ const Footer = () => {
                     </li>
                     <li className="    ">
                       <NavLink
-                        to={"/all-services/view-service/:1"}
+                        to={"/all-services/view-service/6"}
                         className="hover:text-gray-400"
                       >
                         IT Consulting & Support
@@ -147,8 +147,10 @@ const Footer = () => {
                     <li className=" ">
                       Email:{" "}
                       <a
-                        href="mailto:contact@codecrushtech.com"
-                        className="hover:text-gray-400    "
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@codecrushtech.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-inherit"
                       >
                         contact@codecrushtech.com
                       </a>
@@ -173,7 +175,7 @@ const Footer = () => {
                       target="_blank"
                       className=" hover:text-gray-400"
                     >
-                      <FaFacebook size={24} className="text-[#1877F2]"/>
+                      <FaFacebook size={24} className="text-[#1877F2]" />
                     </a>
                     <a
                       href="https://www.linkedin.com/company/codecrushtech/"

@@ -28,7 +28,6 @@ const ContactUs = () => {
       transition={{ duration: 1, ease: "linear" }}
       className="bg-[#4e148d] pb-10 text-white"
       style={{ paddingTop: navbarHeight }}
-
       id="contact"
     >
       <div className="md:max-w-4xl overflow-hidden  lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl px-3 md:px-0 mx-auto py-4">
@@ -49,18 +48,35 @@ const ContactUs = () => {
               <div className="md:p-6 rounded-lg mt-10 md:mt-0 border-black">
                 <div className="flex mb-4">
                   <div className="w-[15%]">
-                    <img src={email} alt="icon" className="w-[40px] border rounded-full" />
+                    <img
+                      src={email}
+                      alt="icon"
+                      className="w-[40px] border rounded-full"
+                    />
                   </div>
                   <div className="text-gray-100 w-[70%] ">
                     <h1 className="text-2xl">Email :</h1>
                     <h1 className="font-light text-xl">
-                      contact@codecrushtech.com
+                      <h1 className="font-light text-xl">
+                        <a
+                          href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@codecrushtech.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-inherit"
+                        >
+                          contact@codecrushtech.com
+                        </a>
+                      </h1>
                     </h1>
                   </div>
                 </div>
                 <div className="flex mb-4">
                   <div className="w-[15%]">
-                    <img src={phone} alt="icon" className="w-[40px] border rounded-full" />
+                    <img
+                      src={phone}
+                      alt="icon"
+                      className="w-[40px] border rounded-full"
+                    />
                   </div>
                   <div className="text-gray-100 w-[70%]">
                     <h1 className="text-2xl">Phone :</h1>
@@ -69,7 +85,11 @@ const ContactUs = () => {
                 </div>
                 <div className="flex mb-4">
                   <div className="w-[15%]">
-                    <img src={location} alt="icon" className="w-[40px] border rounded-full" />
+                    <img
+                      src={location}
+                      alt="icon"
+                      className="w-[40px] border rounded-full"
+                    />
                   </div>
                   <div className="text-gray-100 w-[70%]">
                     <h1 className="text-2xl">Address :</h1>
