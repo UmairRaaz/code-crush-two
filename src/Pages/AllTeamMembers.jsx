@@ -223,7 +223,7 @@ const AllTeamMembers = () => {
             </div>
           ))}
         </div>
-        <div className="grid grid-cols-1 mt-20 md:grid-cols-4 gap-4 gap-y-8">
+        {/* <div className="grid grid-cols-1 mt-20 md:grid-cols-4 gap-4 gap-y-8">
           {teamMembersTwo.map((member) => (
             <div
               key={member.id}
@@ -254,7 +254,7 @@ const AllTeamMembers = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
