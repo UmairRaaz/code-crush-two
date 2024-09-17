@@ -55,7 +55,7 @@ const CareersApply = () => {
     <div className="min-h-screen mt-20 bg-gray-100 text-gray-700">
       <section className="py-12">
         <div className="w-[90%] mx-auto px-4">
-          <h2 className="text-4xl text-center mb-8">Job Details</h2>
+          <h2 className="text-4xl text-center mb-6">Job Details</h2>
           <LineEffect />
           <div className="bg-white p-6 rounded-lg my-8">
             <h3 className="text-5xl font-bold mb-4">Frontend Developer</h3>

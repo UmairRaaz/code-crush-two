@@ -82,7 +82,7 @@ const IndustriesDetailedPage = () => {
                   <h3 className="text-2xl text-center font-bold text-[#4e148d]   mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-gray-700 text-center">
+                  <p className="text-gray-700 text-justify">
                     {item.description}
                   </p>
                 </div>

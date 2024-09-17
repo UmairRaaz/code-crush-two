@@ -1,25 +1,45 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import remoteResourceImage from "../assets/remoteResourcesBg.png";
-
+import axios from "axios";
+import toast from "react-hot-toast";
 function RemoteResources() {
+
   const [showForm, setShowForm] = useState(false);
   const [expertiseFields, setExpertiseFields] = useState([{ id: 1 }]);
   const { register, handleSubmit, reset } = useForm();
-
+  const [loading, setLoading] = useState(false)
   const onSubmit = (data) => {
-    console.log(data);
-    reset();
-    setExpertiseFields([{ id: 1 }]);
-    setShowForm(true);
-  };
+    setLoading(true);
+    axios
+        .post("http://localhost:5000/remote-resources", data)
+        .then((response) => {
+            console.log("Success:", response.data);
+            reset();
+            setExpertiseFields([{ id: 1 }]);
+            setShowForm(true);
+            toast.success("Application Submitted");
+        })
+        .catch((error) => {
+            console.error("Error:", error);
+            toast.error("Application Submitting Failed");
+        })
+        .finally(() => {
+            setLoading(false); 
+        });
+};
+
+  
 
   const handleHireClick = () => {
     setShowForm(true);
   };
 
   const handleAddMore = () => {
-    setExpertiseFields([...expertiseFields, { id: expertiseFields.length + 1 }]);
+    setExpertiseFields([
+      ...expertiseFields,
+      { id: expertiseFields.length + 1 },
+    ]);
   };
 
   return (
@@ -39,14 +59,17 @@ function RemoteResources() {
           </h1>
         </div>
       </div>
-      
+
       <div className="md:w-[70%] mx-auto">
         <h1 className="text-3xl pt-10 text-center mx-auto text-gray-700 md:text-5xl font-bold mb-8">
           We Provide On-Demand Remote Resources
         </h1>
 
         <p className="text-lg md:text-xl px-3 text-justify mx-auto mb-8">
-          Our mission is to revolutionize work practices and eliminate distance barriers. Our Remote Resource service is designed to deliver exceptional IT services globally, empowering your business with top-quality support tailored to your specific needs.
+          Our mission is to revolutionize work practices and eliminate distance
+          barriers. Our Remote Resource service is designed to deliver
+          exceptional IT services globally, empowering your business with
+          top-quality support tailored to your specific needs.
         </p>
       </div>
 
@@ -65,7 +88,12 @@ function RemoteResources() {
             Connect With Our Exceptionally Talented Remote Resources!
           </h2>
           <p className="text-gray-900 mb-8  text-justify">
-            Codecrush Technologies leads the industry in offering exceptional remote resources across various sectors. We provide customized resources to meet your project requirements. Our flexible model allows you to specify the level of expertise and the timeframe you need. We will match you with an expert whose goals align perfectly with yours, no matter where you are located.
+            Codecrush Technologies leads the industry in offering exceptional
+            remote resources across various sectors. We provide customized
+            resources to meet your project requirements. Our flexible model
+            allows you to specify the level of expertise and the timeframe you
+            need. We will match you with an expert whose goals align perfectly
+            with yours, no matter where you are located.
           </p>
 
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
@@ -139,13 +167,18 @@ function RemoteResources() {
             </div>
 
             {expertiseFields.map((field, index) => (
-              <div key={field.id} className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div
+                key={field.id}
+                className="grid grid-cols-1 md:grid-cols-3 gap-4"
+              >
                 <div>
                   <label className="block text-gray-700 font-semibold">
                     Name of Expertise {index + 1}:
                   </label>
                   <select
-                    {...register(`expertise[${index}].nameOfExpertise`, { required: true })}
+                    {...register(`expertise[${index}].nameOfExpertise`, {
+                      required: true,
+                    })}
                     className="w-full p-2 border border-gray-300 rounded-md"
                   >
                     <option>Web Developer</option>
@@ -168,7 +201,9 @@ function RemoteResources() {
                     Number of Expertise {index + 1}:
                   </label>
                   <select
-                    {...register(`expertise[${index}].numberOfExpertise`, { required: true })}
+                    {...register(`expertise[${index}].numberOfExpertise`, {
+                      required: true,
+                    })}
                     className="w-full p-2 border border-gray-300 rounded-md"
                   >
                     <option>1</option>
@@ -184,7 +219,9 @@ function RemoteResources() {
                     Duration of Hire {index + 1}:
                   </label>
                   <select
-                    {...register(`expertise[${index}].durationOfHire`, { required: true })}
+                    {...register(`expertise[${index}].durationOfHire`, {
+                      required: true,
+                    })}
                     className="w-full p-2 border border-gray-300 rounded-md"
                   >
                     <option>Less than 1 month</option>
@@ -230,10 +267,11 @@ function RemoteResources() {
 
             <div className="text-center mt-6">
               <button
+                disabled={loading}
                 type="submit"
                 className="px-8 py-4 bg-[#4e148d] text-white text-lg font-semibold rounded-lg shadow-md hover:bg-[#6828E8] transition duration-300"
               >
-                Submit
+                {loading ? "Submitting" : "Submit"}
               </button>
             </div>
           </form>
