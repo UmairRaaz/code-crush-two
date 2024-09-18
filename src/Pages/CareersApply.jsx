@@ -13,7 +13,7 @@ const CareersApply = () => {
     reset,
     formState: { errors },
   } = useForm();
-  const [loading, setloading] = useState(false)
+  const [loading, setloading] = useState(false);
   const [file, setFile] = useState(null);
   const [fileName, setFileName] = useState("");
 
@@ -26,28 +26,33 @@ const CareersApply = () => {
 
   const onSubmit = async (data) => {
     try {
-      setloading(true)
+      setloading(true);
       const formData = new FormData();
-      formData.append('firstName', data.firstName);
-      formData.append('lastName', data.lastName);
-      formData.append('email', data.email);
-      formData.append('phone', data.phoneNumber);
-      formData.append('cv', file);
+      formData.append("firstName", data.firstName);
+      formData.append("lastName", data.lastName);
+      formData.append("email", data.email);
+      formData.append("phone", data.phoneNumber);
+      formData.append("cv", file);
 
-      const response = await axios.post('https://codecrushbackend.vercel.app/career', formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data'
+      // Axios POST request with JSON payload
+      const response = await axios.post(
+        "https://codecrushbackend.vercel.app/contact",
+        JSON.stringify(formData),
+        {
+          headers: {
+            "Content-Type": "text/plain", // Use text/plain to avoid CORS issues
+          },
         }
-      });
-      toast.success("Application Submitted")
-      setloading(false)
+      );
+
+      toast.success("Application Submitted");
+      setloading(false);
     } catch (error) {
-      toast.error("Application Submitting Failed")
-      setloading(false)
-    }
-    finally{
-      reset()
-      setloading(false)
+      toast.error("Application Submitting Failed");
+      setloading(false);
+    } finally {
+      reset();
+      setloading(false);
     }
   };
 
@@ -199,7 +204,9 @@ const CareersApply = () => {
                 } border-b py-2 transition duration-300 ease-in-out
                   ${errors.cv ? "bg-red-100" : "bg-white"}`}
               >
-                <p className="text-gray-700 flex gap-2 items-center"><LuUpload/> <span>Upload Your CV</span></p>
+                <p className="text-gray-700 flex gap-2 items-center">
+                  <LuUpload /> <span>Upload Your CV</span>
+                </p>
                 <input
                   id="cv"
                   type="file"
@@ -221,7 +228,7 @@ const CareersApply = () => {
 
             <div className="flex items-center justify-between">
               <button
-              disabled={loading}
+                disabled={loading}
                 className="bg-red-500 hover:bg-red-700 text-white  py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
                 type="submit"
               >
