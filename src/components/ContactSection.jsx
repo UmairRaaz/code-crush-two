@@ -14,7 +14,7 @@ const ContactSection = () => {
   const onSubmit = async (data) => {
     try {
       setloading(true);
-      const response = await axios.get("https://codecrushbackend.vercel.app/contact", {
+      const response = await axios.post("https://codecrushbackend.vercel.app/contact", {
         params: {
           name: data.name,
           email: data.email,
