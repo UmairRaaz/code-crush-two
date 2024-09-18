@@ -34,7 +34,7 @@ const CareersApply = () => {
       formData.append('phone', data.phoneNumber);
       formData.append('cv', file);
 
-      const response = await axios.post('http://localhost:5000/career', formData, {
+      const response = await axios.post('https://codecrushbackend.vercel.app/career', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }

@@ -12,7 +12,7 @@ function RemoteResources() {
   const onSubmit = (data) => {
     setLoading(true);
     axios
-        .post("http://localhost:5000/remote-resources", data)
+        .post("https://codecrushbackend.vercel.app/remote-resources", data)
         .then((response) => {
             console.log("Success:", response.data);
             reset();
