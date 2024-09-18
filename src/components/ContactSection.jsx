@@ -23,6 +23,7 @@ const ContactSection = () => {
           subject: data.message,
         },
       });
+      console.log(response)
       setloading(false);
       console.log("Successfully sent: ", response.data);
       toast.success("Message Sent Suceesfully");
