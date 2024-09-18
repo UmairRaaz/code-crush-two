@@ -14,29 +14,48 @@ const ContactSection = () => {
   const onSubmit = async (data) => {
     try {
       setloading(true);
-      const response = await axios.post("https://codecrushbackend.vercel.app/contact", {
-        params: {
+
+      // Prepare the request options
+      const requestOptions = {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json", // Ensure the Content-Type is set to application/json
+        },
+        body: JSON.stringify({
           name: data.name,
           email: data.email,
           phone: data.phone,
           message: data.message,
           subject: data.message,
-        },
-      });
-      console.log(response)
-      setloading(false);
-      console.log("Successfully sent: ", response.data);
-      toast.success("Message Sent Suceesfully");
+        }),
+      };
+
+      // Send the request
+      const response = await fetch(
+        "https://codecrushbackend.vercel.app/contact",
+        requestOptions
+      );
+
+      // Check if the response is OK (status in the range 200-299)
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+
+      const responseData = await response.json();
+
+      console.log(responseData);
+      toast.success("Message Sent Successfully");
     } catch (error) {
-      setloading(false);
       console.error("Failed to send: ", error);
       toast.error("Message Sending Failed");
     } finally {
       setloading(false);
       reset();
     }
+
     console.log(data);
   };
+
   return (
     <div className="py-20 bg-[#fafafa] ">
       <form
@@ -90,7 +109,6 @@ const ContactSection = () => {
             {...register("message", {
               required: "Message is required",
             })}
-            
             className="mt-1 block w-full p-2 border-b outline-none border-gray-300  focus:ring-indigo-500 font-light focus:border-indigo-500"
             rows="3"
             placeholder="Tell us about your project"
