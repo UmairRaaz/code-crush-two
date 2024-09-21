@@ -27,6 +27,7 @@ import AboutUs from "./Pages/AboutUs.jsx";
 import ViewServicesUpdated from "./Pages/ViewServicesUpdated.jsx";
 import ResearchDetailedContent from "./Pages/ResearchDetailedContent.jsx";
 import IndustriesDetailedPage from "./Pages/IndustriesDetailed.jsx";
+import Test from "./Pages/Test.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -47,6 +48,7 @@ const router = createBrowserRouter(
       <Route path="careers/apply" element={<CareersApply />} />
       <Route path="privacypolicy" element={<PrivacyPolicy />} />
       <Route path="termsandcondition" element={<TermsAndCondition />} />
+      <Route path="servercheck" element={<Test />} />
     </Route>
   )
 );
