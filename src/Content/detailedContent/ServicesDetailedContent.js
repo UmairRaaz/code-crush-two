@@ -1,15 +1,15 @@
 import appdevelopment from "../../assets/serviceContentSection/appdevelopment.webp"
-import cms from "../../assets/serviceContentSection/cms.webp"
+import cms from "../../assets/serviceContentSection/contentmanangmentsysytem.webp"
 import customsoftwaresuloutojn from "../../assets/serviceContentSection/customsoftwaresuloutojn.webp"
 import cybersecurity from "../../assets/serviceContentSection/cybersecurity.webp"
 import digitalmarketing2 from "../../assets/serviceContentSection/digitalmarketing.webp"
 import Itconsulting from "../../assets/serviceContentSection/itconsulting.webp"
 import onlinestoreecommerece from "../../assets/serviceContentSection/onlinestoreecommerece.webp"
 import seo from "../../assets/serviceContentSection/seo.webp"
-import socialmediamarketing from "../../assets/serviceContentSection/socialmediamarketing.webp"
+import socialmediamarketing from "../../assets/serviceContentSection/seodigitalmarketing.webp"
 import technicalsupport from "../../assets/serviceContentSection/technicalsupport.webp"
 import uiuxdesign from "../../assets/serviceContentSection/uiuxdesign.webp"
-import webdevelopment from "../../assets/serviceContentSection/webdevelopment.webp"
+import webdevelopment from "../../assets/serviceContentSection/webDevelopment.webp"
 
 export const detailedservicesContent = [
   {

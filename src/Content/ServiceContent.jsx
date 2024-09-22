@@ -5,8 +5,6 @@ import socialMediaMarketing  from '../assets/ServicesSection/services/socialMedi
 import UIUX  from '../assets/ServicesSection/services/UIUX.webp';
 
 import cms  from '../assets/ServicesSection/cms.webp';
-import Fashion  from '../assets/ServicesSection/Fashion.webp';
-import food  from '../assets/ServicesSection/food.webp';
 import realState  from '../assets/ServicesSection/realState.webp';
 import servicesImage  from '../assets/ServicesSection/services.webp';
 import technicalSupport  from '../assets/ServicesSection/technicalSupport.webp';

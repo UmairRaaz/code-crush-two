@@ -1,22 +1,15 @@
-// WebP images
-import education from "../assets/industriesImages/education.webp";
-import Fashion from "../assets/industriesImages/Fashion.webp";
-import foodbeverage from "../assets/industriesImages/food&beverage.webp";
-import healthcare from "../assets/industriesImages/healthcare.webp";
-import hospitilty from "../assets/industriesImages/hospitilty.webp";
-import realestate from "../assets/industriesImages/realestate.webp";
-import retail from "../assets/industriesImages/retail.webp";
-import travel from "../assets/industriesImages/travel.webp";
+import education from "../assets/industriesImages/banners/education.webp";
+import healthcare from "../assets/industriesImages/banners/healthcare.webp";
+import hospitilty from "../assets/industriesImages/banners/hospitilty.webp";
+import realestate from "../assets/industriesImages/banners/realestate.webp";
+import retail from "../assets/industriesImages/banners/retail.webp";
+import travel from "../assets/industriesImages/banners/travel.webp";
+
+
 
 // Additional images for each industry
 import educationOne from "../assets/industriesImages/education/one.jpg";
 import educationTwo from "../assets/industriesImages/education/two.jpg";
-
-import fashionOne from "../assets/industriesImages/fashion/one.jpg";
-import fashionTwo from "../assets/industriesImages/fashion/two.jpg";
-
-import foodbeverageOne from "../assets/industriesImages/foodandbeverages/one.jpg";
-import foodbeverageTwo from "../assets/industriesImages/foodandbeverages/two.jpg";
 
 import healthcareOne from "../assets/industriesImages/healthcare/one.jpg";
 import healthcareTwo from "../assets/industriesImages/healthcare/two.jpg";
@@ -289,92 +282,92 @@ export const industriesDetailedContent = [
       },
     },
   },
-  {
-    id: 7,
-    title: "Food and Beverages",
-    banner: foodbeverage,
-    images : [foodbeverageOne, foodbeverageTwo],
-    description:
-      "The food and beverage industry faces significant challenges in supply chain management, maintaining product quality, meeting changing consumer preferences, and ensuring regulatory compliance. Companies must navigate issues such as efficient inventory management, reducing food waste, adapting to health-conscious and sustainable trends, and addressing complex logistics. Additionally, rising operational costs, food safety standards, and the need for technology integration to improve efficiency and traceability are key challenges that impact the industry's ability to remain competitive",
-    offering: {
-      title: "Our Offerings",
-      list: [
-        {
-          title: "Optimized Supply Chain Management ",
-          description:
-            "We offer advanced digital solutions that streamline supply chain operations, improve inventory management, and enhance logistics, ensuring timely delivery and reducing food waste.",
-        },
-        {
-          title: "Quality Control and Traceability",
-          description:
-            "Our IoT-enabled platforms and data analytics tools provide real-time monitoring of product quality and traceability throughout the supply chain, ensuring compliance with safety standards.",
-        },
-        {
-          title: "Consumer Insights and Personalization",
-          description:
-            "We leverage AI and data analytics to analyze consumer preferences, helping food and beverage companies tailor their products and marketing strategies to meet evolving demands..",
-        },
-        {
-          title: "Sustainability and Waste Reduction ",
-          description:
-            "CodeCrush implements eco-friendly technology solutions to help businesses reduce waste, improve energy efficiency, and adopt sustainable practices, meeting both consumer expectations and regulatory requirements.",
-        },
-        {
-          title: "Automated Operations",
-          description:
-            "Our automation tools improve operational efficiency, from production processes to customer service, helping businesses reduce costs while maintaining high standards.",
-        },
-      ],
-      howCanWeHelp: {
-        title: "How can we help you?",
-        desc: "Are you ready to revolutionize your business?",
-        button:
-          "Let CodeCrush Technologies be your partner for innovation and success.",
-      },
-    },
-  },
-  {
-    id: 8,
-    title: "Fashion",
-    banner: Fashion,
-    images : [fashionOne, fashionTwo],
-    description:
-      "The fashion industry faces challenges in design innovation, production efficiency, supply chain management, and consumer trends. Ensuring product quality and customer satisfaction requires efficient production processes, effective marketing strategies, and staying up-to-date with industry trends. Technological advancements and innovative approaches are essential to addressing these challenges and maintaining a competitive edge in the rapidly evolving fashion market.”",
-    offering: {
-      title: "Our Offerings",
-      list: [
-        {
-          title: "Design Innovation",
-          description:
-            "We provide digital tools and AI-driven solutions to accelerate design processes, analyze fashion trends, and predict future styles, helping brands stay ahead in innovation.",
-        },
-        {
-          title: "Quality Production Efficiency",
-          description:
-            "Our advanced technologies streamline production workflows, enhance supply chain management, and optimize inventory, ensuring timely and cost-effective manufacturing.",
-        },
-        {
-          title: "Supply Chain Optimization",
-          description:
-            "We offer solutions that improve transparency and efficiency across the supply chain, from raw material sourcing to final delivery, reducing disruptions and waste.",
-        },
-        {
-          title: "Consumer Insights and Trend Analysis ",
-          description:
-            "Our data analytics platforms provide deep insights into consumer behavior and market trends, allowing fashion companies to tailor their strategies and marketing efforts effectively.",
-        },
-        {
-          title: "Sustainability Solutions",
-          description:
-            "CodeCrush implements eco-friendly technologies and practices that support sustainable production and ethical labor practices, aligning with consumer expectations and regulatory standards.",
-        },
-      ],
-      howCanWeHelp: {
-        title: "How can we help you?",
-        desc: "Are you ready to revolutionize your business?",
-        button:
-          "Let CodeCrush Technologies be your partner for innovation and success.",
-      },
-    },
-  },
+  // {
+  //   id: 7,
+  //   title: "Food and Beverages",
+  //   banner: foodbeverage,
+  //   images : [foodbeverageOne, foodbeverageTwo],
+  //   description:
+  //     "The food and beverage industry faces significant challenges in supply chain management, maintaining product quality, meeting changing consumer preferences, and ensuring regulatory compliance. Companies must navigate issues such as efficient inventory management, reducing food waste, adapting to health-conscious and sustainable trends, and addressing complex logistics. Additionally, rising operational costs, food safety standards, and the need for technology integration to improve efficiency and traceability are key challenges that impact the industry's ability to remain competitive",
+  //   offering: {
+  //     title: "Our Offerings",
+  //     list: [
+  //       {
+  //         title: "Optimized Supply Chain Management ",
+  //         description:
+  //           "We offer advanced digital solutions that streamline supply chain operations, improve inventory management, and enhance logistics, ensuring timely delivery and reducing food waste.",
+  //       },
+  //       {
+  //         title: "Quality Control and Traceability",
+  //         description:
+  //           "Our IoT-enabled platforms and data analytics tools provide real-time monitoring of product quality and traceability throughout the supply chain, ensuring compliance with safety standards.",
+  //       },
+  //       {
+  //         title: "Consumer Insights and Personalization",
+  //         description:
+  //           "We leverage AI and data analytics to analyze consumer preferences, helping food and beverage companies tailor their products and marketing strategies to meet evolving demands..",
+  //       },
+  //       {
+  //         title: "Sustainability and Waste Reduction ",
+  //         description:
+  //           "CodeCrush implements eco-friendly technology solutions to help businesses reduce waste, improve energy efficiency, and adopt sustainable practices, meeting both consumer expectations and regulatory requirements.",
+  //       },
+  //       {
+  //         title: "Automated Operations",
+  //         description:
+  //           "Our automation tools improve operational efficiency, from production processes to customer service, helping businesses reduce costs while maintaining high standards.",
+  //       },
+  //     ],
+  //     howCanWeHelp: {
+  //       title: "How can we help you?",
+  //       desc: "Are you ready to revolutionize your business?",
+  //       button:
+  //         "Let CodeCrush Technologies be your partner for innovation and success.",
+  //     },
+  //   },
+  // },
+  // {
+  //   id: 8,
+  //   title: "Fashion",
+  //   banner: Fashion,
+  //   images : [fashionOne, fashionTwo],
+  //   description:
+  //     "The fashion industry faces challenges in design innovation, production efficiency, supply chain management, and consumer trends. Ensuring product quality and customer satisfaction requires efficient production processes, effective marketing strategies, and staying up-to-date with industry trends. Technological advancements and innovative approaches are essential to addressing these challenges and maintaining a competitive edge in the rapidly evolving fashion market.”",
+  //   offering: {
+  //     title: "Our Offerings",
+  //     list: [
+  //       {
+  //         title: "Design Innovation",
+  //         description:
+  //           "We provide digital tools and AI-driven solutions to accelerate design processes, analyze fashion trends, and predict future styles, helping brands stay ahead in innovation.",
+  //       },
+  //       {
+  //         title: "Quality Production Efficiency",
+  //         description:
+  //           "Our advanced technologies streamline production workflows, enhance supply chain management, and optimize inventory, ensuring timely and cost-effective manufacturing.",
+  //       },
+  //       {
+  //         title: "Supply Chain Optimization",
+  //         description:
+  //           "We offer solutions that improve transparency and efficiency across the supply chain, from raw material sourcing to final delivery, reducing disruptions and waste.",
+  //       },
+  //       {
+  //         title: "Consumer Insights and Trend Analysis ",
+  //         description:
+  //           "Our data analytics platforms provide deep insights into consumer behavior and market trends, allowing fashion companies to tailor their strategies and marketing efforts effectively.",
+  //       },
+  //       {
+  //         title: "Sustainability Solutions",
+  //         description:
+  //           "CodeCrush implements eco-friendly technologies and practices that support sustainable production and ethical labor practices, aligning with consumer expectations and regulatory standards.",
+  //       },
+  //     ],
+  //     howCanWeHelp: {
+  //       title: "How can we help you?",
+  //       desc: "Are you ready to revolutionize your business?",
+  //       button:
+  //         "Let CodeCrush Technologies be your partner for innovation and success.",
+  //     },
+  //   },
+  // },
 ];

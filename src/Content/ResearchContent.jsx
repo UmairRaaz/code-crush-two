@@ -1,12 +1,12 @@
-import AIBanner from "../assets/researchSection/AI.webp"
-import BlockChainBanner from "../assets/researchSection/BlockChain.webp"
-import cybersecurityBanner from "../assets/researchSection/cybersecurity.webp"
-import edgeBanner from "../assets/researchSection/edge.webp"
-import internetOfThingsBanner from "../assets/researchSection/internetOfThings.webp"
-import MLBanner from "../assets/researchSection/ML.webp"
-import NLPBanner from "../assets/researchSection/NLP.webp"
-import quantumBanner from "../assets/researchSection/quantum.webp"
-import RPABanner from "../assets/researchSection/RPA.webp"
+import AIBanner from "../assets/researchSection/banners/AI.webp"
+import BlockChainBanner from "../assets/researchSection/banners/BlockChain.webp"
+import cybersecurityBanner from "../assets/researchSection/banners/cybersecurity.webp"
+import edgeBanner from "../assets/researchSection/banners/edge.webp"
+import internetOfThingsBanner from "../assets/researchSection/banners/internetOfThings.webp"
+import MLBanner from "../assets/researchSection/banners/ML.webp"
+import NLPBanner from "../assets/researchSection/banners/NLP.webp"
+import quantumBanner from "../assets/researchSection/banners/quantum.webp"
+import RPABanner from "../assets/researchSection/banners/RPA.webp"
 
 
 // AI images 
