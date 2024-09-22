@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ChatBox from '../components/Chatbot/ChatBot';
 
 const Test = () => {
   const [message, setMessage] = useState(''); 
@@ -22,8 +23,7 @@ const Test = () => {
 
   return (
     <div className='min-h-screen my-40'>
-      <button onClick={fetchHealthCheck}>Check Health</button>
-      <p>{message}</p> {/* Display the message from the API */}
+      <ChatBox/>
     </div>
   );
 };

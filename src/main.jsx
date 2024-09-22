@@ -48,7 +48,7 @@ const router = createBrowserRouter(
       <Route path="careers/apply" element={<CareersApply />} />
       <Route path="privacypolicy" element={<PrivacyPolicy />} />
       <Route path="termsandcondition" element={<TermsAndCondition />} />
-      <Route path="servercheck" element={<Test />} />
+      <Route path="checkchatbox" element={<Test />} />
     </Route>
   )
 );
