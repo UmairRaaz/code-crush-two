@@ -9,7 +9,7 @@ import seo from "../../assets/serviceContentSection/seo.webp"
 import socialmediamarketing from "../../assets/serviceContentSection/seodigitalmarketing.webp"
 import technicalsupport from "../../assets/serviceContentSection/technicalsupport.webp"
 import uiuxdesign from "../../assets/serviceContentSection/uiuxdesign.webp"
-import webdevelopment from "../../assets/serviceContentSection/webDevelopmentBanner.webp"
+import webdevelopment from "../../assets/serviceContentSection/webdevelopmentbanner.webp"
 
 export const detailedservicesContent = [
   {
