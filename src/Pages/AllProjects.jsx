@@ -60,7 +60,7 @@ const AllProjects = () => {
   return (
     <div className="md:mt-20 my-20 bg-white">
       <div
-        className="relative h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[30vh] border"
+        className="relative h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
         style={{
           backgroundImage: `url(${projectBG})`,
           backgroundSize: "cover",
