@@ -32,7 +32,7 @@ const ContactSection = () => {
 
       // Send the request
       const response = await fetch(
-        "https://codecrushbackend.vercel.app/contact",
+        "http://localhost:5000/contact",
         requestOptions
       );
 

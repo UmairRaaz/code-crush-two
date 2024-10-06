@@ -11,7 +11,7 @@ import {
 
 import MainPage from "./components/MainPage.jsx";
 import AllServices from "./Pages/AllServices.jsx";
-import ViewService from "./Pages/ViewService.jsx";
+// import ViewService from "./Pages/ViewService.jsx";
 import AllProjects from "./Pages/AllProjects.jsx";
 import ViewProject from "./Pages/ViewProject.jsx";
 import AllBlogs from "./Pages/AllBlogs.jsx";
@@ -28,6 +28,7 @@ import ViewServicesUpdated from "./Pages/ViewServicesUpdated.jsx";
 import ResearchDetailedContent from "./Pages/ResearchDetailedContent.jsx";
 import IndustriesDetailedPage from "./Pages/IndustriesDetailed.jsx";
 import Test from "./Pages/Test.jsx";
+import InternshipApply from "./Pages/InternshipApply.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -46,6 +47,7 @@ const router = createBrowserRouter(
       <Route path="remote-resources" element={<RemoteResources />} />
       <Route path="careers" element={<Careers />} />
       <Route path="careers/apply" element={<CareersApply />} />
+      <Route path="careers/internship/apply" element={<InternshipApply />} />
       <Route path="privacypolicy" element={<PrivacyPolicy />} />
       <Route path="termsandcondition" element={<TermsAndCondition />} />
       <Route path="checkchatbox" element={<Test />} />

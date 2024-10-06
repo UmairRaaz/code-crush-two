@@ -36,15 +36,10 @@ const CareersApply = () => {
 
       // Axios POST request with JSON payload
       const response = await axios.post(
-        "https://codecrushbackend.vercel.app/contact",
+        "http://localhost:5000/career",
         JSON.stringify(formData),
-        {
-          headers: {
-            "Content-Type": "text/plain", // Use text/plain to avoid CORS issues
-          },
-        }
       );
-
+      console.log(response)
       toast.success("Application Submitted");
       setloading(false);
     } catch (error) {

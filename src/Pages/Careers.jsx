@@ -1,13 +1,13 @@
-// CareerPage.js
-import React from "react";
+
 import { useForm } from "react-hook-form";
 import "tailwindcss/tailwind.css";
 import workWiuthUsBG from "../assets/workWiuthUsBG.webp";
 import { NavLink } from "react-router-dom";
-import careerPage from "../assets/careerPage.jpg";
+// import careerPage from "../assets/careerPage.jpg";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { FaRocket } from "react-icons/fa6";
 import { GiChaingun } from "react-icons/gi";
+
 const CareerPage = () => {
   const {
     register,
@@ -18,6 +18,7 @@ const CareerPage = () => {
   const onSubmit = (data) => {
     console.log(data);
   };
+
   const features = [
     {
       icon: <BsFillPeopleFill />,
@@ -36,12 +37,12 @@ const CareerPage = () => {
     },
   ];
 
+  // Positions for full-time jobs
   const positions = [
     {
       title: "Frontend Developer",
       location: "Remote",
-      description:
-        "Work on the latest web technologies to build user-friendly interfaces.",
+      description: "Work on the latest web technologies to build user-friendly interfaces.",
     },
     {
       title: "Backend Developer",
@@ -51,18 +52,42 @@ const CareerPage = () => {
     {
       title: "UI/UX Designer",
       location: "Remote",
-      description:
-        "Design intuitive and engaging user experiences for our products.",
+      description: "Design intuitive and engaging user experiences for our products.",
     },
     {
       title: "Project Manager",
       location: "Remote",
-      description:
-        "Lead project teams to deliver high-quality software solutions.",
+      description: "Lead project teams to deliver high-quality software solutions.",
     },
   ];
+
+  // Internship positions
+  const internships = [
+    {
+      title: "Web Development Intern",
+      location: "Remote",
+      description: "Gain hands-on experience working on real-world projects under expert supervision.",
+    },
+    {
+      title: "App Development Intern",
+      location: "Remote",
+      description: "Gain hands-on experience working on real-world projects under expert supervision.",
+    },
+    {
+      title: "UI/UX Design Intern",
+      location: "Remote",
+      description: "Work on designing cutting-edge user interfaces with guidance from senior designers.",
+    },
+    {
+      title: "Marketing Intern",
+      location: "Remote",
+      description: "Assist in developing marketing campaigns and strategies to promote our products.",
+    },
+  ];
+
   return (
     <div className="mt-20 bg-gray-50">
+      {/* Background Image Section */}
       <div
         className="relative h-[70vh] sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
         style={{
@@ -78,93 +103,77 @@ const CareerPage = () => {
           </h1>
         </div>
       </div>
+
+      {/* Features Section */}
       <div className="min-h-screen max-w-6xl 2xl:max-w-7xl mx-auto">
         <section className="py-12">
-          <div className="flex flex-col gap-y-6 md:gap-y-0 md:flex-row px-4">
-            <div className="w-full md:w-[40%] flex items-center justify-center">
-              <img
-                src={careerPage}
-                alt="careerPage"
-                className="w-80 rounded-xl shadow-xl"
-              />
-            </div>
-            <div className="w-full md:w-[60%]">
-              <h1 className="text-5xl  font-semibold mb-4">
-                Diversity, equity & inclusion
-              </h1>
-              <p className="text-justify mt-6 text-lg">
-                At Code Crush Technology, we believe that diversity fuels
-                innovation, equity fosters growth, and inclusion drives success.
-                We are committed to building a workplace where every individual
-                feels valued, respected, and empowered to bring their authentic
-                selves to work. Our diverse team is our greatest strength, and
-                we strive to create an environment where different perspectives
-                are not only welcomed but celebrated. By embracing diversity,
-                promoting equity, and fostering inclusion, we aim to create a
-                culture where everyone can thrive and contribute to our shared
-                vision.
-              </p>
-            </div>
+          <div className="text-center">
+            <h1 className="text-5xl font-bold">Interested in our mission?</h1>
+            <p className="text-xl text-gray-700 mt-4">Help shape the future with us</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-4">
+            {features.map((feature, index) => (
+              <div
+                key={index}
+                className="shadow-md p-6 rounded-lg text-center flex flex-col items-center"
+              >
+                <div className="text-4xl text-[#4E148D] bg-blue-100 rounded-full p-4 mb-4">
+                  {feature.icon}
+                </div>
+                <h2 className="text-2xl font-semibold mb-2">{feature.title}</h2>
+                <p className="text-gray-600">{feature.description}</p>
+              </div>
+            ))}
           </div>
         </section>
+
+        {/* Job Openings Section */}
         <section className="py-12">
-          <div>
-            <div className="text-center">
-              <h1 className="text-5xl font-bold">Intersted in our mission?</h1>
-              <p className="text-xl text-gray-700 mt-4">
-                Help shape the future with us
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-4">
-              {features.map((feature, index) => (
-                <div
-                  key={index}
-                  className=" shadow-md p-6 rounded-lg text-center flex flex-col items-center"
-                >
-                  <div className="text-4xl text-[#4E148D] bg-blue-100 rounded-full p-4 mb-4">
-                    {feature.icon}
-                  </div>{" "}
-                  {/* Icon */}
-                  <h2 className="text-2xl font-semibold mb-2">
-                    {feature.title}
-                  </h2>
-                  <p className="text-gray-600">{feature.description}</p>
+          <h2 className="text-5xl font-bold text-center mb-8">Open Positions</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {positions.map((position, index) => (
+              <div
+                key={index}
+                className="flex items-center flex-col gap-8 md:gap-0 md:flex-row justify-between rounded-xl p-6 bg-gray-50 border border-gray-300"
+              >
+                <div className="flex flex-col">
+                  <h3 className="text-2xl font-semibold">{position.title}</h3>
+                  <p className="text-gray-600 mb-2">{position.location}</p>
+                  <p className="text-gray-700">{position.description}</p>
+                  <NavLink
+                    to="/careers/apply"
+                    className="text-white w-28 bg-[#4E148D] hover:bg-[#6828E8] rounded-lg px-4 py-2 mt-4"
+                  >
+                    Apply Now
+                  </NavLink>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </section>
-        <section className="py-12 ">
-          <div className="container mx-auto px-4">
-            <h2 className="text-5xl font-bold text-center mb-8">
-              Open Positions
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {positions.map((position, index) => (
-                <div
-                  key={index}
-                  className="flex items-center flex-col gap-8 md:gap-0 md:flex-row justify-between rounded-xl p-6 bg-gray-50 border border-gray-300"
-                >
-                  <div className="flex flex-col ">
-                    <div className="flex justify-between items-center">
-                      <h3 className="text-2xl font-semibold ">
-                        {position.title}
-                      </h3>
-                      <div>
-                        <NavLink
-                          to="/careers/apply"
-                          className=" text-white bg-[#4E148D] hover:bg-[#6828E8] outline-none text-nowrap rounded-lg px-4 py-2"
-                        >
-                          Apply Now
-                        </NavLink>
-                      </div>
-                    </div>
-                    <p className="text-gray-600 mb-2">{position.location}</p>
-                    <p className="text-gray-700">{position.description}</p>
-                  </div>
+
+        {/* Internship Openings Section */}
+        <section className="py-12">
+          <h2 className="text-5xl font-bold text-center mb-8">Internship Openings</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {internships.map((internship, index) => (
+              <div
+                key={index}
+                className="flex items-center flex-col gap-8 md:gap-0 md:flex-row justify-between rounded-xl p-6 bg-gray-50 border border-gray-300"
+              >
+                <div className="flex flex-col">
+                  <h3 className="text-2xl font-semibold">{internship.title}</h3>
+                  <p className="text-gray-600 mb-2">{internship.location}</p>
+                  <p className="text-gray-700">{internship.description}</p>
+                  <NavLink
+                    to="/careers/internship/apply"
+                    className="text-white w-28 bg-[#4E148D] hover:bg-[#6828E8] rounded-lg px-4 py-2 mt-4"
+                  >
+                    Apply Now
+                  </NavLink>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </section>
       </div>
