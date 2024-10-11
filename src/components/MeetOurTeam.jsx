@@ -49,13 +49,7 @@ const MeetOurTeam = () => {
               role={"Chief Technology Officer (CTO)"}
               links={"https://www.linkedin.com/in/fazalbhai/"}
             />
-            <TeamMemberCard
-              image={drAkhter}
-              status={"Co-Founder"}
-              name={"Dr. Akhtar Badshah"}
-              role={"Chief Finance Officer (CFO)"}
-              links={"https://www.linkedin.com/in/akhtar-badshah-41813638/"}
-            />
+            
           </div>
         </div>
       </div>
