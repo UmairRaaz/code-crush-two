@@ -35,18 +35,7 @@ const teamMembers = [
       linkedin: "https://www.linkedin.com/in/fazalbhai/",
     },
   },
-  {
-    id: 3,
-    name: "Dr. Akhtar Badshah",
-    role: "Chief Finance Officer (CFO)",
-    status: "Co-Founder",
-    description:
-      "Dr. Akhtar Badshah manages our financial operations with precision and insight. His leadership in financial planning and analysis ensures our company's fiscal health, supporting sustainable growth and long-term success.",
-    imageUrl: drAkhter,
-    social: {
-      linkedin: "https://www.linkedin.com/in/akhtar-badshah-41813638/",
-    },
-  },
+  
 ];
 const teamMembersTwo = [
   {
@@ -73,84 +62,6 @@ const teamMembersTwo = [
       twitter: "https://twitter.com",
       linkedin: "https://linkedin.com",
       dribbble: "https://dribbble.com",
-    },
-  },
-  {
-    id: 3,
-    name: "Dr. Akhtar Badshah",
-    role: "Chief Finance Officer (CFO)",
-    description:
-      "Dr. Akhtar Badshah manages our financial operations with precision and insight. His leadership in financial planning and analysis ensures our company's fiscal health, supporting sustainable growth and long-term success.",
-    imageUrl: drAkhter,
-    social: {
-      twitter: "https://twitter.com",
-      linkedin: "https://linkedin.com",
-      github: "https://github.com",
-    },
-  },
-  {
-    id: 4,
-    name: "Dr. Akhtar Badshah",
-    role: "Chief Finance Officer (CFO)",
-    description:
-      "Dr. Akhtar Badshah manages our financial operations with precision and insight. His leadership in financial planning and analysis ensures our company's fiscal health, supporting sustainable growth and long-term success.",
-    imageUrl: drAkhter,
-    social: {
-      twitter: "https://twitter.com",
-      linkedin: "https://linkedin.com",
-      github: "https://github.com",
-    },
-  },
-  {
-    id: 5,
-    name: "Dr. Akhtar Badshah",
-    role: "Chief Finance Officer (CFO)",
-    description:
-      "Dr. Akhtar Badshah manages our financial operations with precision and insight. His leadership in financial planning and analysis ensures our company's fiscal health, supporting sustainable growth and long-term success.",
-    imageUrl: drAkhter,
-    social: {
-      twitter: "https://twitter.com",
-      linkedin: "https://linkedin.com",
-      github: "https://github.com",
-    },
-  },
-  {
-    id: 6,
-    name: "Dr. Akhtar Badshah",
-    role: "Chief Finance Officer (CFO)",
-    description:
-      "Dr. Akhtar Badshah manages our financial operations with precision and insight. His leadership in financial planning and analysis ensures our company's fiscal health, supporting sustainable growth and long-term success.",
-    imageUrl: drAkhter,
-    social: {
-      twitter: "https://twitter.com",
-      linkedin: "https://linkedin.com",
-      github: "https://github.com",
-    },
-  },
-  {
-    id: 7,
-    name: "Dr. Akhtar Badshah",
-    role: "Chief Finance Officer (CFO)",
-    description:
-      "Dr. Akhtar Badshah manages our financial operations with precision and insight. His leadership in financial planning and analysis ensures our company's fiscal health, supporting sustainable growth and long-term success.",
-    imageUrl: drAkhter,
-    social: {
-      twitter: "https://twitter.com",
-      linkedin: "https://linkedin.com",
-      github: "https://github.com",
-    },
-  },
-  {
-    id: 8,
-    name: "Dr. Akhtar Badshah",
-    role: "Chief Finance Officer (CFO)",
-    description:
-      "Dr. Akhtar Badshah manages our financial operations with precision and insight. His leadership in financial planning and analysis ensures our company's fiscal health, supporting sustainable growth and long-term success.",
-    imageUrl: drAkhter,
-    social: {
-      twitter: "https://twitter.com",
-      linkedin: "https://linkedin.com",
-      github: "https://github.com",
     },
   },
 ];
