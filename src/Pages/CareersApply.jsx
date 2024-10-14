@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import LineEffect from "../components/Buttons/LineEffect";
-import axios from "axios";
-
 import { LuUpload } from "react-icons/lu";
 import toast from "react-hot-toast";
 
@@ -13,41 +10,84 @@ const CareersApply = () => {
     reset,
     formState: { errors },
   } = useForm();
-  const [loading, setloading] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [file, setFile] = useState(null);
   const [fileName, setFileName] = useState("");
 
   const handleFileChange = (e) => {
     if (e.target.files.length > 0) {
-      setFile(e.target.files[0]);
-      setFileName(e.target.files[0].name);
+      const selectedFile = e.target.files[0];
+
+      // Check if the file is a PDF and less than 5KB
+      const maxSizeInKB = 50; // Set size limit (in KB)
+      const allowedTypes = ["application/pdf"]; // Allow only PDF files
+      if (selectedFile.size > maxSizeInKB * 1024) {
+        toast.error(`File size should be less than ${maxSizeInKB}KB.`);
+        setFile(null);
+        setFileName("");
+        return;
+      }
+
+      if (!allowedTypes.includes(selectedFile.type)) {
+        toast.error("Only PDF files are allowed.");
+        setFile(null);
+        setFileName("");
+        return;
+      }
+
+      setFile(selectedFile);
+      setFileName(selectedFile.name);
     }
   };
 
   const onSubmit = async (data) => {
-    try {
-      setloading(true);
-      const formData = new FormData();
-      formData.append("firstName", data.firstName);
-      formData.append("lastName", data.lastName);
-      formData.append("email", data.email);
-      formData.append("phone", data.phoneNumber);
-      formData.append("cv", file);
+    if (!file) {
+      toast.error("Please upload your CV.");
+      return;
+    }
 
-      // Axios POST request with JSON payload
-      const response = await axios.post(
-        "http://localhost:5000/career",
-        JSON.stringify(formData),
-      );
-      console.log(response)
-      toast.success("Application Submitted");
-      setloading(false);
+    try {
+      setLoading(true);
+
+      // Prepare email details
+      const emailData = {
+        SecureToken: "YOUR_SECURE_TOKEN", // Replace with your secure token
+        To: 'umairgopang123@gmail.com', // Replace with recipient's email
+        From: `${data.email}`, // Replace with your email
+        Subject: "New Job Application",
+        Body: `
+          First Name: ${data.firstName}\n
+          Last Name: ${data.lastName}\n
+          Email: ${data.email}\n
+          Phone Number: ${data.phoneNumber}\n
+          CV Attached: ${fileName} (Check your email for attachments)
+        `,
+        Attachments: [
+          {
+            name: file.name,
+            path: URL.createObjectURL(file), // Create a temporary URL for the file
+          },
+        ],
+      };
+
+      // Send email using SMTP.js
+      Email.send(emailData).then((message) => {
+        console.log("Email sent: ", message);
+        if (message === "OK") {
+          toast.success("Application Submitted Successfully");
+          reset();
+          setFile(null);
+          setFileName("");
+        } else {
+          toast.error("Failed to submit application");
+        }
+      });
+
     } catch (error) {
-      toast.error("Application Submitting Failed");
-      setloading(false);
+      console.error("Error sending email: ", error);
+      toast.error("Failed to submit application");
     } finally {
-      reset();
-      setloading(false);
+      setLoading(false);
     }
   };
 
@@ -56,58 +96,11 @@ const CareersApply = () => {
       <section className="py-12">
         <div className="w-[90%] mx-auto px-4">
           <h2 className="text-4xl text-center mb-6">Job Details</h2>
-          <LineEffect />
-          <div className="bg-white p-6 rounded-lg my-8">
-            <h3 className="text-5xl font-bold mb-4">Frontend Developer</h3>
-            <p className="mb-4">
-              <strong>Responsibilities:</strong>
-            </p>
-            <ul className="list-disc list-inside mb-4">
-              <li>
-                Develop and maintain web applications using HTML, CSS, and
-                JavaScript.
-              </li>
-              <li>
-                Collaborate with designers and backend developers to create
-                seamless user experiences.
-              </li>
-              <li>Ensure the technical feasibility of UI/UX designs.</li>
-              <li>Optimize applications for maximum speed and scalability.</li>
-            </ul>
-            <p className="mb-4">
-              <strong>Requirements:</strong>
-            </p>
-            <ul className="list-disc list-inside mb-4">
-              <li>
-                Proven experience as a Frontend Developer or similar role.
-              </li>
-              <li>
-                Familiarity with responsive design and cross-browser
-                compatibility.
-              </li>
-              <li>
-                Strong understanding of JavaScript frameworks such as React or
-                Angular.
-              </li>
-              <li>Excellent problem-solving skills and attention to detail.</li>
-            </ul>
-            <p className="mb-4">
-              <strong>Benefits:</strong>
-            </p>
-            <ul className="list-disc list-inside mb-4">
-              <li>Competitive salary and benefits package.</li>
-              <li>Opportunities for professional growth and development.</li>
-              <li>Collaborative and inclusive work environment.</li>
-              <li>Flexible working hours and remote work options.</li>
-            </ul>
-          </div>
-          <h2 className="text-3xl text-center font-bold mb-8">
-            Apply for a Position
-          </h2>
-          <LineEffect />
+          {/* Form */}
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="bg-white p-6 rounded-lg shadow-md max-w-lg mt-6 mx-auto"
+            encType="multipart/form-data" // Specify the form encoding type
           >
             {/* First Name */}
             <div className="mb-4">
@@ -116,7 +109,7 @@ const CareersApply = () => {
                 {...register("firstName", {
                   required: "First name is required",
                 })}
-                className={`appearance-none border-b font-normal  w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
+                className={`appearance-none border-b font-normal w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
                   errors.firstName ? "border-red-500" : ""
                 }`}
                 type="text"
@@ -134,7 +127,7 @@ const CareersApply = () => {
               <input
                 id="lastName"
                 {...register("lastName", { required: "Last name is required" })}
-                className={` appearance-none border-b w-full font-normal py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
+                className={`appearance-none border-b w-full font-normal py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
                   errors.lastName ? "border-red-500" : ""
                 }`}
                 type="text"
@@ -190,6 +183,7 @@ const CareersApply = () => {
                 </p>
               )}
             </div>
+
             {/* Add your CV */}
             <div className="mb-4">
               <label

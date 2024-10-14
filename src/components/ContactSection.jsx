@@ -1,7 +1,7 @@
-import axios from "axios";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
+import emailjs from '@emailjs/browser';
 
 const ContactSection = () => {
   const {
@@ -10,57 +10,41 @@ const ContactSection = () => {
     formState: { errors },
     reset,
   } = useForm();
-  const [loading, setloading] = useState(false);
+  const [loading, setLoading] = useState(false);
+
   const onSubmit = async (data) => {
     try {
-      setloading(true);
+      setLoading(true);
 
-      // Prepare the request options
-      const requestOptions = {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json", // Ensure the Content-Type is set to application/json
-        },
-        body: JSON.stringify({
+      // Send the email using EmailJS
+      const emailjsResponse = await emailjs.send(
+        "service_portfolioemail",   // Replace with your EmailJS service ID
+        "template_3wuznos",  // Replace with your EmailJS template ID
+        {
           name: data.name,
           email: data.email,
           phone: data.phone,
           message: data.message,
-          subject: data.message,
-        }),
-      };
-
-      // Send the request
-      const response = await fetch(
-        "http://localhost:5000/contact",
-        requestOptions
+        },
+        "ghd6Vxzxu68IXFWRv" // Replace with your EmailJS user ID or public key
       );
 
-      // Check if the response is OK (status in the range 200-299)
-      if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
-      }
-
-      const responseData = await response.json();
-
-      console.log(responseData);
+      console.log(emailjsResponse);
       toast.success("Message Sent Successfully");
     } catch (error) {
       console.error("Failed to send: ", error);
       toast.error("Message Sending Failed");
     } finally {
-      setloading(false);
+      setLoading(false);
       reset();
     }
-
-    console.log(data);
   };
 
   return (
-    <div className="py-20 bg-[#fafafa] ">
+    <div className="py-20 bg-[#fafafa]">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="space-y-4 max-w-4xl mx-auto px-10 rounded-md p-5 border border-gray-200 bg-white shadow-xl "
+        className="space-y-4 max-w-4xl mx-auto px-10 rounded-md p-5 border border-gray-200 bg-white shadow-xl"
       >
         <div>
           <input
@@ -123,7 +107,7 @@ const ContactSection = () => {
           <button
             disabled={loading}
             type="submit"
-            className="w-44 mx-auto py-2 px-4 bg-[#4e148d] text-white rounded-full shadow-sm  hover:bg-[#6828E8] transition duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mt-4"
+            className="w-44 mx-auto py-2 px-4 bg-[#4e148d] text-white rounded-full shadow-sm hover:bg-[#6828E8] transition duration-300 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mt-4"
           >
             {loading ? `Sending Message` : `Send Message`}
           </button>

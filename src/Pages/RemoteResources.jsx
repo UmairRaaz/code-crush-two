@@ -3,33 +3,51 @@ import { useForm } from "react-hook-form";
 import remoteResourceImage from "../assets/remoteResourcesBg.webp";
 import axios from "axios";
 import toast from "react-hot-toast";
+import emailjs from "@emailjs/browser";
 function RemoteResources() {
-
   const [showForm, setShowForm] = useState(false);
   const [expertiseFields, setExpertiseFields] = useState([{ id: 1 }]);
   const { register, handleSubmit, reset } = useForm();
-  const [loading, setLoading] = useState(false)
-  const onSubmit = (data) => {
-    setLoading(true);
-    axios
-        .post("https://codecrushbackend.vercel.app/remote-resources", data)
-        .then((response) => {
-            console.log("Success:", response.data);
-            reset();
-            setExpertiseFields([{ id: 1 }]);
-            setShowForm(true);
-            toast.success("Application Submitted");
-        })
-        .catch((error) => {
-            console.error("Error:", error);
-            toast.error("Application Submitting Failed");
-        })
-        .finally(() => {
-            setLoading(false); 
-        });
-};
+  const [loading, setLoading] = useState(false);
 
-  
+  const onSubmit = async (data) => {
+    try {
+      setLoading(true);
+
+      // Convert the expertise array into a string
+      const requiredExpertise = data.expertise
+        .map((expert) => {
+          return `Expertise: ${expert.nameOfExpertise}, Number: ${expert.numberOfExpertise}, Duration: ${expert.durationOfHire}`;
+        })
+        .join("\n"); // Join array elements with line breaks
+
+      // Send the email using EmailJS
+      const emailjsResponse = await emailjs.send(
+        "service_portfolioemail", // Replace with your EmailJS service ID
+        "template_unh1ypm", // Replace with your EmailJS template ID
+        {
+          additionalRequirements: data.additionalRequirements,
+          companyName: data.companyName,
+          email: data.email,
+          name: data.name,
+          phoneNumber: data.phoneNumber,
+          projectDescription: data.projectDescription,
+          requiredExpertise, // Expertise array converted to string
+          startDate: data.startDate,
+        },
+        "ghd6Vxzxu68IXFWRv" // Replace with your EmailJS user ID or public key
+      );
+
+      console.log(emailjsResponse);
+      toast.success("Message Sent Successfully");
+    } catch (error) {
+      console.error("Failed to send: ", error);
+      toast.error("Message Sending Failed");
+    } finally {
+      setLoading(false);
+      reset();
+    }
+  };
 
   const handleHireClick = () => {
     setShowForm(true);
