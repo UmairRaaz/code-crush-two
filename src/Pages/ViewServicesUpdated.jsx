@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { FaArrowRight } from "react-icons/fa";
+import { HashLink } from "react-router-hash-link";
 const ViewServicesUpdated = () => {
   const { serviceid } = useParams();
   const serviceContent = detailedservicesContent.find(
@@ -89,9 +90,9 @@ const ViewServicesUpdated = () => {
           <p className="text-lg font-semibold text-[#4E148D]">
             {serviceContent.partnerWithUs}
           </p>
-          <button className="mt-6 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-[#4E148D] hover:bg-[#6828E8]">
+          <HashLink to="/#contact" className="mt-6 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-[#4E148D] hover:bg-[#6828E8]">
             {serviceContent.callToAction}
-          </button>
+          </HashLink>
         </div>
       </div>
     </div>

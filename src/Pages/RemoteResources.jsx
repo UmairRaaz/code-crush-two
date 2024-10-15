@@ -94,7 +94,7 @@ function RemoteResources() {
       <div className="text-center pb-12">
         <button
           onClick={handleHireClick}
-          className="px-6 text-xl py-3 uppercase bg-[#4e148d] text-white font-semibold rounded-lg shadow-md hover:bg-[#6828E8] transition duration-300"
+          className="px-4 text-lg py-1 uppercase tracking-widest bg-[#4e148d] text-white font-semibold rounded-lg shadow-md hover:bg-[#6828E8] transition duration-300"
         >
           Hire
         </button>
@@ -255,7 +255,7 @@ function RemoteResources() {
               <button
                 type="button"
                 onClick={handleAddMore}
-                className="rounded-full border border-blue-800 text-blue-800 px-4 py-2"
+                className="rounded-full border-2 hover:bg-[#4e148d] hover:text-white transition-all border-[#4e148d] text-blue-800 px-2 py-1"
               >
                 Add More
               </button>
@@ -287,7 +287,7 @@ function RemoteResources() {
               <button
                 disabled={loading}
                 type="submit"
-                className="px-8 py-4 bg-[#4e148d] text-white text-lg font-semibold rounded-lg shadow-md hover:bg-[#6828E8] transition duration-300"
+                className="px-4 text-lg py-1 tracking-wider bg-[#4e148d] text-white font-semibold rounded-lg shadow-md hover:bg-[#6828E8] transition duration-300"
               >
                 {loading ? "Submitting" : "Submit"}
               </button>

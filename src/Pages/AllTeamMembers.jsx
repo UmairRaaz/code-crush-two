@@ -206,7 +206,7 @@ const AllTeamMembers = () => {
                       target="_blank"
                       className="text-gray-600 hover:text-gray-400"
                     >
-                      <FaLinkedin size={20} />
+                      <FaLinkedin size={20} className="text-[#0A66C2]" />
                     </a>
                   </div>
                   <p className="text-sm">
