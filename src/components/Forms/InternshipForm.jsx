@@ -1,7 +1,6 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { LuUpload } from "react-icons/lu";
-import axios from "axios";
 import { toast } from "react-hot-toast";
 
 const InternshipForm = () => {
@@ -11,11 +10,11 @@ const InternshipForm = () => {
     formState: { errors },
     reset,
   } = useForm();
-  
+
+  const appUrl = import.meta.env.VITE_API_URL;
   const [loading, setLoading] = useState(false);
   const [file, setFile] = useState(null);
   const [fileName, setFileName] = useState("");
-  console.log("file", file)
   const handleFileChange = (e) => {
     const selectedFile = e.target.files[0];
     if (selectedFile) {
@@ -36,27 +35,37 @@ const InternshipForm = () => {
       formData.append("speciality", data.speciality);
       formData.append("experience", data.experience);
       formData.append("interest", data.interest);
-      formData.append("cv", file);
-  
-      // Axios POST request with formData
-      const response = await axios.post(
-        "http://localhost:5000/internship-apply", 
-        formData,  
-      );
-  
-      console.log("Response from internship apply:", response);
-      toast.success("Application Submitted");
+      formData.append("subject", "Internship Application");
+      if (file) {
+        formData.append('file', file); // 'file' should match the server's expectation
+      }
+      // Log FormData entries
+      for (let [key, value] of formData.entries()) {
+        console.log(`${key}: ${value instanceof File ? value.name : value}`);
+      }
+
+      const response = await fetch(`${appUrl}/jobs/emails/send`, {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.ok) {
+        const jsonResponse = await response.json();
+        console.log("Response:", jsonResponse);
+        toast.success("Application sent successfully!");
+      } else {
+        throw new Error('Failed to send application');
+      }
     } catch (error) {
-      console.error("Error submitting form:", error);
-      toast.error("Application Submitting Failed");
-    } finally {
+      console.error("Failed to send: ", error);
+      toast.error("Message Sending Failed");
+    }
+    finally {
       setLoading(false);
-      setFile(null);
-      setFileName("");
+      reset(); // Reset the form after submission
     }
   };
 
-  
 
   return (
     <form
@@ -70,9 +79,8 @@ const InternshipForm = () => {
           {...register("fullName", {
             required: "Full name is required",
           })}
-          className={`appearance-none border-b font-normal w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
-            errors.fullName ? "border-red-500" : ""
-          }`}
+          className={`appearance - none border - b font - normal w - full py - 2 px - 3 text - gray - 700 leading - tight focus: outline - none focus: shadow - outline ${errors.fullName ? "border-red-500" : ""
+            }`}
           type="text"
           placeholder="Full name"
         />
@@ -92,9 +100,8 @@ const InternshipForm = () => {
               message: "Invalid email format",
             },
           })}
-          className={`appearance-none border-b font-normal w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
-            errors.email ? "border-red-500" : ""
-          }`}
+          className={`appearance - none border - b font - normal w - full py - 2 px - 3 text - gray - 700 leading - tight focus: outline - none focus: shadow - outline ${errors.email ? "border-red-500" : ""
+            }`}
           type="email"
           placeholder="Email"
         />
@@ -114,9 +121,8 @@ const InternshipForm = () => {
               message: "Phone number must be in Pakistani format",
             },
           })}
-          className={`appearance-none border-b font-normal w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
-            errors.phoneNumber ? "border-red-500" : ""
-          }`}
+          className={`appearance - none border - b font - normal w - full py - 2 px - 3 text - gray - 700 leading - tight focus: outline - none focus: shadow - outline ${errors.phoneNumber ? "border-red-500" : ""
+            }`}
           type="tel"
           placeholder="Phone Number"
         />
@@ -134,9 +140,8 @@ const InternshipForm = () => {
           {...register("address", {
             required: "Address is required",
           })}
-          className={`appearance-none border-b font-normal w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
-            errors.address ? "border-red-500" : ""
-          }`}
+          className={`appearance - none border - b font - normal w - full py - 2 px - 3 text - gray - 700 leading - tight focus: outline - none focus: shadow - outline ${errors.address ? "border-red-500" : ""
+            }`}
           type="text"
           placeholder="Address"
         />
@@ -152,9 +157,8 @@ const InternshipForm = () => {
           {...register("education", {
             required: "Education details are required",
           })}
-          className={`appearance-none border-b font-normal w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
-            errors.education ? "border-red-500" : ""
-          }`}
+          className={`appearance - none border - b font - normal w - full py - 2 px - 3 text - gray - 700 leading - tight focus: outline - none focus: shadow - outline ${errors.education ? "border-red-500" : ""
+            }`}
           type="text"
           placeholder="Education"
         />
@@ -170,9 +174,8 @@ const InternshipForm = () => {
           {...register("speciality", {
             required: "Speciality is required",
           })}
-          className={`appearance-none border-b font-normal w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
-            errors.speciality ? "border-red-500" : ""
-          }`}
+          className={`appearance - none border - b font - normal w - full py - 2 px - 3 text - gray - 700 leading - tight focus: outline - none focus: shadow - outline ${errors.speciality ? "border-red-500" : ""
+            }`}
           type="text"
           placeholder="Speciality"
         />
@@ -190,9 +193,8 @@ const InternshipForm = () => {
           {...register("experience", {
             required: "Experience details are required",
           })}
-          className={`appearance-none border-b font-normal w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
-            errors.experience ? "border-red-500" : ""
-          }`}
+          className={`appearance - none border - b font - normal w - full py - 2 px - 3 text - gray - 700 leading - tight focus: outline - none focus: shadow - outline ${errors.experience ? "border-red-500" : ""
+            }`}
           type="text"
           placeholder="Experience"
         />
@@ -210,9 +212,8 @@ const InternshipForm = () => {
           {...register("interest", {
             required: "Interest is required",
           })}
-          className={`appearance-none border-b font-normal w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
-            errors.interest ? "border-red-500" : ""
-          }`}
+          className={`appearance - none border - b font - normal w - full py - 2 px - 3 text - gray - 700 leading - tight focus: outline - none focus: shadow - outline ${errors.interest ? "border-red-500" : ""
+            }`}
           type="text"
           placeholder="Interest"
         />
@@ -221,34 +222,26 @@ const InternshipForm = () => {
         )}
       </div>
 
-      {/* Upload CV */}
+      {/* Add your CV */}
       <div className="mb-4">
         <label
           htmlFor="cv"
-          className={`cursor-pointer bg-blue-400 text-white w-44 flex flex-col ${
-            errors.cv ? "border-red-500" : "border-gray-300"
-          } border-b py-2 transition duration-300 ease-in-out ${
-            errors.cv ? "bg-red-100" : "bg-white"
-          }`}
+          className={`cursor - pointer bg - blue - 400 text - white w - 44 flex flex - col ${errors.cv ? "border-red-500" : "border-gray-300 "
+            } border - b py - 2 transition duration - 300 ease -in -out
+                  ${errors.cv ? "bg-red-100" : "bg-white"}`}
         >
           <p className="text-gray-700 flex gap-2 items-center">
             <LuUpload /> <span>Upload Your CV</span>
           </p>
-          <input
-            id="cv"
-            type="file"
-            {...register("cv", { required: "CV is required" })}
-            className="hidden"
-            onChange={handleFileChange}
-          />
+          <input type="file" onChange={handleFileChange} />
+
+
         </label>
         {errors.cv && (
           <p className="text-red-500 text-xs mt-1">{errors.cv.message}</p>
         )}
         {fileName && (
-          <div className="mt-2 text-gray-700">
-            Selected File: <span className="font-semibold">{fileName}</span>
-          </div>
+          <p className="text-gray-500 text-xs mt-1">{fileName}</p>
         )}
       </div>
 
@@ -261,7 +254,7 @@ const InternshipForm = () => {
           {loading ? "Submitting" : "Submit Application"}
         </button>
       </div>
-    
+
     </form>
   );
 };
