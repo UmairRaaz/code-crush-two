@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import LineEffect from "../components/Buttons/LineEffect";
-import axios from "axios";
-
 import { LuUpload } from "react-icons/lu";
 import toast from "react-hot-toast";
 
@@ -13,43 +11,61 @@ const CareersApply = () => {
     reset,
     formState: { errors },
   } = useForm();
-  const [loading, setloading] = useState(false);
+  const appUrl = import.meta.env.VITE_API_URL;
+
+  const [loading, setLoading] = useState(false);
   const [file, setFile] = useState(null);
   const [fileName, setFileName] = useState("");
 
-  const handleFileChange = (e) => {
-    if (e.target.files.length > 0) {
-      setFile(e.target.files[0]);
-      setFileName(e.target.files[0].name);
+  const handleFileChange = (event) => {
+    const selectedFile = event.target.files[0];
+    if (selectedFile) {
+      setFile(selectedFile);
+      setFileName(selectedFile.name);
     }
   };
 
   const onSubmit = async (data) => {
     try {
-      setloading(true);
+      setLoading(true);
       const formData = new FormData();
-      formData.append("firstName", data.firstName);
-      formData.append("lastName", data.lastName);
+      formData.append("fullName", `${data.firstName} ${data.lastName}`);
       formData.append("email", data.email);
       formData.append("phone", data.phoneNumber);
-      formData.append("cv", file);
+      formData.append("subject", "Job Application");
 
-      // Axios POST request with JSON payload
-      const response = await axios.post(
-        "http://localhost:5000/career",
-        JSON.stringify(formData),
-      );
-      console.log(response)
-      toast.success("Application Submitted");
-      setloading(false);
+      // Append the file if it's selected
+      if (file) {
+        formData.append('file', file); // 'file' should match the server's expectation
+      }
+
+      // Log FormData entries
+      for (let [key, value] of formData.entries()) {
+        console.log(`${key}: ${value instanceof File ? value.name : value}`);
+      }
+
+      const response = await fetch(`${appUrl}/jobs/emails/send`, {
+        method: "POST",
+        body: formData,
+      });
+
+      // Handle response
+      if (response.ok) {
+        const jsonResponse = await response.json();
+        console.log("Response:", jsonResponse);
+        toast.success("Application sent successfully!");
+      } else {
+        throw new Error('Failed to send application');
+      }
     } catch (error) {
-      toast.error("Application Submitting Failed");
-      setloading(false);
+      console.error("Failed to send: ", error);
+      toast.error("Message Sending Failed");
     } finally {
-      reset();
-      setloading(false);
+      setLoading(false);
+      reset(); // Reset the form after submission
     }
-  };
+  }
+
 
   return (
     <div className="min-h-screen mt-20 bg-gray-100 text-gray-700">
@@ -116,9 +132,8 @@ const CareersApply = () => {
                 {...register("firstName", {
                   required: "First name is required",
                 })}
-                className={`appearance-none border-b font-normal  w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
-                  errors.firstName ? "border-red-500" : ""
-                }`}
+                className={`appearance-none border-b font-normal w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${errors.firstName ? "border-red-500" : ""
+                  }`}
                 type="text"
                 placeholder="First name"
               />
@@ -134,9 +149,8 @@ const CareersApply = () => {
               <input
                 id="lastName"
                 {...register("lastName", { required: "Last name is required" })}
-                className={` appearance-none border-b w-full font-normal py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
-                  errors.lastName ? "border-red-500" : ""
-                }`}
+                className={`appearance-none border-b w-full font-normal py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${errors.lastName ? "border-red-500" : ""
+                  }`}
                 type="text"
                 placeholder="Last name"
               />
@@ -154,9 +168,8 @@ const CareersApply = () => {
                 {...register("phoneNumber", {
                   required: "Phone number is required",
                 })}
-                className={`appearance-none border-b font-normal w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
-                  errors.phoneNumber ? "border-red-500" : ""
-                }`}
+                className={`appearance-none border-b font-normal w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${errors.phoneNumber ? "border-red-500" : ""
+                  }`}
                 type="tel"
                 placeholder="Phone Number"
               />
@@ -178,9 +191,8 @@ const CareersApply = () => {
                     message: "Entered value does not match email format",
                   },
                 })}
-                className={`appearance-none font-normal border-b w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
-                  errors.email ? "border-red-500" : ""
-                }`}
+                className={`appearance-none font-normal border-b w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${errors.email ? "border-red-500" : ""
+                  }`}
                 type="email"
                 placeholder="Email"
               />
@@ -190,44 +202,38 @@ const CareersApply = () => {
                 </p>
               )}
             </div>
+
             {/* Add your CV */}
             <div className="mb-4">
               <label
                 htmlFor="cv"
-                className={`cursor-pointer bg-blue-400 text-white w-44 flex flex-col  ${
-                  errors.cv ? "border-red-500" : "border-gray-300 "
-                } border-b py-2 transition duration-300 ease-in-out
+                className={`cursor-pointer bg-blue-400 text-white w-44 flex flex-col ${errors.cv ? "border-red-500" : "border-gray-300 "
+                  } border-b py-2 transition duration-300 ease-in-out
                   ${errors.cv ? "bg-red-100" : "bg-white"}`}
               >
                 <p className="text-gray-700 flex gap-2 items-center">
                   <LuUpload /> <span>Upload Your CV</span>
                 </p>
-                <input
-                  id="cv"
-                  type="file"
-                  {...register("cv", { required: "CV is required" })}
-                  className="hidden"
-                  onChange={handleFileChange}
-                />
+                <input type="file" onChange={handleFileChange} />
+
+
               </label>
               {errors.cv && (
                 <p className="text-red-500 text-xs mt-1">{errors.cv.message}</p>
               )}
               {fileName && (
-                <div className="mt-2 text-gray-700">
-                  Selected File:{" "}
-                  <span className="font-semibold">{fileName}</span>
-                </div>
+                <p className="text-gray-500 text-xs mt-1">{fileName}</p>
               )}
             </div>
 
-            <div className="flex items-center justify-between">
+            <div className="flex justify-center mb-4">
               <button
-                disabled={loading}
-                className="bg-red-500 hover:bg-red-700 text-white  py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
                 type="submit"
+                className={`bg-blue-500 text-white py-2 px-6 rounded ${loading ? "opacity-50 cursor-not-allowed" : ""
+                  }`}
+                disabled={loading}
               >
-                {loading ? `Submitting` : `Submit Application`}
+                {loading ? "Sending..." : "Send Application"}
               </button>
             </div>
           </form>
