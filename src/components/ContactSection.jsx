@@ -1,5 +1,4 @@
-import axios from "axios";
-import React, { useState } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 
@@ -10,50 +9,36 @@ const ContactSection = () => {
     formState: { errors },
     reset,
   } = useForm();
-  const [loading, setloading] = useState(false);
+  const appUrl = import.meta.env.VITE_API_URL;
+
+  const [loading, setLoading] = useState(false);
+
   const onSubmit = async (data) => {
     try {
-      setloading(true);
-
-      // Prepare the request options
-      const requestOptions = {
+      setLoading(true);
+      const response = await fetch(`${appUrl}/jobs/emails/send`, {
         method: "POST",
         headers: {
-          "Content-Type": "application/json", // Ensure the Content-Type is set to application/json
+          'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          name: data.name,
-          email: data.email,
-          phone: data.phone,
-          message: data.message,
-          subject: data.message,
-        }),
-      };
+        body: JSON.stringify({ fullName: data.name, email: data.email, phone: data.phone, message: data.message, subject: "Query Message" })
+      });
 
-      // Send the request
-      const response = await fetch(
-        "http://localhost:5000/contact",
-        requestOptions
-      );
-
-      // Check if the response is OK (status in the range 200-299)
-      if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
+      const json = await response.json()
+      // Handle successful response
+      if (response.status === 200) {
+        toast.success("Message Sent Successfully");
+      } else {
+        toast.error(json.message);
       }
 
-      const responseData = await response.json();
-
-      console.log(responseData);
-      toast.success("Message Sent Successfully");
     } catch (error) {
       console.error("Failed to send: ", error);
       toast.error("Message Sending Failed");
     } finally {
-      setloading(false);
-      reset();
+      setLoading(false);
+      reset(); // Reset the form after submission
     }
-
-    console.log(data);
   };
 
   return (
