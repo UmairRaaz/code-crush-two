@@ -1,7 +1,20 @@
+import englishMasterImage from "/projectImages/englishMaster.png";
+import Wanderlust from "/projectImages/Wanderlust.png";
+import safeDrive from "/projectImages/limit.png";
+import tailorImage from "/projectImages/limit.png";
+import limit from "/projectImages/limit.png"; 
+import DineEase from "/projectImages/DineEase.png"; 
+import aiStudy from "/projectImages/aiStudy.png"; 
+import SalonEase from "/projectImages/SalonEase.png"; 
+import FinSmart from "/projectImages/FinSmart.png"; 
+import BidMarket from "/projectImages/BidMarket.png"; 
+import GenCart from "/projectImages/GenCart.png"; 
+import Spotless from "/projectImages/Spotless.png"; 
+import mcqs from "/projectImages/mcqs.png"; 
 const projects = [
   {
     id: 1,
-    image: "",
+    image: englishMasterImage,
     name: "English Master",
     tagline: "Master English Speaking with AI-Powered Precision",
     shortDescription:
@@ -78,7 +91,7 @@ const projects = [
           "An AI-powered tutor that listens to your pronunciation and provides feedback to help improve clarity and tone.",
       },
       {
-        title: "Speech-to-Text Analysis (added): ",
+        title: "Speech-to-Text Analysis (added) ",
         description:
           "A feature that transcribes spoken words into text, analyzing grammar and fluency for further improvement.",
       },
@@ -133,7 +146,7 @@ const projects = [
   },
   {
     id: 2,
-    image: "",
+    image: Wanderlust,
     name: "Wanderlust",
     tagline: "Explore, Experience, and Enjoy Your Next Adventure",
     shortDescription:
@@ -264,7 +277,7 @@ const projects = [
   },
   {
     id: 3,
-    image: "",
+    image: safeDrive,
     name: "SafeDrive",
     tagline: "Explore, Experience, and Enjoy Your Next Adventure",
     shortDescription:
@@ -393,7 +406,7 @@ const projects = [
   },
   {
     id: 4,
-    image: "",
+    image: tailorImage,
     name: "Tailor Bhai",
     tagline: "Your Tailoring Business, Simplified",
     shortDescription:
@@ -581,7 +594,7 @@ const projects = [
   },
   {
     id: 5,
-    image: "",
+    image: limit,
     name: "SwiftRide",
     tagline: "Your Ride, Your Time – Swift and Reliable!",
     shortDescription:
@@ -630,13 +643,12 @@ const projects = [
       },
       {
         title: "Multiple Ride Options",
-        options: [
+        description: [
           "Economy Rides for affordable travel.",
           "Premium Rides for luxury and comfort.",
           "Carpooling/Shared Rides to split fares with other passengers.",
           "Bike Taxi for quick and efficient short-distance travel.",
         ],
-        description: "",
       },
       {
         title: "Driver Profile & Rating",
@@ -675,13 +687,12 @@ const projects = [
       },
       {
         title: "Super Admin Dashboard",
-        options: [
+        description: [
           "Real-time analytics on rides, drivers, and user behavior.",
           "Dispute management and resolution.",
           "Driver and user onboarding controls.",
           "Payment and transaction monitoring.",
         ],
-        description: "",
       },
     ],
     SuperAdminFeatures: [
@@ -800,7 +811,7 @@ const projects = [
   },
   {
     id: 6,
-    image: "",
+    image: DineEase,
     name: "DineEase",
     tagline: "Effortless Dining, Anytime, Anywhere",
     shortDescription:
@@ -816,12 +827,12 @@ const projects = [
       "Providing an intuitive system for restaurant staff that requires minimal training.",
     ],
     solutions: [
-      "<bold>Advanced Table Reservation System </bold>: Automates table bookings, allowing customers to reserve tables based on availability, time, and party size. ",
-      "<bold>	Waiter App for Efficient Service </bold>:Allows waitstaff to manage multiple tables, take orders via the app, and send them directly to the kitchen, reducing order errors and improving speed. ",
-      "<bold>	Kitchen App for Streamlined Workflow </bold>: Displays incoming orders in real-time, allowing chefs to prepare meals efficiently. The app also tracks prep times and notifies waitstaff when orders are ready. ",
-      "<bold>Counter App for Billing </bold>:Integrated with the POS system, this app allows the counter staff to process payments for dine-in customers, parcel orders, and deliveries. It generates itemized bills and applies discounts or offers automatically. ",
-      "<bold>	Customer App for Self-Service </bold>:Customers can book tables, browse the menu, place dine-in or delivery orders, and schedule parcel pickups through the app. It also supports real-time order tracking and notifications. ",
-      "<bold>	Super Admin Dashboard for Centralized Control </bold>: Provides a detailed overview of daily operations, including reservations, orders, staff performance, and financial analytics. It allows restaurant owners to manage inventory, view reports, handle complaints, and set pricing. ",
+      " Advanced Table Reservation System <bold/>: Automates table bookings, allowing customers to reserve tables based on availability, time, and party size. ",
+      " 	Waiter App for Efficient Service :Allows waitstaff to manage multiple tables, take orders via the app, and send them directly to the kitchen, reducing order errors and improving speed. ",
+      " 	Kitchen App for Streamlined Workflow : Displays incoming orders in real-time, allowing chefs to prepare meals efficiently. The app also tracks prep times and notifies waitstaff when orders are ready. ",
+      " Counter App for Billing :Integrated with the POS system, this app allows the counter staff to process payments for dine-in customers, parcel orders, and deliveries. It generates itemized bills and applies discounts or offers automatically. ",
+      " 	Customer App for Self-Service :Customers can book tables, browse the menu, place dine-in or delivery orders, and schedule parcel pickups through the app. It also supports real-time order tracking and notifications. ",
+      " 	Super Admin Dashboard for Centralized Control : Provides a detailed overview of daily operations, including reservations, orders, staff performance, and financial analytics. It allows restaurant owners to manage inventory, view reports, handle complaints, and set pricing. ",
     ],
     results: [
       "25% increase in table occupancy through optimized reservation management and real-time updates on table availability.",
@@ -834,7 +845,7 @@ const projects = [
       review:
         "DineEase has transformed how we operate our restaurant. Our staff is more efficient, the customer experience is fantastic, and we’ve seen an improvement in revenue. The ability to track everything in real time is a game-changer.",
     },
-    features: [
+    detailedFeatures: [
       {
         appType: "Customer App Features",
         features: [
@@ -959,7 +970,7 @@ const projects = [
   },
   {
     id: 7,
-    image: "",
+    image: aiStudy,
     name: "AI Study",
     tagline: "Learn Smarter with AI-Powered Education",
     shortDescription:
@@ -974,11 +985,11 @@ const projects = [
       "Providing actionable data and insights for educators to track student progress and optimize teaching strategies.",
     ],
     solutions: [
-      "<bold>AI-Powered Adaptive Learning</bold>: The platform tailors study plans based on individual student performance, learning pace, and subject mastery. AI continuously adjusts the curriculum to match students' progress, providing a personalized learning path. ",
-      "<bold>AI-Powered Tutors </bold>:Intelligent AI tutors offer step-by-step guidance for complex topics, helping students understand difficult concepts with ease. These AI tutors are available 24/7 for immediate support. ",
-      "<bold>Interactive Quizzes & Gamified Learning </bold>: Engaging quizzes, challenges, and games that make learning fun while assessing students' understanding in real-time. ",
-      "<bold>Real-Time Feedback & Analytics </bold>:Detailed progress reports and personalized feedback for both students and teachers. AI identifies areas for improvement and provides suggestions on how to enhance performance. ",
-      "<bold>Multilingual Support </bold>:  The platform is equipped to offer lessons in multiple languages, making it accessible to a global audience.",
+      " AI-Powered Adaptive Learning: The platform tailors study plans based on individual student performance, learning pace, and subject mastery. AI continuously adjusts the curriculum to match students' progress, providing a personalized learning path. ",
+      " AI-Powered Tutors :Intelligent AI tutors offer step-by-step guidance for complex topics, helping students understand difficult concepts with ease. These AI tutors are available 24/7 for immediate support. ",
+      " Interactive Quizzes & Gamified Learning : Engaging quizzes, challenges, and games that make learning fun while assessing students' understanding in real-time. ",
+      " Real-Time Feedback & Analytics :Detailed progress reports and personalized feedback for both students and teachers. AI identifies areas for improvement and provides suggestions on how to enhance performance. ",
+      " Multilingual Support :  The platform is equipped to offer lessons in multiple languages, making it accessible to a global audience.",
     ],
     results: [
       "45% increase in student performance by utilizing personalized learning pathways.",
@@ -991,32 +1002,32 @@ const projects = [
       review:
         "AI Study has completely changed how I approach learning. The adaptive learning system feels like having a personal tutor with me all the time, and I can track my progress in real time. It’s truly a revolutionary platform.",
     },
-    features: [
+    detailedFeatures: [
       {
         appType: "AI-Powered Personalized Learning",
         features: [
-          "<bold>Adaptive Study Plans </bold>: Automatically adjusts lessons based on your learning pace and current understanding",
-          "<bold>AI Tutors </bold>: Virtual tutors available 24/7 for instant help, answering questions, and explaining complex concepts in real-time.",
-          "<bold>Progress Tracking </bold>: Detailed analytics for students and educators, highlighting strengths, weaknesses, and areas of improvement.",
-          "<bold>Customizable Learning Paths </bold>: Tailor-made courses based on your interests, academic level, and future goals.",
+          " Adaptive Study Plans : Automatically adjusts lessons based on your learning pace and current understanding",
+          " AI Tutors : Virtual tutors available 24/7 for instant help, answering questions, and explaining complex concepts in real-time.",
+          " Progress Tracking : Detailed analytics for students and educators, highlighting strengths, weaknesses, and areas of improvement.",
+          " Customizable Learning Paths : Tailor-made courses based on your interests, academic level, and future goals.",
         ],
       },
       {
         appType: "Interactive Learning Tools",
         features: [
-          "<bold>Quizzes & Assessments</bold>: Interactive quizzes with instant feedback and performance tracking.",
-          "<bold>Daily Challenges </bold>: Engaging challenges that push students to practice consistently and achieve learning milestones.",
-          "<bold>AI-Powered Grammar Checker </bold>: Ensures essays, reports, and assignments are free from grammatical errors, improving writing skills.",
-          "<bold>Vocabulary Builder</bold>: Daily vocabulary exercises that help students expand their word bank and usage through spaced repetition techniques.",
-          "<bold>AI Conversations & Study Chats</bold>: Engage in real-time conversations with AI bots designed to help you practice and improve communication skills.",
+          " Quizzes & Assessments: Interactive quizzes with instant feedback and performance tracking.",
+          " Daily Challenges : Engaging challenges that push students to practice consistently and achieve learning milestones.",
+          " AI-Powered Grammar Checker : Ensures essays, reports, and assignments are free from grammatical errors, improving writing skills.",
+          " Vocabulary Builder: Daily vocabulary exercises that help students expand their word bank and usage through spaced repetition techniques.",
+          " AI Conversations & Study Chats: Engage in real-time conversations with AI bots designed to help you practice and improve communication skills.",
         ],
       },
       {
         appType: "Engagement Features",
         features: [
-          "<bold>Gamification</bold>: Earn points, badges, and rewards for completing lessons, taking quizzes, and improving performance.",
-          "<bold>Collaborative Learning</bold>: Students can work together on projects and discussions, making learning more social and interactive.",
-          "<bold>Live Webinars & Expert Classes</bold>: Access to live virtual classes and sessions with industry professionals and academic experts.",
+          " Gamification: Earn points, badges, and rewards for completing lessons, taking quizzes, and improving performance.",
+          " Collaborative Learning: Students can work together on projects and discussions, making learning more social and interactive.",
+          " Live Webinars & Expert Classes: Access to live virtual classes and sessions with industry professionals and academic experts.",
         ],
       },
     ],
@@ -1067,7 +1078,7 @@ const projects = [
   },
   {
     id: 8,
-    image: "",
+    image: SalonEase,
     name: "SalonEase",
     tagline: "Your Perfect Salon Experience, Just a Tap Away",
     shortDescription:
@@ -1082,12 +1093,12 @@ const projects = [
       "Maintaining consistent quality and customer satisfaction while scaling salon operations across multiple locations.",
     ],
     solutions: [
-      "<bold>SaaS-Based Booking System</bold>: A fully automated, cloud-based system that allows customers to schedule appointments 24/7 via the app or website. ",
-      "<bold>Comprehensive Salon Management</bold>:Salon app offers real-time visibility into appointments, staff schedules, and customer preferences, minimizing human error and double-booking.",
-      "<bold>Centralized Admin Dashboard </bold>: Super admin dashboard enables centralized control over salon operations, allowing for better resource allocation, performance tracking, and decision-making.",
-      "<bold>Customer Personalization </bold>:The customer app allows users to create profiles, receive personalized recommendations, track their service history, and receive special offers based on their preferences. ",
-      "<bold>Automated Notifications </bold>: Both customers and salons receive timely notifications for appointment reminders, cancellations, or changes, enhancing customer satisfaction. ",
-      "<bold>Payment Integration </bold>: Supports multiple payment gateways, enabling cashless transactions and secure online payments. ",
+      " SaaS-Based Booking System: A fully automated, cloud-based system that allows customers to schedule appointments 24/7 via the app or website. ",
+      " Comprehensive Salon Management:Salon app offers real-time visibility into appointments, staff schedules, and customer preferences, minimizing human error and double-booking.",
+      " Centralized Admin Dashboard : Super admin dashboard enables centralized control over salon operations, allowing for better resource allocation, performance tracking, and decision-making.",
+      " Customer Personalization :The customer app allows users to create profiles, receive personalized recommendations, track their service history, and receive special offers based on their preferences. ",
+      " Automated Notifications : Both customers and salons receive timely notifications for appointment reminders, cancellations, or changes, enhancing customer satisfaction. ",
+      " Payment Integration : Supports multiple payment gateways, enabling cashless transactions and secure online payments. ",
     ],
     results: [
       "30% increase in booking efficiency through automated scheduling and reminders.",
@@ -1100,29 +1111,29 @@ const projects = [
       review:
         "SalonEase has completely transformed our booking system! Our clients love the ease of scheduling appointments through the app, and it has made managing our salon so much simpler.",
     },
-    features: [
+    detailedFeatures: [
       {
         appType: "Customer App",
         features: [
-          "<bold>Easy Booking System </bold>: Customers can search for salons, browse services, view available time slots, and book appointments with just a few taps.",
-          "<bold>Service Discovery </bold>: Users can explore a wide range of services, from haircuts to facials, offered by salons in their area.",
-          "<bold>In-App Payments: </bold>: Integrated with various payment gateways, allowing customers to pay securely online or choose to pay at the salon.",
-          "<bold>Appointment Reminders </bold>:Automated push notifications to remind customers about their upcoming appointments.",
-          "<bold>Customer Reviews & Ratings</bold>:Allows users to rate their experiences and read reviews to choose the best salons.",
-          "<bold>Loyalty Programs & Discounts </bold>:Customers can earn points and receive discounts for repeat visits, incentivizing loyalty.",
-          "<bold>Personalized Profiles </bold>:Tracks service history and provides recommendations based on previous appointments and preferences.",
+          " Easy Booking System : Customers can search for salons, browse services, view available time slots, and book appointments with just a few taps.",
+          " Service Discovery : Users can explore a wide range of services, from haircuts to facials, offered by salons in their area.",
+          " In-App Payments:  Integrated with various payment gateways, allowing customers to pay securely online or choose to pay at the salon.",
+          " Appointment Reminders :Automated push notifications to remind customers about their upcoming appointments.",
+          " Customer Reviews & Ratings:Allows users to rate their experiences and read reviews to choose the best salons.",
+          " Loyalty Programs & Discounts :Customers can earn points and receive discounts for repeat visits, incentivizing loyalty.",
+          " Personalized Profiles :Tracks service history and provides recommendations based on previous appointments and preferences.",
         ],
       },
       {
         appType: "Salon App",
         features: [
-          "<bold>Appointment Management</bold>: Real-time access to booked appointments, staff schedules, and service durations.",
-          "<bold>Staff Management </bold>: Assign specific staff to appointments based on skills and availability, ensuring optimized workflow.",
-          "<bold>Service Management </bold>: Easily update available services, pricing, and promotional offers.",
-          "<bold>Customer Relationship Management (CRM)</bold>: Access customer profiles, preferences, and appointment history for more personalized service.",
-          "<bold>Inventory Management</bold>: Manage beauty products, tools, and supplies required for various services.",
-          "<bold>Invoicing & Payments</bold>: Generate invoices automatically, and manage online payments, tips, and other financial transactions.",
-          "<bold>Marketing Tools</bold>: Engage with customers through promotions, discounts, and notifications for special offers.",
+          " Appointment Management: Real-time access to booked appointments, staff schedules, and service durations.",
+          " Staff Management : Assign specific staff to appointments based on skills and availability, ensuring optimized workflow.",
+          " Service Management : Easily update available services, pricing, and promotional offers.",
+          " Customer Relationship Management (CRM): Access customer profiles, preferences, and appointment history for more personalized service.",
+          " Inventory Management: Manage beauty products, tools, and supplies required for various services.",
+          " Invoicing & Payments: Generate invoices automatically, and manage online payments, tips, and other financial transactions.",
+          " Marketing Tools: Engage with customers through promotions, discounts, and notifications for special offers.",
         ],
       },
     ],
@@ -1191,7 +1202,8 @@ const projects = [
       },
       {
         title: "GraphQL",
-        description: "For efficient data fetching and real-time updates between the app, salon, and admin dashboard.",
+        description:
+          "For efficient data fetching and real-time updates between the app, salon, and admin dashboard.",
       },
     ],
     additionalNotes:
@@ -1199,7 +1211,7 @@ const projects = [
   },
   {
     id: 9,
-    image: "",
+    image: FinSmart,
     name: "FinSmart",
     tagline: "Empowering Your Financial Future",
     shortDescription:
@@ -1213,46 +1225,46 @@ const projects = [
       "Security concerns regarding online transactions and sensitive financial data create reluctance in adopting digital financial tools.",
     ],
     solutions: [
-      "<bold>Intuitive User Interface</bold>: A user-friendly design that simplifies navigation and encourages engagement, making finance management accessible for everyone. ",
-      "<bold>Comprehensive Budgeting Tools</bold>:Users can create personalized budgets, track expenses in real-time, and receive alerts for overspending.",
-      "<bold>Investment Tracking </bold>: Allows users to monitor their investment portfolios, view performance analytics, and get personalized insights on market trends.",
-      "<bold>Secure Transactions</bold>:Implements top-tier encryption and multi-factor authentication to ensure the safety of user data and transactions. ",
-      "<bold>Financial Goal Setting </bold>: Users can set specific savings goals and receive customized plans and tips to achieve them. ",
-      "<bold>Educational Resources:  </bold>: Provides articles, videos, and tutorials to enhance financial literacy and empower users to make informed financial decisions.",
-      "<bold>Real-time Notifications:  </bold>: Sends alerts for bill payments, budget limits, and investment opportunities, helping users stay on top of their financial responsibilities.",
+      " Intuitive User Interface: A user-friendly design that simplifies navigation and encourages engagement, making finance management accessible for everyone. ",
+      " Comprehensive Budgeting Tools:Users can create personalized budgets, track expenses in real-time, and receive alerts for overspending.",
+      " Investment Tracking : Allows users to monitor their investment portfolios, view performance analytics, and get personalized insights on market trends.",
+      " Secure Transactions:Implements top-tier encryption and multi-factor authentication to ensure the safety of user data and transactions. ",
+      " Financial Goal Setting : Users can set specific savings goals and receive customized plans and tips to achieve them. ",
+      " Educational Resources:  : Provides articles, videos, and tutorials to enhance financial literacy and empower users to make informed financial decisions.",
+      " Real-time Notifications:  : Sends alerts for bill payments, budget limits, and investment opportunities, helping users stay on top of their financial responsibilities.",
     ],
     results: [
-      "<bold>Increased User Engagement</bold>:The intuitive interface and educational resources resulted in a 40% increase in user engagement within the first six months.",
-      "<bold>Improved Financial Health </bold>: Users reported an average savings increase of 30% after implementing budgeting tools and goal-setting features. ",
-      "<bold>Enhanced Security Measures:  </bold>The app's robust security protocols led to zero security breaches, fostering trust among users.",
-      "<bold>Positive User Feedback:  </bold>Over 85% of users rated the app 4.5 stars or higher for its ease of use and effectiveness.",
+      " Increased User Engagement:The intuitive interface and educational resources resulted in a 40% increase in user engagement within the first six months.",
+      " Improved Financial Health : Users reported an average savings increase of 30% after implementing budgeting tools and goal-setting features. ",
+      " Enhanced Security Measures:  The app's robust security protocols led to zero security breaches, fostering trust among users.",
+      " Positive User Feedback:  Over 85% of users rated the app 4.5 stars or higher for its ease of use and effectiveness.",
     ],
     clientReview: {
       clientName: "Alex Johnson, FinSmart User",
       review:
         "FinSmart has completely transformed how I manage my money. The budgeting tools are intuitive, and I feel more in control of my financial future than ever before!",
     },
-    features: [
+    detailedFeatures: [
       {
         appType: "User App",
         features: [
-          "<bold>Personalized Dashboard</bold>: A comprehensive overview of financial health, including income, expenses, and savings goals.",
-          "<bold>Budget Creation Tools </bold>: Simple tools to create, track, and adjust personal budgets based on income and spending habits.",
-          "<bold>Expense Tracking: </bold>: Automatic categorization of expenses with the ability to manually adjust categories and amounts.",
-          "<bold>Investment Insights </bold>:Real-time tracking of investments with personalized recommendations based on user preferences and market conditions.",
-          "<bold>Bill Management</bold>:Schedule and track bill payments, with alerts for upcoming due dates to avoid late fees.",
-          "<bold>Savings Goals </bold>Set specific savings targets with progress tracking and tailored tips for achieving those goals.",
-          "<bold>In-App Chat Support </bold>:Access to customer support through chat for any questions or issues related to the app.",
+          " Personalized Dashboard: A comprehensive overview of financial health, including income, expenses, and savings goals.",
+          " Budget Creation Tools : Simple tools to create, track, and adjust personal budgets based on income and spending habits.",
+          " Expense Tracking: : Automatic categorization of expenses with the ability to manually adjust categories and amounts.",
+          " Investment Insights :Real-time tracking of investments with personalized recommendations based on user preferences and market conditions.",
+          " Bill Management:Schedule and track bill payments, with alerts for upcoming due dates to avoid late fees.",
+          " Savings Goals Set specific savings targets with progress tracking and tailored tips for achieving those goals.",
+          " In-App Chat Support :Access to customer support through chat for any questions or issues related to the app.",
         ],
       },
       {
         appType: "Admin Dashboard",
         features: [
-          "<bold>User Management</bold>: Tools for managing user accounts, tracking engagement metrics, and providing personalized support.",
-          "<bold>Analytics & Reporting </bold>: Comprehensive reports on user behavior, financial trends, and overall app performance to inform updates and features.",
-          "<bold>Security Monitoring </bold>: Real-time monitoring for suspicious activity and security breaches, ensuring user data protection.",
-          "<bold>Content Management System</bold>: Easily update educational resources and app content to keep users informed and engaged.",
-          "<bold>Marketing Tools: </bold>: Create targeted campaigns and promotions to encourage user engagement and app adoption.",
+          " User Management: Tools for managing user accounts, tracking engagement metrics, and providing personalized support.",
+          " Analytics & Reporting : Comprehensive reports on user behavior, financial trends, and overall app performance to inform updates and features.",
+          " Security Monitoring : Real-time monitoring for suspicious activity and security breaches, ensuring user data protection.",
+          " Content Management System: Easily update educational resources and app content to keep users informed and engaged.",
+          " Marketing Tools: : Create targeted campaigns and promotions to encourage user engagement and app adoption.",
         ],
       },
     ],
@@ -1284,12 +1296,12 @@ const projects = [
       },
       {
         title: "Firebase Authentication",
-        description:
-          "For secure user authentication and identity management.",
+        description: "For secure user authentication and identity management.",
       },
       {
         title: "Payment Gateways (Stripe, PayPal): ",
-        description: "For secure and seamless payment processing and fund transfers.",
+        description:
+          "For secure and seamless payment processing and fund transfers.",
       },
     ],
     additionalNotes:
@@ -1297,7 +1309,7 @@ const projects = [
   },
   {
     id: 10,
-    image: "",
+    image: BidMarket,
     name: "BidMarket",
     tagline: "Buy, Sell, and Bid – Your Marketplace Awaits!",
     shortDescription:
@@ -1305,52 +1317,52 @@ const projects = [
     overview:
       "BidMarket offers a comprehensive solution for users looking to buy and sell goods through classified ads and bidding. The platform combines the convenience of a classified ads website with the excitement of a bidding system, allowing users to find great deals or sell their items to the highest bidder. With an intuitive interface and robust features, BidMarket caters to both casual users and serious buyers/sellers, ensuring a seamless experience from browsing to transaction. </br> This platform not only serves as a marketplace but also fosters a community of users, enabling them to engage with one another through reviews, ratings, and chat functionalities.",
     challenges: [
-      "<bold>User Trust</bold>: Building a trustworthy environment for users to feel secure in transactions, especially with bidding involved. ",
-      "<bold>Complex Navigation</bold>:Many existing classified ad platforms suffer from confusing interfaces that hinder user engagement.",
-      "<bold>Competition</bold>Standing out in a saturated market filled with similar platforms offering limited features.",
-      "<bold>Fraud Prevention</bold>Ensuring the platform is secure from fraudulent listings and transactions that can harm user experience.",
+      " User Trust: Building a trustworthy environment for users to feel secure in transactions, especially with bidding involved. ",
+      " Complex Navigation:Many existing classified ad platforms suffer from confusing interfaces that hinder user engagement.",
+      " CompetitionStanding out in a saturated market filled with similar platforms offering limited features.",
+      " Fraud PreventionEnsuring the platform is secure from fraudulent listings and transactions that can harm user experience.",
     ],
     solutions: [
-      "<bold>Verified Listings</bold>Implement a verification process for sellers to ensure legitimacy and enhance user trust in the platform. ",
-      "<bold>Intuitive User Interface</bold>Designed with simplicity in mind, making it easy for users to navigate, post ads, and participate in bidding.",
-      "<bold>Bidding System</bold>A real-time bidding feature that allows users to place bids on items, receive notifications for outbid alerts, and track bidding history.",
-      "<bold>User Feedback Mechanism</bold>Incorporate a rating and review system to help users make informed decisions based on past interactions.",
-      "<bold>Robust Security Measures </bold>: Advanced security protocols to protect user data and transactions, along with monitoring for suspicious activity. ",
-      "<bold>Customer Support </bold>Dedicated support channels, including live chat and an FAQ section, to assist users with any queries.",
+      " Verified ListingsImplement a verification process for sellers to ensure legitimacy and enhance user trust in the platform. ",
+      " Intuitive User InterfaceDesigned with simplicity in mind, making it easy for users to navigate, post ads, and participate in bidding.",
+      " Bidding SystemA real-time bidding feature that allows users to place bids on items, receive notifications for outbid alerts, and track bidding history.",
+      " User Feedback MechanismIncorporate a rating and review system to help users make informed decisions based on past interactions.",
+      " Robust Security Measures : Advanced security protocols to protect user data and transactions, along with monitoring for suspicious activity. ",
+      " Customer Support Dedicated support channels, including live chat and an FAQ section, to assist users with any queries.",
     ],
     results: [
-      "<bold>Increased User Engagement</bold>The user-friendly interface and engaging features led to a 50% increase in active users within the first quarter of launch.",
-      "<bold>Higher Transaction Volume: </bold>The bidding feature resulted in a 35% increase in transactions compared to traditional classified ad listings.",
-      "<bold>Enhanced User Trust: </bold>Verified listings and user feedback mechanisms led to a significant decrease in fraudulent activities, with user satisfaction ratings exceeding 90%.",
-      "<bold>Strong Community Building </bold>Users reported positive experiences with the chat functionalities, leading to an increase in repeat usage.",
+      " Increased User EngagementThe user-friendly interface and engaging features led to a 50% increase in active users within the first quarter of launch.",
+      " Higher Transaction Volume: The bidding feature resulted in a 35% increase in transactions compared to traditional classified ad listings.",
+      " Enhanced User Trust: Verified listings and user feedback mechanisms led to a significant decrease in fraudulent activities, with user satisfaction ratings exceeding 90%.",
+      " Strong Community Building Users reported positive experiences with the chat functionalities, leading to an increase in repeat usage.",
     ],
     clientReview: {
       clientName: "Sarah Thompson, BidMarket User",
       review:
         "BidMarket has changed the way I buy and sell online! The bidding feature adds excitement to finding great deals, and I feel safe knowing that the platform takes security seriously.",
     },
-    features: [
+    detailedFeatures: [
       {
         appType: "User App",
         features: [
-          "<bold>Classified Ads Posting</bold>: Users can easily create and manage their classified ads with images, descriptions, and pricing.",
-          "<bold>Bidding System </bold>Participate in real-time bidding on various products with instant notifications for bids placed.",
-          "<bold>Search Filters: </bold>Advanced filtering options for users to find items based on categories, price range, and location.",
-          "<bold>Saved Searches</bold>Users can save their search preferences and receive alerts when new items match their criteria.",
-          "<bold>User Profiles</bold>Detailed profiles with transaction history, ratings, and reviews to build community trust.",
-          "<bold>In-App Messaging: </bold> Secure messaging system allowing users to communicate directly regarding listings.",
-          "<bold>Watchlist </bold>Users can save items they are interested in for easy access and to track bidding status.",
+          " Classified Ads Posting: Users can easily create and manage their classified ads with images, descriptions, and pricing.",
+          " Bidding System Participate in real-time bidding on various products with instant notifications for bids placed.",
+          " Search Filters: Advanced filtering options for users to find items based on categories, price range, and location.",
+          " Saved SearchesUsers can save their search preferences and receive alerts when new items match their criteria.",
+          " User ProfilesDetailed profiles with transaction history, ratings, and reviews to build community trust.",
+          " In-App Messaging:  Secure messaging system allowing users to communicate directly regarding listings.",
+          " Watchlist Users can save items they are interested in for easy access and to track bidding status.",
         ],
       },
       {
         appType: "Admin Dashboard",
         features: [
-          "<bold>User Management</bold>: Admins can monitor user accounts, manage listings, and handle disputes effectively.",
-          "<bold>Analytics & Reporting </bold>: Comprehensive analytics tools to track user engagement, transaction volume, and bidding trends.",
-          "<bold>Content Moderation </bold>: Tools for reviewing and approving classified ads before they go live to prevent inappropriate content.",
-          "<bold>Payment Management: </bold>Secure payment processing features to handle transactions smoothly and efficiently.",
-          "<bold>Fraud Detection</bold>Advanced algorithms to identify and prevent fraudulent listings or activities on the platform.",
-          "<bold>Promotional Tools</bold>Create and manage promotional campaigns to boost engagement and attract new users.",
+          " User Management: Admins can monitor user accounts, manage listings, and handle disputes effectively.",
+          " Analytics & Reporting : Comprehensive analytics tools to track user engagement, transaction volume, and bidding trends.",
+          " Content Moderation : Tools for reviewing and approving classified ads before they go live to prevent inappropriate content.",
+          " Payment Management: Secure payment processing features to handle transactions smoothly and efficiently.",
+          " Fraud DetectionAdvanced algorithms to identify and prevent fraudulent listings or activities on the platform.",
+          " Promotional ToolsCreate and manage promotional campaigns to boost engagement and attract new users.",
         ],
       },
     ],
@@ -1377,8 +1389,7 @@ const projects = [
       },
       {
         title: "Stripe or PayPal API",
-        description:
-          "For secure payment processing and transaction handling.",
+        description: "For secure payment processing and transaction handling.",
       },
       {
         title: "AI & Machine Learning",
@@ -1391,91 +1402,96 @@ const projects = [
   },
   {
     id: 11,
-    image: "",
+    image: GenCart,
     name: "GenCart",
     tagline: "Your Shopping, Delivered!",
     shortDescription:
       "GenCart is a comprehensive e-commerce app designed to streamline online shopping experiences for customers while providing seamless operations for riders and shoppers. With an easy-to-use interface and robust features, GenCart connects customers with a wide range of products and fast delivery options.",
-      overViewDetail : {
-        name: "GenCart",
-        description: "GenCart is an all-in-one e-commerce solution that empowers customers to browse, shop, and receive products right at their doorstep.",
-        components: [
-          {
-            name: "Customer App",
-            functionality: "Allows users to explore various products, add items to their cart, and make secure payments."
-          },
-          {
-            name: "Shopper App",
-            functionality: "Enables designated shoppers to fulfill customer orders by picking items from local stores."
-          },
-          {
-            name: "Rider App",
-            functionality: "Facilitates delivery personnel to efficiently manage and deliver orders, ensuring timely service."
-          }
-        ],
-        benefits: "This multi-faceted approach enhances user experience while providing flexibility and convenience in shopping and delivery."
-      },
+    overViewDetail: {
+      name: "GenCart",
+      description:
+        "GenCart is an all-in-one e-commerce solution that empowers customers to browse, shop, and receive products right at their doorstep.",
+      components: [
+        {
+          name: "Customer App",
+          functionality:
+            "Allows users to explore various products, add items to their cart, and make secure payments.",
+        },
+        {
+          name: "Shopper App",
+          functionality:
+            "Enables designated shoppers to fulfill customer orders by picking items from local stores.",
+        },
+        {
+          name: "Rider App",
+          functionality:
+            "Facilitates delivery personnel to efficiently manage and deliver orders, ensuring timely service.",
+        },
+      ],
+      benefits:
+        "This multi-faceted approach enhances user experience while providing flexibility and convenience in shopping and delivery.",
+    },
     challenges: [
-      "<bold>Order Fulfillment Efficiency</bold> Ensuring timely and accurate order fulfillment from stores to customers.",
-      "<bold>User Engagement</bold>Keeping customers engaged and encouraging repeat purchases in a competitive market.",
-      "<bold>Delivery Tracking: </bold>Providing real-time tracking for customers to monitor their orders.",
-      "<bold>Inventory Management</bold>Maintaining up-to-date inventory levels across multiple stores to avoid order cancellations.",
+      " Order Fulfillment Efficiency Ensuring timely and accurate order fulfillment from stores to customers.",
+      " User EngagementKeeping customers engaged and encouraging repeat purchases in a competitive market.",
+      " Delivery Tracking: Providing real-time tracking for customers to monitor their orders.",
+      " Inventory ManagementMaintaining up-to-date inventory levels across multiple stores to avoid order cancellations.",
     ],
     solutions: [
-      "<bold>Real-Time Order Management</bold>Implement a centralized order management system that allows shoppers to receive and process orders quickly.",
-      "<bold>User-Friendly Interface</bold> Design an intuitive app interface for all users to navigate easily and find what they need.",
-      "<bold>Delivery Tracking System</bold>Introduce GPS tracking within the Rider App to provide customers with live updates on their order status.",
-      "<bold>Introduce GPS tracking within the Rider App to provide customers with live updates on their order status.</bold>Use a robust inventory management system that updates stock levels in real-time to prevent overselling.",
-      "<bold>Loyalty Programs </bold>: Develop a rewards system for customers to encourage repeat business and enhance user engagement.",
+      " Real-Time Order ManagementImplement a centralized order management system that allows shoppers to receive and process orders quickly.",
+      " User-Friendly Interface Design an intuitive app interface for all users to navigate easily and find what they need.",
+      " Delivery Tracking SystemIntroduce GPS tracking within the Rider App to provide customers with live updates on their order status.",
+      " Introduce GPS tracking within the Rider App to provide customers with live updates on their order status.Use a robust inventory management system that updates stock levels in real-time to prevent overselling.",
+      " Loyalty Programs : Develop a rewards system for customers to encourage repeat business and enhance user engagement.",
     ],
     results: [
-      "<bold>Enhanced Customer Satisfaction</bold>The streamlined order fulfillment process and real-time tracking features resulted in a 40% increase in customer satisfaction ratings.",
-      "<bold>Improved Delivery Times: </bold>Efficient management of deliveries led to a 30% reduction in average delivery time.",
-      "<bold>Higher User Retention </bold>The introduction of loyalty programs contributed to a 25% increase in repeat purchases within the first six months.",
-      "<bold>Optimized Inventory Management </bold>Automated inventory syncing reduced stock discrepancies, leading to a more reliable shopping experience.",
+      " Enhanced Customer SatisfactionThe streamlined order fulfillment process and real-time tracking features resulted in a 40% increase in customer satisfaction ratings.",
+      " Improved Delivery Times: Efficient management of deliveries led to a 30% reduction in average delivery time.",
+      " Higher User Retention The introduction of loyalty programs contributed to a 25% increase in repeat purchases within the first six months.",
+      " Optimized Inventory Management Automated inventory syncing reduced stock discrepancies, leading to a more reliable shopping experience.",
     ],
     clientReview: {
       clientName: "Lisa Patel, GenCart User",
       review:
         "GenCart has transformed my shopping experience! The ease of ordering and the quick delivery made it my go-to app for online shopping.",
     },
-    features: [
+    detailedFeatures: [
       {
         appType: "Customer App",
         features: [
-          "<bold>Product Catalog</bold>Browse a vast selection of products across multiple categories.",
-          "<bold>Shopping Cart</bold>Add items to the cart and manage quantities easily.",
-          "<bold>Secure Payments: </bold>Multiple payment options including credit/debit cards, digital wallets, and cash on delivery.",
-          "<bold>Order Tracking</bold>Real-time updates on order status and delivery tracking.",
-          "<bold>User Reviews and Ratings</bold>Read feedback on products and services to make informed choices.",
-          "<bold>Wishlist: </bold> Save favorite items for future purchases.",
+          " Product CatalogBrowse a vast selection of products across multiple categories.",
+          " Shopping CartAdd items to the cart and manage quantities easily.",
+          " Secure Payments: Multiple payment options including credit/debit cards, digital wallets, and cash on delivery.",
+          " Order TrackingReal-time updates on order status and delivery tracking.",
+          " User Reviews and RatingsRead feedback on products and services to make informed choices.",
+          " Wishlist:  Save favorite items for future purchases.",
         ],
       },
       {
         appType: "Shopper App",
         features: [
-          "<bold>Order Notifications</bold>Receive real-time alerts for new customer orders.",
-          "<bold>Inventory Access</bold>: View inventory levels and product details from local stores.",
-          "<bold>Route Optimization </bold>:Use GPS to find the most efficient routes for order fulfillment.",
-          "<bold>In-App Communication </bold>Chat feature to communicate with customers for clarifications or special requests.",
+          " Order NotificationsReceive real-time alerts for new customer orders.",
+          " Inventory Access: View inventory levels and product details from local stores.",
+          " Route Optimization :Use GPS to find the most efficient routes for order fulfillment.",
+          " In-App Communication Chat feature to communicate with customers for clarifications or special requests.",
         ],
       },
       {
         appType: "Rider App",
         features: [
-          "<bold>Delivery Requests</bold>Accept and manage delivery requests efficiently.",
-          "<bold>Navigation Integration</bold>Built-in maps for easy navigation and delivery route planning.",
-          "<bold>Delivery Confirmation </bold>Notify customers upon delivery completion.",
-          "<bold>Earnings Tracker</bold>View completed deliveries and earnings in real-time.",
+          " Delivery RequestsAccept and manage delivery requests efficiently.",
+          " Navigation IntegrationBuilt-in maps for easy navigation and delivery route planning.",
+          " Delivery Confirmation Notify customers upon delivery completion.",
+          " Earnings TrackerView completed deliveries and earnings in real-time.",
         ],
       },
       {
         appType: "Admin Dashboard",
         features: [
-          "<bold>User Management</bold>Monitor and manage customer, shopper, and rider accounts.",
-          "<bold>Order Management</bold>Overview of all active and completed orders for streamlined operations.",
-          "<bold>Analytics and Reporting: </bold>Access detailed reports on sales, user engagement, and inventory levels.",
-          "<bold>Promotional Management</bold>Create and manage promotions and discounts for customers.",
+          " User ManagementMonitor and manage customer, shopper, and rider accounts.",
+          " Order ManagementOverview of all active and completed orders for streamlined operations.",
+          " Analytics and Reporting: Access detailed reports on sales, user engagement, and inventory levels.",
+          " Promotional ManagementCreate and manage promotions and discounts for customers.",
         ],
       },
     ],
@@ -1516,82 +1532,87 @@ const projects = [
   },
   {
     id: 12,
-    image: "",
+    image: Spotless,
     name: "Spotless Jo",
     tagline: "A Cleaner Home, Just a Tap Away!",
     shortDescription:
       "Spotless Jo is an innovative home cleaning app that connects users with professional cleaners at the touch of a button. Designed for convenience, reliability, and quality service, Spotless Jo makes maintaining a spotless home easier than ever.",
-      overViewDetail : {
-        name: "GenCart",
-        description: "Spotless Jo is a user-friendly platform that streamlines the process of booking home cleaning services. The app caters to homeowners looking for trustworthy cleaning professionals while providing cleaners with an efficient way to manage their bookings and schedules",
-        components: [
-          {
-            name: "Customer App",
-            functionality: "Allows customers to schedule cleanings, customize their service preferences, and make secure payments.."
-          },
-          {
-            name: "●	Cleaner  App",
-            functionality: "Empowers cleaning professionals to manage their appointments, communicate with clients, and receive payments."
-          },
-          {
-            name: "●	Admin Dashboard",
-            functionality: "Offers comprehensive management tools to oversee operations, track service quality, and analyze user data"
-          }
-        ],
-        benefits: "With Spotless Jo, users can effortlessly maintain their homes, while cleaners can enjoy a flexible work schedule and a steady stream of clients."
-      },
+    overViewDetail: {
+      name: "GenCart",
+      description:
+        "Spotless Jo is a user-friendly platform that streamlines the process of booking home cleaning services. The app caters to homeowners looking for trustworthy cleaning professionals while providing cleaners with an efficient way to manage their bookings and schedules",
+      components: [
+        {
+          name: "Customer App",
+          functionality:
+            "Allows customers to schedule cleanings, customize their service preferences, and make secure payments..",
+        },
+        {
+          name: "	Cleaner  App",
+          functionality:
+            "Empowers cleaning professionals to manage their appointments, communicate with clients, and receive payments.",
+        },
+        {
+          name: "	Admin Dashboard",
+          functionality:
+            "Offers comprehensive management tools to oversee operations, track service quality, and analyze user data",
+        },
+      ],
+      benefits:
+        "With Spotless Jo, users can effortlessly maintain their homes, while cleaners can enjoy a flexible work schedule and a steady stream of clients.",
+    },
     challenges: [
-      "<bold>●	Trust and Reliability</bold> Ensuring users feel confident in the cleaners’ reliability and professionalism.",
-      "<bold>●	Booking Management</bold>Managing and coordinating multiple appointments efficiently.",
-      "<bold>●	Service Quality Control: </bold>Maintaining high service standards and customer satisfaction",
-      "<bold>●	Flexible Scheduling</bold>Accommodating last-minute bookings and cancellations without disrupting service.",
+      " 	Trust and Reliability Ensuring users feel confident in the cleaners’ reliability and professionalism.",
+      " 	Booking ManagementManaging and coordinating multiple appointments efficiently.",
+      " 	Service Quality Control: Maintaining high service standards and customer satisfaction",
+      " 	Flexible SchedulingAccommodating last-minute bookings and cancellations without disrupting service.",
     ],
     solutions: [
-      "<bold>●	Background Checks</bold>Conduct thorough background checks and verification processes for all cleaning professionals to ensure safety and reliability.",
-      "<bold>●	Real-Time Availability</bold>Implement a real-time scheduling system that shows cleaner availability for immediate bookings.",
-      "<bold>●	Rating System</bold>Introduce a review and rating system that allows users to rate their cleaning experience, providing valuable feedback for quality control.",
-      "<bold>●	In-App Chat.</bold>Provide an in-app chat feature to facilitate direct communication between customers and cleaners for specific requests or questions.",
-      "<bold>●	Dynamic Pricing</bold>Implement a flexible pricing model based on service type, time required, and additional customizations.",
+      " 	Background ChecksConduct thorough background checks and verification processes for all cleaning professionals to ensure safety and reliability.",
+      " 	Real-Time AvailabilityImplement a real-time scheduling system that shows cleaner availability for immediate bookings.",
+      " 	Rating SystemIntroduce a review and rating system that allows users to rate their cleaning experience, providing valuable feedback for quality control.",
+      " 	In-App Chat.Provide an in-app chat feature to facilitate direct communication between customers and cleaners for specific requests or questions.",
+      " 	Dynamic PricingImplement a flexible pricing model based on service type, time required, and additional customizations.",
     ],
     results: [
-      "<bold>●	Increased User Trust</bold>The robust vetting process for cleaners led to a 35% increase in user registrations within the first month.",
-      "<bold>●	High Customer Retention </bold>The implementation of a rating system resulted in an 80% retention rate of satisfied customers.",
-      "<bold>●	Optimized Operations </bold>Real-time scheduling decreased appointment overlaps by 50%, enhancing overall service efficiency.",
-      "<bold>●	Positive Feedback </bold>Users reported an average service rating of 4.8/5, indicating high satisfaction with cleaning services.",
+      " 	Increased User TrustThe robust vetting process for cleaners led to a 35% increase in user registrations within the first month.",
+      " 	High Customer Retention The implementation of a rating system resulted in an 80% retention rate of satisfied customers.",
+      " 	Optimized Operations Real-time scheduling decreased appointment overlaps by 50%, enhancing overall service efficiency.",
+      " 	Positive Feedback Users reported an average service rating of 4.8/5, indicating high satisfaction with cleaning services.",
     ],
     clientReview: {
       clientName: "Sarah Mitchell, Spotless Jo User",
       review:
         "Spotless Jo has changed my cleaning routine completely! The cleaners are professional, and I love how easy it is to book them. Highly recommend!",
     },
-    features: [
+    detailedFeatures: [
       {
         appType: "User App",
         features: [
-          "<bold>●	Easy Booking</bold>Quickly schedule one-time or recurring cleaning services.",
-          "<bold>●	Service Customization</bold>Choose cleaning types (standard, deep clean, move-in/out) and specify any special requests.",
-          "<bold>●	Secure Payments </bold>Multiple payment options including credit/debit cards and digital wallets.",
-          "<bold>●	Booking History</bold>Track previous bookings and rebook favorite cleaners with ease.",
-          "<bold>●	Real-Time Tracking: </bold>Monitor the arrival time of your cleaner through GPS tracking.",
-          "<bold>●	User Reviews: </bold> Read and leave feedback on cleaning experiences",
+          "	Easy BookingQuickly schedule one-time or recurring cleaning services.",
+          " 	Service CustomizationChoose cleaning types (standard, deep clean, move-in/out) and specify any special requests.",
+          " 	Secure Payments Multiple payment options including credit/debit cards and digital wallets.",
+          " 	Booking HistoryTrack previous bookings and rebook favorite cleaners with ease.",
+          " 	Real-Time Tracking: Monitor the arrival time of your cleaner through GPS tracking.",
+          " 	User Reviews:  Read and leave feedback on cleaning experiences",
         ],
       },
       {
         appType: "Cleaner App",
         features: [
-          "<bold>●	Appointment Management</bold>View and manage scheduled cleaning appointments effortlessly.",
-          "<bold>●	Profile Setup</bold>: Create a detailed profile showcasing skills, experience, and customer ratings.",
-          "<bold>●	Earnings Tracker </bold>Monitor earnings and payments in real time.",
-          "<bold>●	Communication Tools </bold>Use in-app chat to connect with customers for specific cleaning instructions.",
+          " 	Appointment ManagementView and manage scheduled cleaning appointments effortlessly.",
+          " 	Profile Setup: Create a detailed profile showcasing skills, experience, and customer ratings.",
+          " 	Earnings Tracker Monitor earnings and payments in real time.",
+          " 	Communication Tools Use in-app chat to connect with customers for specific cleaning instructions.",
         ],
       },
       {
         appType: "Admin Dashboard",
         features: [
-          "<bold>●	User Management</bold>Administer user and cleaner profiles, ensuring accurate information and verification.",
-          "<bold>●	Booking Analytics</bold>Analyze booking trends, user preferences, and service performance metrics.",
-          "<bold>●	Quality Assurance </bold>Review customer ratings and feedback to uphold service standards.",
-          "<bold>●	Promotional Management</bold>Create and manage promotions to attract new users and retain existing ones.",
+          " 	User ManagementAdminister user and cleaner profiles, ensuring accurate information and verification.",
+          " 	Booking AnalyticsAnalyze booking trends, user preferences, and service performance metrics.",
+          " 	Quality Assurance Review customer ratings and feedback to uphold service standards.",
+          " 	Promotional ManagementCreate and manage promotions to attract new users and retain existing ones.",
         ],
       },
     ],
@@ -1618,13 +1639,11 @@ const projects = [
       },
       {
         title: "Stripe or PayPal API",
-        description:
-          "For secure and convenient payment processing",
+        description: "For secure and convenient payment processing",
       },
       {
         title: "Google Maps API",
-        description:
-          "For GPS tracking and location-based services.",
+        description: "For GPS tracking and location-based services.",
       },
     ],
     additionalNotes:
@@ -1632,55 +1651,55 @@ const projects = [
   },
   {
     id: 13,
-    image: "",
+    image: mcqs,
     name: "Pakistan’s Largest MCQs & Test Preparation Platform",
     tagline: "Your Gateway to Success in Competitive Exams",
     shortDescription:
       "This platform serves as the ultimate resource for students in Pakistan, providing an extensive collection of MCQs, quizzes, and test preparation materials. With over 1 million downloads and hundreds of thousands of active users, it empowers students to excel in competitive exams and enhance their knowledge.",
-      overview:
+    overview:
       "Pakistan’s Largest MCQs & Test Preparation Platform is a comprehensive online resource designed for students preparing for various competitive exams, including entry tests, job tests, and professional certifications. The platform offers an extensive range of multiple-choice questions (MCQs), practice quizzes, and detailed test preparation materials to ensure users are thoroughly prepared for their exams <br/> The platform is available as a website and mobile application, making it accessible anytime, anywhere. Its user-friendly interface and interactive features make studying enjoyable and efficient, while real-time analytics help users track their progress and identify areas for improvement.",
     challenges: [
-      "<bold>Content Quality</bold> Maintaining a high standard of quality and relevance in the vast array of questions and study materials.",
-      "<bold>User Engagement</bold>Keeping students motivated and engaged with consistent updates and interactive features.",
-      "<bold>Scalability: </bold>Ensuring the platform can handle a growing number of users and content without compromising performance.",
-      "<bold>Exam Relevance</bold>Regularly updating the question bank to reflect the latest syllabi and exam patterns.",
+      " Content Quality Maintaining a high standard of quality and relevance in the vast array of questions and study materials.",
+      " User EngagementKeeping students motivated and engaged with consistent updates and interactive features.",
+      " Scalability: Ensuring the platform can handle a growing number of users and content without compromising performance.",
+      " Exam RelevanceRegularly updating the question bank to reflect the latest syllabi and exam patterns.",
     ],
     solutions: [
-      "<bold>Expert Content Creation</bold>Collaborate with subject matter experts to curate high-quality MCQs and study materials aligned with current exam trends.",
-      "<bold>Interactive Features</bold>Implement gamification elements such as quizzes and leaderboards to increase user engagement and motivation.",
-      "<bold>Scalable Infrastructure</bold>Utilize cloud-based hosting to ensure the platform can efficiently handle increased user traffic and content.",
-      "<bold>Regular Updates.</bold>Establish a routine for updating content and adding new quizzes to reflect changing curricula and exam patterns.",
+      " Expert Content CreationCollaborate with subject matter experts to curate high-quality MCQs and study materials aligned with current exam trends.",
+      " Interactive FeaturesImplement gamification elements such as quizzes and leaderboards to increase user engagement and motivation.",
+      " Scalable InfrastructureUtilize cloud-based hosting to ensure the platform can efficiently handle increased user traffic and content.",
+      " Regular Updates.Establish a routine for updating content and adding new quizzes to reflect changing curricula and exam patterns.",
     ],
     results: [
-      "<bold>Massive User Baset</bold>Achieved over 1 million downloads and sustained hundreds of thousands of active users.",
-      "<bold>High Engagement Rates </bold>User engagement increased by 50% within three months of implementing interactive features and gamification.",
-      "<bold>Positive Feedback </bold>Users reported improved performance in exams, with many achieving their desired results through diligent practice on the platform.",
-      "<bold>Content Growth: </bold>Expanded the question bank to over 100,000 MCQs across various subjects, catering to a wide range of exam preparations.",
+      " Massive User BasetAchieved over 1 million downloads and sustained hundreds of thousands of active users.",
+      " High Engagement Rates User engagement increased by 50% within three months of implementing interactive features and gamification.",
+      " Positive Feedback Users reported improved performance in exams, with many achieving their desired results through diligent practice on the platform.",
+      " Content Growth: Expanded the question bank to over 100,000 MCQs across various subjects, catering to a wide range of exam preparations.",
     ],
     clientReview: {
       clientName: "Ali Khan, Platform User",
       review:
         "This platform has been a game-changer for my studies! The extensive MCQ collection and quizzes helped me ace my entry test. Highly recommend it!",
     },
-    features: [
+    detailedFeatures: [
       {
         appType: "User Platform",
         features: [
-          "<bold>Extensive Question Bank</bold>Access to over 100,000 MCQs across multiple subjects, updated regularly.",
-          "<bold>Practice Quizzes</bold>Take quizzes tailored to specific topics and exam formats to reinforce knowledge.",
-          "<bold>Performance Tracking</bold>Real-time analytics to monitor progress, identify strengths, and target weaknesses.",
-          "<bold>User-Friendly Interface</bold>Intuitive navigation makes it easy for users to find study materials and take quizzes.",
-          "<bold>Leaderboards and Rewards</bold>Gamified elements encourage competition and reward top performers with badges and recognition.",
-          "<bold>Offline Access </bold> Download quizzes and study materials for offline access, allowing for flexible study options.",
+          " Extensive Question BankAccess to over 100,000 MCQs across multiple subjects, updated regularly.",
+          " Practice QuizzesTake quizzes tailored to specific topics and exam formats to reinforce knowledge.",
+          " Performance TrackingReal-time analytics to monitor progress, identify strengths, and target weaknesses.",
+          " User-Friendly InterfaceIntuitive navigation makes it easy for users to find study materials and take quizzes.",
+          " Leaderboards and RewardsGamified elements encourage competition and reward top performers with badges and recognition.",
+          " Offline Access  Download quizzes and study materials for offline access, allowing for flexible study options.",
         ],
       },
       {
         appType: "Admin Dashboard",
         features: [
-          "<bold>Content Management</bold>Easily manage and update the question bank and study materials.",
-          "<bold>User Analytics</bold>Track user engagement, performance metrics, and feedback to improve the platform.",
-          "<bold>Communication Tools</bold>Send announcements and updates to users about new content or features.",
-          "<bold>Subscription Management </bold>Handle user subscriptions and payments efficiently, ensuring a smooth monetization process.",
+          " Content ManagementEasily manage and update the question bank and study materials.",
+          " User AnalyticsTrack user engagement, performance metrics, and feedback to improve the platform.",
+          " Communication ToolsSend announcements and updates to users about new content or features.",
+          " Subscription Management Handle user subscriptions and payments efficiently, ensuring a smooth monetization process.",
         ],
       },
     ],
@@ -1707,8 +1726,7 @@ const projects = [
       },
       {
         title: "AWS or Google Cloud",
-        description:
-          "For scalable hosting and storage solutions",
+        description: "For scalable hosting and storage solutions",
       },
       {
         title: "Analytics Tools: ",
@@ -1721,4 +1739,4 @@ const projects = [
   },
 ];
 
-export default projects;
+export { projects };

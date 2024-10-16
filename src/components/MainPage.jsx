@@ -20,7 +20,7 @@ const MainPage = () => {
       <Portfolio />
       <MeetOurTeam />
       {/* <ClientReviews /> */}
-      {/* <BlogsSection /> */}
+      <BlogsSection />
       <ContactUs />
       <ContactSection/>
     </div>

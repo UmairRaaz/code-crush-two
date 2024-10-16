@@ -4,7 +4,7 @@ import serviceBG from "../assets/serviceBG.png"
 import LineEffect from "../components/Buttons/LineEffect";
 import { industries, rAndDProjects, services } from "../Content/ServiceContent.jsx";
 import AllServiceCard from "../components/ServiceSection/AllServicesCard.jsx";
-console.log(industries)
+// console.log(industries)
 
 const AllServices = () => {
   const navigate = useNavigate();

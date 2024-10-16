@@ -13,33 +13,9 @@ import projectSix from "../assets/projectImages/six.webp"
 
 import { useNavigate } from 'react-router-dom';
 import LineEffect from '../components/Buttons/LineEffect';
+import { projects } from '../Content/ProjectContent/ProjectDeatils';
 
-const projects = {
-  "Custom Websites": [
-    { id: 1, title: "Project 1", imgSrc: projectOne },
-    { id: 2, title: "Project 2", imgSrc: projectTwo },
-  ],
-  "Custom Software": [
-    { id: 3, title: "Project 3", imgSrc: projectTwo },
-    { id: 4, title: "Project 4", imgSrc: projectThree },
-  ],
-  "Mobile Apps": [
-    { id: 5, title: "Project 5", imgSrc: projectThree },
-    { id: 6, title: "Project 6", imgSrc: projectTwo },
-  ],
-  "Custom API": [
-    { id: 7, title: "Project 7", imgSrc: projectFour },
-    { id: 8, title: "Project 8", imgSrc: projectThree },
-  ],
-  "Themes Dev..": [
-    { id: 9, title: "Project 9", imgSrc: projectSix },
-    { id: 10, title: "Project 10", imgSrc: projectFour },
-  ],
-  "Game development": [
-    { id: 11, title: "Project 11", imgSrc: projectSix },
-    { id: 12, title: "Project 12", imgSrc: projectTwo },
-  ],
-};
+
 
 const categories = Object.keys(projects);
 
@@ -50,11 +26,10 @@ const overlayVariants = {
 
 const AllProjects = () => {
   const navigate = useNavigate();
-  const [activeCategory, setActiveCategory] = useState(categories[0]);
+  // const [activeCategory, setActiveCategory] = useState(categories[0]);
 
-  const handleNavigate = (url) => {
-    navigate("/view-project/:1");
-    console.log("Navigating to:", url);
+  const handleNavigate = (id) => {
+    navigate(`/view-project/${id}`);
   };
 
   return (
@@ -78,7 +53,7 @@ const AllProjects = () => {
         </h1>
         <LineEffect />
         <p className="text-center max-w-4xl mt-2 mx-auto">Explore our featured projects to see how Code Crush Technology transforms ideas into impactful solutions. Each project highlights our commitment to innovation, quality, and excellence. From cutting-edge app development to sophisticated web solutions, our portfolio demonstrates the breadth and depth of our expertise. Dive into our case studies and witness the difference our technology makes in real-world applications. </p>
-        <div className="flex flex-wrap justify-center mt-10 gap-4 mb-10">
+        {/* <div className="flex flex-wrap justify-center mt-10 gap-4 mb-10">
           {categories.map((category, index) => (
             <button
               key={index}
@@ -96,24 +71,24 @@ const AllProjects = () => {
               )}
             </button>
           ))}
-        </div>
+        </div> */}
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects[activeCategory].map((project) => (
+          {projects.map((project) => (
             <motion.div
               whileHover="visible"
               initial="hidden"
-              onClick={() => handleNavigate(`/view-project/${project.id}`)}
+              onClick={() => handleNavigate(project.id)}
               className="group flex bg-white  py-4 rounded-3xl shadow-2xl items-center justify-center hover:bg-[#E6E6FA] transition-all relative cursor-pointer"
               key={project.id}
             >
-              <img src={project.imgSrc} alt="portfolio-img" className="w-72 rounded-xl" />
+              <img src={project.image} alt="portfolio-img" className="w-72 rounded-xl" />
               <motion.div
                 variants={overlayVariants}
                 transition={{ duration: 0.5 }}
                 className="absolute bottom-10 bg-white/80 w-full text-gray-700 py-5 px-10"
               >
-                <h1 className="text-2xl font-bold">{project.title}</h1>
+                <h1 className="text-2xl font-bold">{project.name}</h1>
                 <p className="flex items-center gap-1 text-sm mt-2">
                   <span>View Project</span>
                   <span className="mt-1">

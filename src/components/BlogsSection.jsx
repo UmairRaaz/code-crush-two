@@ -3,6 +3,9 @@ import BlogCard from "./BlogSection/BlogCard";
 import ViewAllButton from "./Buttons/ViewAllButton";
 import LineEffect from "./Buttons/LineEffect";
 import { motion } from "framer-motion";
+import developmentProcess from "/blogImages/developmentProcess.webp";
+import customSoftware from "/blogImages/customSoftware.webp";
+import powerOfAI from "/blogImages/powerOfAI.webp";
 const BlogsSection = () => {
   return (
     <motion.div
@@ -29,19 +32,16 @@ const BlogsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
           <BlogCard
-            img={
-              "https://images.unsplash.com/photo-1688793488916-c9416f9a4480?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            }
+            img={developmentProcess}
+            heading="Our Proven Development Process"
           />
           <BlogCard
-            img={
-              "https://images.unsplash.com/photo-1699004642520-b48fa2465840?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D"
-            }
+            img={customSoftware}
+            heading="The Power of Custom Software Services"
           />
           <BlogCard
-            img={
-              "https://images.unsplash.com/photo-1706459061049-7aeaa97069e2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHx8"
-            }
+            img={powerOfAI}
+            heading="Unleashing the Power of AI"
           />
         </div>
       </div>

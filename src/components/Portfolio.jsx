@@ -44,13 +44,13 @@ const Portfolio = () => {
             whileHover="visible"
             initial="hidden"
             className="group bg-white rounded-3xl shadow-2xl flex items-center justify-center hover:bg-[#ADD8E6] relative transition-all cursor-pointer"
-            onClick={() => navigate("/view-project/:1")}
+            onClick={() => navigate("/view-project/1")}
           >
             <img src={projectFive} alt="portfolio-img" className="w-52" />
             <motion.div
               variants={overlayVariants}
               transition={{ duration: 0.5 }}
-              onClick={() => navigate("/view-project/:1")}
+              onClick={() => navigate("/view-project/1")}
               className="absolute bottom-10 bg-white/80 w-full text-gray-700 py-5 px-10"
             >
               <h1 className="text-2xl font-bold">Mobile App</h1>
@@ -64,7 +64,7 @@ const Portfolio = () => {
           </motion.div>
           <div className="flex flex-col justify-between gap-10">
             <motion.div
-              onClick={() => navigate("/view-project/:1")}
+              onClick={() => navigate("/view-project/1")}
               whileHover="visible"
               initial="hidden"
               className="group bg-white py-4 pt-4  rounded-3xl shadow-2xl flex items-center justify-center hover:bg-[#90EE90] transition-all relative"
@@ -72,7 +72,7 @@ const Portfolio = () => {
               <img src={projectOne} alt="portfolio-img" className="w-72 rounded-xl" />
               <motion.div
                 variants={overlayVariants}
-                onClick={() => navigate("/view-project/:1")}
+                onClick={() => navigate("/view-project/1")}
                 transition={{ duration: 0.5 }}
                 className="absolute bottom-10 bg-white/80 w-full text-gray-700 py-5 px-10"
               >
@@ -87,14 +87,14 @@ const Portfolio = () => {
             </motion.div>
             <motion.div
               whileHover="visible"
-              onClick={() => navigate("/view-project/:1")}
+              onClick={() => navigate("/view-project/1")}
               initial="hidden"
               className="group bg-white py-4 rounded-3xl h-full shadow-2xl flex items-center justify-center  hover:bg-[#87CEFA] transition-all relative"
             >
               <img src={projectTwo} alt="portfolio-img" className="w-72 rounded-xl" />
               <motion.div
                 variants={overlayVariants}
-                onClick={() => navigate("/view-project/:1")}
+                onClick={() => navigate("/view-project/1")}
                 transition={{ duration: 0.5 }}
                 className="absolute bottom-10 bg-white/80 w-full text-gray-700 py-5 px-10"
               >
@@ -112,13 +112,13 @@ const Portfolio = () => {
             <motion.div
               whileHover="visible"
               initial="hidden"
-              onClick={() => navigate("/view-project/:1")}
+              onClick={() => navigate("/view-project/1")}
               className="group flex bg-white pt-4 py-4 rounded-3xl shadow-2xl items-center justify-center hover:bg-[#E6E6FA] transition-all relative"
             >
               <img src={projectThree} alt="portfolio-img" className="w-72 rounded-xl" />
               <motion.div
                 variants={overlayVariants}
-                onClick={() => navigate("/view-project/:1")}
+                onClick={() => navigate("/view-project/1")}
                 transition={{ duration: 0.5 }}
                 className="absolute bottom-10 bg-white/80 w-full text-gray-700 py-5 px-10"
               >
@@ -133,7 +133,7 @@ const Portfolio = () => {
             </motion.div>
             <motion.div
               whileHover="visible"
-              onClick={() => navigate("/view-project/:1")}
+              onClick={() => navigate("/view-project/1")}
               initial="hidden"
               className="group flex bg-white h-full rounded-3xl shadow-2xl items-center justify-center hover:bg-[#FFA07A] transition-all relative"
             >
@@ -141,7 +141,7 @@ const Portfolio = () => {
               <motion.div
                 variants={overlayVariants}
                 transition={{ duration: 0.5 }}
-                onClick={() => navigate("/view-project/:1")}
+                onClick={() => navigate("/view-project/1")}
                 className="absolute bottom-10 bg-white/80 w-full text-gray-700 py-5 px-10"
               >
                 <h1 className="text-2xl font-bold">Web App</h1>
