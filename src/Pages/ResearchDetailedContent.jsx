@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { researhAndDevelopmentContent } from "../Content/ResearchContent";
 import { IoMdArrowDroprightCircle } from "react-icons/io";
+import { HashLink } from "react-router-hash-link";
 
 const ResearchDetailedContent = () => {
   const { serviceid } = useParams();
@@ -133,10 +134,10 @@ const ResearchDetailedContent = () => {
 
         {/* Call to Action */}
         <div className="mt-10 flex items-center justify-center">
-          <button className="bg-blue-600 flex items-center gap-2 text-white py-2 px-6 rounded-lg hover:bg-blue-700">
+          <HashLink to="/#contact" className="bg-blue-600 flex items-center gap-2 text-white py-2 px-6 rounded-lg hover:bg-blue-700">
             {data.callToActionButton}
             <IoMdArrowDroprightCircle size={20} className="mt-1" />
-          </button>
+          </HashLink>
         </div>
       </div>
     </div>

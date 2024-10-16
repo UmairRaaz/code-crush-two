@@ -1,7 +1,7 @@
-import peopleOnboard from "../assets/website_icons/peopleOnboard.svg";
-import clutchRating from "../assets/website_icons/clutchRating.svg";
-import projectsCompleted from "../assets/website_icons/projectsCompleted.svg";
-import globalOffice from "../assets/website_icons/globalOffice.svg";
+import peopleOnboard from "../assets/website_icons/peopleOnboard.png";
+import clutchRating from "../assets/website_icons/clutchRating.png";
+import projectsCompleted from "../assets/website_icons/projectsCompleted.png";
+import globalOffice from "../assets/website_icons/globalOffice.png";
 
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";

@@ -27,7 +27,7 @@ const Services = () => {
     const baseClass =
       "text-base px-1 md:text-xl h-14 flex-1 md:px-4 md:py-2 border border-gray-400 whitespace-nowrap ";
     const activeClass = "bg-[#4e148d] text-white";
-    const inactiveClass = "border-gray-300 text-gray-700 bg-transparent";
+    const inactiveClass = "border-gray-300 hover:bg-[#4e148d] hover:text-white transition-all text-gray-700 bg-transparent";
 
     return `${baseClass} ${
       activeComponent === component ? activeClass : inactiveClass
@@ -42,7 +42,7 @@ const Services = () => {
       className=" md:mt-0 py-1 pt-28 md:pt-32  w-full  font-googleFonts"
       id="services"
     >
-      <div className="md:max-w:4xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl px-3 md:px-0  mx-auto flex flex-col  md:justify-between my-4 ">
+      <div className="md:max-w:4xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl px-3 md:px-0  mx-auto flex flex-col   md:justify-between my-4 ">
         <div className="flex justify-between ">
           <button
             className={getButtonClass("Services")}

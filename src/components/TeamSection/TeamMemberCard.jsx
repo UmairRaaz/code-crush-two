@@ -7,7 +7,7 @@ const TeamMemberCard = ({ links, status, image, name, role }) => {
         <img
           src={image}
           alt="portrait"
-          className="h-[10rem] md:h-[13rem] w-[10rem] md:w-[13rem]  rounded-full mx-auto "
+          className="h-[10rem] md:h-[13rem] w-[10rem] md:w-[13rem] mx-auto "
         />
       </div>
       <div className="mt-4 px-4 text-gray-700">
@@ -23,7 +23,7 @@ const TeamMemberCard = ({ links, status, image, name, role }) => {
         </div>
 
         <p className="text-center text-nowrap">
-          {status} & {role}
+          <span className="text-red-800">{status}</span> & {role}
         </p>
       </div>
     </div>

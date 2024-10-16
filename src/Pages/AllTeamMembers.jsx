@@ -5,11 +5,9 @@ import LineEffect from "../components/Buttons/LineEffect";
 // import drAkhter from "../assets/drAkhter.png";
 // import engrFazal from "../assets/engrFazal.png";
 // import habib from "../assets/habib.png";
-
-import drAkhter from "../assets/drAkhtertwo.png";
-import engrFazal from "../assets/engrFazaltwo.png";
-import habib from "../assets/habibtwo.png";
-
+import drAkhter from "../assets/akhterNew.png";
+import engrFazal from "../assets/fazalNew.png";
+import habib from "../assets/habibNew.png";
 const teamMembers = [
   {
     id: 1,
@@ -211,7 +209,7 @@ const AllTeamMembers = () => {
                   </div>
                   <p className="text-sm">
                     <i>
-                      <span className="">{member.status}</span> & {member.role}
+                      <span className="text-red-800">{member.status}</span> & {member.role}
                     </i>
                   </p>
                 </div>

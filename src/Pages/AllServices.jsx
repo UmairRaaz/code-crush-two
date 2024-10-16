@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import serviceBG from "../assets/serviceBG.webp"
+import serviceBG from "../assets/serviceBG.png"
 
 import LineEffect from "../components/Buttons/LineEffect";
 import { industries, rAndDProjects, services } from "../Content/ServiceContent.jsx";
@@ -14,7 +14,7 @@ const AllServices = () => {
         className="relative h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[55vh] border"
         style={{
           backgroundImage: `url(${serviceBG})`,
-          backgroundSize: "cover",
+          backgroundSize: "contain",
           backgroundPosition: "center",
         }}
       >
