@@ -1,7 +1,7 @@
 import React from "react";
 import { blogsArray } from '../../Content/Blogs/BlogContent';
 
-const BlogPost = () => {
+const BlogFour = () => {
   // Extracting the blog at index 3 from blogsArray
   const blogData = blogsArray[3]; // Make sure this index is correct
 
@@ -18,12 +18,12 @@ const BlogPost = () => {
   } = blogData;
 
   return (
-    <div className="container mx-auto p-6">
+    <div className="container my-20 bg-gray-100 mx-auto p-6">
       {/* Title Section */}
       <h1 className="text-4xl font-bold mb-6">{title}</h1>
 
       {/* Image */}
-      <img src={image} alt={title} className="w-full h-auto rounded-lg mb-6" />
+      {/* <img src={image} alt={title} className="w-full h-auto rounded-lg mb-6" /> */}
 
       {/* Introduction */}
       <p className="text-lg mb-6">{introduction}</p>
@@ -67,4 +67,4 @@ const BlogPost = () => {
   );
 };
 
-export default BlogPost;
+export default BlogFour;

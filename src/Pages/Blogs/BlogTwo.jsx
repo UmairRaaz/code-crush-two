@@ -5,10 +5,10 @@ const BlogTwo = () => {
   const blog = blogsArray[1]; // Access data from index 1
 
   return (
-    <div className="bg-gray-50 p-6 md:p-12">
+    <div className="bg-gray-50 p-6 md:p-12 my-20">
       {/* Header Section */}
       <div className="text-center mb-8">
-        <img src={blog.image} alt={blog.title} className="mx-auto mb-6" />
+        {/* <img src={blog.image} alt={blog.title} className="w-96 mx-auto mb-6" /> */}
         <h1 className="text-4xl font-bold mb-4">{blog.title}</h1>
         <p className="text-lg text-gray-600">{blog.introduction}</p>
       </div>

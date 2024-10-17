@@ -6,18 +6,18 @@ const BlogPost = () => {
   const blog = blogsArray[2];
 
   return (
-    <div className="p-6 max-w-4xl mx-auto bg-white shadow-md rounded-lg">
+    <div className="p-6  my-20 mx-auto bg-gray-100 shadow-md rounded-lg">
       {/* Blog Image */}
       <div className="w-full">
-        <img
+        {/* <img
           src={blog.image}
           alt={blog.title}
           className="w-full h-64 object-cover rounded-lg"
-        />
+        /> */}
       </div>
 
       {/* Blog Title */}
-      <h1 className="text-3xl font-bold text-gray-800 mt-6">{blog.title}</h1>
+      <h1 className="text-3xl text-center font-bold text-gray-800 mt-6">{blog.title}</h1>
 
       {/* Introduction */}
       <p className="text-gray-600 mt-4">{blog.introduction}</p>
@@ -37,7 +37,7 @@ const BlogPost = () => {
         <h2 className="text-2xl font-semibold text-gray-800">
           {blog.sections.keyBenefits.title}
         </h2>
-        <ul className="list-disc list-inside mt-4">
+        <ul className=" list-inside mt-4">
           {blog.sections.keyBenefits.benefits.map((benefit, index) => (
             <li key={index} className="mt-2">
               <h3 className="text-xl font-medium text-gray-700">{benefit.title}</h3>
@@ -52,7 +52,7 @@ const BlogPost = () => {
         <h2 className="text-2xl font-semibold text-gray-800">
           {blog.sections.aiInIndustries.title}
         </h2>
-        <ul className="list-disc list-inside mt-4">
+        <ul className=" list-inside mt-4">
           {blog.sections.aiInIndustries.industries.map((industry, index) => (
             <li key={index} className="mt-2">
               <h3 className="text-xl font-medium text-gray-700">{industry.name}</h3>
@@ -67,7 +67,7 @@ const BlogPost = () => {
         <h2 className="text-2xl font-semibold text-gray-800">
           {blog.sections.futureOfAI.title}
         </h2>
-        <ul className="list-disc list-inside mt-4">
+        <ul className=" list-inside mt-4">
           {blog.sections.futureOfAI.trends.map((trend, index) => (
             <li key={index} className="mt-2">
               <h3 className="text-xl font-medium text-gray-700">{trend.title}</h3>

@@ -34,6 +34,8 @@ import BlogTwo from "./Pages/Blogs/BlogTwo.jsx";
 import BlogThree from "./Pages/Blogs/BlogThree.jsx";
 import BlogFive from "./Pages/Blogs/BlogFive.jsx";
 import BlogSix from "./Pages/Blogs/BlogSix.jsx";
+import BlogFour from "./Pages/Blogs/BlogFour.jsx";
+import ViewProjectTest from "./components/Chatbot/Test.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -46,11 +48,14 @@ const router = createBrowserRouter(
       <Route path='all-services/view-research-and-development/:serviceid' element={<ResearchDetailedContent/>}/>
       <Route path="all-projects" element={<AllProjects />} />
       <Route path='view-project/:projectid' element={<ViewProject/>}/>
+      <Route path='view-project/test' element={<ViewProjectTest/>}/>
       <Route path="all-blogs" element={<AllBlogs />} />
-      {/* <Route path='view-blog/:blogid' element={<BlogOne/>}/> */}
-      {/* <Route path='view-blog/:blogid' element={<BlogTwo/>}/> */}
-      {/* <Route path='view-blog/:blogid' element={<BlogThree/>}/> */}
-      <Route path='view-blog/:blogid' element={<BlogFive/>}/>
+      <Route path='view-blog/one' element={<BlogOne/>}/>
+      <Route path='view-blog/two' element={<BlogTwo/>}/>
+      <Route path='view-blog/three' element={<BlogThree/>}/>
+      <Route path='view-blog/four' element={<BlogFour/>}/>
+      <Route path='view-blog/five' element={<BlogFive/>}/>
+      <Route path='view-blog/six' element={<BlogSix/>}/>
       <Route path="all-members" element={<AllTeamMembers />} />
       <Route path="remote-resources" element={<RemoteResources />} />
       <Route path="careers" element={<Careers />} />

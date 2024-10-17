@@ -5,7 +5,7 @@ const BlogOne = () => {
     const blog = blogsArray[0]; // Accessing the first blog object directly
     
     return (
-        <div className="bg-white p-6 md:p-12">
+        <div className="bg-white p-6 md:p-12 my-20 ">
             {/* Header Section */}
             <div className="text-center mb-8">
                 <h1 className="text-3xl font-bold mb-4">{blog.title}</h1>
