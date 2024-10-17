@@ -108,10 +108,10 @@ const teamMembersTwo = [
     image: israr,
   },
   {
-    fullName: "Waqar",
-    designation: "s simply dummy text of the printing and",
+    fullName: "Waqar Ahmed",
+    designation: "Flutter Intern",
     careerSummary:
-      "typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer t",
+      "I am a skilled Flutter Developer with experience in Flutter, Firebase, SQL, local and push notifications, and role-based authentication, focused on creating efficient and user-friendly mobile applications.",
     image: waqar,
   },
   {
