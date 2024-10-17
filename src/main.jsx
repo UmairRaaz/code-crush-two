@@ -29,6 +29,11 @@ import ResearchDetailedContent from "./Pages/ResearchDetailedContent.jsx";
 import IndustriesDetailedPage from "./Pages/IndustriesDetailed.jsx";
 import Test from "./Pages/Test.jsx";
 import InternshipApply from "./Pages/InternshipApply.jsx";
+import BlogOne from "./Pages/Blogs/BlogOne.jsx";
+import BlogTwo from "./Pages/Blogs/BlogTwo.jsx";
+import BlogThree from "./Pages/Blogs/BlogThree.jsx";
+import BlogFive from "./Pages/Blogs/BlogFive.jsx";
+import BlogSix from "./Pages/Blogs/BlogSix.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -42,7 +47,10 @@ const router = createBrowserRouter(
       <Route path="all-projects" element={<AllProjects />} />
       <Route path='view-project/:projectid' element={<ViewProject/>}/>
       <Route path="all-blogs" element={<AllBlogs />} />
-      <Route path='view-blog/:blogid' element={<ViewBlog/>}/>
+      {/* <Route path='view-blog/:blogid' element={<BlogOne/>}/> */}
+      {/* <Route path='view-blog/:blogid' element={<BlogTwo/>}/> */}
+      {/* <Route path='view-blog/:blogid' element={<BlogThree/>}/> */}
+      <Route path='view-blog/:blogid' element={<BlogFive/>}/>
       <Route path="all-members" element={<AllTeamMembers />} />
       <Route path="remote-resources" element={<RemoteResources />} />
       <Route path="careers" element={<Careers />} />

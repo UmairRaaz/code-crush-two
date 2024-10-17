@@ -81,7 +81,7 @@ const teamMembersTwo = [
   },
   {
     fullName: "Salman",
-    designation: "Graphic & UI/UX Designer",
+    designation: "Senior Graphic & UI/UX Designer",
     careerSummary:
       "I am Salman, a creative and detail-oriented Graphic & UI/UX Designer with over 4+ years of experience. I excel in designing user-friendly interfaces for both web and mobile applications, focusing on enhancing user experiences. My skills include wireframing, prototyping, and utilizing industry-standard design tools such as Figma, Adobe Illustrator, Adobe After Effects, and Adobe Photoshop. I am passionate about crafting intuitive and visually appealing designs that align with user needs and business objectives.",
     image: salman,
@@ -129,10 +129,10 @@ const teamMembersTwo = [
     image: aliyan,
   },
   {
-    fullName: "umar",
-    designation: "s simply dummy text of the printing and",
+    fullName: "Umar Aziz",
+    designation: "Digital Marketing Executive",
     careerSummary:
-      "typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer t",
+      "I am a digital marketer, managing social media platforms, SEO, and optimizing websites and apps. Skilled in running ad campaigns across Facebook, YouTube, Google, and more.",
     image: umar,
   },
   {
