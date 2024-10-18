@@ -28,7 +28,7 @@ const ContactUs = () => {
       transition={{ duration: 1, ease: "linear" }}
       className="bg-[#4e148d] pb-10 text-white"
       style={{ paddingTop: navbarHeight }}
-      id="contact"
+      
     >
       <div className="md:max-w-4xl overflow-hidden  lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl px-3 md:px-0 mx-auto py-4">
         <h1 className="text-4xl font-bold mb-8 text-center">

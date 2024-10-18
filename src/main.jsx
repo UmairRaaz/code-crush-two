@@ -37,6 +37,7 @@ import BlogSix from "./Pages/Blogs/BlogSix.jsx";
 import BlogFour from "./Pages/Blogs/BlogFour.jsx";
 import ViewProjectTest from "./components/Chatbot/Test.jsx";
 
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
@@ -50,12 +51,12 @@ const router = createBrowserRouter(
       <Route path='view-project/:projectid' element={<ViewProject/>}/>
       <Route path='view-project/test' element={<ViewProjectTest/>}/>
       <Route path="all-blogs" element={<AllBlogs />} />
-      <Route path='view-blog/one' element={<BlogOne/>}/>
-      <Route path='view-blog/two' element={<BlogTwo/>}/>
-      <Route path='view-blog/three' element={<BlogThree/>}/>
-      <Route path='view-blog/four' element={<BlogFour/>}/>
-      <Route path='view-blog/five' element={<BlogFive/>}/>
-      <Route path='view-blog/six' element={<BlogSix/>}/>
+      <Route path='view-blog/1' element={<BlogOne/>}/>
+      <Route path='view-blog/2' element={<BlogTwo/>}/>
+      <Route path='view-blog/3' element={<BlogThree/>}/>
+      <Route path='view-blog/4' element={<BlogFour/>}/>
+      <Route path='view-blog/5' element={<BlogFive/>}/>
+      <Route path='view-blog/6' element={<BlogSix/>}/>
       <Route path="all-members" element={<AllTeamMembers />} />
       <Route path="remote-resources" element={<RemoteResources />} />
       <Route path="careers" element={<Careers />} />

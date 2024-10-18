@@ -2,36 +2,77 @@ import React from 'react';
 import { blogsArray } from '../../Content/Blogs/BlogContent';
 
 const BlogOne = () => {
-    const blog = blogsArray[0]; // Accessing the first blog object directly
-    
+    const blogData = blogsArray[0]; // Accessing the first blog object directly
+
     return (
-        <div className="bg-white p-6 md:p-12 my-20 ">
-            {/* Header Section */}
-            <div className="text-center mb-8">
-                <h1 className="text-3xl font-bold mb-4">{blog.title}</h1>
-                <h2 className="text-xl text-gray-600 mb-4">{blog.company}</h2>
-                <p className="text-gray-700">{blog.overview}</p>
+        <div className="max-w-6xl my-20 mx-auto p-6">
+            {/* Blog Image */}
+            <div className="mb-6">
+                <img
+                    src={blogData.image}
+                    alt={blogData.title}
+                    className="w-full h-96 object-cover rounded-lg shadow-md"
+                />
             </div>
 
+            {/* Blog Title */}
+            <h1 className="text-4xl font-bold text-gray-800 mb-4">
+                {blogData.title}
+            </h1>
+
+            {/* Blog Overview */}
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                {blogData.overview}
+            </p>
+
             {/* Phases Section */}
-            <div className="space-y-10">
-                {blog.phases.map((phase, index) => (
-                    <div key={index} className="bg-gray-100 p-6 rounded-lg shadow-lg">
-                        <h3 className="text-2xl font-semibold mb-4">{phase.name}</h3>
-                        <p className="text-gray-700 mb-2">{phase.description}</p>
-                        <ul className="list-disc list-inside space-y-2">
-                            {phase.details.map((detail, i) => (
-                                <li key={i} dangerouslySetInnerHTML={{ __html: detail }} className="text-gray-600"></li>
-                            ))}
-                        </ul>
-                    </div>
-                ))}
+            <div className="mb-8">
+                <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+                    Phases of the Project
+                </h2>
+                <div className="space-y-4">
+                    {blogData.phases.map((phase, index) => (
+                        <div key={index} className="bg-gray-100 p-6 rounded-lg shadow-lg">
+                            <h3 className="text-xl font-semibold text-gray-700 mb-2">
+                                {phase.name}
+                            </h3>
+                            <p className="text-gray-600 leading-relaxed mb-2">
+                                {phase.description}
+                            </p>
+                            <ul className="list-disc list-inside space-y-2">
+                                {phase.details.map((detail, i) => (
+                                    <li
+                                        key={i}
+                                        dangerouslySetInnerHTML={{ __html: detail }}
+                                        className="text-gray-600"
+                                    />
+                                ))}
+                            </ul>
+                        </div>
+                    ))}
+                </div>
             </div>
 
             {/* Conclusion Section */}
-            <div className="mt-12">
-                <h4 className="text-xl font-bold">Conclusion</h4>
-                <p className="text-gray-700 mt-2" dangerouslySetInnerHTML={{ __html: blog.conclusion }}></p>
+            <div className="mb-8">
+                <h2 className="text-2xl font-semibold text-gray-800 mb-4">Conclusion</h2>
+                <p
+                    className="text-gray-600 leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: blogData.conclusion }}
+                />
+            </div>
+
+            {/* Call to Action */}
+            <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+                <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+                    {blogData.callToActionTitle}
+                </h2>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                    {blogData.callToActionDescription}
+                </p>
+                <button className="bg-[#4E148D] text-white py-2 px-4 rounded-lg shadow hover:bg-[#6828E8] transition">
+                    Contact Us
+                </button>
             </div>
         </div>
     );

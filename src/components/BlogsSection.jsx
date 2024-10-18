@@ -34,14 +34,17 @@ const BlogsSection = () => {
           <BlogCard
             img={developmentProcess}
             heading="Our Proven Development Process"
+            id={1}
           />
           <BlogCard
             img={customSoftware}
             heading="The Power of Custom Software Services"
+            id={2}
           />
           <BlogCard
             img={powerOfAI}
             heading="Unleashing the Power of AI"
+            id={3}
           />
         </div>
       </div>

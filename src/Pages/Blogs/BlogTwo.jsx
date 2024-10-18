@@ -2,35 +2,54 @@ import React from 'react';
 import { blogsArray } from '../../Content/Blogs/BlogContent';
 
 const BlogTwo = () => {
-  const blog = blogsArray[1]; // Access data from index 1
+  // Extract the blog data from index 1
+  const blogData = blogsArray[1];
 
   return (
-    <div className="bg-gray-50 p-6 md:p-12 my-20">
-      {/* Header Section */}
-      <div className="text-center mb-8">
-        {/* <img src={blog.image} alt={blog.title} className="w-96 mx-auto mb-6" /> */}
-        <h1 className="text-4xl font-bold mb-4">{blog.title}</h1>
-        <p className="text-lg text-gray-600">{blog.introduction}</p>
+    <div className="max-w-6xl my-20 mx-auto p-6">
+      {/* Blog Image */}
+      <div className="mb-8">
+        <img
+          src={blogData.image}
+          alt={blogData.title}
+          className="w-full h-96 object-cover rounded-lg shadow-lg"
+        />
       </div>
+
+      {/* Blog Title */}
+      <h1 className="text-4xl font-bold text-gray-800 mb-4 text-center">
+        {blogData.title}
+      </h1>
+
+      {/* Introduction */}
+      <p className="text-lg text-gray-600 mb-6 leading-relaxed text-center">
+        {blogData.introduction}
+      </p>
 
       {/* Understanding Custom Software Section */}
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">
-          {blog.sections.understandingCustomSoftware.title}
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          {blogData.sections.understandingCustomSoftware.title}
         </h2>
-        <p className="text-gray-700">{blog.sections.understandingCustomSoftware.description}</p>
+        <p className="text-gray-700 leading-relaxed">
+          {blogData.sections.understandingCustomSoftware.description}
+        </p>
       </section>
 
       {/* Key Benefits Section */}
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">
-          {blog.sections.keyBenefits.title}
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          {blogData.sections.keyBenefits.title}
         </h2>
         <div className="space-y-6">
-          {blog.sections.keyBenefits.benefits.map((benefit, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
-              <p className="text-gray-700">{benefit.description}</p>
+          {blogData.sections.keyBenefits.benefits.map((benefit, index) => (
+            <div key={index} className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-gray-700 mb-2">
+                {benefit.title}
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                {benefit.description}
+              </p>
             </div>
           ))}
         </div>
@@ -38,14 +57,18 @@ const BlogTwo = () => {
 
       {/* Development Process Section */}
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">
-          {blog.sections.developmentProcess.title}
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          {blogData.sections.developmentProcess.title}
         </h2>
         <div className="space-y-6">
-          {blog.sections.developmentProcess.steps.map((step, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
-              <p className="text-gray-700">{step.description}</p>
+          {blogData.sections.developmentProcess.steps.map((step, index) => (
+            <div key={index} className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-gray-700 mb-2">
+                {step.title}
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                {step.description}
+              </p>
             </div>
           ))}
         </div>
@@ -53,14 +76,18 @@ const BlogTwo = () => {
 
       {/* Industries We Serve Section */}
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">
-          {blog.sections.industriesWeServe.title}
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          {blogData.sections.industriesWeServe.title}
         </h2>
         <div className="space-y-6">
-          {blog.sections.industriesWeServe.industries.map((industry, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold mb-2">{industry.name}</h3>
-              <p className="text-gray-700">{industry.description}</p>
+          {blogData.sections.industriesWeServe.industries.map((industry, index) => (
+            <div key={index} className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-gray-700 mb-2">
+                {industry.name}
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                {industry.description}
+              </p>
             </div>
           ))}
         </div>
@@ -68,11 +95,11 @@ const BlogTwo = () => {
 
       {/* Why Choose Us Section */}
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">
-          {blog.sections.whyChooseUs.title}
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          {blogData.sections.whyChooseUs.title}
         </h2>
         <ul className="list-disc list-inside text-gray-700">
-          {blog.sections.whyChooseUs.reasons.map((reason, index) => (
+          {blogData.sections.whyChooseUs.reasons.map((reason, index) => (
             <li key={index} className="mb-2">
               {reason}
             </li>
@@ -82,12 +109,14 @@ const BlogTwo = () => {
 
       {/* Conclusion Section */}
       <section className="mt-12">
-        <h2 className="text-2xl font-semibold mb-4">
-          {blog.sections.conclusion.title}
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          {blogData.sections.conclusion.title}
         </h2>
-        <p className="text-gray-700 mb-4">{blog.sections.conclusion.description}</p>
-        <p className="text-lg text-blue-600 font-semibold">
-          {blog.sections.conclusion.callToAction}
+        <p className="text-gray-600 leading-relaxed mb-4">
+          {blogData.sections.conclusion.description}
+        </p>
+        <p className="text-lg text-[#4E148D] font-semibold">
+          {blogData.sections.conclusion.callToAction}
         </p>
       </section>
     </div>

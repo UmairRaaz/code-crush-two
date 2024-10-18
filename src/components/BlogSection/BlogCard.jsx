@@ -1,7 +1,7 @@
 import { FaChevronRight } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
-const BlogCard = ({ img , heading }) => {
+const BlogCard = ({ img , heading, id }) => {
   const truncateHeading = (heading) => {
     const words = heading.split(" ");
     return words.length > 5 ? words.slice(0, 5).join(" ") + "..." : heading;
@@ -19,8 +19,8 @@ const BlogCard = ({ img , heading }) => {
     <p className="text-sm text-gray-500">
       29 Jan 2024 | 2 min read | 219 views
     </p>
-    <button className="text-sm text-gray-700 mt-2 flex gap-2 items-center rounded-2xl">
-      <NavLink to={"/view-blog/:blogid"}>Read More </NavLink>
+    <button  className="text-sm text-gray-700 mt-2 flex gap-2 items-center rounded-2xl">
+      <NavLink to={`/view-blog/${id}`}>Read More </NavLink>
       <FaChevronRight className="mt-1 text-gray-700" size={10} />
     </button>
   </div>

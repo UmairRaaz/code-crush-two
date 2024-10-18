@@ -30,7 +30,7 @@ const AllBlogs = () => {
       <div className="w-[80%] mx-auto py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-10">
           {blogsArray.map((blog, index) => (
-            <BlogCard img={blog.image} heading={blog.title} key={index}/>
+            <BlogCard img={blog.image} id={blog.id} heading={blog.title} key={index}/>
           ))}
         </div>
       </div>

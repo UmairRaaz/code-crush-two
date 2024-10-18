@@ -98,7 +98,7 @@ function NavBar() {
               ))}
 
               {/* Language Button for Mobile */}
-              <li className="md:hidden mt-4">
+              <li className="md:hidden flex items-center justify-center mt-4 relative">
                 <button
                   className="flex items-center gap-x-2"
                   onClick={() => setNavbar(!navbar)}
@@ -107,23 +107,28 @@ function NavBar() {
                   <GrLanguage size={20} />
                 </button>
                 <ul
-                  className={`absolute bg-white p-2  mt-28 mr-10 w-28 overflow-hidden border rounded-lg shadow-lg ${
+                  className={`absolute bg-white p-2 mt-2 w-28 overflow-hidden border rounded-lg shadow-lg ${
                     navbar ? "block" : "hidden"
                   }`}
+                  style={{
+                    left: "50%", // Center the dropdown
+                    transform: "translateX(-50%)", // Shift it left by half its width
+                    top: "100%", // Positioned directly below the button
+                  }}
                 >
                   <li
-                    className=" px-2 py-1 cursor-pointer bg-white hover:bg-gray-200 flex items-center"
+                    className="px-2 py-1 gap-2 cursor-pointer bg-white hover:bg-gray-200 flex items-center"
                     onClick={() => handleButton("English")}
                   >
                     English
-                    <img src={ukflag} alt="" className="w-6" />
+                    <img src={ukflag} alt="UK Flag" className="w-6" />
                   </li>
                   <li
                     className="py-1 pt-2 px-2 cursor-pointer hover:bg-gray-200 justify-between flex items-center"
                     onClick={() => handleButton("عربي")}
                   >
                     عربي
-                    <img src={saudiflag} alt="" className="w-6" />
+                    <img src={saudiflag} alt="Saudi Flag" className="w-6" />
                   </li>
                 </ul>
               </li>
@@ -131,25 +136,30 @@ function NavBar() {
           </div>
 
           {/* Language Button on md screens */}
-          <div className="md:flex hidden items-center">
+          <div className="md:flex hidden items-center relative">
             <button
-              className="flex items-center gap-x-2 "
+              className="flex items-center gap-x-2"
               onClick={() => setNavbar(!navbar)}
             >
               <span>{language}</span>
               <GrLanguage size={20} />
             </button>
             <ul
-              className={`absolute bg-white p-2  mt-28 mr-10 w-28 overflow-hidden border rounded-lg shadow-lg ${
+              className={`absolute bg-white p-2 mt-2 w-28 overflow-hidden border rounded-lg shadow-lg ${
                 navbar ? "block" : "hidden"
               }`}
+              style={{
+                left: "50%",
+                transform: "translateX(-50%)",
+                top: "100%", // Positioned directly below the button
+              }}
             >
               <li
-                className=" px-2 py-1 justify-between gap-1 cursor-pointer bg-white hover:bg-gray-200 flex items-center"
+                className="px-2 py-1 justify-between gap-1 cursor-pointer bg-white hover:bg-gray-200 flex items-center"
                 onClick={() => handleButton("English")}
               >
                 English
-                <img src={ukflag} alt="" className="w-6" />
+                <img src={ukflag} alt="UK Flag" className="w-6" />
               </li>
 
               <li
@@ -157,7 +167,7 @@ function NavBar() {
                 onClick={() => handleButton("عربي")}
               >
                 عربي
-                <img src={saudiflag} alt="" className="w-6" />
+                <img src={saudiflag} alt="Saudi Flag" className="w-6" />
               </li>
             </ul>
           </div>

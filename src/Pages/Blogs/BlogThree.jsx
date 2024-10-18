@@ -6,100 +6,121 @@ const BlogPost = () => {
   const blog = blogsArray[2];
 
   return (
-    <div className="p-6  my-20 mx-auto bg-gray-100 shadow-md rounded-lg">
+    <div className="max-w-6xl my-20 mx-auto p-6">
       {/* Blog Image */}
-      <div className="w-full">
-        {/* <img
+      <div className="mb-6">
+        <img
           src={blog.image}
           alt={blog.title}
-          className="w-full h-64 object-cover rounded-lg"
-        /> */}
+          className="w-full h-96 object-cover rounded-lg shadow-md"
+        />
       </div>
 
       {/* Blog Title */}
-      <h1 className="text-3xl text-center font-bold text-gray-800 mt-6">{blog.title}</h1>
+      <h1 className="text-4xl font-bold text-gray-800 mb-4 text-center">
+        {blog.title}
+      </h1>
 
       {/* Introduction */}
-      <p className="text-gray-600 mt-4">{blog.introduction}</p>
+      <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+        {blog.introduction}
+      </p>
 
       {/* Understanding AI Section */}
-      <div className="mt-8">
-        <h2 className="text-2xl font-semibold text-gray-800">
+      <div className="mb-8">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
           {blog.sections.understandingAI.title}
         </h2>
-        <p className="text-gray-600 mt-2">
+        <p className="text-gray-600 leading-relaxed">
           {blog.sections.understandingAI.description}
         </p>
       </div>
 
       {/* Key Benefits Section */}
-      <div className="mt-8">
-        <h2 className="text-2xl font-semibold text-gray-800">
+      <div className="mb-8">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
           {blog.sections.keyBenefits.title}
         </h2>
-        <ul className=" list-inside mt-4">
+        <div className="space-y-4">
           {blog.sections.keyBenefits.benefits.map((benefit, index) => (
-            <li key={index} className="mt-2">
-              <h3 className="text-xl font-medium text-gray-700">{benefit.title}</h3>
-              <p className="text-gray-600">{benefit.description}</p>
-            </li>
+            <div key={index}>
+              <h3 className="text-xl font-semibold text-gray-700 mb-2">
+                {benefit.title}
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                {benefit.description}
+              </p>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
 
       {/* AI in Industries Section */}
-      <div className="mt-8">
-        <h2 className="text-2xl font-semibold text-gray-800">
+      <div className="mb-8">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
           {blog.sections.aiInIndustries.title}
         </h2>
-        <ul className=" list-inside mt-4">
+        <div className="space-y-4">
           {blog.sections.aiInIndustries.industries.map((industry, index) => (
-            <li key={index} className="mt-2">
-              <h3 className="text-xl font-medium text-gray-700">{industry.name}</h3>
-              <p className="text-gray-600">{industry.description}</p>
-            </li>
+            <div key={index}>
+              <h3 className="text-xl font-semibold text-gray-700 mb-2">
+                {industry.name}
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                {industry.description}
+              </p>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
 
       {/* Future of AI Section */}
-      <div className="mt-8">
-        <h2 className="text-2xl font-semibold text-gray-800">
+      <div className="mb-8">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
           {blog.sections.futureOfAI.title}
         </h2>
-        <ul className=" list-inside mt-4">
+        <div className="space-y-4">
           {blog.sections.futureOfAI.trends.map((trend, index) => (
-            <li key={index} className="mt-2">
-              <h3 className="text-xl font-medium text-gray-700">{trend.title}</h3>
-              <p className="text-gray-600">{trend.description}</p>
-            </li>
+            <div key={index}>
+              <h3 className="text-xl font-semibold text-gray-700 mb-2">
+                {trend.title}
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                {trend.description}
+              </p>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
 
       {/* How We Harness AI Section */}
-      <div className="mt-8">
-        <h2 className="text-2xl font-semibold text-gray-800">
+      <div className="mb-8">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
           {blog.sections.howWeHarnessAI.title}
         </h2>
-        <p className="text-gray-600 mt-2">
+        <p className="text-gray-600 leading-relaxed">
           {blog.sections.howWeHarnessAI.description}
         </p>
       </div>
 
-      {/* Conclusion */}
-      <div className="mt-8">
-        <h2 className="text-2xl font-semibold text-gray-800">
+      {/* Conclusion Section */}
+      <div className="mb-8">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
           {blog.sections.conclusion.title}
         </h2>
-        <p className="text-gray-600 mt-2">
+        <p className="text-gray-600 leading-relaxed">
           {blog.sections.conclusion.description}
         </p>
-        <div className="mt-4">
-          <button className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
-            {blog.sections.conclusion.callToAction}
-          </button>
-        </div>
+      </div>
+
+      {/* Call to Action */}
+      <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+          {blog.sections.conclusion.callToAction}
+        </h2>
+        <button className=" bg-[#4E148D] hover:bg-[#6828E8] text-white py-2 px-4 rounded-lg shadow transition">
+          {blog.sections.conclusion.callToAction}
+        </button>
       </div>
     </div>
   );
