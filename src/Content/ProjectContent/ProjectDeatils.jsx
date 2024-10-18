@@ -152,7 +152,7 @@ const projects = [
     shortDescription:
       "Wanderlust is a comprehensive tourism platform that allows users to plan their entire journey—from booking hotels and transportation to experiencing local culture and adventure activities. The platform provides a one-stop solution for a seamless and enriched travel experience.",
     overview:
-      "Wanderlust is a multi-feature tourism website and mobile app, designed to be the ultimate travel companion. It allows users to effortlessly book hotels, transportation, and adventure activities while connecting them with local guides and cultural experiences. Wanderlust caters to a wide variety of travelers, including solo explorers, families, and adventure seekers. <br/> The platform not only offers convenient trip planning but also fosters authentic, immersive experiences by providing access to local experts and unique cultural opportunities. Whether it's booking a cozy hotel, arranging transportation, or signing up for cultural workshops, Wanderlust ensures that travelers enjoy the journey while also engaging deeply with the local culture.",
+      "Wanderlust is a multi-feature tourism website and mobile app, designed to be the ultimate travel companion. It allows users to effortlessly book hotels, transportation, and adventure activities while connecting them with local guides and cultural experiences. Wanderlust caters to a wide variety of travelers, including solo explorers, families, and adventure seekers.  The platform not only offers convenient trip planning but also fosters authentic, immersive experiences by providing access to local experts and unique cultural opportunities. Whether it's booking a cozy hotel, arranging transportation, or signing up for cultural workshops, Wanderlust ensures that travelers enjoy the journey while also engaging deeply with the local culture.",
     challenges: [
       "Integrating a diverse range of services (hotels, taxis, local tours) into a single, easy-to-use platform.",
       "Ensuring seamless real-time booking for a wide range of services, from accommodations to adventure activities.",
@@ -283,7 +283,7 @@ const projects = [
     shortDescription:
       "SafeDrive is a smart car driving assistant app designed to enhance road safety by monitoring driving behavior and providing real-time alerts. Equipped with speed monitoring, sleep detection, and advanced driver-assist features, it ensures that users stay safe on the road.",
     overview:
-      "SafeDrive is an innovative car driving controller app that empowers drivers to maintain safe driving habits while providing valuable tools to manage their vehicles more effectively. With a focus on driver safety, SafeDrive offers real-time updates such as speed monitoring, GPS tracking, and silent phone mode during highway driving to minimize distractions. <br/> The app integrates cutting-edge technologies to detect when a driver is drowsy and immediately sends an alert to wake them up. Furthermore, it offers detailed settings, allowing drivers to customize the app based on their preferences. SafeDrive keeps drivers informed about critical driving data, ensuring a safer and more controlled driving experience.",
+      "SafeDrive is an innovative car driving controller app that empowers drivers to maintain safe driving habits while providing valuable tools to manage their vehicles more effectively. With a focus on driver safety, SafeDrive offers real-time updates such as speed monitoring, GPS tracking, and silent phone mode during highway driving to minimize distractions.  The app integrates cutting-edge technologies to detect when a driver is drowsy and immediately sends an alert to wake them up. Furthermore, it offers detailed settings, allowing drivers to customize the app based on their preferences. SafeDrive keeps drivers informed about critical driving data, ensuring a safer and more controlled driving experience.",
     challenges: [
       "Developing real-time monitoring features like speed detection, sleep detection, and GPS tracking with high accuracy.",
       "Integrating safety features such as automatic phone silencing based on speed and location.",
@@ -412,7 +412,7 @@ const projects = [
     shortDescription:
       "Tailor Bhai is a complete tailoring shop management app that streamlines every aspect of running a tailor shop. From taking customer orders to managing measurements, payments, delivery schedules, and even loans, Tailor Bhai is designed to boost efficiency and improve customer satisfaction for tailoring businesses of any size.",
     overview:
-      "Tailor Bhai is a revolutionary solution for tailors looking to modernize and automate their business operations. Designed to handle every task within a tailoring business, the app makes it easier to manage customer orders, track measurements, handle payments, and monitor deliveries. Whether you're a small tailor or running a large chain, Tailor Bhai provides a comprehensive suite of tools to manage your business effortlessly. <br/> Tailor Bhai not only focuses on core tailoring needs like managing fabric and measurements but also incorporates advanced features like tracking credit/loans, customer notifications, order status updates, and payment management. The app is designed with an intuitive interface, making it simple for tailors to manage their workflow from a single platform. <br/> The Super Admin Dashboard feature offers tailor shop owners and managers complete control over their operations, providing powerful insights and tools to track the performance of multiple tailors or shops under one roof.",
+      "Tailor Bhai is a revolutionary solution for tailors looking to modernize and automate their business operations. Designed to handle every task within a tailoring business, the app makes it easier to manage customer orders, track measurements, handle payments, and monitor deliveries. Whether you're a small tailor or running a large chain, Tailor Bhai provides a comprehensive suite of tools to manage your business effortlessly.  Tailor Bhai not only focuses on core tailoring needs like managing fabric and measurements but also incorporates advanced features like tracking credit/loans, customer notifications, order status updates, and payment management. The app is designed with an intuitive interface, making it simple for tailors to manage their workflow from a single platform.  The Super Admin Dashboard feature offers tailor shop owners and managers complete control over their operations, providing powerful insights and tools to track the performance of multiple tailors or shops under one roof.",
     challenges: [
       "Managing multiple aspects of a tailor’s business, from customer orders to final delivery, all in one seamless application",
       "Providing an easy-to-use interface for tailors who may not be tech-savvy.",
@@ -475,9 +475,9 @@ const projects = [
           "Access past order histories and generate business reports to analyze sales trends and performance.",
       },
       {
-        title: "Super Admin Dashboard:",
+        title: "Super Admin Dashboard",
         description:
-          "○	Monitor multiple branches or tailors. ○	Track shop performance with data insights and analytics. ○	Assign and track orders across tailors. ○	Review order completion rates and customer satisfaction.",
+          "Monitor multiple branches or tailors, Track shop performance with data insights and analytics, Assign and track orders across tailors,	Review order completion rates and customer satisfaction.",
       },
       {
         title: "Fabric Inventory Management",
@@ -600,7 +600,7 @@ const projects = [
     shortDescription:
       "SwiftRide is a modern ride-booking app designed to provide fast, reliable, and affordable transportation services. Whether you need a ride across the city or to the airport, SwiftRide ensures a seamless experience with just a few taps on your phone.",
     overview:
-      "SwiftRide is a feature-rich, intuitive app that connects passengers with drivers for convenient, on-demand transportation. Built to rival top ride-hailing platforms, SwiftRide offers multiple ride options, real-time tracking, flexible payment systems, and a user-friendly interface to make every journey smooth and hassle-free. Whether you're a commuter, tourist, or someone in need of quick transportation, SwiftRide simplifies urban mobility by offering both private and shared ride options. <br/>The app aims to cater to both users and drivers by providing a flexible system where customers can request rides instantly, and drivers can find the nearest rides quickly. The app includes a fare estimate, ride status, real-time location tracking, and driver ratings, ensuring transparency and safety for passengers. <br/> SwiftRide also comes with a Super Admin Dashboard that allows administrators to manage all operations, track rides, handle disputes, and ensure that both drivers and passengers have a seamless experience. This dashboard provides insights into user trends, geographical performance, and service efficiency, allowing for a data-driven approach to managing the platform.",
+      "SwiftRide is a feature-rich, intuitive app that connects passengers with drivers for convenient, on-demand transportation. Built to rival top ride-hailing platforms, SwiftRide offers multiple ride options, real-time tracking, flexible payment systems, and a user-friendly interface to make every journey smooth and hassle-free. Whether you're a commuter, tourist, or someone in need of quick transportation, SwiftRide simplifies urban mobility by offering both private and shared ride options. The app aims to cater to both users and drivers by providing a flexible system where customers can request rides instantly, and drivers can find the nearest rides quickly. The app includes a fare estimate, ride status, real-time location tracking, and driver ratings, ensuring transparency and safety for passengers.  SwiftRide also comes with a Super Admin Dashboard that allows administrators to manage all operations, track rides, handle disputes, and ensure that both drivers and passengers have a seamless experience. This dashboard provides insights into user trends, geographical performance, and service efficiency, allowing for a data-driven approach to managing the platform.",
     challenges: [
       "Competing in an established and highly competitive ride-booking market.",
       "Offering a user-friendly, reliable, and feature-rich app to meet diverse user needs.",
@@ -687,12 +687,7 @@ const projects = [
       },
       {
         title: "Super Admin Dashboard",
-        description: [
-          "Real-time analytics on rides, drivers, and user behavior.",
-          "Dispute management and resolution.",
-          "Driver and user onboarding controls.",
-          "Payment and transaction monitoring.",
-        ],
+        description: "Real-time analytics on rides, drivers, and user behavior, Dispute management and resolution, Driver and user onboarding controls, Payment and transaction monitoring."
       },
     ],
     SuperAdminFeatures: [
@@ -702,7 +697,7 @@ const projects = [
           "Admins can track all rides in real-time, managing driver allocation, route issues, and safety concerns.",
       },
       {
-        title: "Driver Management: ",
+        title: "Driver Management ",
         description:
           "Monitor driver performance, handle driver queries, and manage disputes.",
       },
@@ -817,7 +812,7 @@ const projects = [
     shortDescription:
       "DineEase is a comprehensive restaurant management system designed to streamline restaurant operations. With integrated apps for customers, waitstaff, kitchen, and the counter, it also includes a super admin dashboard that offers full control over reservations, dining options, and orders.",
     overview:
-      "DineEase revolutionizes how restaurants operate by providing a unified system to manage reservations, table booking, dining options, delivery services, and parcel pick-up orders. The system is composed of multiple apps tailored to specific roles within the restaurant environment, including the Waiter App, Kitchen App, Counter App, and Customer App. The Super Admin Dashboard serves as the control center, allowing restaurant owners to monitor real-time operations, manage inventory, oversee finances, and provide customer support. <br/>DineEase caters to a wide range of restaurant types, from casual dining and cafes to fine dining and fast-food establishments. The system not only improves internal restaurant efficiency but also enhances the customer experience by offering seamless reservation, order, and delivery options.",
+      "DineEase revolutionizes how restaurants operate by providing a unified system to manage reservations, table booking, dining options, delivery services, and parcel pick-up orders. The system is composed of multiple apps tailored to specific roles within the restaurant environment, including the Waiter App, Kitchen App, Counter App, and Customer App. The Super Admin Dashboard serves as the control center, allowing restaurant owners to monitor real-time operations, manage inventory, oversee finances, and provide customer support. DineEase caters to a wide range of restaurant types, from casual dining and cafes to fine dining and fast-food establishments. The system not only improves internal restaurant efficiency but also enhances the customer experience by offering seamless reservation, order, and delivery options.",
     challenges: [
       "Handling peak-time reservations and optimizing table management to maximize occupancy.",
       "Ensuring real-time communication between the front-of-house and back-of-house staff for smooth operations..",
@@ -976,7 +971,7 @@ const projects = [
     shortDescription:
       "AI Study is a next-generation educational platform that leverages artificial intelligence to personalize learning experiences. By offering tailored study plans, intelligent tutoring, and interactive tools, AI Study ensures that each student can learn at their own pace, anytime and anywhere.",
     overview:
-      "AI Study is designed to revolutionize the education system by utilizing AI technologies to make learning more personalized, interactive, and efficient. Whether you’re a school student, university learner, or professional seeking new skills, AI Study adjusts to your level, learning style, and progress. The platform offers a wide range of subjects, from science and mathematics to arts and literature, and incorporates advanced features like AI-driven tutoring, adaptive study plans, interactive quizzes, and real-time progress tracking. <br/> By leveraging AI, the platform identifies areas where a student may need extra help, adjusts study materials, and provides actionable insights for both learners and educators. AI Study is available across mobile and web platforms, making it accessible to learners anytime, anywhere.",
+      "AI Study is designed to revolutionize the education system by utilizing AI technologies to make learning more personalized, interactive, and efficient. Whether you’re a school student, university learner, or professional seeking new skills, AI Study adjusts to your level, learning style, and progress. The platform offers a wide range of subjects, from science and mathematics to arts and literature, and incorporates advanced features like AI-driven tutoring, adaptive study plans, interactive quizzes, and real-time progress tracking.  By leveraging AI, the platform identifies areas where a student may need extra help, adjusts study materials, and provides actionable insights for both learners and educators. AI Study is available across mobile and web platforms, making it accessible to learners anytime, anywhere.",
     challenges: [
       "Ensuring personalized learning for students with varying learning styles, academic levels, and goals.",
       "Maintaining student engagement, motivation, and consistency in study habits",
@@ -1084,7 +1079,7 @@ const projects = [
     shortDescription:
       "SalonEase is a cutting-edge SaaS-based salon booking platform that allows customers to book beauty services effortlessly. It offers a comprehensive suite of tools for salons to manage appointments, staff, services, and payments through a robust customer app, salon app, and super admin dashboard.",
     overview:
-      "SalonEase is designed to revolutionize how salons and beauty service providers interact with their clients. The platform enables customers to seamlessly book appointments, explore services, and receive personalized beauty care recommendations. Salon owners benefit from efficient management of staff, schedules, customer data, and payments all through the salon app. The super admin dashboard ensures centralized control and visibility over all registered salons on the platform, offering deep insights into performance, sales, and user behavior. <br/> This SaaS-based solution is ideal for salons of all sizes, from small beauty shops to large chains, enabling them to provide a premium, hassle-free customer experience while improving their operational efficiency.",
+      "SalonEase is designed to revolutionize how salons and beauty service providers interact with their clients. The platform enables customers to seamlessly book appointments, explore services, and receive personalized beauty care recommendations. Salon owners benefit from efficient management of staff, schedules, customer data, and payments all through the salon app. The super admin dashboard ensures centralized control and visibility over all registered salons on the platform, offering deep insights into performance, sales, and user behavior.  This SaaS-based solution is ideal for salons of all sizes, from small beauty shops to large chains, enabling them to provide a premium, hassle-free customer experience while improving their operational efficiency.",
     challenges: [
       "Traditional booking systems often lead to missed appointments, scheduling conflicts, and dissatisfied customers.",
       "Salons lack efficient tools to manage multiple appointments, staff, and services, leading to poor customer experience.",
@@ -1217,7 +1212,7 @@ const projects = [
     shortDescription:
       "FinSmart is an innovative fintech app designed to simplify personal finance management. With cutting-edge features like budgeting tools, investment tracking, and secure transactions, FinSmart empowers users to take control of their financial health and make informed decisions.",
     overview:
-      "FinSmart revolutionizes the way individuals manage their finances by offering a comprehensive suite of tools designed for both novice and experienced users. The app provides a seamless experience for budgeting, saving, investing, and tracking expenses. FinSmart not only helps users understand their financial status but also guides them toward achieving their financial goals through personalized recommendations and insights. <br/> With a user-friendly interface and robust security measures, FinSmart makes it easy for users to manage their finances on the go, ensuring that financial literacy and empowerment are accessible to everyone.",
+      "FinSmart revolutionizes the way individuals manage their finances by offering a comprehensive suite of tools designed for both novice and experienced users. The app provides a seamless experience for budgeting, saving, investing, and tracking expenses. FinSmart not only helps users understand their financial status but also guides them toward achieving their financial goals through personalized recommendations and insights.  With a user-friendly interface and robust security measures, FinSmart makes it easy for users to manage their finances on the go, ensuring that financial literacy and empowerment are accessible to everyone.",
     challenges: [
       "With a user-friendly interface and robust security measures, FinSmart makes it easy for users to manage their finances on the go, ensuring that financial literacy and empowerment are accessible to everyone.",
       "Existing fintech solutions can be overly complex or intimidating for new users, leading to poor adoption rates.",
@@ -1657,7 +1652,7 @@ const projects = [
     shortDescription:
       "This platform serves as the ultimate resource for students in Pakistan, providing an extensive collection of MCQs, quizzes, and test preparation materials. With over 1 million downloads and hundreds of thousands of active users, it empowers students to excel in competitive exams and enhance their knowledge.",
     overview:
-      "Pakistan’s Largest MCQs & Test Preparation Platform is a comprehensive online resource designed for students preparing for various competitive exams, including entry tests, job tests, and professional certifications. The platform offers an extensive range of multiple-choice questions (MCQs), practice quizzes, and detailed test preparation materials to ensure users are thoroughly prepared for their exams <br/> The platform is available as a website and mobile application, making it accessible anytime, anywhere. Its user-friendly interface and interactive features make studying enjoyable and efficient, while real-time analytics help users track their progress and identify areas for improvement.",
+      "Pakistan’s Largest MCQs & Test Preparation Platform is a comprehensive online resource designed for students preparing for various competitive exams, including entry tests, job tests, and professional certifications. The platform offers an extensive range of multiple-choice questions (MCQs), practice quizzes, and detailed test preparation materials to ensure users are thoroughly prepared for their exams  The platform is available as a website and mobile application, making it accessible anytime, anywhere. Its user-friendly interface and interactive features make studying enjoyable and efficient, while real-time analytics help users track their progress and identify areas for improvement.",
     challenges: [
       " Content Quality Maintaining a high standard of quality and relevance in the vast array of questions and study materials.",
       " User EngagementKeeping students motivated and engaged with consistent updates and interactive features.",

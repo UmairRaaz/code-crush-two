@@ -1,14 +1,15 @@
 import { FaChevronRight } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const BlogCard = ({ img , heading, id }) => {
+  const navigate = useNavigate()
   const truncateHeading = (heading) => {
     const words = heading.split(" ");
     return words.length > 5 ? words.slice(0, 5).join(" ") + "..." : heading;
   };
   
   return (
-    <div className="flex flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all pb-8">
+    <div onClick={()=> navigate(`/view-blog/${id}`)} className="flex cursor-pointer flex-col rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all pb-8">
   <div className="rounded-t-xl">
     <img src={img} alt="image" className="w-full h-56 object-cover" />
   </div>

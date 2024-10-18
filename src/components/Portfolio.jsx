@@ -53,7 +53,8 @@ const Portfolio = () => {
               onClick={() => navigate("/view-project/1")}
               className="absolute bottom-10 bg-white/80 w-full text-gray-700 py-5 px-10"
             >
-              <h1 className="text-2xl font-bold">Mobile App</h1>
+              <h1 className="text-2xl font-bold">Photo convertor App
+              </h1>
               {/* <p className="flex items-center gap-1 text-sm mt-2">
                 <span>View Project</span>
                 <span className="mt-1">
@@ -76,7 +77,7 @@ const Portfolio = () => {
                 transition={{ duration: 0.5 }}
                 className="absolute bottom-10 bg-white/80 w-full text-gray-700 py-5 px-10"
               >
-                <h1 className="text-2xl font-bold">Web App</h1>
+                <h1 className="text-2xl font-bold">U ride App</h1>
                 {/* <p className="flex items-center gap-1 text-sm mt-2">
                   <span>View Project</span>
                   <span className="mt-1">
@@ -98,7 +99,7 @@ const Portfolio = () => {
                 transition={{ duration: 0.5 }}
                 className="absolute bottom-10 bg-white/80 w-full text-gray-700 py-5 px-10"
               >
-                <h1 className="text-2xl font-bold">Web App</h1>
+                <h1 className="text-2xl font-bold">Islam Master App</h1>
                 {/* <p className="flex items-center gap-1 text-sm mt-2">
                   <span>View Project</span>
                   <span className="mt-1">
@@ -122,7 +123,7 @@ const Portfolio = () => {
                 transition={{ duration: 0.5 }}
                 className="absolute bottom-10 bg-white/80 w-full text-gray-700 py-5 px-10"
               >
-                <h1 className="text-2xl font-bold">Web App</h1>
+                <h1 className="text-2xl font-bold">Islam Master App</h1>
                 {/* <p className="flex items-center gap-1 text-sm mt-2">
                   <span>View Project</span>
                   <span className="mt-1">
@@ -144,7 +145,7 @@ const Portfolio = () => {
                 onClick={() => navigate("/view-project/1")}
                 className="absolute bottom-10 bg-white/80 w-full text-gray-700 py-5 px-10"
               >
-                <h1 className="text-2xl font-bold">Web App</h1>
+                <h1 className="text-2xl font-bold">Speedometer App</h1>
                 {/* <p className="flex items-center gap-1 text-sm mt-2">
                   <span>View Project</span>
                   <span className="mt-1">

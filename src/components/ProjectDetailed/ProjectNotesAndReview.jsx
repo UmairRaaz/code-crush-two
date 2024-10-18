@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProjectNotesAndReview = ({project}) => {
   return (
-    <div className="max-w-6xl mx-auto flex gap-10 mb-10  border-gray-300">
+    <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-10 mb-10  border-gray-300">
         {/* Additional Notes Section */}
         <div className="flex-1  bg-white p-6 shadow-lg rounded-lg">
           <h2 className="text-2xl font-bold text-center mb-4 text-[#06496b]">

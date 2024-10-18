@@ -2,14 +2,14 @@ import React from 'react'
 
 const ProjectFeatures = ({project}) => {
   return (
-    <div className="md:w-[40%] w-full shadow-2xl min-h-20 p-4 md:absolute top-0 right-0">
+    <div className="md:w-[37%] w-full shadow-2xl min-h-20 p-4 md:absolute top-0 right-0">
             <h2 className="text-2xl font-bold mb-4 flex gap-2 items-center">
               Features
             </h2>
             <ul className="list-disc list-inside space-y-2">
               {project.features.map((feature, index) => (
                 <li key={index} className="">
-                  {feature.title} : {feature.description}
+                  <span className='font-semibold'>{feature.title}</span> : {feature.description}
                 </li>
               ))}
             </ul>

@@ -4,7 +4,7 @@ import { MdOutlineBubbleChart } from 'react-icons/md'
 
 const ProjectTechnologies = ({project}) => {
   return (
-    <div className="max-w-6xl my-10 mx-auto p-8 bg-white shadow-lg rounded-lg border-gray-200">
+    <div className="max-w-6xl my-10 mx-auto p-8 bg-white  rounded-lg border-gray-200">
         <h2 className="text-3xl font-bold text-center mb-6 text-[#06496b]">
           Technologies Used
         </h2>
