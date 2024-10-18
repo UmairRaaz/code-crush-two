@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import serviceBG from "../assets/serviceBG.png"
+import serviceBG from "/Images/Banners/serviceBG.png"
 
 import LineEffect from "../components/Buttons/LineEffect";
 import { industries, rAndDProjects, services } from "../Content/ServiceContent.jsx";

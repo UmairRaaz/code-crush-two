@@ -1,6 +1,6 @@
-import drAkhter from "/teamImages/sirAkhtar.webp";
-import engrFazal from "/teamImages/sirFazal.webp";
-import habib from "/teamImages/sirHabib.webp";
+import drAkhter from "/Images/TeamMemberImages/sirAkhtar.webp";
+import engrFazal from "/Images/TeamMemberImages/sirFazal.webp";
+import habib from "/Images/TeamMemberImages/sirHabib.webp";
 import { motion } from "framer-motion";
 import TeamMemberCard from "./TeamSection/TeamMemberCard";
 import ViewAllButton from "./Buttons/ViewAllButton";

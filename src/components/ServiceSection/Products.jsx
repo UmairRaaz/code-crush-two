@@ -1,7 +1,7 @@
-import ArtificialIntelligence from "../../assets/ServicesSection/R&D/ArtificialIntelligence.webp";
-import MachineLearning from "../../assets/ServicesSection/R&D/MachineLearning.webp";
-import BlockchainTechnology from "../../assets/ServicesSection/R&D/BlockchainTechnology.webp";
-import NaturalLanguageProcessing from "../../assets/ServicesSection/R&D/NaturalLanguageProcessing.webp";
+import ArtificialIntelligence from "/Images/ServiceSectionImages/ArtificialIntelligence.webp";
+import MachineLearning from "/Images/ServiceSectionImages/ArtificialIntelligence.webp";
+import BlockchainTechnology from "/Images/ServiceSectionImages/ArtificialIntelligence.webp";
+import NaturalLanguageProcessing from "/Images/ServiceSectionImages/ArtificialIntelligence.webp";
 import { NavLink } from "react-router-dom";
 import { rAndDProjects } from "../../Content/ServiceContent";
 

@@ -1,24 +1,24 @@
-import ourTeamBG from "../assets/ourTeamBG.webp";
+import ourTeamBG from "/Images/Banners/ourTeamBG.webp";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { BsTwitter } from "react-icons/bs";
 import LineEffect from "../components/Buttons/LineEffect";
-import drAkhter from "/teamImages/sirAkhtar.webp";
-import engrFazal from "/teamImages/sirFazal.webp";
-import habib from "/teamImages/sirHabib.webp";
+import drAkhter from "/Images/TeamMemberImages/sirAkhtar.webp";
+import engrFazal from "/Images/TeamMemberImages/sirFazal.webp";
+import habib from "/Images/TeamMemberImages/sirHabib.webp";
 
-import akhtar from "/teamImages/akhtar_zaman_profile.webp";
-import aliyan from "/teamImages/aliyan_profile.webp";
-import amir from "/teamImages/amir_habib.webp";
-import hamza from "/teamImages/hamza_profile.webp";
-import israr from "/teamImages/israr_profile.webp";
-import kashif from "/teamImages/kashif_profile.webp";
-import rahmat from "/teamImages/rahmat_ullah_profile.webp";
-import salman from "/teamImages/salman_profile.webp";
-import ubaid from "/teamImages/ubaid_profile.webp";
-import umair from "/teamImages/umair_profile.webp";
-import umar from "/teamImages/umar_profile.webp";
-import zain from "/teamImages/zain_profile.webp";
-import waqar from "/teamImages/waqar_profile.png";
+import akhtar from "/Images/TeamMemberImages/akhtar_zaman_profile.webp";
+import aliyan from "/Images/TeamMemberImages/aliyan_profile.webp";
+import amir from "/Images/TeamMemberImages/amir_habib.webp";
+import hamza from "/Images/TeamMemberImages/hamza_profile.webp";
+import israr from "/Images/TeamMemberImages/israr_profile.webp";
+import kashif from "/Images/TeamMemberImages/kashif_profile.webp";
+import rahmat from "/Images/TeamMemberImages/rahmat_ullah_profile.webp";
+import salman from "/Images/TeamMemberImages/salman_profile.webp";
+import ubaid from "/Images/TeamMemberImages/ubaid_profile.webp";
+import umair from "/Images/TeamMemberImages/umair_profile.webp";
+import umar from "/Images/TeamMemberImages/umar_profile.webp";
+import zain from "/Images/TeamMemberImages/zain_profile.webp";
+import waqar from "/Images/TeamMemberImages/waqar_profile.webp";
 const teamMembers = [
   {
     id: 1,

@@ -1,5 +1,5 @@
-import personImage from "../../assets/portraitTwo.jpg";
-import comapnyLogo from "../../assets/ProductOne.png";
+// import personImage from "../../assets/portraitTwo.jpg";
+// import comapnyLogo from "../../assets/ProductOne.png";
 
 const ReviewCard = ({desc}) => {
   return (

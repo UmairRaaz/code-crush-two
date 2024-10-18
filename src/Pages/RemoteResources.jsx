@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import remoteResourceImage from "../assets/remoteResourcesBg.webp";
+import remoteResourceImage from "/Images/Banners/remoteResourcesBg.webp";
 import axios from "axios";
 import toast from "react-hot-toast";
 import emailjs from "@emailjs/browser";

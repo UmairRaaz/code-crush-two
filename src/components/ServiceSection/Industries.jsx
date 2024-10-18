@@ -1,7 +1,7 @@
-import educationImage from "../../assets/ServicesSection/Industries/Education.webp";
-import healthcareImage from "../../assets/ServicesSection/Industries/Healthcare.webp";
-import RetailImage from "../../assets/ServicesSection/Industries/Retail.webp";
-import travelImage from "../../assets/ServicesSection/Industries/Travel.webp";
+import educationImage from "/Images/ServiceSectionImages/Education.webp";
+import healthcareImage from "/Images/ServiceSectionImages/Healthcare.webp";
+import RetailImage from "/Images/ServiceSectionImages/Retail.webp";
+import travelImage from "/Images/ServiceSectionImages/Travel.webp";
 
 
 import { NavLink } from 'react-router-dom';

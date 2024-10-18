@@ -1,92 +1,92 @@
-import AIBanner from "../assets/researchSection/banners/AI.webp"
-import BlockChainBanner from "../assets/researchSection/banners/BlockChain.webp"
-import cybersecurityBanner from "../assets/researchSection/banners/cybersecurity.webp"
-import edgeBanner from "../assets/researchSection/banners/edge.webp"
-import internetOfThingsBanner from "../assets/researchSection/banners/internetOfThings.webp"
-import MLBanner from "../assets/researchSection/banners/ML.webp"
-import NLPBanner from "../assets/researchSection/banners/NLP.webp"
-import quantumBanner from "../assets/researchSection/banners/quantum.webp"
-import RPABanner from "../assets/researchSection/banners/RPA.webp"
+import AIBanner from "/Images/researchSection/banners/AI.webp"
+import BlockChainBanner from "/Images/researchSection/banners/BlockChain.webp"
+import cybersecurityBanner from "/Images/researchSection/banners/cybersecurity.webp"
+import edgeBanner from "/Images/researchSection/banners/edge.webp"
+import internetOfThingsBanner from "/Images/researchSection/banners/internetOfThings.webp"
+import MLBanner from "/Images/researchSection/banners/ML.webp"
+import NLPBanner from "/Images/researchSection/banners/NLP.webp"
+import quantumBanner from "/Images/researchSection/banners/quantum.webp"
+import RPABanner from "/Images/researchSection/banners/RPA.webp"
 
 
 // AI images 
-import AIOne from "../assets/researchSection/ai/one.png";
-import AITwo from "../assets/researchSection/ai/two.png";
-import AIThree from "../assets/researchSection/ai/three.png";
-import AIFour from "../assets/researchSection/ai/four.png";
-import AIFive from "../assets/researchSection/ai/five.png";
-import AISix from "../assets/researchSection/ai/six.png";
-import AISeven from "../assets/researchSection/ai/seven.png";
-import AIEight from "../assets/researchSection/ai/eight.png";
-import AINine from "../assets/researchSection/ai/nine.png";
+import AIOne from "/Images/researchSection/ai/one.png";
+import AITwo from "/Images/researchSection/ai/two.png";
+import AIThree from "/Images/researchSection/ai/three.png";
+import AIFour from "/Images/researchSection/ai/four.png";
+import AIFive from "/Images/researchSection/ai/five.png";
+import AISix from "/Images/researchSection/ai/six.png";
+import AISeven from "/Images/researchSection/ai/seven.png";
+import AIEight from "/Images/researchSection/ai/eight.png";
+import AINine from "/Images/researchSection/ai/nine.png";
 
 //ML Image
-import MLOne from "../assets/researchSection/ml/one.png";
-import MLTwo from "../assets/researchSection/ml/two.png";
-import MLThree from "../assets/researchSection/ml/three.png";
-import MLFour from "../assets/researchSection/ml/four.png";
-import MLFive from "../assets/researchSection/ml/five.png";
-import MLSix from "../assets/researchSection/ml/six.png";
+import MLOne from "/Images/researchSection/ml/one.png";
+import MLTwo from "/Images/researchSection/ml/two.png";
+import MLThree from "/Images/researchSection/ml/three.png";
+import MLFour from "/Images/researchSection/ml/four.png";
+import MLFive from "/Images/researchSection/ml/five.png";
+import MLSix from "/Images/researchSection/ml/six.png";
 
 //NLP Image
-import NLPOne from "../assets/researchSection/nlp/one.png";
-import NLPTwo from "../assets/researchSection/nlp/two.png";
-import NLPThree from "../assets/researchSection/nlp/three.png";
-import NLPFour from "../assets/researchSection/nlp/four.png";
-import NLPFive from "../assets/researchSection/nlp/five.png";
-import NLPSix from "../assets/researchSection/nlp/six.png";
+import NLPOne from "/Images/researchSection/nlp/one.png";
+import NLPTwo from "/Images/researchSection/nlp/two.png";
+import NLPThree from "/Images/researchSection/nlp/three.png";
+import NLPFour from "/Images/researchSection/nlp/four.png";
+import NLPFive from "/Images/researchSection/nlp/five.png";
+import NLPSix from "/Images/researchSection/nlp/six.png";
 
 //Blockchain
-import blockChainOne from "../assets/researchSection/blockchain/one.png";
-import blockChainTwo from "../assets/researchSection/blockchain/two.png";
-import blockChainThree from "../assets/researchSection/blockchain/three.png";
-import blockChainFour from "../assets/researchSection/blockchain/four.png";
-import blockChainFive from "../assets/researchSection/blockchain/five.png";
-import blockChainSix from "../assets/researchSection/blockchain/six.png";
-import blockChainSeven from "../assets/researchSection/blockchain/seven.png";
+import blockChainOne from "/Images/researchSection/blockchain/one.png";
+import blockChainTwo from "/Images/researchSection/blockchain/two.png";
+import blockChainThree from "/Images/researchSection/blockchain/three.png";
+import blockChainFour from "/Images/researchSection/blockchain/four.png";
+import blockChainFive from "/Images/researchSection/blockchain/five.png";
+import blockChainSix from "/Images/researchSection/blockchain/six.png";
+import blockChainSeven from "/Images/researchSection/blockchain/seven.png";
 
 
 //Cybersecurity
-import cybersecurityOne from "../assets/researchSection/cybrsecurity/one.png";
-import cybersecurityTwo from "../assets/researchSection/cybrsecurity/two.png";
-import cybersecurityThree from "../assets/researchSection/cybrsecurity/three.png";
-import cybersecurityFour from "../assets/researchSection/cybrsecurity/four.png";
-import cybersecurityFive from "../assets/researchSection/cybrsecurity/five.png";
-import cybersecuritySix from "../assets/researchSection/cybrsecurity/six.png";
-// import cybersecuritySeven from "../assets/researchSection/cybrsecurity/seven.png";
+import cybersecurityOne from "/Images/researchSection/cybrsecurity/one.png";
+import cybersecurityTwo from "/Images/researchSection/cybrsecurity/two.png";
+import cybersecurityThree from "/Images/researchSection/cybrsecurity/three.png";
+import cybersecurityFour from "/Images/researchSection/cybrsecurity/four.png";
+import cybersecurityFive from "/Images/researchSection/cybrsecurity/five.png";
+import cybersecuritySix from "/Images/researchSection/cybrsecurity/six.png";
+// import cybersecuritySeven from "/Images/researchSection/cybrsecurity/seven.png";
 
 //RPA
-import rpaOne from "../assets/researchSection/rpa/one.png";
-import rpaTwo from "../assets/researchSection/rpa/two.png";
-import rpaThree from "../assets/researchSection/rpa/three.png";
-import rpaFour from "../assets/researchSection/rpa/four.png";
-import rpaFive from "../assets/researchSection/rpa/five.png";
-import rpaSix from "../assets/researchSection/rpa/six.png";
+import rpaOne from "/Images/researchSection/rpa/one.png";
+import rpaTwo from "/Images/researchSection/rpa/two.png";
+import rpaThree from "/Images/researchSection/rpa/three.png";
+import rpaFour from "/Images/researchSection/rpa/four.png";
+import rpaFive from "/Images/researchSection/rpa/five.png";
+import rpaSix from "/Images/researchSection/rpa/six.png";
 
 //Quantum
-import quantumOne from "../assets/researchSection/quantum/one.png";
-import quantumTwo from "../assets/researchSection/quantum/two.png";
-import quantumThree from "../assets/researchSection/quantum/three.png";
-import quantumFour from "../assets/researchSection/quantum/four.png";
-import quantumFive from "../assets/researchSection/quantum/five.png";
-import quantumSix from "../assets/researchSection/quantum/six.png";
+import quantumOne from "/Images/researchSection/quantum/one.png";
+import quantumTwo from "/Images/researchSection/quantum/two.png";
+import quantumThree from "/Images/researchSection/quantum/three.png";
+import quantumFour from "/Images/researchSection/quantum/four.png";
+import quantumFive from "/Images/researchSection/quantum/five.png";
+import quantumSix from "/Images/researchSection/quantum/six.png";
 
 //IOT
-import iotOne from "../assets/researchSection/iot/one.png";
-import iotTwo from "../assets/researchSection/iot/two.png";
-import iotThree from "../assets/researchSection/iot/three.png";
-import iotFour from "../assets/researchSection/iot/four.png";
-import iotFive from "../assets/researchSection/iot/five.png";
-import iotSix from "../assets/researchSection/iot/six.png";
-// import iotSeven from "../assets/researchSection/iot/seven.png";
+import iotOne from "/Images/researchSection/iot/one.png";
+import iotTwo from "/Images/researchSection/iot/two.png";
+import iotThree from "/Images/researchSection/iot/three.png";
+import iotFour from "/Images/researchSection/iot/four.png";
+import iotFive from "/Images/researchSection/iot/five.png";
+import iotSix from "/Images/researchSection/iot/six.png";
+// import iotSeven from "/Images/researchSection/iot/seven.png";
 
 //edge
-import edgeOne from "../assets/researchSection/edge/one.png";
-import edgeTwo from "../assets/researchSection/edge/two.png";
-import edgeThree from "../assets/researchSection/edge/three.png";
-import edgeFour from "../assets/researchSection/edge/four.png";
-import edgeFive from "../assets/researchSection/edge/five.png";
-import edgeSix from "../assets/researchSection/edge/six.png";
+import edgeOne from "/Images/researchSection/edge/one.png";
+import edgeTwo from "/Images/researchSection/edge/two.png";
+import edgeThree from "/Images/researchSection/edge/three.png";
+import edgeFour from "/Images/researchSection/edge/four.png";
+import edgeFive from "/Images/researchSection/edge/five.png";
+import edgeSix from "/Images/researchSection/edge/six.png";
 
 export const researhAndDevelopmentContent = [
   {

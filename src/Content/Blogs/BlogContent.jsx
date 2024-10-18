@@ -1,9 +1,9 @@
-import developmentProcess from "/blogImages/developmentProcess.webp";
-import customSoftware from "/blogImages/customSoftware.webp";
-import powerOfAI from "/blogImages/powerOfAI.webp";
-import customSolutions from "/blogImages/customSolutions.webp";
-import traditionalSoftware from "/blogImages/traditionalSoftware.webp";
-import mobileAppFuture from "/blogImages/mobileAppFuture.webp";
+import developmentProcess from "/Images/BlogSectionImages/developmentProcess.webp";
+import customSoftware from "/Images/BlogSectionImages/customSoftware.webp";
+import powerOfAI from "/Images/BlogSectionImages/powerOfAI.webp";
+import customSolutions from "/Images/BlogSectionImages/customSolutions.webp";
+import traditionalSoftware from "/Images/BlogSectionImages/traditionalSoftware.webp";
+import mobileAppFuture from "/Images/BlogSectionImages/mobileAppFuture.webp";
 const blogsArray = [
   {
     id: 1,

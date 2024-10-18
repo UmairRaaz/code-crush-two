@@ -1,11 +1,11 @@
-import aboutUs from "../assets/aboutUs.webp";
-import habibImage from "../assets/aboutUs/ceoImage.svg";
+import aboutUs from "/Images/AboutSectionImages/aboutUs.webp";
+import habibImage from "/Images/AboutSectionImages/ceoImage.svg";
 import LineEffect from "../components/Buttons/LineEffect";
 import { FaLinkedin } from "react-icons/fa";
-import logo from "../assets/aboutUs/companyLogo.svg";
-import mission from "../assets/aboutUs/missionLogo.svg";
-import objective from "../assets/aboutUs/objectiveLogo.svg";
-import whycodecrush from "../assets/aboutUs/whycodecrush.svg";
+import logo from "/Images/AboutSectionImages/companyLogo.svg";
+import mission from "/Images/AboutSectionImages/missionLogo.svg";
+import objective from "/Images/AboutSectionImages/objectiveLogo.svg";
+import whycodecrush from "/Images/AboutSectionImages/whycodecrush.svg";
 const AboutUs = () => {
   return (
     <div className="py-1 bg-gray-100">

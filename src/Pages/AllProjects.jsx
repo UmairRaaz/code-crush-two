@@ -1,15 +1,10 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import servicepagebg from "../assets/servicepagebg.jpg";
+import servicepagebg from "/Images/Banners/servicepagebg.jpg";
 import { IoIosArrowRoundForward } from 'react-icons/io';
-import projectBG from "../assets/projectBG.webp"
+import projectBG from "/Images/Banners/projectBG.webp"
 
-import projectOne from "../assets/projectImages/one.webp"
-import projectTwo from "../assets/projectImages/two.webp"
-import projectThree from "../assets/projectImages/three.webp"
-import projectFour from "../assets/projectImages/four.webp"
-import projectFive from "../assets/projectImages/five.webp"
-import projectSix from "../assets/projectImages/six.webp"
+
 
 import { useNavigate } from 'react-router-dom';
 import LineEffect from '../components/Buttons/LineEffect';

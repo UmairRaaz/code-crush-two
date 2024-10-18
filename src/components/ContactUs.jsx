@@ -1,6 +1,6 @@
-import email from "../assets/website_icons/email.svg";
-import location from "../assets/website_icons/location.svg";
-import phone from "../assets/website_icons/phone.svg";
+import email from "/Images/Icons/email.svg";
+import location from "/Images/Icons/location.svg";
+import phone from "/Images/Icons/phone.svg";
 import LineEffect from "./Buttons/LineEffect";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";

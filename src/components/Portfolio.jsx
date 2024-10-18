@@ -1,10 +1,5 @@
 import { motion } from "framer-motion";
 
-import projectOne from "../assets/projectImages/one.webp";
-import projectTwo from "../assets/projectImages/two.webp";
-import projectThree from "../assets/projectImages/three.webp";
-import projectFour from "../assets/projectImages/four.webp";
-import projectFive from "../assets/projectImages/five.webp";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import ViewAllButton from "./Buttons/ViewAllButton";
 import { useNavigate } from "react-router-dom";

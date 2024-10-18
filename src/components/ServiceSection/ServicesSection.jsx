@@ -1,7 +1,7 @@
-import appDevelopment from "../../assets/ServicesSection/services/appDevelopment.webp";
-import webDevlopment from "../../assets/ServicesSection/services/webDevelopment.webp";
-import socialMediaMarketing from "../../assets/ServicesSection/services/socialMediaMarketing.webp";
-import UIUX from "../../assets/ServicesSection/services/UIUX.webp";
+import appDevelopment from "/Images/ServiceSectionImages/appDevelopment.webp";
+import webDevlopment from "/Images/ServiceSectionImages/webDevelopment.webp";
+import socialMediaMarketing from "/Images/ServiceSectionImages/socialMediaMarketing.webp";
+import UIUX from "/Images/ServiceSectionImages/UIUX.webp";
 import { NavLink } from "react-router-dom";
 import { services } from "../../Content/ServiceContent";
 

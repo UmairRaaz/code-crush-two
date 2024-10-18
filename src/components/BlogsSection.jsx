@@ -3,9 +3,9 @@ import BlogCard from "./BlogSection/BlogCard";
 import ViewAllButton from "./Buttons/ViewAllButton";
 import LineEffect from "./Buttons/LineEffect";
 import { motion } from "framer-motion";
-import developmentProcess from "/blogImages/developmentProcess.webp";
-import customSoftware from "/blogImages/customSoftware.webp";
-import powerOfAI from "/blogImages/powerOfAI.webp";
+import developmentProcess from "/Images/BlogSectionImages/developmentProcess.webp";
+import customSoftware from "/Images/BlogSectionImages/customSoftware.webp";
+import powerOfAI from "/Images/BlogSectionImages/powerOfAI.webp";
 const BlogsSection = () => {
   return (
     <motion.div

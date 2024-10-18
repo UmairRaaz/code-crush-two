@@ -1,30 +1,30 @@
-import education from "../assets/industriesImages/banners/education.webp";
-import healthcare from "../assets/industriesImages/banners/healthcare.webp";
-import hospitilty from "../assets/industriesImages/banners/hospitilty.webp";
-import realestate from "../assets/industriesImages/banners/realestate.webp";
-import retail from "../assets/industriesImages/banners/retail.webp";
-import travel from "../assets/industriesImages/banners/travel.webp";
+import education from "/Images/industriesImages/banners/education.webp";
+import healthcare from "/Images/industriesImages/banners/healthcare.webp";
+import hospitilty from "/Images/industriesImages/banners/hospitilty.webp";
+import realestate from "/Images/industriesImages/banners/realestate.webp";
+import retail from "/Images/industriesImages/banners/retail.webp";
+import travel from "/Images/industriesImages/banners/travel.webp";
 
 
 
 // Additional images for each industry
-import educationOne from "../assets/industriesImages/education/one.jpg";
-import educationTwo from "../assets/industriesImages/education/two.jpg";
+import educationOne from "/Images/industriesImages/education/one.jpg";
+import educationTwo from "/Images/industriesImages/education/two.jpg";
 
-import healthcareOne from "../assets/industriesImages/healthcare/one.jpg";
-import healthcareTwo from "../assets/industriesImages/healthcare/two.jpg";
+import healthcareOne from "/Images/industriesImages/healthcare/one.jpg";
+import healthcareTwo from "/Images/industriesImages/healthcare/two.jpg";
 
-import hospitiltyOne from "../assets/industriesImages/hospatility/one.jpg";
-import hospitiltyTwo from "../assets/industriesImages/hospatility/two.jpg";
+import hospitiltyOne from "/Images/industriesImages/hospatility/one.jpg";
+import hospitiltyTwo from "/Images/industriesImages/hospatility/two.jpg";
 
-import realestateOne from "../assets/industriesImages/realstate/one.jpg";
-import realestateTwo from "../assets/industriesImages/realstate/two.jpg";
+import realestateOne from "/Images/industriesImages/realstate/one.jpg";
+import realestateTwo from "/Images/industriesImages/realstate/two.jpg";
 
-import retailOne from "../assets/industriesImages/retail/one.jpg";
-import retailTwo from "../assets/industriesImages/retail/two.jpg";
+import retailOne from "/Images/industriesImages/retail/one.jpg";
+import retailTwo from "/Images/industriesImages/retail/two.jpg";
 
-import travelOne from "../assets/industriesImages/travel/one.jpg";
-import travelTwo from "../assets/industriesImages/travel/two.jpg";
+import travelOne from "/Images/industriesImages/travel/one.jpg";
+import travelTwo from "/Images/industriesImages/travel/two.jpg";
 
 
 export const industriesDetailedContent = [

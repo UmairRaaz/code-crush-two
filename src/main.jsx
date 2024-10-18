@@ -35,7 +35,6 @@ import BlogThree from "./Pages/Blogs/BlogThree.jsx";
 import BlogFive from "./Pages/Blogs/BlogFive.jsx";
 import BlogSix from "./Pages/Blogs/BlogSix.jsx";
 import BlogFour from "./Pages/Blogs/BlogFour.jsx";
-import ViewProjectTest from "./components/Chatbot/Test.jsx";
 
 
 const router = createBrowserRouter(
@@ -49,7 +48,6 @@ const router = createBrowserRouter(
       <Route path='all-services/view-research-and-development/:serviceid' element={<ResearchDetailedContent/>}/>
       <Route path="all-projects" element={<AllProjects />} />
       <Route path='view-project/:projectid' element={<ViewProject/>}/>
-      <Route path='view-project/test' element={<ViewProjectTest/>}/>
       <Route path="all-blogs" element={<AllBlogs />} />
       <Route path='view-blog/1' element={<BlogOne/>}/>
       <Route path='view-blog/2' element={<BlogTwo/>}/>

@@ -1,6 +1,6 @@
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useRef, useEffect } from "react";
-import aboutUs from "../assets/aboutUs.webp";
+import aboutUs from "/Images/AboutSectionImages/aboutUs.webp";
 
 const AboutUs = () => {
   const ref = useRef(null);

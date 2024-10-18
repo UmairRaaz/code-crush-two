@@ -1,12 +1,12 @@
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { useState } from "react";
-import close from "../assets/close.svg";
-import menu from "../assets/menu.svg";
+import close from "/Images/Icons/close.svg";
+import menu from "/Images/Icons/menu.svg";
 import { GrLanguage } from "react-icons/gr";
-import NavbarLogo from "../assets/navbarLogo.svg";
-import saudiflag from "../assets/saudiflag.svg";
-import ukflag from "../assets/ukflag.svg";
+import NavbarLogo from "/Images/Icons/navbarLogo.svg";
+import saudiflag from "/Images/Icons/saudiflag.svg";
+import ukflag from "/Images/Icons/ukflag.svg";
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
   const [activeLink, setActiveLink] = useState("/");

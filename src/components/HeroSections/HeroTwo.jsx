@@ -1,4 +1,4 @@
-import HeroTwoImage from "../../assets/heroSectionImages/slideTwo.webp";
+import HeroTwoImage from "/Images/heroSectionImages/slideTwo.webp";
 const HeroTwo = () => {
   return (
     <div

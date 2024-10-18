@@ -1,6 +1,6 @@
 
 import { FaRegCalendarAlt } from "react-icons/fa";
-import servicepagebg from "../assets/servicepagebg.jpg";
+import servicepagebg from "/Images/Banners/servicepagebg.jpg";
 import BlogCard from "../components/BlogSection/BlogCard"
 import LineEffect from "../components/Buttons/LineEffect";
 import { blogsArray } from "../Content/Blogs/BlogContent";

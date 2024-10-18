@@ -1,7 +1,7 @@
 
 import { useForm } from "react-hook-form";
 import "tailwindcss/tailwind.css";
-import workWiuthUsBG from "../assets/workWiuthUsBG.webp";
+import workWiuthUsBG from "/Images/Banners/workWiuthUsBG.webp";
 import { NavLink } from "react-router-dom";
 // import careerPage from "../assets/careerPage.jpg";
 import { BsFillPeopleFill } from "react-icons/bs";
