@@ -1,123 +1,257 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import remoteResourceImage from "/remoteResourcesBg.webp";
-import toast from "react-hot-toast";
-import emailjs from '@emailjs/browser';
+import { LuUpload } from "react-icons/lu";
+import { toast } from "react-hot-toast";
 
-function RemoteResources() {
-  const [showForm, setShowForm] = useState(false);
-  const [expertiseFields, setExpertiseFields] = useState([{ id: 1 }]);
-  const { register, handleSubmit, reset } = useForm();
+const InternshipForm = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
+
+  const appUrl = import.meta.env.VITE_API_URL;
   const [loading, setLoading] = useState(false);
+  const [file, setFile] = useState(null);
+  const [fileName, setFileName] = useState("");
 
-  const onSubmit = (data) => {
-    setLoading(true);
-    
-    // EmailJS integration to send email
-    emailjs.send(
-      "your_service_id", // replace with your EmailJS service ID
-      "your_template_id", // replace with your EmailJS template ID
-      data,
-      "your_user_id" // replace with your EmailJS user ID (or public key)
-    )
-    .then((response) => {
-      console.log("Success:", response.status, response.text);
-      reset();
-      setExpertiseFields([{ id: 1 }]);
-      setShowForm(true);
-      toast.success("Application Submitted");
-    })
-    .catch((error) => {
-      console.error("Error:", error);
-      toast.error("Application Submitting Failed");
-    })
-    .finally(() => {
+  const handleFileChange = (e) => {
+    const selectedFile = e.target.files[0];
+    if (selectedFile) {
+      setFile(selectedFile);
+      setFileName(selectedFile.name);
+    }
+  };
+
+  const onSubmit = async (data) => {
+    try {
+      setLoading(true);
+      const formData = new FormData();
+      formData.append("fullName", data.fullName);
+      formData.append("email", data.email);
+      formData.append("phone", data.phoneNumber);
+      formData.append("address", data.address);
+      formData.append("education", data.education);
+      formData.append("speciality", data.speciality);
+      formData.append("experience", data.experience);
+      formData.append("interest", data.interest);
+      formData.append("subject", "Internship Application");
+      if (file) {
+        formData.append('file', file); // 'file' should match the server's expectation
+      }
+
+      // Log FormData entries
+      for (let [key, value] of formData.entries()) {
+        console.log(`${key}: ${value instanceof File ? value.name : value}`);
+      }
+
+      const response = await fetch(`${appUrl}/jobs/emails/send`, {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.ok) {
+        const jsonResponse = await response.json();
+        console.log("Response:", jsonResponse);
+        toast.success("Application sent successfully!");
+      } else {
+        throw new Error('Failed to send application');
+      }
+    } catch (error) {
+      console.error("Failed to send: ", error);
+      toast.error("Message Sending Failed");
+    } finally {
       setLoading(false);
-    });
-  };
-
-  const handleHireClick = () => {
-    setShowForm(true);
-  };
-
-  const handleAddMore = () => {
-    setExpertiseFields([
-      ...expertiseFields,
-      { id: expertiseFields.length + 1 },
-    ]);
+      reset(); // Reset the form after submission
+    }
   };
 
   return (
-    <div className="mt-20 pb-20 min-h-screen bg-gray-100">
-      <div
-        className="relative h-[70vh] sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
-        style={{
-          backgroundImage: `url(${remoteResourceImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="absolute inset-0 bg-black opacity-60"></div>
-        <div className="relative z-10 flex items-center justify-center h-full">
-          <h1 className="text-white text-4xl text-center tracking-widest uppercase font-bold">
-            Remote Resources
-          </h1>
-        </div>
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className="bg-white p-6 rounded-lg shadow-md max-w-2xl border border-gray-400 mt-6 mx-auto"
+    >
+      {/* Full Name */}
+      <div className="mb-4">
+        <input
+          id="fullName"
+          {...register("fullName", {
+            required: "Full name is required",
+          })}
+          className={`appearance-none border-b font-normal w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${errors.fullName ? "border-red-500" : ""
+            }`}
+          type="text"
+          placeholder="Full name"
+        />
+        {errors.fullName && (
+          <p className="text-red-500 text-xs mt-1">{errors.fullName.message}</p>
+        )}
       </div>
 
-      <div className="md:w-[70%] mx-auto">
-        <h1 className="text-3xl pt-10 text-center mx-auto text-gray-700 md:text-5xl font-bold mb-8">
-          We Provide On-Demand Remote Resources
-        </h1>
-
-        <p className="text-lg md:text-xl px-3 text-justify mx-auto mb-8">
-          Our mission is to revolutionize work practices and eliminate distance
-          barriers. Our Remote Resource service is designed to deliver
-          exceptional IT services globally, empowering your business with
-          top-quality support tailored to your specific needs.
-        </p>
+      {/* Email Address */}
+      <div className="mb-4">
+        <input
+          id="email"
+          {...register("email", {
+            required: "Email is required",
+            pattern: {
+              value: /^\S+@\S+$/i,
+              message: "Invalid email format",
+            },
+          })}
+          className={`appearance-none border-b font-normal w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${errors.email ? "border-red-500" : ""
+            }`}
+          type="email"
+          placeholder="Email"
+        />
+        {errors.email && (
+          <p className="text-red-500 text-xs mt-1">{errors.email.message}</p>
+        )}
       </div>
 
-      <div className="text-center pb-12">
-        <button
-          onClick={handleHireClick}
-          className="px-6 text-xl py-3 uppercase bg-[#4e148d] text-white font-semibold rounded-lg shadow-md hover:bg-[#6828E8] transition duration-300"
+      {/* Phone Number (Pakistani Format) */}
+      <div className="mb-4">
+        <input
+          id="phoneNumber"
+          {...register("phoneNumber", {
+            required: "Phone number is required",
+            pattern: {
+              value: /^((\+92)|(92)|(0))3\d{2}-?\d{7}$/,
+              message: "Phone number must be in Pakistani format",
+            },
+          })}
+          className={`appearance-none border-b font-normal w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${errors.phoneNumber ? "border-red-500" : ""
+            }`}
+          type="tel"
+          placeholder="Phone Number"
+        />
+        {errors.phoneNumber && (
+          <p className="text-red-500 text-xs mt-1">
+            {errors.phoneNumber.message}
+          </p>
+        )}
+      </div>
+
+      {/* Address */}
+      <div className="mb-4">
+        <input
+          id="address"
+          {...register("address", {
+            required: "Address is required",
+          })}
+          className={`appearance-none border-b font-normal w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${errors.address ? "border-red-500" : ""
+            }`}
+          type="text"
+          placeholder="Address"
+        />
+        {errors.address && (
+          <p className="text-red-500 text-xs mt-1">{errors.address.message}</p>
+        )}
+      </div>
+
+      {/* Education */}
+      <div className="mb-4">
+        <input
+          id="education"
+          {...register("education", {
+            required: "Education details are required",
+          })}
+          className={`appearance-none border-b font-normal w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${errors.education ? "border-red-500" : ""
+            }`}
+          type="text"
+          placeholder="Education"
+        />
+        {errors.education && (
+          <p className="text-red-500 text-xs mt-1">{errors.education.message}</p>
+        )}
+      </div>
+
+      {/* Speciality */}
+      <div className="mb-4">
+        <input
+          id="speciality"
+          {...register("speciality", {
+            required: "Speciality is required",
+          })}
+          className={`appearance-none border-b font-normal w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${errors.speciality ? "border-red-500" : ""
+            }`}
+          type="text"
+          placeholder="Speciality"
+        />
+        {errors.speciality && (
+          <p className="text-red-500 text-xs mt-1">
+            {errors.speciality.message}
+          </p>
+        )}
+      </div>
+
+      {/* Experience */}
+      <div className="mb-4">
+        <input
+          id="experience"
+          {...register("experience", {
+            required: "Experience details are required",
+          })}
+          className={`appearance-none border-b font-normal w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${errors.experience ? "border-red-500" : ""
+            }`}
+          type="text"
+          placeholder="Experience"
+        />
+        {errors.experience && (
+          <p className="text-red-500 text-xs mt-1">
+            {errors.experience.message}
+          </p>
+        )}
+      </div>
+
+      {/* Interest */}
+      <div className="mb-4">
+        <input
+          id="interest"
+          {...register("interest", {
+            required: "Interest is required",
+          })}
+          className={`appearance-none border-b font-normal w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${errors.interest ? "border-red-500" : ""
+            }`}
+          type="text"
+          placeholder="Interest"
+        />
+        {errors.interest && (
+          <p className="text-red-500 text-xs mt-1">{errors.interest.message}</p>
+        )}
+      </div>
+
+      {/* Add your CV */}
+      <div className="mb-4">
+        <label
+          htmlFor="cv"
+          className={`cursor-pointer bg-blue-400 text-white w-44 flex flex-col items-center justify-center py-2 ${errors.cv ? "border-red-500" : "border-gray-300"} transition duration-300 ease-in-out`}
         >
-          Hire
+          <p className="text-gray-700 flex gap-2 items-center">
+            <LuUpload /> <span>Upload Your CV</span>
+          </p>
+          <input type="file" id="cv" className="hidden" onChange={handleFileChange} />
+        </label>
+        {errors.cv && (
+          <p className="text-red-500 text-xs mt-1">{errors.cv.message}</p>
+        )}
+        {fileName && (
+          <p className="text-gray-500 text-xs mt-1">{fileName}</p>
+        )}
+      </div>
+
+      <div className="flex items-center justify-between">
+        <button
+          disabled={loading}
+          className="bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
+          type="submit"
+        >
+          {loading ? "Submitting" : "Submit Application"}
         </button>
       </div>
-
-      {showForm && (
-        <div className="bg-white p-6 rounded-lg shadow-lg md:w-[70%] mx-auto">
-          <h2 className="text-2xl font-semibold mb-6 text-center">
-            Connect With Our Exceptionally Talented Remote Resources!
-          </h2>
-          <p className="text-gray-900 mb-8 text-justify">
-            Codecrush Technologies leads the industry in offering exceptional
-            remote resources across various sectors. We provide customized
-            resources to meet your project requirements. Our flexible model
-            allows you to specify the level of expertise and the timeframe you
-            need. We will match you with an expert whose goals align perfectly
-            with yours, no matter where you are located.
-          </p>
-
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-            {/* Form fields remain unchanged */}
-
-            <div className="text-center mt-6">
-              <button
-                disabled={loading}
-                type="submit"
-                className="px-8 py-4 bg-[#4e148d] text-white text-lg font-semibold rounded-lg shadow-md hover:bg-[#6828E8] transition duration-300"
-              >
-                {loading ? "Submitting" : "Submit"}
-              </button>
-            </div>
-          </form>
-        </div>
-      )}
-    </div>
+    </form>
   );
-}
+};
 
-export default RemoteResources;
+export default InternshipForm;
