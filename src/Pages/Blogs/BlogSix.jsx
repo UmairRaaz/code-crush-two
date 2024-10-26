@@ -1,5 +1,6 @@
 import React from 'react';
 import { blogsArray } from '../../Content/Blogs/BlogContent';
+import { HashLink } from 'react-router-hash-link';
 
 const BlogSix = () => {
   // Extract the blog data from index 4
@@ -80,9 +81,9 @@ const BlogSix = () => {
         <p className="text-gray-600 leading-relaxed mb-4">
           {blogData.sections.callToAction.description}
         </p>
-        <button className=" bg-[#4E148D] hover:bg-[#6828E8] text-white py-2 px-4 rounded-lg shadow transition">
+        <HashLink to={"/#contact"} className=" bg-[#4E148D] hover:bg-[#6828E8] text-white py-2 px-4 rounded-lg shadow transition">
           Contact Us
-        </button>
+        </HashLink>
       </div>
     </div>
   );

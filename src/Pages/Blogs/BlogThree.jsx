@@ -1,5 +1,6 @@
 import React from 'react';
 import { blogsArray } from '../../Content/Blogs/BlogContent';
+import { HashLink } from 'react-router-hash-link';
 
 const BlogPost = () => {
   // Access the blog at index 2
@@ -118,9 +119,9 @@ const BlogPost = () => {
         <h2 className="text-2xl font-semibold text-gray-800 mb-2">
           {blog.sections.conclusion.callToAction}
         </h2>
-        <button className=" bg-[#4E148D] hover:bg-[#6828E8] text-white py-2 px-4 rounded-lg shadow transition">
+        <HashLink to={"/#contact"} className=" bg-[#4E148D] hover:bg-[#6828E8] text-white py-2 px-4 rounded-lg shadow transition">
           {blog.sections.conclusion.callToAction}
-        </button>
+        </HashLink>
       </div>
     </div>
   );

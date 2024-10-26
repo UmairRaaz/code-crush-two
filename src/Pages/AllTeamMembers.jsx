@@ -88,7 +88,7 @@ const teamMembersTwo = [
   },
   {
     fullName: "Akhtar Zaman",
-    designation: "Graphic & UI/UX Designer",
+    designation: "Sr. Graphic & UI/UX Designer",
     careerSummary:
       "I am Akhtar Zaman, a creative and detail-oriented Graphic & UI/UX Designer with over 3+ years of experience. I excel in designing user-friendly interfaces for both web and mobile applications, focusing on enhancing user experiences. My skills include wireframing, prototyping, and utilizing industry-standard design tools such as Figma, Adobe Illustrator, Adobe After Effects, and Adobe Photoshop. I am passionate about crafting intuitive and visually appealing designs that align with user needs and business objectives.",
     image: akhtar,

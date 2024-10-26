@@ -1,9 +1,11 @@
 import React from 'react';
 import { blogsArray } from '../../Content/Blogs/BlogContent';
+import { useNavigate } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const BlogOne = () => {
     const blogData = blogsArray[0]; // Accessing the first blog object directly
-
+   
     return (
         <div className="max-w-6xl my-20 mx-auto p-6">
             {/* Blog Image */}
@@ -70,9 +72,9 @@ const BlogOne = () => {
                 <p className="text-gray-600 leading-relaxed mb-4">
                     {blogData.callToActionDescription}
                 </p>
-                <button className="bg-[#4E148D] text-white py-2 px-4 rounded-lg shadow hover:bg-[#6828E8] transition">
+                <HashLink to={"/#contact"} className="bg-[#4E148D] text-white py-2 px-4 rounded-lg shadow hover:bg-[#6828E8] transition">
                     Contact Us
-                </button>
+                </HashLink>
             </div>
         </div>
     );

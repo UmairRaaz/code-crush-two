@@ -47,10 +47,10 @@ const ContactSection = () => {
   };
 
   return (
-    <div className="py-20 bg-[#fafafa]">
+    <div className="py-20 bg-[#fafafa]" id="contact">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="space-y-4 max-w-4xl mx-auto px-10 rounded-md p-5 border border-gray-200 bg-white shadow-xl"
+        className="space-y-4 max-w-4xl mx-auto px-10 rounded-md p-5 border border-gray-200 bg-white shadow-xl my-5"
       >
         <div>
           <input
