@@ -31,6 +31,7 @@ const ContactSection = () => {
       });
 
       const json = await response.json();
+      console.log("contact json", json)
       // Handle successful response
       if (response.status === 200) {
         toast.success("Message Sent Successfully");

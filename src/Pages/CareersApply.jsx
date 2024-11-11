@@ -48,11 +48,11 @@ const CareersApply = () => {
         method: "POST",
         body: formData,
       });
-
+      console.log("response on career", response.json())
       // Handle response
       if (response.ok) {
-        const jsonResponse = await response.json();
-        console.log("Response:", jsonResponse);
+        // const jsonResponse = await response.json();
+        // console.log("Response:", jsonResponse);
         toast.success("Application sent successfully!");
       } else {
         throw new Error('Failed to send application');

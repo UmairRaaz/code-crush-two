@@ -13,6 +13,195 @@ import Spotless from "/Images/ProjectSectionImages/Spotless.png";
 import mcqs from "/Images/ProjectSectionImages/mcqs.png"; 
 const projects = [
   {
+    id: 4,
+    image: tailorImage,
+    name: "Tailor Bhai",
+    link : "https://thetailorbhai.com/",
+    tagline: "Your Tailoring Business, Simplified",
+    shortDescription:
+      "Tailor Bhai is a complete tailoring shop management app that streamlines every aspect of running a tailor shop. From taking customer orders to managing measurements, payments, delivery schedules, and even loans, Tailor Bhai is designed to boost efficiency and improve customer satisfaction for tailoring businesses of any size.",
+    overview:
+      "Tailor Bhai is a revolutionary solution for tailors looking to modernize and automate their business operations. Designed to handle every task within a tailoring business, the app makes it easier to manage customer orders, track measurements, handle payments, and monitor deliveries. Whether you're a small tailor or running a large chain, Tailor Bhai provides a comprehensive suite of tools to manage your business effortlessly.  Tailor Bhai not only focuses on core tailoring needs like managing fabric and measurements but also incorporates advanced features like tracking credit/loans, customer notifications, order status updates, and payment management. The app is designed with an intuitive interface, making it simple for tailors to manage their workflow from a single platform.  The Super Admin Dashboard feature offers tailor shop owners and managers complete control over their operations, providing powerful insights and tools to track the performance of multiple tailors or shops under one roof.",
+    challenges: [
+      "Managing multiple aspects of a tailor’s business, from customer orders to final delivery, all in one seamless application",
+      "Providing an easy-to-use interface for tailors who may not be tech-savvy.",
+      "Allowing customers to track their order status and receive real-time notifications.",
+      "Handling complex tasks such as loans and credit management in a simple, understandable way.",
+      "Enabling Super Admin features for large tailoring businesses to oversee multiple branches, tailors, and customers in one unified system.",
+    ],
+    solutions: [
+      "Tailor Bhai was built with a user-friendly design, ensuring that tailors of all experience levels can easily navigate and utilize the app’s extensive features.",
+      "Integrated fabric, measurement, and customer management modules for seamless handling of all tailoring processes.",
+      "Added real-time notifications and order tracking for customers, improving transparency and customer service.",
+      "Developed a credit/loan management system, allowing tailors to track payments and handle customer credit with ease.",
+      "Introduced a Super Admin Dashboard for large businesses to manage multiple tailor shops, monitor employee performance, and oversee business metrics from a single control panel.",
+    ],
+    results: [
+      "Increased shop efficiency by 30%, with streamlined order management and reduced errors in customer measurements.",
+      "Improved customer satisfaction through timely notifications, faster service, and clear order tracking, leading to a 20% increase in customer retention.",
+      "Tailor Bhai enabled tailors to take on more orders, boosting productivity by 25% and improving overall business growth.",
+      "Large tailoring businesses using the Super Admin Dashboard saw a 40% improvement in oversight and decision-making, with real-time data analytics and performance tracking.",
+    ],
+    clientReview: {
+      clientName: "Hammad Ali, Owner of Fashion Tailors",
+      review:
+        "Tailor Bhai has completely changed the way I run my shop. I no longer worry about losing track of orders or measurements. The app is easy to use, and my customers love the fact that they can get updates on their orders! Plus, the Super Admin Dashboard makes it so simple to oversee everything",
+    },
+    features: [
+      {
+        title: "Customer Management",
+        description:
+          "Store customer information, contact details, and order history in one place.",
+      },
+      {
+        title: "Order & Measurement Tracking",
+        description:
+          "Keep track of all measurements, fabrics, styles, and customer preferences for each order.",
+      },
+      {
+        title: "Loan Management",
+        description:
+          "Track customer loans and credit, allowing tailors to offer deferred payment options.",
+      },
+      {
+        title: "Real-Time Notifications",
+        description:
+          "Automatically send customers updates on their order status, from booking to delivery.",
+      },
+      {
+        title: "Delivery Schedule Management",
+        description:
+          "Organize deliveries and pickups, and set reminders for upcoming deadlines.",
+      },
+      {
+        title: "Payment Tracking",
+        description:
+          "Record payments and manage customer balances with automatic invoice generation.",
+      },
+      {
+        title: "Order History & Analytics",
+        description:
+          "Access past order histories and generate business reports to analyze sales trends and performance.",
+      },
+      {
+        title: "Super Admin Dashboard",
+        description:
+          "Monitor multiple branches or tailors, Track shop performance with data insights and analytics, Assign and track orders across tailors,	Review order completion rates and customer satisfaction.",
+      },
+      {
+        title: "Fabric Inventory Management",
+        description:
+          "Keep track of the available stock of fabrics and notify tailors when supplies are running low.",
+      },
+      {
+        title: "Custom Designs & Alterations Module",
+        description:
+          "Handle special requests, custom designs, and alterations easily.",
+      },
+      {
+        title: "Employee Management",
+        description:
+          "Manage tailor assignments, track individual performance, and evaluate their productivity.",
+      },
+      {
+        title: "Customer Notifications",
+        description:
+          "Notify customers about upcoming deliveries, overdue payments, and promotions.",
+      },
+      {
+        title: "Task Prioritization & Calendar Integration",
+        description:
+          "Prioritize tailoring tasks and manage deadlines with integrated calendars and alerts.",
+      },
+    ],
+    SuperAdminFeatures: [
+      {
+        title: "Multi-Shop Management",
+        description:
+          "Manage multiple shops from one platform, tracking the progress and orders of each shop independently",
+      },
+      {
+        title: "Tailor Performance Tracking",
+        description:
+          "Monitor the performance of individual tailors, including the number of completed orders, customer feedback, and efficiency.",
+      },
+      {
+        title: "Financial Reports",
+        description:
+          "Generate financial reports to track the revenue, expenses, and overall performance of each branch or tailor.",
+      },
+      {
+        title: "Order Assignment & Monitoring",
+        description:
+          "Assign orders to specific tailors and monitor the status of each order across different branches.",
+      },
+      {
+        title: "Customer Feedback & Analytics",
+        description:
+          " Analyze customer reviews and feedback to improve service quality.",
+      },
+      {
+        title: "Customizable Settings",
+        description:
+          " Adjust app settings for each shop, tailor, or order, ensuring that Tailor Bhai fits the specific needs of each business.",
+      },
+      {
+        title: "Security & Access Control",
+        description:
+          " Set access levels for employees and manage permissions to ensure data privacy and security.",
+      },
+      {
+        title: "Discounts & Promotions",
+        description:
+          "Run business promotions, create discount campaigns, and analyze their impact on customer retention.",
+      },
+    ],
+    technologiesUsed: [
+      {
+        title: "Flutter & Dart",
+        description:
+          "For seamless cross-platform mobile development, ensuring compatibility on both Android and iOS devices.",
+      },
+      {
+        title: "Firebase",
+        description:
+          "Real-time database for instant updates on orders, notifications, and customer tracking.",
+      },
+      {
+        title: "Node.js & Express",
+        description:
+          "Backend services for handling user data, order management, and business logic.",
+      },
+      {
+        title: "MongoDB",
+        description:
+          "Scalable database solution to store customer data, orders, and measurements.",
+      },
+      {
+        title: "GraphQL",
+        description:
+          "For efficient data fetching, improving app speed and performance, especially for larger shops.",
+      },
+      {
+        title: "AI-Based Customer Analytics",
+        description:
+          "AI modules to analyze customer feedback and tailor performance, providing actionable insights for business growth.",
+      },
+      {
+        title: "Stripe & PayPal Integration",
+        description:
+          "Secure payment processing for tracking customer payments and handling credit.",
+      },
+      {
+        title: "Cloud Hosting (AWS/GCP): ",
+        description:
+          "For scalable infrastructure capable of handling large data loads across multiple shops and branches.",
+      },
+    ],
+    additionalNotes:
+      "Tailor Bhai is more than just an app for managing tailoring orders – it’s a complete solution for scaling and improving every aspect of a tailoring business. With its powerful features, from handling orders to overseeing multiple shops, Tailor Bhai is designed to help tailors increase efficiency, reduce errors, and provide superior customer service. The Super Admin Dashboard makes it particularly valuable for larger businesses, offering data-driven insights to manage operations at scale.",
+  },
+  {
     id: 1,
     image: englishMasterImage,
     name: "English Master",
@@ -404,194 +593,7 @@ const projects = [
     additionalNotes:
       "SafeDrive is designed with safety at its core, ensuring drivers maintain focus on the road without being overwhelmed by distractions. Its real-time monitoring and customizable features allow drivers to take control of their driving habits while prioritizing safety. The app also addresses the needs of long-distance drivers by providing fatigue detection and immediate action alerts, further enhancing road safety. Through advanced technology and user-centric design, SafeDrive aims to make roads safer for everyone.",
   },
-  {
-    id: 4,
-    image: tailorImage,
-    name: "Tailor Bhai",
-    tagline: "Your Tailoring Business, Simplified",
-    shortDescription:
-      "Tailor Bhai is a complete tailoring shop management app that streamlines every aspect of running a tailor shop. From taking customer orders to managing measurements, payments, delivery schedules, and even loans, Tailor Bhai is designed to boost efficiency and improve customer satisfaction for tailoring businesses of any size.",
-    overview:
-      "Tailor Bhai is a revolutionary solution for tailors looking to modernize and automate their business operations. Designed to handle every task within a tailoring business, the app makes it easier to manage customer orders, track measurements, handle payments, and monitor deliveries. Whether you're a small tailor or running a large chain, Tailor Bhai provides a comprehensive suite of tools to manage your business effortlessly.  Tailor Bhai not only focuses on core tailoring needs like managing fabric and measurements but also incorporates advanced features like tracking credit/loans, customer notifications, order status updates, and payment management. The app is designed with an intuitive interface, making it simple for tailors to manage their workflow from a single platform.  The Super Admin Dashboard feature offers tailor shop owners and managers complete control over their operations, providing powerful insights and tools to track the performance of multiple tailors or shops under one roof.",
-    challenges: [
-      "Managing multiple aspects of a tailor’s business, from customer orders to final delivery, all in one seamless application",
-      "Providing an easy-to-use interface for tailors who may not be tech-savvy.",
-      "Allowing customers to track their order status and receive real-time notifications.",
-      "Handling complex tasks such as loans and credit management in a simple, understandable way.",
-      "Enabling Super Admin features for large tailoring businesses to oversee multiple branches, tailors, and customers in one unified system.",
-    ],
-    solutions: [
-      "Tailor Bhai was built with a user-friendly design, ensuring that tailors of all experience levels can easily navigate and utilize the app’s extensive features.",
-      "Integrated fabric, measurement, and customer management modules for seamless handling of all tailoring processes.",
-      "Added real-time notifications and order tracking for customers, improving transparency and customer service.",
-      "Developed a credit/loan management system, allowing tailors to track payments and handle customer credit with ease.",
-      "Introduced a Super Admin Dashboard for large businesses to manage multiple tailor shops, monitor employee performance, and oversee business metrics from a single control panel.",
-    ],
-    results: [
-      "Increased shop efficiency by 30%, with streamlined order management and reduced errors in customer measurements.",
-      "Improved customer satisfaction through timely notifications, faster service, and clear order tracking, leading to a 20% increase in customer retention.",
-      "Tailor Bhai enabled tailors to take on more orders, boosting productivity by 25% and improving overall business growth.",
-      "Large tailoring businesses using the Super Admin Dashboard saw a 40% improvement in oversight and decision-making, with real-time data analytics and performance tracking.",
-    ],
-    clientReview: {
-      clientName: "Hammad Ali, Owner of Fashion Tailors",
-      review:
-        "Tailor Bhai has completely changed the way I run my shop. I no longer worry about losing track of orders or measurements. The app is easy to use, and my customers love the fact that they can get updates on their orders! Plus, the Super Admin Dashboard makes it so simple to oversee everything",
-    },
-    features: [
-      {
-        title: "Customer Management",
-        description:
-          "Store customer information, contact details, and order history in one place.",
-      },
-      {
-        title: "Order & Measurement Tracking",
-        description:
-          "Keep track of all measurements, fabrics, styles, and customer preferences for each order.",
-      },
-      {
-        title: "Loan Management",
-        description:
-          "Track customer loans and credit, allowing tailors to offer deferred payment options.",
-      },
-      {
-        title: "Real-Time Notifications",
-        description:
-          "Automatically send customers updates on their order status, from booking to delivery.",
-      },
-      {
-        title: "Delivery Schedule Management",
-        description:
-          "Organize deliveries and pickups, and set reminders for upcoming deadlines.",
-      },
-      {
-        title: "Payment Tracking",
-        description:
-          "Record payments and manage customer balances with automatic invoice generation.",
-      },
-      {
-        title: "Order History & Analytics",
-        description:
-          "Access past order histories and generate business reports to analyze sales trends and performance.",
-      },
-      {
-        title: "Super Admin Dashboard",
-        description:
-          "Monitor multiple branches or tailors, Track shop performance with data insights and analytics, Assign and track orders across tailors,	Review order completion rates and customer satisfaction.",
-      },
-      {
-        title: "Fabric Inventory Management",
-        description:
-          "Keep track of the available stock of fabrics and notify tailors when supplies are running low.",
-      },
-      {
-        title: "Custom Designs & Alterations Module",
-        description:
-          "Handle special requests, custom designs, and alterations easily.",
-      },
-      {
-        title: "Employee Management",
-        description:
-          "Manage tailor assignments, track individual performance, and evaluate their productivity.",
-      },
-      {
-        title: "Customer Notifications",
-        description:
-          "Notify customers about upcoming deliveries, overdue payments, and promotions.",
-      },
-      {
-        title: "Task Prioritization & Calendar Integration",
-        description:
-          "Prioritize tailoring tasks and manage deadlines with integrated calendars and alerts.",
-      },
-    ],
-    SuperAdminFeatures: [
-      {
-        title: "Multi-Shop Management",
-        description:
-          "Manage multiple shops from one platform, tracking the progress and orders of each shop independently",
-      },
-      {
-        title: "Tailor Performance Tracking",
-        description:
-          "Monitor the performance of individual tailors, including the number of completed orders, customer feedback, and efficiency.",
-      },
-      {
-        title: "Financial Reports",
-        description:
-          "Generate financial reports to track the revenue, expenses, and overall performance of each branch or tailor.",
-      },
-      {
-        title: "Order Assignment & Monitoring",
-        description:
-          "Assign orders to specific tailors and monitor the status of each order across different branches.",
-      },
-      {
-        title: "Customer Feedback & Analytics",
-        description:
-          " Analyze customer reviews and feedback to improve service quality.",
-      },
-      {
-        title: "Customizable Settings",
-        description:
-          " Adjust app settings for each shop, tailor, or order, ensuring that Tailor Bhai fits the specific needs of each business.",
-      },
-      {
-        title: "Security & Access Control",
-        description:
-          " Set access levels for employees and manage permissions to ensure data privacy and security.",
-      },
-      {
-        title: "Discounts & Promotions",
-        description:
-          "Run business promotions, create discount campaigns, and analyze their impact on customer retention.",
-      },
-    ],
-    technologiesUsed: [
-      {
-        title: "Flutter & Dart",
-        description:
-          "For seamless cross-platform mobile development, ensuring compatibility on both Android and iOS devices.",
-      },
-      {
-        title: "Firebase",
-        description:
-          "Real-time database for instant updates on orders, notifications, and customer tracking.",
-      },
-      {
-        title: "Node.js & Express",
-        description:
-          "Backend services for handling user data, order management, and business logic.",
-      },
-      {
-        title: "MongoDB",
-        description:
-          "Scalable database solution to store customer data, orders, and measurements.",
-      },
-      {
-        title: "GraphQL",
-        description:
-          "For efficient data fetching, improving app speed and performance, especially for larger shops.",
-      },
-      {
-        title: "AI-Based Customer Analytics",
-        description:
-          "AI modules to analyze customer feedback and tailor performance, providing actionable insights for business growth.",
-      },
-      {
-        title: "Stripe & PayPal Integration",
-        description:
-          "Secure payment processing for tracking customer payments and handling credit.",
-      },
-      {
-        title: "Cloud Hosting (AWS/GCP): ",
-        description:
-          "For scalable infrastructure capable of handling large data loads across multiple shops and branches.",
-      },
-    ],
-    additionalNotes:
-      "Tailor Bhai is more than just an app for managing tailoring orders – it’s a complete solution for scaling and improving every aspect of a tailoring business. With its powerful features, from handling orders to overseeing multiple shops, Tailor Bhai is designed to help tailors increase efficiency, reduce errors, and provide superior customer service. The Super Admin Dashboard makes it particularly valuable for larger businesses, offering data-driven insights to manage operations at scale.",
-  },
+  
   {
     id: 5,
     image: limit,

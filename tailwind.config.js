@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      googleFonts : ["Outfit", "sans-serif"]
+      googleFonts : ["Outfit", "sans-serif"],
+      remoteResourceFont : ["Tinos", "serif"]
     }
   },
   plugins: [],

@@ -22,6 +22,7 @@ const ViewProject = () => {
         name={project.name}
         shortDescription={project.shortDescription}
         image={project.image}
+        link={project.link}
       />
       <div>
         <div className="mt-10 w-[90%] md:relative mx-auto flex md:flex-row flex-col gap-10 p-6 bg-white rounded-lg text-[#06496b]">

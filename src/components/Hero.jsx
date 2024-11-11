@@ -5,10 +5,13 @@ import HeroTwo from "./HeroSections/HeroTwo";
 import HeroThree from "./HeroSections/HeroThree";
 import HeroFour from "./HeroSections/HeroFour";
 import HeroFive from "./HeroSections/HeroFive";
+import HeroSix from "./HeroSections/HeroSix";
+import HeroSeven from "./HeroSections/HeroSeven";
+import HeroEight from "./HeroSections/HeroEight";
 
 const Hero = () => {
   const [currentHero, setCurrentHero] = useState(0);
-  const heroComponents = [HeroFive, HeroOne, HeroTwo, HeroThree, HeroFour];
+  const heroComponents = [HeroFive, HeroOne, HeroTwo, HeroThree, HeroFour, HeroSix, HeroSeven, HeroEight];
 
   useEffect(() => {
     const interval = setInterval(() => {

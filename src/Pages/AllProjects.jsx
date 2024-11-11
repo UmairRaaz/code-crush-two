@@ -1,16 +1,10 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import servicepagebg from "/Images/Banners/servicepagebg.jpg";
-import { IoIosArrowRoundForward } from 'react-icons/io';
-import projectBG from "/Images/Banners/projectBG.webp"
+import { motion } from "framer-motion";
+import { IoIosArrowRoundForward } from "react-icons/io";
+import projectBG from "/Images/Banners/projectBG.webp";
 
-
-
-import { useNavigate } from 'react-router-dom';
-import LineEffect from '../components/Buttons/LineEffect';
-import { projects } from '../Content/ProjectContent/ProjectDeatils';
-
-
+import { useNavigate } from "react-router-dom";
+import LineEffect from "../components/Buttons/LineEffect";
+import { projects } from "../Content/ProjectContent/ProjectDeatils";
 
 const categories = Object.keys(projects);
 
@@ -39,15 +33,25 @@ const AllProjects = () => {
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 flex items-center justify-center h-full">
-          <h1 className="text-white text-4xl tracking-widest uppercase font-bold">Projects</h1>
+          <h1 className="text-white text-4xl tracking-widest uppercase font-bold">
+            Projects
+          </h1>
         </div>
       </div>
       <div className="w-[80%] mx-auto">
-      <h1 className="text-5xl pt-10 mb-6 font-bold text-center font-googleFonts text-gray-700">
+        <h1 className="text-5xl pt-10 mb-6 font-remoteResourceFont font-bold text-center  text-gray-700">
           All Projects
         </h1>
         <LineEffect />
-        <p className="text-center max-w-4xl mt-2 mx-auto">Explore our featured projects to see how Code Crush Technology transforms ideas into impactful solutions. Each project highlights our commitment to innovation, quality, and excellence. From cutting-edge app development to sophisticated web solutions, our portfolio demonstrates the breadth and depth of our expertise. Dive into our case studies and witness the difference our technology makes in real-world applications. </p>
+        <p className="text-justify  max-w-4xl font-remoteResourceFont mt-2 mb-4 mx-auto">
+          Explore our featured projects to see how Code Crush Technology
+          transforms ideas into impactful solutions. Each project highlights our
+          commitment to innovation, quality, and excellence. From cutting-edge
+          app development to sophisticated web solutions, our portfolio
+          demonstrates the breadth and depth of our expertise. Dive into our
+          case studies and witness the difference our technology makes in
+          real-world applications.{" "}
+        </p>
         {/* <div className="flex flex-wrap justify-center mt-10 gap-4 mb-10">
           {categories.map((category, index) => (
             <button
@@ -77,7 +81,11 @@ const AllProjects = () => {
               className="group flex bg-white  py-4 rounded-3xl shadow-2xl items-center justify-center hover:bg-[#E6E6FA] transition-all relative cursor-pointer"
               key={project.id}
             >
-              <img src={project.image} alt="portfolio-img" className="w-72 rounded-xl" />
+              <img
+                src={project.image}
+                alt="portfolio-img"
+                className="w-72 rounded-xl"
+              />
               <motion.div
                 variants={overlayVariants}
                 transition={{ duration: 0.5 }}

@@ -28,7 +28,6 @@ const ContactUs = () => {
       transition={{ duration: 1, ease: "linear" }}
       className="bg-[#4e148d] pb-10 text-white"
       style={{ paddingTop: navbarHeight }}
-      
     >
       <div className="md:max-w-4xl overflow-hidden  lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl px-3 md:px-0 mx-auto py-4">
         <h1 className="text-4xl font-bold mb-8 text-center">
@@ -93,10 +92,13 @@ const ContactUs = () => {
                   </div>
                   <div className="text-gray-100 w-[70%]">
                     <h1 className="text-2xl">Address :</h1>
-                    <h1 className="font-light text-xl">
-                      Al-Nawaz Arcade, Adjacent to Rawalpindi Urology Hospital,
-                      Murree Road, Rawalpindi, Islamabad, Pakistan
-                    </h1>
+                    <ol className="font-light list-disc ml-5 space-y-1">
+                      <li>
+                        Al-Nawaz Arcade, Adjacent to Rawalpindi Urology
+                        Hospital, Murree Road, Rawalpindi, Islamabad, Pakistan
+                      </li>
+                      <li>Chakdara, Malakand</li>
+                    </ol>
                   </div>
                 </div>
               </div>

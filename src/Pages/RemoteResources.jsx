@@ -78,7 +78,7 @@ function RemoteResources() {
         </div>
       </div>
 
-      <div className="md:w-[70%] mx-auto">
+      <div className="md:w-[70%] mx-auto font-remoteResourceFont ">
         <h1 className="text-3xl pt-10 text-center mx-auto text-gray-700 md:text-5xl font-bold mb-8">
           We Provide On-Demand Remote Resources
         </h1>
@@ -102,10 +102,10 @@ function RemoteResources() {
 
       {showForm && (
         <div className="bg-white p-6 rounded-lg shadow-lg md:w-[70%] mx-auto">
-          <h2 className="text-2xl font-semibold mb-6 text-center">
+          <h2 className="text-2xl font-remoteResourceFont font-semibold mb-6 text-center">
             Connect With Our Exceptionally Talented Remote Resources!
           </h2>
-          <p className="text-gray-900 mb-8  text-justify">
+          <p className="text-gray-900 font-remoteResourceFont mb-8  text-justify">
             Codecrush Technologies leads the industry in offering exceptional
             remote resources across various sectors. We provide customized
             resources to meet your project requirements. Our flexible model

@@ -50,7 +50,6 @@ const InternshipForm = () => {
         method: "POST",
         body: formData,
       });
-
       if (response.ok) {
         const jsonResponse = await response.json();
         console.log("Response:", jsonResponse);

@@ -16,7 +16,7 @@ const BlogsSection = () => {
     >
       <div className="md:max-w:4xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl px-3 md:px-0  mx-auto">
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-4xl font-bold my-4 mb-8">
+          <h1 className="text-4xl text-gray-700 font-bold my-4 mb-8">
             In-Depth Analysis and Case Studies
           </h1>
           <LineEffect />

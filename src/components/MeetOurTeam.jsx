@@ -16,7 +16,7 @@ const MeetOurTeam = () => {
         <div>
           <div className="flex flex-col md:flex-row justify-between">
             <div>
-              <h1 className="text-4xl text-center md:text-left md:text-5xl font-bold mb-4">
+              <h1 className="text-4xl text-center text-gray-700 md:text-5xl font-bold mb-4">
                 Our Leadership
               </h1>
               <p className="text-base text-center md:text-left text-gray-600">
