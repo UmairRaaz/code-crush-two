@@ -98,7 +98,7 @@ const NavbarUpdated = () => {
         {/* Contact Us Button with HashLink */}
         <HashLink
           to="/#contact"
-          className=" cursor-pointer bg-[#EDE8F4] ml-20 md:ml-0 text-[#4E148D] font-semibold px-6 py-2 rounded-full shadow-md hover:bg-gray-300 transition duration-300"
+          className=" cursor-pointer bg-[#EDE8F4] ml-4 md:ml-0 text-[#4E148D] font-semibold px-6 py-2 text-nowrap text-sm md:text-md rounded-full shadow-md hover:bg-gray-300 transition duration-300"
         >
           Contact Us
         </HashLink>

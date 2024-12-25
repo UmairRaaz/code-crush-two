@@ -74,11 +74,12 @@ const teamMembersTwo = [
 const TeamMembers = () => {
   return (
     <div>
-      <div className="">
+      <div className="w-full">
         <div>
-          <div className="flex flex-col md:flex-row justify-between">
-            <div>
-              <div className="flex justify-between items-start">
+          <div className="flex flex-col md:flex-row justify-between w-full">
+            <div className="w-full">
+              {/* Header and Button */}
+              <div className="flex w-full justify-between items-start ">
                 <h1 className="text-4xl text-left text-gray-700 md:text-5xl font-bold mb-4">
                   Our Leadership
                 </h1>
@@ -96,6 +97,7 @@ const TeamMembers = () => {
                 </div>
               </div>
 
+              {/* Description Text */}
               <p className="text-base text-left md:text-left text-gray-600">
                 Meet the driving forces behind Code Crush Technologies. Get to
                 know the visionary leaders who guide our company with expertise
@@ -103,6 +105,7 @@ const TeamMembers = () => {
               </p>
             </div>
           </div>
+
           <div className="mt-8 px-4 md:px-0 min-h-72 grid gap-x-10 gap-8 grid-cols-1 md:grid-cols-3">
             {teamMembers.map((member, index) => (
               <NewTeamMemberCard

@@ -76,7 +76,7 @@ const HeroUpdated = () => {
   const nextSlide = slidesContent[(currentSlide + 1) % slidesContent.length];
   return (
     <div
-      className="min-h-screen overflow-hidden bg-cover bg-center flex flex-col justify-between relative transition-all duration-1000"
+      className="h-[70vh] md:h-screen overflow-hidden bg-cover bg-center flex flex-col justify-between relative transition-all duration-1000"
       style={{
         backgroundImage: `url(${slide.backgroundImage})`,
       }}
@@ -94,7 +94,7 @@ const HeroUpdated = () => {
             </div>
 
             {/* Fixed Button */}
-            <button className="md:text-xl rounded-full p-10 w-full md:w-96 flex gap-x-2 items-center justify-center text-white h-10 bg-[#4e148d] whitespace-nowrap md:px-4 py-1">
+            <button className="md:text-xl text-xs rounded-full p-10 w-full md:w-96 flex gap-x-2 items-center justify-center text-white h-10 bg-[#4e148d] whitespace-nowrap md:px-4 py-1">
               <p>Hire Code Crush Technologies</p>
               <span>
                 <GoArrowUpRight size={20} />
