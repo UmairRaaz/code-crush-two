@@ -8,9 +8,9 @@ import objective from "/Images/AboutSectionImages/objectiveLogo.svg";
 import whycodecrush from "/Images/AboutSectionImages/whycodecrush.svg";
 const AboutUs = () => {
   return (
-    <div className="py-1 bg-gray-100">
+    <div className="bg-gray-100 ">
       <div
-        className="relative h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
+        className="relative  h-[70vh] sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
         style={{
           backgroundImage: `url(${aboutUs})`,
           backgroundSize: "cover",

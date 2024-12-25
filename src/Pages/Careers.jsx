@@ -86,7 +86,7 @@ const CareerPage = () => {
   ];
 
   return (
-    <div className="mt-20 bg-gray-50">
+    <div className=" bg-gray-50">
       {/* Background Image Section */}
       <div
         className="relative h-[70vh] sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"

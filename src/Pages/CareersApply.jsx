@@ -67,7 +67,7 @@ const CareersApply = () => {
   }
 
   return (
-    <div className="min-h-screen mt-20 bg-gray-100 text-gray-700">
+    <div className="min-h-screen pt-10 bg-gray-100 text-gray-700">
       <section className="py-12">
         <div className="w-[90%] mx-auto px-4">
           <h2 className="text-4xl text-center mb-6">Job Details</h2>

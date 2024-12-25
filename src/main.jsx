@@ -35,12 +35,13 @@ import BlogThree from "./Pages/Blogs/BlogThree.jsx";
 import BlogFive from "./Pages/Blogs/BlogFive.jsx";
 import BlogSix from "./Pages/Blogs/BlogSix.jsx";
 import BlogFour from "./Pages/Blogs/BlogFour.jsx";
+import HomePageUpdated from "./Pages/HomePageUpdated.jsx";
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
-      <Route path="" element={<MainPage />} />
+      <Route path="" element={<HomePageUpdated />} />
       <Route path="/about" element={<AboutUs />} />
       <Route path="all-services" element={<AllServices />} />
       <Route path='all-services/view-service/:serviceid' element={<ViewServicesUpdated/>}/>

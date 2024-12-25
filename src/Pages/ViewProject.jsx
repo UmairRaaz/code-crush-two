@@ -25,7 +25,7 @@ const ViewProject = () => {
         link={project.link}
       />
       <div>
-        <div className="mt-10 w-[90%] md:relative mx-auto flex md:flex-row flex-col gap-10 p-6 bg-white rounded-lg text-[#06496b]">
+        <div className=" w-[90%] md:relative mx-auto flex md:flex-row flex-col gap-10 p-6 bg-white rounded-lg text-[#06496b]">
           <div className={`${project.features ? "md:w-[70%]" : "md:w-[70%] w-full"}`}>
             <AboutProject project={project} projectOverViewDetailed={project.overViewDetail} projectOverView={project.overview} />
           </div>

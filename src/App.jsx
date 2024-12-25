@@ -1,14 +1,14 @@
-import MainPage from "./components/MainPage";
-import NavBar from "./components/Navbar";
+
 import Footer from "./components/Footer";
 import { Outlet } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import BackToTopButton from "./components/Buttons/BackToTopButton";
+import NavbarUpdated from "./NewComponents/NavbarUpdated";
 
 function App() {
   return (
     <div className="font-googleFonts">
-      <NavBar />
+      <NavbarUpdated/>
       <ScrollToTop/>
       <Outlet/>
       <BackToTopButton/>

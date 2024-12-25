@@ -1,5 +1,4 @@
-import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
-import { BsTwitterX } from "react-icons/bs";
+import { FaLinkedin } from "react-icons/fa";
 const TeamMemberCard = ({ links, status, image, name, role }) => {
   return (
     <div className=" pb-4 rounded-xl hover:scale-105 transition-all cursor-pointer py-6">
