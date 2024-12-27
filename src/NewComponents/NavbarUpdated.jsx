@@ -66,12 +66,12 @@ const NavbarUpdated = () => {
 
         {/* Navigation Links */}
         <div
-          className={`fixed lg:static top-0 right-0 h-screen lg:h-auto w-[70%] lg:w-auto bg-black/70 backdrop-blur-lg rounded-l-lg lg:rounded-full flex flex-col lg:flex-row items-center justify-center lg:gap-6 p-6 lg:py-1 transition-transform duration-300 ${
+          className={`fixed lg:static top-0 right-0 h-screen lg:h-auto w-[70%] lg:w-auto bg-black/40 ${isScrolled ? "bg-black/80" : "bg-black/10"} backdrop-blur-lg rounded-l-lg lg:rounded-full flex flex-col lg:flex-row items-center justify-center lg:gap-1 p-6 lg:py-1 transition-transform duration-300 ${
             isMenuOpen ? "translate-x-0" : "translate-x-full lg:translate-x-0"
           }`}
         >
           <button
-            className="lg:hidden absolute top-4 right-4 text-white text-2xl"
+            className="lg:hidden absolute top-4 right-4 text-white text-5xl"
             onClick={() => setIsMenuOpen(false)}
           >
             &times;
@@ -79,43 +79,54 @@ const NavbarUpdated = () => {
           {menuItems.map((item, index) => (
             <div
               key={index}
-              className="relative flex items-center lg:justify-center gap-4"
+              className="relative flex items-center lg:justify-center "
             >
               {/* Using Link component for navigation */}
               <Link
                 to={item.path}
                 onClick={() => handleLinkClick(item.title.toLowerCase())}
-                className={`text-white text-lg font-medium px-4 py-2 hover:text-gray-300 ${
+                className={`text-white text-lg font-medium  px-4 py-2 hover:text-gray-300 ${
                   activeLink === item.title.toLowerCase() ? "text-gray-200" : ""
                 }`}
               >
                 {item.title}
               </Link>
               {index !== menuItems.length - 1 && (
-                <div className="w-[1px] h-6 bg-white hidden lg:block mx-2" />
+                <div className="w-[1px] h-6 bg-white hidden lg:block" />
               )}
               {activeLink === item.title.toLowerCase() && (
-                <span className="absolute bottom-1 left-[40%] translate-x-[-50%] h-[4px] w-[4px] bg-white rounded-full"></span>
+                <span className="absolute bottom-1 left-1/2 transform -translate-x-1/2 h-[4px] w-[4px] bg-white rounded-full"></span>
               )}
             </div>
           ))}
         </div>
 
         {/* Contact Us Button with HashLink */}
-        <HashLink
-          to="/#contact"
-          className="cursor-pointer bg-[#EDE8F4] ml-4 md:ml-0 text-[#4E148D] font-semibold px-6 py-2 text-nowrap text-sm md:text-md rounded-full shadow-md hover:bg-gray-300 transition duration-300"
-        >
-          Contact Us
-        </HashLink>
+        <div className="lg:flex hidden items-center gap-4">
+          <HashLink
+            to="/#contact"
+            className="cursor-pointer bg-[#EDE8F4] text-[#4E148D] font-semibold px-6 py-2 text-nowrap text-sm md:text-md rounded-full shadow-md hover:bg-gray-300 transition duration-300"
+          >
+            Contact Us
+          </HashLink>
+        </div>
 
-        {/* Mobile Menu Button */}
-        <button
-          className="lg:hidden text-white text-2xl"
-          onClick={() => setIsMenuOpen(true)}
-        >
-          &#9776;
-        </button>
+        {/* Mobile Menu Button and Contact Us Button for small screens */}
+        <div className="lg:hidden flex items-center gap-4">
+          <HashLink
+            to="/#contact"
+            className="cursor-pointer bg-[#EDE8F4] text-[#4E148D] font-semibold px-6 py-2 text-nowrap text-sm md:text-md rounded-full shadow-md hover:bg-gray-300 transition duration-300"
+          >
+            Contact Us
+          </HashLink>
+
+          <button
+            className={` text-2xl ${isScrolled ? "text-[#4E148D]" : "text-white"}`}
+            onClick={() => setIsMenuOpen(true)}
+          >
+            &#9776;
+          </button>
+        </div>
       </div>
     </nav>
   );

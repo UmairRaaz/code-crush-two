@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import servicesnew from "../Content/servicenew";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
@@ -59,12 +60,12 @@ const Services = () => {
               ))}
             </div>
 
-            <div className="flex mt-4 ">
-              <button className="flex w-full items-center justify-center gap-4 bg-[#c9bee0] border border-[#4E148D] text-[#4E148D] font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-purple-700 hover:text-white transition duration-300">
+            <div className="flex gap-2 mt-4 ">
+              <Link to={"/all-services"} className="flex w-full items-center justify-center gap-4 bg-[#c9bee0] border border-[#4E148D] text-[#4E148D] font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-purple-700 hover:text-white transition duration-300">
                 View All
-              </button>
+              </Link>
 
-              <div className="flex w-[30%] items-center justify-center md:gap-x-8">
+              <div className="flex w-[30%] gap-2 items-center justify-center md:gap-x-8">
                 <AiOutlineArrowLeft
                   onClick={() => handleNavigation("prev")}
                   size={50}

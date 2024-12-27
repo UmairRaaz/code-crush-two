@@ -82,8 +82,9 @@ const HeroUpdated = () => {
   // Get the next slide index with wrap-around logic
   const nextSlide = slidesContent[(currentSlide + 1) % slidesContent.length];
   return (
-    <div
-      className="h-[100vh] md:h-[100vh] lg:h-[100vh] xl:h-[100vh] 2xl:h-[70vh] overflow-hidden bg-cover bg-center flex flex-col justify-between relative transition-all duration-1000"
+    <div className="bg-white px-2 py-2">
+      <div
+      className="h-[100vh] w-[99%] rounded-3xl mx-auto overflow-hidden bg-cover bg-center flex flex-col justify-between relative transition-all duration-1000"
       style={{
         backgroundImage: `url(${slide.backgroundImage})`,
         backgroundSize: "cover", // This ensures the background image fills the container
@@ -159,6 +160,7 @@ const HeroUpdated = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

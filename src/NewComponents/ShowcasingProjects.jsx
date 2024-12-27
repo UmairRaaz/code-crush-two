@@ -46,7 +46,6 @@ const ShowcasingProjects = () => {
       },
     ],
   };
-  console.log(projects)
   return (
     <div className="bg-[#E8E9F4] py-4 ">
       <div className="md:max-w-4xl my-10 lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl px-3 md:px-0 mx-auto">
