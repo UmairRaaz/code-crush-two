@@ -6,7 +6,7 @@ const InsideCodeCrush = () => {
       {/* Container */}
       <div className="">
         {/* Heading */}
-        <h1 className="text-3xl text-left font-bold text-black mb-4 ">
+        <h1 className="text-3xl text-left font-bold text-black mb-4">
           A Look Inside Code Crush
         </h1>
         <p className="text-[#21083B] max-w-3xl mb-12">
@@ -16,60 +16,47 @@ const InsideCodeCrush = () => {
         </p>
 
         {/* Two Columns Layout */}
-        <div className="flex md:flex-row flex-col gap-8">
+        <div className="flex flex-col md:flex-row gap-8">
           {/* Left Column */}
-          <div className="text-center  border border-gray-400 rounded-lg p-4 w-full md:w-[70%]">
-            <div className="relative">
-              <img
-                src="/Images/InsideCodeCrush/teamwork.png"
-                alt="Our Workspace"
-                className="rounded-lg shadow-md h-80 w-full"
-              />
-              {/* Play Icon Overlay */}
-              <div className="absolute inset-0 flex justify-center items-center">
-                <img
-                  src="/Images/InsideCodeCrush/play-circle.png"
-                  alt="Play Icon"
-                  className="h-12 w-12 text-white"
-                />
-              </div>
-            </div>
+          <div className="flex-1 text-center border border-gray-400 rounded-lg p-4">
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed?v=oRLW6aw3o2U&list=PLLBWNs6n7YMUihYEVNEUGB29t3Rfq6bTa&index=20"
+              title="Team Collaboration"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="rounded-lg shadow-md"
+            ></iframe>
             <p className="text-xl text-left text-gray-500 mt-4">Teamwork in action</p>
           </div>
 
           {/* Right Column */}
-          <div className="md:space-y-4 flex flex-row md:flex-col items-center gap-4 rounded-lg border p-4 border-gray-400 w-full md:w-[40%]">
+          <div className="flex flex-row md:flex-col border border-gray-400 rounded-lg p-4 gap-4 md:w-[40%] w-full">
             {/* Video Card */}
-            <div className="relative">
-              <img
-                src="/Images/InsideCodeCrush/team-collaboration.png"
-                alt="Team Collaboration"
-                className="rounded-lg shadow-md w-full"
-              />
-              {/* Play Icon Overlay */}
-              <div className="absolute inset-0 flex justify-center items-center">
-                <img
-                  src="/Images/InsideCodeCrush/play-circle.png"
-                  alt="Play Icon"
-                  className="h-12 w-12 text-white"
-                />
-              </div>
+            <div className="flex-1">
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed?v=ZYYJhE-O2tU&list=PLLBWNs6n7YMUihYEVNEUGB29t3Rfq6bTa&index=11"
+                title="Team Collaboration"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="rounded-lg shadow-md h-44"
+              ></iframe>
             </div>
+
             {/* Second Video Card */}
-            <div className="relative">
-              <img
-                src="/Images/InsideCodeCrush/office-lounge.png"
-                alt="Office Lounge"
-                className="rounded-lg shadow-md w-full"
-              />
-              {/* Play Icon Overlay */}
-              <div className="absolute inset-0 flex justify-center items-center">
-                <img
-                  src="/Images/InsideCodeCrush/play-circle.png"
-                  alt="Play Icon"
-                  className="h-12 w-12 text-white"
-                />
-              </div>
+            <div className="flex-1">
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed?v=jPK2DiZ4XZU&list=PLLBWNs6n7YMUihYEVNEUGB29t3Rfq6bTa&index=18"
+                title="Team Collaboration"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="rounded-lg shadow-md h-44"
+              ></iframe>
             </div>
           </div>
         </div>
