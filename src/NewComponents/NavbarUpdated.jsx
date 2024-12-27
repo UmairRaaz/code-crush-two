@@ -1,26 +1,24 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom"; // Import useLocation
-import { HashLink } from 'react-router-hash-link'; // Import HashLink for smooth scrolling to sections
+import { Link, useLocation } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const NavbarUpdated = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false); // State to track scroll position
-  const location = useLocation(); // Hook to get the current URL location
+  const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
-  // Handle click on menu items
   const handleLinkClick = (link) => {
     setActiveLink(link);
-    setIsMenuOpen(false); // Close menu on link click (mobile)
+    setIsMenuOpen(false);
     if (link !== "contact") {
-      window.scrollTo(0, 0); // Scroll to top on navigation
+      window.scrollTo(0, 0);
     }
   };
 
-  // Handle scroll position
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) { // Adjust threshold as needed
+      if (window.scrollY > 50) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -34,13 +32,12 @@ const NavbarUpdated = () => {
     };
   }, []);
 
-  // Update active link based on the current location
   useEffect(() => {
-    const path = location.pathname.split("/")[1]; // Get the first part of the path
-    setActiveLink(path || "home"); // Set the active link to the path (default to "home")
+    const path = location.pathname.split("/")[1];
+    const matchedItem = menuItems.find((item) => item.path.includes(path));
+    setActiveLink(matchedItem ? matchedItem.title.toLowerCase() : "home");
   }, [location]);
 
-  // Define the menu items with title and corresponding path
   const menuItems = [
     { title: "Home", path: "/" },
     { title: "About", path: "/about" },
@@ -51,7 +48,9 @@ const NavbarUpdated = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-gray-100" : "bg-transparent"}`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        isScrolled ? "bg-gray-100" : "bg-transparent"
+      }`}
     >
       <div className="container mx-auto flex items-center justify-between py-4 px-6 lg:px-10">
         {/* Logo */}
@@ -67,7 +66,9 @@ const NavbarUpdated = () => {
 
         {/* Navigation Links */}
         <div
-          className={`fixed lg:static top-0 right-0 h-screen lg:h-auto w-[70%] lg:w-auto bg-black/70 backdrop-blur-lg rounded-l-lg lg:rounded-full flex flex-col lg:flex-row items-center justify-center lg:gap-6 p-6 lg:py-1 transition-transform duration-300 ${isMenuOpen ? "translate-x-0" : "translate-x-full lg:translate-x-0"}`}
+          className={`fixed lg:static top-0 right-0 h-screen lg:h-auto w-[70%] lg:w-auto bg-black/70 backdrop-blur-lg rounded-l-lg lg:rounded-full flex flex-col lg:flex-row items-center justify-center lg:gap-6 p-6 lg:py-1 transition-transform duration-300 ${
+            isMenuOpen ? "translate-x-0" : "translate-x-full lg:translate-x-0"
+          }`}
         >
           <button
             className="lg:hidden absolute top-4 right-4 text-white text-2xl"
@@ -76,12 +77,17 @@ const NavbarUpdated = () => {
             &times;
           </button>
           {menuItems.map((item, index) => (
-            <div key={index} className="relative flex items-center">
+            <div
+              key={index}
+              className="relative flex items-center lg:justify-center gap-4"
+            >
               {/* Using Link component for navigation */}
               <Link
                 to={item.path}
-                onClick={() => handleLinkClick(item.title)}
-                className={`text-white text-lg font-medium px-4 py-2 hover:text-gray-300 ${activeLink === item.title.toLowerCase() ? "text-gray-200" : ""}`}
+                onClick={() => handleLinkClick(item.title.toLowerCase())}
+                className={`text-white text-lg font-medium px-4 py-2 hover:text-gray-300 ${
+                  activeLink === item.title.toLowerCase() ? "text-gray-200" : ""
+                }`}
               >
                 {item.title}
               </Link>
@@ -89,7 +95,7 @@ const NavbarUpdated = () => {
                 <div className="w-[1px] h-6 bg-white hidden lg:block mx-2" />
               )}
               {activeLink === item.title.toLowerCase() && (
-                <span className="absolute bottom-1 left-[50%] translate-x-[-50%] h-[4px] w-[4px] bg-white rounded-full"></span>
+                <span className="absolute bottom-1 left-[40%] translate-x-[-50%] h-[4px] w-[4px] bg-white rounded-full"></span>
               )}
             </div>
           ))}
@@ -98,7 +104,7 @@ const NavbarUpdated = () => {
         {/* Contact Us Button with HashLink */}
         <HashLink
           to="/#contact"
-          className=" cursor-pointer bg-[#EDE8F4] ml-4 md:ml-0 text-[#4E148D] font-semibold px-6 py-2 text-nowrap text-sm md:text-md rounded-full shadow-md hover:bg-gray-300 transition duration-300"
+          className="cursor-pointer bg-[#EDE8F4] ml-4 md:ml-0 text-[#4E148D] font-semibold px-6 py-2 text-nowrap text-sm md:text-md rounded-full shadow-md hover:bg-gray-300 transition duration-300"
         >
           Contact Us
         </HashLink>

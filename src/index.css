@@ -138,6 +138,11 @@ html {
   width: 20px;
   margin: 1px;
 }
+.arrow-teams{
+  height: 40px;
+  width: 40px;
+  margin: 1px;
+}
 
 @keyframes slide {
   0% {

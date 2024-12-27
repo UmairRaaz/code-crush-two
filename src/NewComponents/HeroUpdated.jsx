@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 import React, { useState, useEffect } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 
@@ -76,16 +83,19 @@ const HeroUpdated = () => {
   const nextSlide = slidesContent[(currentSlide + 1) % slidesContent.length];
   return (
     <div
-      className="h-[70vh] md:h-screen overflow-hidden bg-cover bg-center flex flex-col justify-between relative transition-all duration-1000"
+      className="h-[100vh] md:h-[100vh] lg:h-[100vh] xl:h-[100vh] 2xl:h-[70vh] overflow-hidden bg-cover bg-center flex flex-col justify-between relative transition-all duration-1000"
       style={{
         backgroundImage: `url(${slide.backgroundImage})`,
+        backgroundSize: "cover", // This ensures the background image fills the container
+        backgroundPosition: "center center", // This keeps the image centered
+        backgroundRepeat: "no-repeat", // Prevents repetition of the image
       }}
     >
       <div className="absolute w-full left-0 bottom-10 right-10 flex justify-between space-x-4">
         {/* Left Div */}
-        <div className="ml-4 md:ml-10 md:w-[600px] w-[62%]">
+        <div className="ml-4 md:ml-10 w-[80%] lg:w-[65%] xl:w-[55%] 2xl:w-[45%] ">
           <div
-            className=" border text-white border-white bg-black bg-opacity-40 backdrop-blur-md p-4 md:p-6 rounded-xl shadow-md relative flex flex-col justify-between"
+            className="border text-white border-white bg-black bg-opacity-40 backdrop-blur-md p-4 md:p-6 rounded-xl shadow-md relative flex flex-col justify-between"
             style={{ minHeight: "200px", maxHeight: "400px" }}
           >
             <div>
@@ -103,7 +113,7 @@ const HeroUpdated = () => {
           </div>
 
           {/* Progress Bar */}
-          <div className="flex items-center w-full mt-4 ">
+          <div className="flex items-center w-full mt-4">
             {/* Left Slide Number */}
             <span className="text-white text-sm font-bold">01</span>
 
@@ -132,7 +142,7 @@ const HeroUpdated = () => {
         </div>
 
         {/* Right Div */}
-        <div className="md:w-56 absolute right-2 md:right-8 bottom-10 md:bottom-0 h-32 overflow-hidden flex items-center justify-center transition-transform duration-1000 ">
+        <div className="md:w-56 absolute right-2 md:right-8 bottom-10 md:bottom-0 h-32 overflow-hidden flex items-center justify-center transition-transform duration-1000">
           {/* Image */}
           <img
             src={nextSlide.backgroundImage}
@@ -141,8 +151,10 @@ const HeroUpdated = () => {
           />
 
           {/* Overlay Text */}
-          <div className="absolute inset-0 flex flex-col  bg-black bg-opacity-30 text-white px-4 py-2">
-            <h3 className="md:text-md leading-tight font-semibold">{nextSlide.title}</h3>
+          <div className="absolute inset-0 flex flex-col bg-black bg-opacity-30 text-white px-4 py-2">
+            <h3 className="md:text-md leading-tight font-semibold">
+              {nextSlide.title}
+            </h3>
             <p className="text-xs mt-1">{nextSlide.description}</p>
           </div>
         </div>

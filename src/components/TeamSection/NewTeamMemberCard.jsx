@@ -2,7 +2,7 @@ import React from 'react'
 import { FaLinkedin } from "react-icons/fa";
 const NewTeamMemberCard = ({ links, status, image, name, role }) => {
   return (
-      <div className="border border-gray-400 pb-4 rounded-xl  cursor-pointer py-6">
+      <div className=" pb-4 rounded-xl  cursor-pointer py-6">
           <div className="w-full ">
             <img
               src={image}
@@ -23,7 +23,7 @@ const NewTeamMemberCard = ({ links, status, image, name, role }) => {
             </div>
     
             <p className="text-left ">
-              <span className="">{status}</span> & {role}
+              <span className="font-bold text-red-500">{status}</span> & {role}
             </p>
           </div>
         </div>

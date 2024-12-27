@@ -1,17 +1,13 @@
 import React from "react";
-import { GoArrowRight, GoArrowUpRight } from "react-icons/go"; // Import custom arrow icon
-import { NavLink } from "react-router-dom";
+import { GoArrowRight, GoArrowUpRight } from "react-icons/go"; 
+
 import Slider from "react-slick"; // Importing react-slick
 import { projects } from "../Content/ProjectContent/ProjectDeatils"; // Assuming your project data is here
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
-const SamplePrevArrow = (props) => {
-  const { className, style, onClick } = props;
-  return (
-    <div onClick={onClick} className={`arrow  ${className}`}>
-      <AiOutlineArrowLeft class="arrows" style={{ color: "white" }} />
-    </div>
-  );
-};
+import {  AiOutlineArrowRight } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
+
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -22,6 +18,7 @@ function SampleNextArrow(props) {
   );
 }
 const ShowcasingProjects = () => {
+  const navigate = useNavigate()
   const settings = {
     dots: false, // No dots
     infinite: true, // Infinite scroll
@@ -49,7 +46,7 @@ const ShowcasingProjects = () => {
       },
     ],
   };
-
+  console.log(projects)
   return (
     <div className="bg-[#E8E9F4] py-4 ">
       <div className="md:max-w-4xl my-10 lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl px-3 md:px-0 mx-auto">
@@ -82,7 +79,9 @@ const ShowcasingProjects = () => {
         <div className="mt-8">
           <Slider {...settings}>
             {projects.map((project, index) => (
-              <div key={index} className="project-card px-4">
+              <div
+              onClick={() => navigate(`/view-project/${project.id}`)}
+              key={index} className="project-card cursor-pointer px-4">
                 <div className="p-6 bg-white rounded-lg shadow-lg w-full h-72 ">
                   <img
                     src={project.image} // Assuming you have images in your project data

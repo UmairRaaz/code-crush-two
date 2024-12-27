@@ -47,11 +47,11 @@ const Collabaration = () => {
         </h1>
         <Slider {...settings}>
           {brandImages.map((brand) => (
-            <div key={brand.id} className="px-4">
+            <div key={brand.id} className="px-4 ">
               <img
                 src={brand.src}
                 alt={brand.alt}
-                className="w-32 h-32 object-contain"
+                className="w-40 border h-40 object-contain"
               />
             </div>
           ))}

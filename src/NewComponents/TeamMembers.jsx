@@ -11,6 +11,7 @@ import amir from "/Images/TeamMemberImages/amir_habib.webp";
 import kashif from "/Images/TeamMemberImages/kashif_profile.webp";
 import salman from "/Images/TeamMemberImages/salman_profile.webp";
 import zain from "/Images/TeamMemberImages/zain_profile.webp";
+import TeamSlider from "./TeamSlider";
 const teamMembers = [
   {
     image: habib,
@@ -123,7 +124,7 @@ const TeamMembers = () => {
           <div className="flex mt-8 flex-col md:flex-row justify-between">
             <div>
               <h1 className="text-4xl text-left text-gray-700 md:text-5xl font-bold mb-4">
-                Stay Connected on LinkedIn
+              Core team
               </h1>
               <p className="text-base text-left md:text-left text-gray-600">
                 Follow our team on LinkedIn for updates, achievements, and
@@ -132,35 +133,9 @@ const TeamMembers = () => {
               </p>
             </div>
           </div>
-          <div className="mt-8 px-4 py-4 md:px-0 flex gap-2 overflow-x-auto scroll-container">
-            {teamMembersTwo.map((member, index) => (
-              <div
-                key={index}
-                className="team-member bg-white py-2 px-5 rounded-lg shadow-lg flex flex-col gap-6 cursor-pointer transition-transform transform hover:shadow-xl flex-shrink-0"
-                style={{ width: "250px" }}
-              >
-                <div className="flex flex-col gap-4 items-center">
-                  <img
-                    src={member.image}
-                    alt={member.fullName}
-                    className="rounded-full object-cover object-center flex-shrink-0"
-                  />
-                  <div className="flex flex-col w-full">
-                    <div className="flex w-full justify-between items-center gap-2">
-                      <h2 className="text-sm font-bold text-blue-800 w-full truncate">
-                        {member.fullName}
-                      </h2>
-                      <FaLinkedin size={15} className="text-[#0A66C2]" />
-                    </div>
-                    <p className="text-gray-600 text-xs mt-3 mb-2 text-center truncate">
-                      {member.designation}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+         
         </div>
+        <TeamSlider teamMembersTwo={teamMembersTwo} />
       </div>
     </div>
   );
