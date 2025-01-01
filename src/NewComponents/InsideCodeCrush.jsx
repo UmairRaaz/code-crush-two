@@ -16,9 +16,9 @@ const InsideCodeCrush = () => {
         </p>
 
         {/* Two Columns Layout */}
-        <div className="flex flex-col md:flex-row gap-8">
+        <div className="flex flex-col  md:flex-row gap-8">
           {/* Left Column */}
-          <div className="flex-1 flex flex-col  text-center border border-gray-400 rounded-lg p-4">
+          <div className="flex-1 flex flex-col h-96 text-center border border-gray-400 rounded-lg p-4">
             <iframe
               width="100%"
               height="315"
@@ -28,7 +28,7 @@ const InsideCodeCrush = () => {
               allowFullScreen
               className="rounded-lg shadow-md"
             ></iframe>
-            <p className="text-xl text-left text-gray-500 mt-4">Teamwork in action</p>
+            <p className="text-xl text-left text-gray-700 mt-4">Teamwork in action</p>
           </div>
 
           {/* Right Column */}
@@ -44,7 +44,7 @@ const InsideCodeCrush = () => {
                 allowFullScreen
                 className="rounded-lg shadow-md h-40"
               ></iframe>
-              <p className="text-xl text-left text-gray-500 mt-4">Teamwork in action</p>
+              <p className="text-md text-left text-gray-700 mt-1">Teamwork in action</p>
             </div>
 
             {/* Second Video Card */}
@@ -58,7 +58,7 @@ const InsideCodeCrush = () => {
                 allowFullScreen
                 className="rounded-lg shadow-md h-40"
               ></iframe>
-              <p className="text-xl text-left text-gray-500 mt-4">Teamwork in action</p>
+              <p className="text-md text-left text-gray-700 mt-1">Teamwork in action</p>
             </div>
           </div>
         </div>

@@ -94,14 +94,14 @@ const HeroUpdated = () => {
     >
       <div className="absolute w-full left-0 bottom-10 right-10 flex justify-between space-x-4">
         {/* Left Div */}
-        <div className="ml-4 md:ml-10 w-[80%] lg:w-[65%] xl:w-[55%] 2xl:w-[45%] ">
+        <div className="ml-4 md:ml-10 pr-3 md:pr-0 ">
           <div
-            className="border text-white border-white bg-black bg-opacity-40 backdrop-blur-md p-4 md:p-6 rounded-xl shadow-md relative flex flex-col justify-between"
-            style={{ minHeight: "200px", maxHeight: "400px" }}
+            className="text-white  bg-black bg-opacity-40 backdrop-blur-md p-4 md:p-6 rounded-xl shadow-md relative transition-all flex flex-col justify-between"
+            // style={{ minHeight: "400px", maxHeight: "500px" }}
           >
             <div>
-              <h2 className="text-2xl md:text-4xl font-bold mb-4">{slide.title}</h2>
-              <p className="text-lg md:text-xl mb-10">{slide.description}</p>
+              <h2 className="text-2xl md:text-5xl font-bold mb-4">{slide.title}</h2>
+              <p className="text-lg md:text-2xl mb-10">{slide.description}</p>
             </div>
 
             {/* Fixed Button */}
@@ -142,23 +142,7 @@ const HeroUpdated = () => {
           </div>
         </div>
 
-        {/* Right Div */}
-        <div className="md:w-56 absolute right-2 md:right-8 bottom-10 md:bottom-0 h-32 overflow-hidden flex items-center justify-center transition-transform duration-1000">
-          {/* Image */}
-          <img
-            src={nextSlide.backgroundImage}
-            alt="Vision"
-            className="w-full h-full object-cover rounded-lg"
-          />
-
-          {/* Overlay Text */}
-          <div className="absolute inset-0 flex flex-col bg-black bg-opacity-30 text-white px-4 py-2">
-            <h3 className="md:text-md leading-tight font-semibold">
-              {nextSlide.title}
-            </h3>
-            <p className="text-xs mt-1">{nextSlide.description}</p>
-          </div>
-        </div>
+        
       </div>
     </div>
     </div>

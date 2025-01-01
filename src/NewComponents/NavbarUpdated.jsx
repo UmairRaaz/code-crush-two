@@ -52,14 +52,14 @@ const NavbarUpdated = () => {
         isScrolled ? "bg-gray-100" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between py-4 px-6 lg:px-10">
+      <div className="container mx-auto flex items-center justify-between py-2 px-6 lg:px-10">
         {/* Logo */}
         <div className="text-xl font-bold text-white">
           <Link to="/" className="flex items-center">
             <img
               src={"/Images/Icons/navbarLogo.svg"}
               alt="logo"
-              className="w-[180px]"
+              className="w-[130px]"
             />
           </Link>
         </div>
@@ -85,7 +85,7 @@ const NavbarUpdated = () => {
               <Link
                 to={item.path}
                 onClick={() => handleLinkClick(item.title.toLowerCase())}
-                className={`text-white text-lg font-medium  px-4 py-2 hover:text-gray-300 ${
+                className={`text-white text-sm font-medium  px-4 py-2 hover:text-gray-300 ${
                   activeLink === item.title.toLowerCase() ? "text-gray-200" : ""
                 }`}
               >

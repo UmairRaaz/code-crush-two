@@ -7,10 +7,18 @@ import NewTeamMemberCard from "../components/TeamSection/NewTeamMemberCard";
 import AllTeamMembers from "../components/TeamSection/AllTeamMembers";
 import { FaLinkedin } from "react-icons/fa";
 import akhtar from "/Images/TeamMemberImages/akhtar_zaman_profile.webp";
+import aliyan from "/Images/TeamMemberImages/aliyan_profile.webp";
 import amir from "/Images/TeamMemberImages/amir_habib.webp";
+import hamza from "/Images/TeamMemberImages/hamza_profile.webp";
+import israr from "/Images/TeamMemberImages/israr_profile.webp";
 import kashif from "/Images/TeamMemberImages/kashif_profile.webp";
+import rahmat from "/Images/TeamMemberImages/rahmat_ullah_profile.webp";
 import salman from "/Images/TeamMemberImages/salman_profile.webp";
+import ubaid from "/Images/TeamMemberImages/ubaid_profile.webp";
+import umair from "/Images/TeamMemberImages/umair_profile.webp";
+import umar from "/Images/TeamMemberImages/umar_profile.webp";
 import zain from "/Images/TeamMemberImages/zain_profile.webp";
+import waqar from "/Images/TeamMemberImages/waqar_profile.webp";
 import TeamSlider from "./TeamSlider";
 const teamMembers = [
   {
@@ -70,6 +78,62 @@ const teamMembersTwo = [
     careerSummary:
       "I am Akhtar Zaman, a creative and detail-oriented Graphic & UI/UX Designer with over 3+ years of experience. I excel in designing user-friendly interfaces for both web and mobile applications, focusing on enhancing user experiences. My skills include wireframing, prototyping, and utilizing industry-standard design tools such as Figma, Adobe Illustrator, Adobe After Effects, and Adobe Photoshop. I am passionate about crafting intuitive and visually appealing designs that align with user needs and business objectives.",
     image: akhtar,
+  },
+  {
+    fullName: "Rehmat Ullah",
+    designation: "Flutter Developer",
+    careerSummary:
+      "I'm a Flutter developer focused on building seamless, high-performance apps with stunning designs and smooth user experiences. I bring creative solutions to life through clean, efficient code and modern development practices.",
+    image: rahmat,
+  },
+  {
+    fullName: "Muhammad Israr",
+    designation: "Flutter Intern",
+    careerSummary:
+      "I specialize in crafting intuitive, cross-platform mobile applications leveraging Flutter's cutting-edge technology. Proficient in developing scalable, user-centric interfaces, I strive to deliver innovative solutions.",
+    image: israr,
+  },
+  {
+    fullName: "Waqar Ahmed",
+    designation: "Flutter Intern",
+    careerSummary:
+      "I am a skilled Flutter Developer with experience in Flutter, Firebase, SQL, local and push notifications, and role-based authentication, focused on creating efficient and user-friendly mobile applications.",
+    image: waqar,
+  },
+  {
+    fullName: "Umair Raaz",
+    designation: "Full Stack Web Developer",
+    careerSummary:
+      "I am a Full Stack Web Developer with expertise in the MERN stack and Next.js, specializing in building scalable, user-centric applications. I excel in both frontend and backend development, delivering efficient, modern web solutions.",
+    image: umair,
+  },
+  {
+    fullName: "Aliyan Rahim",
+    designation: "UI/UX Intern",
+    careerSummary:
+      "I'm a self-motivated and seasoned UI/UX designer with 1 year of hands-on experience. I’m excited to continue growing in the field and contributing to impactful projects.",
+    image: aliyan,
+  },
+  {
+    fullName: "Umar Aziz",
+    designation: "Digital Marketing Executive",
+    careerSummary:
+      "I am a digital marketer, managing social media platforms, SEO, and optimizing websites and apps. Skilled in running ad campaigns across Facebook, YouTube, Google, and more.",
+    image: umar,
+  },
+  {
+    fullName: "Hamza Kashif",
+    designation: "Quality Engineer",
+    careerSummary:
+      "I am Hamza Kashif, working as a Quality Engineer responsible for ensuring products meet high standards through quality control processes and system improvements. I focus on analyzing production systems and driving excellence in product quality.",
+    image: hamza,
+  },
+  {
+    fullName: "Ubaid Ullah",
+    designation: "Flutter Developer Intern",
+    careerSummary:
+      "I am a skilled Flutter developer with experience in building cross-platform mobile applications. I specialize in creating high-performance, responsive UIs and integrating complex APIs. My expertise in Dart, combined with a focus on scalable and maintainable code, allows me to deliver efficient solutions for modern app development.",
+    image: ubaid,
   },
 ];
 const TeamMembers = () => {

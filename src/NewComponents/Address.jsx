@@ -57,10 +57,15 @@ const Address = () => {
                     alt="image"
                     className="w-10 mr-3"
                   />
-                  <p className="text-gray-600 text-xl">
+                  <a
+                    href="https://www.google.com/maps?q=Al-Nawaz+Arcade,+Adjacent+to+Rawalpindi+Urology+Hospital,+Murree+Road,+Rawalpindi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 text-xl hover:text-blue-500 transition-colors"
+                  >
                     Al-Nawaz Arcade, Adjacent to Rawalpindi Urology Hospital,
                     Murree Road, Rawalpindi
-                  </p>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -143,7 +148,7 @@ const Address = () => {
               <div className="p-4 bg-white rounded-xl">
                 <iframe
                   title="UOM Road Satellite View"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3590.021582346674!2d72.0507568!3d34.6695595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dc050073746fc9%3A0xd7110da8f3eb92d1!2sCode%20Crush%20Technologies%20Chakdara%20%28near%20UOM%29!5e0!3m2!1sen!2sin!4v1672283833649!5m2!1sen!2sin&maptype=satellite" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3590.021582346674!2d72.0507568!3d34.6695595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dc050073746fc9%3A0xd7110da8f3eb92d1!2sCode%20Crush%20Technologies%20Chakdara%20%28near%20UOM%29!5e0!3m2!1sen!2sin!4v1672283833649!5m2!1sen!2sin&maptype=satellite"
                   width="100%"
                   height="300"
                   style={{ border: 0 }}

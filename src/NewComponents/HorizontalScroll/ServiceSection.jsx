@@ -16,7 +16,7 @@ const ServiceSection = () => {
     imageSection.push(
       <div
         key={i}
-        className="w-[90vw]  shrink-0 rounded-3xl overflow-hidden"
+        className="w-[90vw] shrink-0 rounded-3xl "
         ref={(ref) => (imageRefs.current[i - 1] = ref)}
       >
         <ServiceGrid servicecontent={servicesnew[i-1]}/>
@@ -51,10 +51,10 @@ const ServiceSection = () => {
   }, []);
 
   return (
-    <div className="bg-[#E8E9F4] py-4">
-      <div className="md:max-w-4xl  lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl px-3 md:px-0 mx-auto ">
+    <div className="">
+      <div className="md:max-w-4xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl px-3 md:px-0 mx-auto ">
         <section
-          className="flex pt-24 overflow-hidden min-h-screen items-center space-x-10"
+          className="flex min-h-screen items-center space-x-10"
           ref={imageContainerRef}
         >
           {imageSection}

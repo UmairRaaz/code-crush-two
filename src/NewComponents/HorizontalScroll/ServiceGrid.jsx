@@ -22,14 +22,19 @@ const ServiceGrid = ({ servicecontent }) => {
   ];
   
   return (
-    <>
-      <h1 className="text-4xl ml-4  mb-4 font-semibold">{servicecontent.sectionName}</h1>
-      <div className="w-full  mx-auto gap-10 grid grid-cols-2">
+    <div className="min-h-screen rounded-xl bg-[#e9e9f4]">
+      <h1 className="text-4xl ml-14 mt-20 pt-10 mb-2 font-semibold">{servicecontent.sectionName}</h1>
+      <div className="grid pb-10 px-10 grid-cols-2 gap-6">
         {servicecontent.content.map((service, index) => (
-          <ServiceCard service={service} key={index}  color={colors[index]}/>
+          <ServiceCard
+            service={service}
+            key={index}
+            color={colors[index]}
+            className=""
+          />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
