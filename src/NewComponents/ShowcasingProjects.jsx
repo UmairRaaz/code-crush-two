@@ -13,7 +13,7 @@ function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div onClick={onClick} className={`arrow ${className}`}>
-      <AiOutlineArrowRight class="arrows " style={{ color: "#4e158a" }} />
+      <AiOutlineArrowRight className="arrows " style={{ color: "#4e158a" }} />
     </div>
   );
 }

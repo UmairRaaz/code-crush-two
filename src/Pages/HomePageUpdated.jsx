@@ -11,6 +11,7 @@ import ContactUs from "../NewComponents/Contactus";
 import Services from "../NewComponents/Services";
 import HeroUpdated from "../NewComponents/HeroUpdated";
 import ServicesWithAnimation from "../NewComponents/ServicesWithAnimation";
+import ServiceSection from "../NewComponents/HorizontalScroll/ServiceSection";
 
 const HomePageUpdated = () => {
   return (
@@ -27,11 +28,11 @@ const HomePageUpdated = () => {
         <JourneySection />
       </div>
 
-      <div className="block md:hidden">
+      {/* <div className="block md:hidden">
       <Services />
-      </div>
-      <div className="hidden md:block">
-      <ServicesWithAnimation />
+      </div> */}
+      <div className="">
+      <ServiceSection/>
       </div>
       <div className="md:max-w-4xl my-10 lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl px-3 md:px-0 mx-auto">
 
