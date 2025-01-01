@@ -14,7 +14,7 @@ const JourneySection = () => {
         </h1>
 
         {/* Journey Stats */}
-        <div className="flex justify-center items-center gap-10">
+        <div className="flex justify-center items-center md:gap-10">
           {/* Box 1 */}
           <div className="p-6 text-center w-60">
             <h2 className="text-4xl md:text-5xl font-bold text-[#7F56D9] mb-2">
