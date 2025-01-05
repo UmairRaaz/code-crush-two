@@ -273,3 +273,9 @@ html {
 .scroll-container::-webkit-scrollbar {
   display: none; /* Hide scrollbar in WebKit browsers */
 }
+
+
+/* ServiceSectionSlider.css */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

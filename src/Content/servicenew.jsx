@@ -1,41 +1,41 @@
 const servicesnew = [
-  {
-    sectionName: "Team",
-    content: [
-      {
-        image: "/Images/services/about/development.png",
-        heading: "Development",
-        description:
-          "Delivering scalable software solutions for your unique needs.",
-        icon: "/Images/Icons/servicesicon/development.png",
-        hoverIcon: "/Images/Icons/servicesicon/development-white.png",
-      },
-      {
-        image: "/Images/services/about/internship.png",
-        heading: "Research",
-        description:
-          "Designing and building intuitive mobile and  that meet your specific business needs.",
-        icon: "/Images/Icons/servicesicon/internship.png",
-        hoverIcon: "/Images/Icons/servicesicon/internship-white.png",
-      },
-      {
-        image: "/Images/services/about/marketing.png",
-        heading: "Marketing",
-        description:
-          "Crafting intuitive and visually appealing interfaces that improve user satisfaction.",
-        icon: "/Images/Icons/servicesicon/marketing.png",
-        hoverIcon: "/Images/Icons/servicesicon/marketing-white.png",
-      },
-      {
-        image: "/Images/services/about/research.png",
-        heading: "Internship",
-        description:
-          "Creating and managing targeted social media campaigns to build brand awareness,",
-        icon: "/Images/Icons/servicesicon/research.png",
-        hoverIcon: "/Images/Icons/servicesicon/research-white.png",
-      },
-    ],
-  },
+  // {
+  //   sectionName: "Team",
+  //   content: [
+  //     {
+  //       image: "/Images/services/about/development.png",
+  //       heading: "Development",
+  //       description:
+  //         "Delivering scalable software solutions for your unique needs.",
+  //       icon: "/Images/Icons/servicesicon/development.png",
+  //       hoverIcon: "/Images/Icons/servicesicon/development-white.png",
+  //     },
+  //     {
+  //       image: "/Images/services/about/internship.png",
+  //       heading: "Research",
+  //       description:
+  //         "Designing and building intuitive mobile and  that meet your specific business needs.",
+  //       icon: "/Images/Icons/servicesicon/internship.png",
+  //       hoverIcon: "/Images/Icons/servicesicon/internship-white.png",
+  //     },
+  //     {
+  //       image: "/Images/services/about/marketing.png",
+  //       heading: "Marketing",
+  //       description:
+  //         "Crafting intuitive and visually appealing interfaces that improve user satisfaction.",
+  //       icon: "/Images/Icons/servicesicon/marketing.png",
+  //       hoverIcon: "/Images/Icons/servicesicon/marketing-white.png",
+  //     },
+  //     {
+  //       image: "/Images/services/about/research.png",
+  //       heading: "Internship",
+  //       description:
+  //         "Creating and managing targeted social media campaigns to build brand awareness,",
+  //       icon: "/Images/Icons/servicesicon/research.png",
+  //       hoverIcon: "/Images/Icons/servicesicon/research-white.png",
+  //     },
+  //   ],
+  // },
   {
     sectionName: "Services",
     content: [

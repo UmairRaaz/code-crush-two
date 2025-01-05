@@ -12,7 +12,7 @@ const ServiceSection = () => {
 
   // Generate the image elements
   const imageSection = [];
-  for (let i = 1; i <= 4; i++) {
+  for (let i = 1; i <= 3; i++) {
     imageSection.push(
       <div
         key={i}
@@ -54,7 +54,7 @@ const ServiceSection = () => {
     <div className="">
       <div className="md:max-w-4xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl px-3 md:px-0 mx-auto ">
         <section
-          className="flex min-h-screen items-center space-x-10"
+          className="flex min-h-screen items-center  space-x-10"
           ref={imageContainerRef}
         >
           {imageSection}

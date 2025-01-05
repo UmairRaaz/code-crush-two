@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ServiceCard = ({ service, color }) => {
+const ServiceCard = ({ service }) => {
   const [hovered, setHovered] = useState(false);
   console.log(service.hoverIcon)
   return (
@@ -14,7 +14,7 @@ const ServiceCard = ({ service, color }) => {
         <img
           src={service.image}
           alt={service.heading}
-          className="w-full h-40 object-cover rounded-t-lg"
+          className="w-full h-28 object-cover rounded-t-lg"
         />
 
         {/* Black Overlay */}
