@@ -1,12 +1,21 @@
 import React from "react";
 import Slider from "react-slick";
-import { AiOutlineArrowRight } from "react-icons/ai";
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div onClick={onClick} className={`arrow ${className}`}>
-      <AiOutlineArrowRight style={{ color: "#4e158a", fontSize: "3rem" }} />
+      <AiOutlineArrowRight style={{ color: "#4e158a" }} />
+    </div>
+  );
+}
+
+function SamplePrevious(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div onClick={onClick} className={`arrow ${className}`}>
+      <AiOutlineArrowLeft style={{ color: "#4e158a" }} />
     </div>
   );
 }
@@ -20,6 +29,8 @@ const TeamSlider = ({ teamMembersTwo }) => {
     slidesToScroll: 1, // Scroll one card at a time
     arrows: true, // Enable custom arrows
     nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevious />,
+
     responsive: [
       {
         breakpoint: 1024, // When screen width is below 1024px
@@ -38,11 +49,11 @@ const TeamSlider = ({ teamMembersTwo }) => {
 
   return (
     <div className="mt-8 px-4">
-      <Slider {...settings} className="py-4">
+      <Slider {...settings} className="py-4 team-slider">
         {teamMembersTwo.map((member, index) => (
           <div
             key={index}
-            className="team-member min-h-64 my-10  rounded-lg hover:shadow-2xl transition-shadow flex flex-col justify-center items-center "
+            className="team-member min-h-64 my-10 rounded-lg hover:shadow-2xl hover:border hover:border-gray-600 transition-all duration-300 ease-in-out flex flex-col justify-center items-center py-2"
           >
             <div className="relative">
               <img

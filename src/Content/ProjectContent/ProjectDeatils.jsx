@@ -1649,7 +1649,7 @@ const projects = [
   {
     id: 13,
     image: mcqs,
-    name: "Pakistan’s Largest MCQs & Test Preparation Platform",
+    name: "MCQs Pro",
     tagline: "Your Gateway to Success in Competitive Exams",
     shortDescription:
       "This platform serves as the ultimate resource for students in Pakistan, providing an extensive collection of MCQs, quizzes, and test preparation materials. With over 1 million downloads and hundreds of thousands of active users, it empowers students to excel in competitive exams and enhance their knowledge.",

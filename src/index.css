@@ -102,32 +102,106 @@ html {
   /* Adjust this value as needed */
 }
 
-.slick-arrow.slick-prev {
-  display: none !important;
-}
-.slick-arrow.slick-next {
+/* Styles for Team Slider */
+.team-slider .slick-arrow.slick-next,
+.team-slider .slick-arrow.slick-prev {
   background-color: white;
   color: #4e158a;
-  height: 30px;
-  width: 30px;
+  height: 70px;  /* Adjust size */
+  width: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   opacity: 0.8;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-/* Hide the arrow on small screens */
+.team-slider .slick-arrow.slick-prev {
+  left: -70px;
+}
+
+.team-slider .slick-arrow.slick-next {
+  right: -70px;
+}
+
+/* Styles for Product Slider */
+.showcasing-project {
+  position: relative; /* Ensure the arrows are positioned relative to this container */
+}
+
+.showcasing-project .slick-arrow.slick-next,
+.showcasing-project .slick-arrow.slick-prev {
+  background-color: white;  /* Different background */
+  color: #4e158a;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  opacity: 1;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.showcasing-project .slick-arrow.slick-prev {
+  left: -30px; /* Adjust to your preference */
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.showcasing-project .slick-arrow.slick-next {
+  right: -30px; /* Adjust to your preference */
+}
+
+.events .slick-arrow.slick-next,
+.events .slick-arrow.slick-prev {
+  background-color: white;  /* Different background */
+  color: #4e158a;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  opacity: 1;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.events .slick-arrow.slick-prev {
+  left: -30px; /* Adjust to your preference */
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.events .slick-arrow.slick-next {
+  right: -30px; /* Adjust to your preference */
+}
+
+/* Make arrows fully visible on hover */
+.slick-arrow:hover {
+  opacity: 1;
+}
+
+/* Hide the arrows on small screens */
 @media (max-width: 640px) {
-  .slick-arrow.slick-next {
+  .slick-arrow {
     display: none;
   }
 }
 
-/* .slick-arrow.slick-next:hover{
-    background-color: #2574f5;
-    opacity:1;
-} */
+
 
 .slick-next::before {
   display: none;

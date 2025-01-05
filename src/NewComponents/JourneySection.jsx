@@ -7,9 +7,9 @@ const JourneySection = () => {
 
   return (
     <div ref={ref} className="py-2 ">
-      <div className="text-center">
+      <div className="">
         {/* Section Heading */}
-        <h1 className="text-3xl md:text-4xl text-center font-bold text-black mb-6">
+        <h1 className="text-3xl md:text-4xl  font-bold text-black mb-6">
           A Journey of 2 Years
         </h1>
 

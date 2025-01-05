@@ -1,24 +1,34 @@
 import React from "react";
-import { GoArrowRight, GoArrowUpRight } from "react-icons/go"; 
-
+import { GoArrowRight, GoArrowUpRight } from "react-icons/go";
 import Slider from "react-slick"; // Importing react-slick
 import { projects } from "../Content/ProjectContent/ProjectDeatils"; // Assuming your project data is here
-import {  AiOutlineArrowRight } from "react-icons/ai";
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-
-
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div onClick={onClick} className={`arrow ${className}`}>
-      <AiOutlineArrowRight className="arrows " style={{ color: "#4e158a" }} />
+      <AiOutlineArrowRight style={{ color: "#4e158a" }} className="arrows" />
     </div>
   );
 }
+
+function SamplePrevious(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div onClick={onClick} className={`arrow ${className}`}>
+      <AiOutlineArrowLeft
+        style={{ color: "#4e158a" }}
+        className="text-center absolute"
+      />
+    </div>
+  );
+}
+
 const ShowcasingProjects = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const settings = {
     dots: false, // No dots
     infinite: true, // Infinite scroll
@@ -26,7 +36,8 @@ const ShowcasingProjects = () => {
     slidesToShow: 3, // Default to showing 3 projects at a time
     slidesToScroll: 1, // Scroll one at a time
     arrows: true, // Enable arrows
-    nextArrow: <SampleNextArrow to="next" />,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevious />,
     centerMode: true, // Enable centering for slides
     centerPadding: "10px", // Add padding to the center item to ensure spacing
     responsive: [
@@ -46,13 +57,14 @@ const ShowcasingProjects = () => {
       },
     ],
   };
+
   return (
-    <div className="bg-[#E8E9F4] py-4 ">
+    <div className="bg-[#E8E9F4] py-4">
       <div className="md:max-w-4xl my-10 lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl px-3 md:px-0 mx-auto">
         <div className="flex px-4 flex-col md:flex-row justify-between">
           <div>
             <div className="flex justify-between items-start">
-              <h1 className="text-4xl text-left text-gray-700 md:text-5xl font-bold ">
+              <h1 className="text-4xl text-left text-gray-700 md:text-5xl font-bold">
                 Showcasing Our Success Stories
               </h1>
               <div className="flex justify-center md:justify-end">
@@ -76,18 +88,23 @@ const ShowcasingProjects = () => {
         </div>
 
         <div className="mt-8">
-          <Slider {...settings}>
+          <Slider {...settings} className="showcasing-project">
             {projects.map((project, index) => (
               <div
-              onClick={() => navigate(`/view-project/${project.id}`)}
-              key={index} className="project-card cursor-pointer px-4">
-                <div className="p-6 bg-white rounded-lg shadow-lg w-full h-72 ">
+                onClick={() => navigate(`/view-project/${project.id}`)}
+                key={index}
+                className="project-card cursor-pointer px-4 py-4"
+              >
+                {/* Wrapping div for hover effect */}
+                <div className="p-3 bg-white transition-all rounded-lg w-full min-h-64 group  hover:scale-110 relative overflow-hidden">
+                  {/* Image with group-hover */}
                   <img
-                    src={project.image} // Assuming you have images in your project data
+                    src={project.image}
                     alt={project.name}
-                    className="w-full h-48 object-cover rounded-md mb-4"
+                    className="w-full h-48 object-fill rounded-md transition-transform duration-300 group-hover:scale-110"
                   />
-                  <h3 className="text-md text-black text-center">
+                  {/* Project Name */}
+                  <h3 className="text-md text-black text-center px-2 py-1 absolute bottom-2 left-1/2 transform -translate-x-1/2 w-full ">
                     {project.name}
                   </h3>
                 </div>

@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 import React, { useState, useEffect } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 
@@ -84,67 +77,86 @@ const HeroUpdated = () => {
   return (
     <div className="bg-white px-2 py-2">
       <div
-      className="h-[70vh] md:h-[100vh] w-[99%] rounded-3xl mx-auto overflow-hidden bg-cover bg-center flex flex-col justify-between relative transition-all duration-1000"
-      style={{
-        backgroundImage: `url(${slide.backgroundImage})`,
-        backgroundSize: "cover", // This ensures the background image fills the container
-        backgroundPosition: "center center", // This keeps the image centered
-        backgroundRepeat: "no-repeat", // Prevents repetition of the image
-      }}
-    >
-      <div className="absolute w-full left-0 bottom-10 right-10 flex justify-between space-x-4">
-        {/* Left Div */}
-        <div className="ml-4 md:ml-10 pr-3 md:pr-0 ">
-          <div
-            className="text-white  bg-black bg-opacity-40 backdrop-blur-md p-4 md:p-6 rounded-xl shadow-md relative transition-all flex flex-col justify-between"
-            // style={{ minHeight: "400px", maxHeight: "500px" }}
-          >
-            <div>
-              <h2 className="text-2xl md:text-5xl font-bold mb-4">{slide.title}</h2>
-              <p className="text-lg md:text-2xl mb-10">{slide.description}</p>
+        className="h-[70vh] md:h-[100vh] w-[99%] rounded-3xl mx-auto overflow-hidden bg-cover bg-center flex flex-col justify-between relative transition-all duration-1000"
+        style={{
+          backgroundImage: `url(${slide.backgroundImage})`,
+          backgroundSize: "cover", // This ensures the background image fills the container
+          backgroundPosition: "center center", // This keeps the image centered
+          backgroundRepeat: "no-repeat", // Prevents repetition of the image
+        }}
+      >
+        <div className="absolute w-full left-0 bottom-10 right-10 flex justify-between space-x-4">
+          {/* Left Div */}
+          <div className="ml-4 md:ml-10 pr-3 md:pr-0 ">
+            <div
+              className="text-white  bg-black bg-opacity-40 backdrop-blur-md p-4 md:p-6 rounded-xl shadow-md relative transition-all flex flex-col justify-between"
+              // style={{ minHeight: "400px", maxHeight: "500px" }}
+            >
+              <div>
+                <h2 className="text-2xl md:text-5xl font-bold mb-4">
+                  {slide.title}
+                </h2>
+                <p className="text-lg md:text-2xl mb-10">{slide.description}</p>
+              </div>
+
+              {/* Fixed Button */}
+              <button className="md:text-xl text-xs rounded-full p-10 w-full md:w-96 flex gap-x-2 items-center justify-center text-white h-10 bg-[#4e148d] whitespace-nowrap md:px-4 py-1">
+                <p>Hire Code Crush Technologies</p>
+                <span>
+                  <GoArrowUpRight size={20} />
+                </span>
+              </button>
             </div>
-
-            {/* Fixed Button */}
-            <button className="md:text-xl text-xs rounded-full p-10 w-full md:w-96 flex gap-x-2 items-center justify-center text-white h-10 bg-[#4e148d] whitespace-nowrap md:px-4 py-1">
-              <p>Hire Code Crush Technologies</p>
-              <span>
-                <GoArrowUpRight size={20} />
-              </span>
-            </button>
-          </div>
-
-          {/* Progress Bar */}
-          <div className="flex items-center w-full mt-4">
-            {/* Left Slide Number */}
-            <span className="text-white text-sm font-bold">01</span>
 
             {/* Progress Bar */}
-            <div className="flex-grow mx-4 relative">
-              {/* Segmented Progress Bar */}
-              <div className="flex justify-between relative">
-                {slidesContent.map((_, index) => (
-                  <div
-                    key={index}
-                    className={`h-1 mx-[1px] w-[12.5%] rounded-full ${
-                      index <= currentSlide
-                        ? "bg-blue-800"
-                        : "bg-white bg-opacity-70 backdrop-blur-md"
-                    }`}
-                  ></div>
-                ))}
-              </div>
-            </div>
+            <div className="flex items-center w-full mt-4">
+              {/* Left Slide Number */}
+              <span className="text-white text-sm font-bold">01</span>
 
-            {/* Right Slide Number */}
-            <span className="text-white text-sm font-bold">
-              {slidesContent.length}
-            </span>
+              {/* Progress Bar */}
+              <div className="flex-grow mx-4 relative">
+                {/* Segmented Progress Bar */}
+                <div className="flex justify-between relative">
+                  {slidesContent.map((_, index) => (
+                    <div
+                      key={index}
+                      className={`h-1 mx-[1px] w-[12.5%] rounded-full ${
+                        index <= currentSlide
+                          ? "bg-blue-800"
+                          : "bg-white bg-opacity-70 backdrop-blur-md"
+                      }`}
+                    ></div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Right Slide Number */}
+              <span className="text-white text-sm font-bold">
+                {slidesContent.length}
+              </span>
+            </div>
+          </div>
+
+          {/* Right Div */}
+          <div className="w-60 hidden md:flex absolute right-8 bottom-4 overflow-hidden  transition-transform duration-1000 rounded-lg ">
+            {/* Image */}
+            <img
+              src={nextSlide.visionImage}
+              alt="Vision"
+              className="w-full h-full object-contain rounded-lg"
+            />
+
+            {/* Black Overlay */}
+            <div className="absolute inset-0 bg-black opacity-50"></div>
+
+            {/* Overlay Text */}
+            <div className="absolute inset-0 flex px-2  flex-col justify-center text-white">
+              <h3 className="text-lg font-semibold">{nextSlide.title}</h3>
+              <p className="text-xs mt-1">{nextSlide.description}</p>
+            </div>
           </div>
         </div>
-
-        
       </div>
-    </div>
     </div>
   );
 };
