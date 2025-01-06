@@ -6,7 +6,7 @@ const Address = () => {
     <div className="bg-[#E8E9F4] py-10 ">
       <div className="md:max-w-4xl mt-10 lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl px-3 md:px-0 mx-auto">
         {/* Heading */}
-        <h1 className="text-4xl font-bold text-gray-800 mb-8">
+        <h1 className="text-3xl md:text-4xl px-3 md:px-0 font-bold text-gray-800 mb-8">
           Get in Touch with Code Crush Technology
         </h1>
 
@@ -87,7 +87,7 @@ const Address = () => {
           </div>
 
           {/* Section 2: Regional Office */}
-          <div className="flex flex-col lg:flex-row-reverse items-center lg:items-start">
+          <div className="flex flex-col gap-y-6 md:gap-y-0 lg:flex-row-reverse items-center lg:items-start">
             {/* Left Column: Image */}
             <div className="lg:w-1/2 w-full px-4 mt-6 lg:mt-0">
               <h2 className="text-2xl font-bold text-gray-700 mb-4">

@@ -16,7 +16,7 @@ const MobileService = () => {
   };
 
   return (
-    <div className="px-4 bg-white">
+    <div className="p-4  bg-[#e9e9f5] ">
       {servicesnew.map((section, index) => (
         <div key={index} className="my-4 ">
           <h2 className="text-2xl font-bold text-left mb-4">
@@ -30,7 +30,7 @@ const MobileService = () => {
               return (
                 <div
                   key={idx}
-                  className={`bg-white h-full border border-gray-300 rounded-xl pb-6 overflow-hidden relative hover:scale-105 transition-transform duration-300 ease-in-out group`}
+                  className={`bg-white  h-full border border-gray-300 rounded-xl pb-6 overflow-hidden relative hover:scale-105 transition-transform duration-300 ease-in-out group`}
                   onMouseEnter={() => setHovered(true)}
                   onMouseLeave={() => setHovered(false)}
                 >

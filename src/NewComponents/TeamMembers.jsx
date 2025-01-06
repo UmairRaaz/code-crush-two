@@ -138,14 +138,14 @@ const teamMembersTwo = [
 ];
 const TeamMembers = () => {
   return (
-    <div>
-      <div className="w-full">
+
+      <div className="w-full  px-3 md:px-0">
         <div>
           <div className="flex flex-col md:flex-row justify-between w-full">
             <div className="w-full">
               {/* Header and Button */}
-              <div className="flex w-full justify-between items-start ">
-                <h1 className="text-4xl text-left text-gray-700 md:text-5xl font-bold mb-4">
+              <div className="flex  justify-between items-start ">
+                <h1 className="text-4xl w-1/2 md:w-full text-left text-gray-700 md:text-5xl font-bold mb-4">
                   Our Leadership
                 </h1>
 
@@ -201,7 +201,7 @@ const TeamMembers = () => {
         </div>
         <TeamSlider teamMembersTwo={teamMembersTwo} />
       </div>
-    </div>
+
   );
 };
 

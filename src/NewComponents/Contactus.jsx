@@ -55,10 +55,10 @@ const ContactUs = () => {
   return (
     <div
       id="contact"
-      className="flex pt-20 pb-4  flex-col gap-4  lg:flex-row items-start justify-between"
+      className="flex md:pt-4 pb-20 md:pb-4 flex-col gap-4  lg:flex-row items-start justify-between"
     >
       {/* Left Section */}
-      <div className="lg:w-1/2 w-full mb-10 mt-8 lg:mb-0">
+      <div className="lg:w-1/2 w-full mb-5 md:mb-20 mt-8 px-3 md:px-0 lg:mb-0">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">Stay Updated</h1>
         <p className="text-gray-600 text-lg leading-relaxed">
           Follow us on social media for the latest updates, tips, and news about
@@ -67,7 +67,7 @@ const ContactUs = () => {
       </div>
 
       {/* Right Section: Contact Form */}
-      <div className="lg:w-1/2 w-full bg-white p-6">
+      <div className="lg:w-1/2 w-full md:mt-8 bg-white px-3">
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">
           Send us a Message
         </h2>

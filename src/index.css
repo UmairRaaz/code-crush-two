@@ -107,7 +107,7 @@ html {
 .team-slider .slick-arrow.slick-prev {
   background-color: white;
   color: #4e158a;
-  height: 70px;  /* Adjust size */
+  height: 70px; /* Adjust size */
   width: 70px;
   display: flex;
   align-items: center;
@@ -135,7 +135,7 @@ html {
 
 .showcasing-project .slick-arrow.slick-next,
 .showcasing-project .slick-arrow.slick-prev {
-  background-color: white;  /* Different background */
+  background-color: white; /* Different background */
   color: #4e158a;
   height: 40px;
   width: 40px;
@@ -163,7 +163,7 @@ html {
 
 .events .slick-arrow.slick-next,
 .events .slick-arrow.slick-prev {
-  background-color: white;  /* Different background */
+  background-color: white; /* Different background */
   color: #4e158a;
   height: 40px;
   width: 40px;
@@ -196,12 +196,20 @@ html {
 
 /* Hide the arrows on small screens */
 @media (max-width: 640px) {
-  .slick-arrow {
+  .events .slick-arrow.slick-prev,
+  .events .slick-arrow.slick-next {
     display: none;
   }
+  .showcasing-project .slick-arrow.slick-prev,
+  .showcasing-project .slick-arrow.slick-next {
+    display: none;
+  }
+  .team-slider .slick-arrow.slick-prev,
+  .team-slider .slick-arrow.slick-next {
+    display: none;
+  }
+
 }
-
-
 
 .slick-next::before {
   display: none;
@@ -212,7 +220,7 @@ html {
   width: 20px;
   margin: 1px;
 }
-.arrow-teams{
+.arrow-teams {
   height: 40px;
   width: 40px;
   margin: 1px;
@@ -273,7 +281,6 @@ html {
 .scroll-container::-webkit-scrollbar {
   display: none; /* Hide scrollbar in WebKit browsers */
 }
-
 
 /* ServiceSectionSlider.css */
 .scrollbar-hide::-webkit-scrollbar {

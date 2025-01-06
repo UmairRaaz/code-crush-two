@@ -2,7 +2,7 @@ import React from "react";
 
 const InsideCodeCrush = () => {
   return (
-    <div className="md:mt-8 mt-4">
+    <div className="md:mt-8 mt-4 px-3 md:px-0">
       {/* Container */}
       <div className="">
         {/* Heading */}
