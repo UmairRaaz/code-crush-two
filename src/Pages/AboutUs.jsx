@@ -6,10 +6,12 @@ import logo from "/Images/AboutSectionImages/companyLogo.svg";
 import mission from "/Images/AboutSectionImages/missionLogo.svg";
 import objective from "/Images/AboutSectionImages/objectiveLogo.svg";
 import whycodecrush from "/Images/AboutSectionImages/whycodecrush.svg";
+import CommonHeader from "../components/CommonHeader";
 const AboutUs = () => {
+  
   return (
     <div className="bg-gray-100 ">
-      <div
+      {/* <div
         className="relative  h-[70vh] sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
         style={{
           backgroundImage: `url(${aboutUs})`,
@@ -23,7 +25,8 @@ const AboutUs = () => {
             About Us
           </h1>
         </div>
-      </div>
+      </div> */}
+      <CommonHeader image={aboutUs} text={"About Us"}/>
       <div className="max-w-6xl mx-auto 2xl:max-w-7xl">
       <h1 className="text-5xl pt-10 mb-6 font-bold text-center font-googleFonts text-gray-700">
         CEO Message

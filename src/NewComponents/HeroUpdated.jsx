@@ -36,13 +36,13 @@ const HeroUpdated = () => {
       description:
         "Unlock the potential of your ideas with our custom tech solutions.",
       backgroundImage: "/Images/hero/fifth.png",
-      visionImage: "/Images/hero/sixth.png",
+      visionImage: "/Images/hero/sixth.webp",
     },
     {
       title: "Your Partner in Digital Transformation",
       description:
         "Drive growth and efficiency with our seamless tech integration and innovation.",
-      backgroundImage: "/Images/hero/sixth.png",
+      backgroundImage: "/Images/hero/sixth.webp",
       visionImage: "/Images/hero/seventh.png",
     },
     {
@@ -74,24 +74,22 @@ const HeroUpdated = () => {
 
   // Get the next slide index with wrap-around logic
   const nextSlide = slidesContent[(currentSlide + 1) % slidesContent.length];
+
   return (
     <div className="bg-white px-2 py-2">
       <div
         className="h-[70vh] md:h-[100vh] w-[99%] rounded-3xl mx-auto overflow-hidden bg-cover bg-center flex flex-col justify-between relative transition-all duration-1000"
         style={{
           backgroundImage: `url(${slide.backgroundImage})`,
-          backgroundSize: "cover", // This ensures the background image fills the container
-          backgroundPosition: "center center", // This keeps the image centered
-          backgroundRepeat: "no-repeat", // Prevents repetition of the image
+          backgroundSize: "cover", // Ensures the background image covers the entire section
+          backgroundPosition: "center center", // Keeps the image centered
+          backgroundRepeat: "no-repeat", // Prevents image repetition
         }}
       >
         <div className="absolute w-full left-0 bottom-10 right-10 flex justify-between space-x-4">
           {/* Left Div */}
-          <div className="ml-4 md:ml-10 pr-3 md:pr-0 ">
-            <div
-              className="text-white  bg-black bg-opacity-40 backdrop-blur-md p-4 md:p-6 rounded-xl shadow-md relative transition-all flex flex-col justify-between"
-              // style={{ minHeight: "400px", maxHeight: "500px" }}
-            >
+          <div className="ml-4 md:ml-10 pr-3 md:pr-0">
+            <div className="text-white bg-black bg-opacity-40 backdrop-blur-md p-4 md:p-6 rounded-xl shadow-md relative transition-all flex flex-col justify-between">
               <div>
                 <h2 className="text-2xl md:text-5xl font-bold mb-4">
                   {slide.title}
@@ -138,19 +136,21 @@ const HeroUpdated = () => {
           </div>
 
           {/* Right Div */}
-          <div className="w-60 hidden md:flex absolute right-8 bottom-4 overflow-hidden  transition-transform duration-1000 rounded-lg ">
+          <div className="w-60 hidden md:flex absolute right-8 bottom-4 overflow-hidden transition-transform duration-1000 rounded-lg">
             {/* Image */}
             <img
+              srcSet={`${nextSlide.visionImage}?w=500 500w, ${nextSlide.visionImage}?w=1000 1000w, ${nextSlide.visionImage}?w=2000 2000w`}
+              sizes="(max-width: 768px) 500px, (max-width: 1200px) 1000px, 2000px"
               src={nextSlide.visionImage}
               alt="Vision"
-              className="w-full h-full object-contain rounded-lg"
+              className="w-full h-full object-cover rounded-lg" // Use object-cover for better image fitting
             />
 
             {/* Black Overlay */}
             <div className="absolute inset-0 bg-black opacity-50"></div>
 
             {/* Overlay Text */}
-            <div className="absolute inset-0 flex px-2  flex-col justify-center text-white">
+            <div className="absolute inset-0 flex px-2 flex-col justify-center text-white">
               <h3 className="text-lg font-semibold">{nextSlide.title}</h3>
               <p className="text-xs mt-1">{nextSlide.description}</p>
             </div>

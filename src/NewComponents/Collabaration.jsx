@@ -41,10 +41,10 @@ const Collabaration = () => {
 
   return (
     <div className="bg-[#E8E9F4]  px-3 md:px-0 mt-10 pt-4">
-      <div className="md:max-w-4xl  lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl px-3 md:px-0 mx-auto">
-        <h1 className="text-4xl px-2 md:px-0 text-black font-bold mb-2 text-left">
-          Collaborations & Partnerships
-        </h1>
+      <h1 className="md:max-w-4xl  lg:max-w-4xl xl:max-w-5xl 2xl:max-w-7xl 0 mx-auto text-4xl px-3 md:px-0 text-black font-bold mb-2 text-left">
+        Collaborations & Partnerships
+      </h1>
+      <div className="">
         <Slider {...settings}>
           {brandImages.map((brand) => (
             <div key={brand.id} className="px-4 ">

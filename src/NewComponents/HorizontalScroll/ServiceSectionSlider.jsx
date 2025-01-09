@@ -1,59 +1,77 @@
-import React, { useRef, useEffect, useState } from 'react';
-import ServiceGrid from './ServiceGrid';
-import servicesnew from '../../Content/servicenew';
+import React, { useRef, useEffect, useState } from "react";
+import ServiceGrid from "./ServiceGrid";
+import servicesnew from "../../Content/servicenew";
 
 const ServiceSectionSlider = () => {
   const scrollContainerRef = useRef(null);
   const [serviceContent, setServiceContent] = useState(servicesnew);
 
   useEffect(() => {
-    // Duplicate the first and last slides to create a seamless loop
-    const newContent = [...servicesnew]; // Adding the slides
-    setServiceContent(newContent);
+    // Initialize service content
+    setServiceContent([...servicesnew]);
   }, []);
 
-  const handleScroll = () => {
+  const handleNext = () => {
     const scrollContainer = scrollContainerRef.current;
     if (scrollContainer) {
-      const slideWidth = scrollContainer.clientWidth; // Width of one slide
-      const scrollLeft = scrollContainer.scrollLeft; // Current scroll position
-      const totalSlides = scrollContainer.children.length; // Total number of slides
-      const currentIndex = Math.floor(scrollLeft / slideWidth); // Nearest slide index
-
-      // Logic for seamless loop can be added here
+      const slideWidth = scrollContainer.clientWidth;
+      scrollContainer.scrollBy({ left: slideWidth, behavior: "smooth" });
     }
   };
 
-  useEffect(() => {
+  const handlePrevious = () => {
     const scrollContainer = scrollContainerRef.current;
+    if (scrollContainer) {
+      const slideWidth = scrollContainer.clientWidth;
+      scrollContainer.scrollBy({ left: -slideWidth, behavior: "smooth" });
+    }
+  };
 
-    // Auto-scroll interval (if needed)
-    // const autoScrollInterval = setInterval(() => {
-    //   handleScroll();
-    // }, 5000);
-
-    // Cleanup on component unmount
-    // return () => {
-    //   clearInterval(autoScrollInterval);
-    // };
-  }, []);
-
-  const imageSection = [];
-  for (let i = 0; i < serviceContent.length; i++) {
-    imageSection.push(
-      <div key={i} className="w-full shrink-0 rounded-3xl snap-center">
-        <ServiceGrid servicecontent={serviceContent[i]} />
-      </div>
-    );
-  }
+  const imageSection = serviceContent.map((content, index) => (
+    <div key={index} className="w-full shrink-0 rounded-3xl snap-center">
+      <ServiceGrid servicecontent={content} />
+    </div>
+  ));
 
   return (
-    <div className="overflow-hidden">
-      <div className="md:max-w-4xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl px-3 md:px-0 mx-auto">
+    <div className="relative overflow-hidden">
+      <div className="md:max-w-4xl relative lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl px-3 md:px-0 mx-auto">
+        <button
+          className="absolute -left-12 top-1/2 transform  bg-gray-100 z-50 -translate-y-1/2  p-2 rounded-full shadow-lg"
+          onClick={handlePrevious}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            className="w-12 h-12 rotate-180"
+          >
+            <path
+              d="m14.707 11.293-4-4A1 1 0 0 0 9 8v8a1 1 0 0 0 1.707.707l4-4a1 1 0 0 0 0-1.414z"
+              fill="#ff8e31"
+              data-name="Right"
+            />
+          </svg>
+        </button>
+        <button
+          className="absolute bg-gray-100 z-50 -right-12 top-1/2 transform -translate-y-1/2 p-2 rounded-full  shadow-lg"
+          onClick={handleNext}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            className="w-12 h-12"
+          >
+            <path
+              d="m14.707 11.293-4-4A1 1 0 0 0 9 8v8a1 1 0 0 0 1.707.707l4-4a1 1 0 0 0 0-1.414z"
+              fill="#ff8e31"
+              data-name="Right"
+            />
+          </svg>
+        </button>
+
         <section
           ref={scrollContainerRef}
           className="flex items-center space-x-10 snap-x snap-mandatory overflow-x-auto scrollbar-hide"
-          onScroll={handleScroll}
         >
           {imageSection}
         </section>

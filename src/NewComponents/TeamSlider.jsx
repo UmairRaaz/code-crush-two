@@ -49,29 +49,31 @@ const TeamSlider = ({ teamMembersTwo }) => {
 
   return (
     <div className="mt-8 px-4">
-      <Slider {...settings} className="py-4 team-slider">
-        {teamMembersTwo.map((member, index) => (
-          <div
-            key={index}
-            className="team-member min-h-64 my-10 rounded-lg hover:shadow-2xl hover:border hover:border-gray-600 transition-all duration-300 ease-in-out flex flex-col justify-center items-center py-2"
-          >
+    <Slider {...settings} className="py-4 team-slider">
+      {teamMembersTwo.map((member, index) => (
+        <div
+          key={index}
+          className="px-4" // Add padding here to control gap
+        >
+          <div className="team-member border border-gray-300 min-h-64 my-10 rounded-lg hover:shadow-2xl hover:border hover:border-gray-600 transition-all duration-300 ease-in-out flex flex-col justify-center items-center py-2">
             <div className="relative">
               <img
                 src={member.image}
-                alt={member.fullName}
+                alt={member.name}
                 className="rounded-full object-cover mx-auto w-44 h-44"
               />
             </div>
             <div className="mt-4 text-center">
               <h2 className="text-sm font-bold text-black">
-                {member.fullName}
+                {member.name}
               </h2>
-              <p className="text-gray-600 text-xs mt-1">{member.designation}</p>
+              <p className="text-gray-600 text-xs mt-1">{member.role}</p>
             </div>
           </div>
-        ))}
-      </Slider>
-    </div>
+        </div>
+      ))}
+    </Slider>
+  </div>
   );
 };
 
