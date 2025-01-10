@@ -1,103 +1,59 @@
 import React, { useState, useEffect } from "react";
 import { GoArrowUpRight } from "react-icons/go";
+import { slidesContent } from "../Content/hero-content";
 
 const HeroUpdated = () => {
-  const slidesContent = [
-    {
-      title: "Innovative Software Development",
-      description:
-        "Delivering scalable and efficient software solutions for your unique needs.",
-      backgroundImage: "/Images/hero/first.png",
-      visionImage: "/Images/hero/second.png",
-    },
-    {
-      title: "Vision",
-      description:
-        "To be the largest and most innovative IT Development Company by 2030.",
-      backgroundImage: "/Images/hero/second.png",
-      visionImage: "/Images/hero/third.png",
-    },
-    {
-      title: "Transform Your Vision Into Reality",
-      description:
-        "Unlock the potential of your ideas with our custom tech solutions.",
-      backgroundImage: "/Images/hero/third.png",
-      visionImage: "/Images/hero/fourth.png",
-    },
-    {
-      title: "Strategic Tech Consulting",
-      description:
-        "Guiding your business with expert advice and innovative technology strategies.",
-      backgroundImage: "/Images/hero/fourth.png",
-      visionImage: "/Images/hero/fifth.png",
-    },
-    {
-      title: "Digital Win Technology",
-      description:
-        "Unlock the potential of your ideas with our custom tech solutions.",
-      backgroundImage: "/Images/hero/fifth.png",
-      visionImage: "/Images/hero/sixth.png",
-    },
-    {
-      title: "Your Partner in Digital Transformation",
-      description:
-        "Drive growth and efficiency with our seamless tech integration and innovation.",
-      backgroundImage: "/Images/hero/sixth.png",
-      visionImage: "/Images/hero/seventh.png",
-    },
-    {
-      title: "Cyber Security",
-      description:
-        "Protect your data and build resilience against cyber threats.",
-      backgroundImage: "/Images/hero/seventh.png",
-      visionImage: "/Images/hero/eight.png",
-    },
-    {
-      title: "Digital Twin Technology",
-      description:
-        "Leverage the power of digital twins to optimize and protect your operations.",
-      backgroundImage: "/Images/hero/eight.png",
-      visionImage: "/Images/hero/first.png",
-    },
-  ];
-
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isSliding, setIsSliding] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % slidesContent.length);
-    }, 5000); // Change slides every 5 seconds
+      setIsSliding(true);
+      setTimeout(() => {
+        setCurrentSlide((prevSlide) => (prevSlide + 1) % slidesContent.length);
+        setIsSliding(false);
+      }, 500); // Match this to the CSS transition duration
+    }, 3000);
     return () => clearInterval(interval);
   }, [slidesContent.length]);
 
   const slide = slidesContent[currentSlide];
-
-  // Get the next slide index with wrap-around logic
   const nextSlide = slidesContent[(currentSlide + 1) % slidesContent.length];
 
   return (
-    <div className="bg-white px-2 py-1">
+    <div className="bg-white px-2 py-1 overflow-hidden">
       <div
-        className="h-[70vh] md:h-[100vh] w-[99%] rounded-3xl mx-auto overflow-hidden bg-cover bg-center flex flex-col justify-between relative transition-all duration-1000"
-        style={{
-          backgroundImage: `url(${slide.backgroundImage})`,
-          backgroundSize: "cover", // Ensures the background image covers the entire section
-          backgroundPosition: "center center", // Keeps the image centered
-          backgroundRepeat: "no-repeat", // Prevents image repetition
-        }}
+        key={currentSlide}
+        className={`h-[70vh] md:h-[100vh] w-[99%] rounded-3xl mx-auto overflow-hidden bg-cover bg-center flex flex-col justify-between relative`}
       >
+        {/* Background Image with Fade Transition */}
+        <div
+          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${
+            isSliding ? "opacity-0" : "opacity-100"
+          }`}
+          style={{
+            backgroundImage: `url(${slide.backgroundImage})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center center",
+            backgroundRepeat: "no-repeat",
+          }}
+        ></div>
+
+        {/* Preload Next Image */}
+        <img
+          src={nextSlide.backgroundImage}
+          alt="Preloading next slide"
+          style={{ display: "none" }}
+        />
+
+        {/* Content Section */}
         <div className="absolute w-full left-0 bottom-10 right-10 flex justify-between space-x-4">
-          {/* Left Div */}
-          <div className="ml-4  md:ml-10 pr-3 md:pr-0">
-            <div className="text-white border border-white bg-black  bg-opacity-40 backdrop-blur-md p-4 md:p-6 rounded-xl shadow-md relative transition-all flex flex-col justify-between">
+          <div className="ml-4 md:ml-10 pr-3 md:pr-0">
+            <div className="text-white border border-white bg-black bg-opacity-40 backdrop-blur-md p-4 md:p-6 rounded-xl shadow-md relative flex flex-col justify-between">
               <div>
-                <h2 className="text-2xl md:text-5xl font-bold mb-4">
-                  {slide.title}
-                </h2>
+                <h2 className="text-2xl md:text-5xl font-bold mb-4">{slide.title}</h2>
                 <p className="text-lg md:text-2xl mb-10">{slide.description}</p>
               </div>
-
-              {/* Fixed Button */}
               <button className="md:text-xl text-xs rounded-full p-10 w-full md:w-96 flex gap-x-2 items-center justify-center text-white h-10 md:h-14 bg-[#4e148d] whitespace-nowrap md:px-4 py-1">
                 <p>Hire Code Crush Technologies</p>
                 <span>
@@ -106,14 +62,9 @@ const HeroUpdated = () => {
               </button>
             </div>
 
-            {/* Progress Bar */}
             <div className="flex items-center w-full mt-4">
-              {/* Left Slide Number */}
               <span className="text-white text-sm font-bold">01</span>
-
-              {/* Progress Bar */}
               <div className="flex-grow mx-4 relative">
-                {/* Segmented Progress Bar */}
                 <div className="flex justify-between relative">
                   {slidesContent.map((_, index) => (
                     <div
@@ -127,15 +78,11 @@ const HeroUpdated = () => {
                   ))}
                 </div>
               </div>
-
-              {/* Right Slide Number */}
               <span className="text-white text-sm font-bold">
                 {slidesContent.length}
               </span>
             </div>
           </div>
-
-         
         </div>
       </div>
     </div>
