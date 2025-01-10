@@ -87,7 +87,7 @@ const ShowcasingProjects = () => {
           </div>
         </div>
 
-        <div className="mt-8">
+        <div className="mt-4">
           <Slider {...settings} className="showcasing-project">
             {projects.map((project, index) => (
               <div
@@ -96,7 +96,7 @@ const ShowcasingProjects = () => {
                 className="project-card cursor-pointer px-4 py-4"
               >
                 {/* Wrapping div for hover effect */}
-                <div className="p-3 bg-white transition-all rounded-lg w-full min-h-64 group  hover:scale-110 relative overflow-hidden">
+                <div className="p-3 hover:p-1 bg-white transition-all rounded-lg w-full min-h-64 group  hover:scale-110 relative overflow-hidden">
                   {/* Image with group-hover */}
                   <img
                     src={project.image}

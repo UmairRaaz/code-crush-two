@@ -9,7 +9,7 @@ const InsideCodeCrush = () => {
         <h1 className="text-3xl text-left font-bold text-black mb-4">
           A Look Inside Code Crush
         </h1>
-        <p className="text-[#21083B] max-w-3xl mb-12">
+        <p className="text-[#21083B] max-w-3xl mb-4">
           Step into our workspace! Watch exclusive videos showcasing our
           professional environment, teamwork, and commitment to delivering the
           best solutions.
@@ -18,10 +18,10 @@ const InsideCodeCrush = () => {
         {/* Two Columns Layout */}
         <div className="flex flex-col  md:flex-row gap-8">
           {/* Left Column */}
-          <div className="flex-1 flex flex-col h-96 text-center border border-gray-400 rounded-lg p-4">
+          <div className="flex-1 flex flex-col h-full text-center border border-gray-400 rounded-lg p-4">
             <iframe
               width="100%"
-              height="315"
+              height="347"
               src="https://www.youtube.com/embed?v=oRLW6aw3o2U&list=PLLBWNs6n7YMUihYEVNEUGB29t3Rfq6bTa&index=20"
               title="Team Collaboration"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

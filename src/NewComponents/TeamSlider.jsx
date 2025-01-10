@@ -48,14 +48,14 @@ const TeamSlider = ({ teamMembersTwo }) => {
   };
 
   return (
-    <div className="mt-8 px-4">
+    <div className=" px-4">
     <Slider {...settings} className="py-4 team-slider">
       {teamMembersTwo.map((member, index) => (
         <div
           key={index}
           className="px-4" // Add padding here to control gap
         >
-          <div className="team-member border border-gray-300 min-h-64 my-10 rounded-lg hover:shadow-2xl hover:border hover:border-gray-600 transition-all duration-300 ease-in-out flex flex-col justify-center items-center py-2">
+          <div className="team-member border border-gray-300 min-h-64  rounded-lg hover:shadow-xl cursor-pointer hover:border hover:border-gray-400 transition-all duration-200 ease-in-out flex flex-col justify-center items-center py-2">
             <div className="relative">
               <img
                 src={member.image}

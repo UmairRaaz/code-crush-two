@@ -64,7 +64,7 @@ const TeamMembers = () => {
           </div>
         </div>
 
-        <div className="mt-8 px-4 md:px-0 min-h-72 grid gap-x-10 gap-8 grid-cols-1 md:grid-cols-3">
+        <div className="mt-4 px-4 md:px-0 min-h-72 grid gap-x-10 gap-8 grid-cols-1 md:grid-cols-3">
           {teamMembers.map((member, index) => (
             <NewTeamMemberCard
               key={index}

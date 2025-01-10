@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 const ServiceCard = ({ service }) => {
   const [hovered, setHovered] = useState(false);
-  console.log(service)
+
   const navigate = useNavigate()
   return (
     <div

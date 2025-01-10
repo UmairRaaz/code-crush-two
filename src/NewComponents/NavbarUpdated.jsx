@@ -48,7 +48,7 @@ const NavbarUpdated = () => {
 
   return (
     <nav
-      className={`fixed top-0 md:top-0 py-2 left-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed  top-0 md:top-0 py-2 left-0 w-full z-50 transition-all duration-300 ${
         isScrolled ? "bg-gray-100" : "bg-transparent"
       }`}
     >
@@ -66,7 +66,7 @@ const NavbarUpdated = () => {
 
         {/* Navigation Links */}
         <div
-          className={`fixed lg:static top-0 right-0 h-screen lg:h-auto w-[70%] lg:w-auto bg-black/40 ${isScrolled ? "bg-black/80" : "bg-black/10"} backdrop-blur-lg rounded-l-lg lg:rounded-full flex flex-col lg:flex-row items-center justify-center lg:gap-1 p-6 lg:py-1 transition-transform duration-300 ${
+          className={`fixed lg:static md:border md:border-white top-0 right-0 h-screen lg:h-auto w-[70%] lg:w-auto bg-black/40 ${isScrolled ? "bg-black/80" : "bg-black/10"} backdrop-blur-lg rounded-l-lg lg:rounded-full flex flex-col lg:flex-row items-center justify-center lg:gap-1 p-6 lg:py-1 transition-transform duration-300 ${
             isMenuOpen ? "translate-x-0" : "translate-x-full lg:translate-x-0"
           }`}
         >

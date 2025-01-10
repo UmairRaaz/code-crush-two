@@ -2,7 +2,7 @@ import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 const NewTeamMemberCard = ({ links, status, image, name, role }) => {
   return (
-    <div className="pb-4 border border-gray-300  hover:border hover:border-gray-600 hover:shadow-lg transition-all duration-300 ease-in-out rounded-xl cursor-pointer py-6">
+    <div className="pb-4 border border-gray-300  hover:border hover:border-gray-400 hover:shadow-lg transition-all duration-200 ease-in-out rounded-xl cursor-pointer py-6">
       <div className="w-full">
         <img
           src={image}
