@@ -45,6 +45,7 @@ const servicesnew = [
         description: "Custom solutions tailored to your business needs.",
         icon: "/Images/Icons/servicesicon/appdevelopment.png",
         hoverIcon: "/Images/Icons/servicesicon/appdevelopment-white.png",
+        link: "/all-services/view-service/2",
       },
       {
         image: "/Images/services/gigs/web.png",
@@ -53,6 +54,7 @@ const servicesnew = [
           "Designing and building intuitive mobile and  that meet your specific business needs.",
         icon: "/Images/Icons/servicesicon/webdev.png",
         hoverIcon: "/Images/Icons/servicesicon/webdev-white.png",
+        link: "/all-services/view-service/3",
       },
       {
         image: "/Images/services/gigs/uiux.png",
@@ -61,6 +63,7 @@ const servicesnew = [
           "Crafting intuitive and visually appealing interfaces that improve user satisfaction.",
         icon: "/Images/Icons/servicesicon/uiux.png",
         hoverIcon: "/Images/Icons/servicesicon/uiux-white.png",
+        link: "/all-services/view-service/1",
       },
       {
         image: "/Images/services/gigs/digital.png",
@@ -69,7 +72,7 @@ const servicesnew = [
           "Creating and managing targeted social media campaigns to build brand awareness,",
         icon: "/Images/Icons/servicesicon/digitalmarketing.png",
         hoverIcon: "/Images/Icons/servicesicon/digitalmarketing-white.png",
-        
+        link: "/all-services/view-service/4",
       },
     ],
   },
@@ -83,6 +86,7 @@ const servicesnew = [
           "Delivering and scalable software solutions for your unique needs.",
         icon: "/Images/Icons/servicesicon/ai.png",
         hoverIcon: "/Images/Icons/servicesicon/ai-white.png",
+        link: "/all-services/view-research-and-development/0",
       },
       {
         image: "/Images/services/randD/machine.png",
@@ -91,6 +95,7 @@ const servicesnew = [
           "Designing and building intuitive mobile and  that meet your specific business needs.",
         icon: "/Images/Icons/servicesicon/ml.png",
         hoverIcon: "/Images/Icons/servicesicon/ml-white.png",
+        link: "/all-services/view-research-and-development/1",
       },
       {
         image: "/Images/services/randD/nlp.png",
@@ -99,6 +104,7 @@ const servicesnew = [
           "Crafting intuitive and visually appealing interfaces that improve user satisfaction.",
         icon: "/Images/Icons/servicesicon/nlp.png",
         hoverIcon: "/Images/Icons/servicesicon/nlp-white.png",
+        link: "/all-services/view-research-and-development/2",
       },
       {
         image: "/Images/services/randD/blockchain.png",
@@ -107,6 +113,7 @@ const servicesnew = [
           "Creating and managing targeted social media campaigns to build brand awareness.",
         icon: "/Images/Icons/servicesicon/blockchain.png",
         hoverIcon: "/Images/Icons/servicesicon/blockchain-white.png",
+        link: "/all-services/view-research-and-development/3",
       },
     ],
   },
@@ -120,6 +127,7 @@ const servicesnew = [
           "Enhancing travel experiences with innovative solutions for booking, itinerary management",
         icon: "/Images/Icons/servicesicon/travel.png",
         hoverIcon: "/Images/Icons/servicesicon/travel-white.png",
+        link: "/all-services/view-industries/1",
       },
       {
         image: "/Images/services/industries/healthcare.png",
@@ -128,6 +136,7 @@ const servicesnew = [
           "Designing and building intuitive mobile and  that meet your specific business needs.",
         icon: "/Images/Icons/servicesicon/healthcare.png",
         hoverIcon: "/Images/Icons/servicesicon/healthcare-white.png",
+        link: "/all-services/view-industries/2",
       },
       {
         image: "/Images/services/industries/education.png",
@@ -136,6 +145,7 @@ const servicesnew = [
           "Crafting intuitive and visually appealing interfaces that improve user satisfaction.",
         icon: "/Images/Icons/servicesicon/education.png",
         hoverIcon: "/Images/Icons/servicesicon/education-white.png",
+        link: "/all-services/view-industries/3",
       },
       {
         image: "/Images/services/industries/retail.png",
@@ -144,6 +154,7 @@ const servicesnew = [
           "Creating and managing targeted social media campaigns to build brand awareness.",
         icon: "/Images/Icons/servicesicon/retail.png",
         hoverIcon: "/Images/Icons/servicesicon/retail-white.png",
+        link: "/all-services/view-industries/4",
       },
     ],
   },

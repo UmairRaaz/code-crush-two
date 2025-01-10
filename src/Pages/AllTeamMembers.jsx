@@ -19,6 +19,8 @@ import umair from "/Images/TeamMemberImages/umair_profile.webp";
 import umar from "/Images/TeamMemberImages/umar_profile.webp";
 import zain from "/Images/TeamMemberImages/zain_profile.webp";
 import waqar from "/Images/TeamMemberImages/waqar_profile.webp";
+import CommonHeader from "../components/CommonHeader";
+import allTeamMembers from "../Content/teammembers";
 const teamMembers = [
   {
     id: 1,
@@ -153,22 +155,8 @@ const teamMembersTwo = [
 
 const AllTeamMembers = () => {
   return (
-    <div className="bg-[#f4f5fa] mt-20">
-      <div
-        className="relative h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
-        style={{
-          backgroundImage: `url(${ourTeamBG})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="relative z-10 flex items-center justify-center h-full">
-          <h1 className="text-white tracking-widest uppercase text-2xl md:text-4xl font-bold">
-            Our Team
-          </h1>
-        </div>
-      </div>
+    <div className="bg-[#f4f5fa]">
+      <CommonHeader text={"Our Team"} image={ourTeamBG} />
       <h1 className="text-5xl pt-10 mb-6 font-bold text-center font-googleFonts text-gray-700">
         All Team Members
       </h1>
@@ -221,29 +209,27 @@ const AllTeamMembers = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 mt-20 md:grid-cols-3 gap-4 gap-y-8">
-          {teamMembersTwo.map((member, index) => (
+        <div className="grid grid-cols-1 mt-20 md:grid-cols-4 ">
+          {allTeamMembers.map((member, index) => (
             <div
               key={index}
-              className="team-member bg-white py-6 px-5 rounded-lg shadow-lg flex flex-col gap-6 cursor-pointer transition-transform transform hover:scale-105 hover:shadow-xl"
+              className="px-4" // Add padding here to control gap
             >
-              <div className="flex gap-4 items-center">
-                <img
-                  src={member.image}
-                  alt={member.fullName}
-                  className="rounded-full w-20 h-20 object-cover object-center flex-shrink-0 border-2 border-blue-500"
-                />
-                <div className="flex flex-col">
-                  <h2 className="text-xl font-bold text-blue-800">
-                    {member.fullName}
+              <div className="team-member border border-gray-300 min-h-64 my-5 rounded-lg hover:shadow-2xl hover:border hover:border-gray-600 transition-all duration-300 ease-in-out flex flex-col justify-center items-center py-2">
+                <div className="relative">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="rounded-full object-cover mx-auto w-44 h-44"
+                  />
+                </div>
+                <div className="mt-4 text-center">
+                  <h2 className="text-sm font-bold text-black">
+                    {member.name}
                   </h2>
-                  <p className="text-gray-600 mb-2">{member.designation}</p>
+                  <p className="text-gray-600 text-xs mt-1">{member.role}</p>
                 </div>
               </div>
-              <div className="border-b border-gray-200"></div>
-              <p className="text-gray-700 leading-relaxed text-justify px-3">
-                {member.careerSummary}
-              </p>
             </div>
           ))}
         </div>

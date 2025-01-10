@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import servicesnew from "../../Content/servicenew";
+import { useNavigate } from "react-router-dom";
 
 const MobileService = () => {
   // Slick slider settings
@@ -14,19 +15,22 @@ const MobileService = () => {
     autoplay: true,
     autoplaySpeed: 3000,
   };
-
+  const navigate = useNavigate();
   return (
     <div className="p-4 bg-[#e9e9f5]">
       {servicesnew.map((section, index) => (
         <div key={index} className="my-4">
-          <h2 className="text-2xl font-bold text-left mb-4">{section.sectionName}</h2>
+          <h2 className="text-2xl cursor-pointer font-bold text-left mb-4">
+            {section.sectionName}
+          </h2>
 
           <Slider {...settings}>
             {section.content.map((service, idx) => {
               return (
                 <div
                   key={idx}
-                  className="bg-white h-full border border-gray-300 rounded-xl pb-6 overflow-hidden relative"
+                  onClick={() => navigate(service.link)}
+                  className="bg-white cursor-pointer h-full border border-gray-300 rounded-xl pb-6 overflow-hidden relative"
                 >
                   {/* Image Container */}
                   <div className="relative">

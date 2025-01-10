@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { researhAndDevelopmentContent } from "../Content/ResearchContent";
 import { IoMdArrowDroprightCircle } from "react-icons/io";
 import { HashLink } from "react-router-hash-link";
+import CommonHeader from "../components/CommonHeader";
 
 const ResearchDetailedContent = () => {
   const { serviceid } = useParams();
@@ -32,8 +33,8 @@ const ResearchDetailedContent = () => {
   }
 
   return (
-    <div className="py-10 pb-20 bg-gray-100">
-      <div
+    <div className="pb-20 bg-gray-100">
+      {/* <div
         className="relative h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
         style={{
           backgroundImage: `url(${data.image})`,
@@ -47,7 +48,8 @@ const ResearchDetailedContent = () => {
             {data.name}
           </h1>
         </div>
-      </div>
+      </div> */}
+      <CommonHeader image={data.image} text={data.name}/>
       <div className="w-[90%]  md:max-w:4xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mx-auto mt-8 md:p-6">
         <h1 className="text-4xl uppercase text-center font-bold mb-8">
           {data?.subname}

@@ -1,4 +1,3 @@
-
 import { useForm } from "react-hook-form";
 import "tailwindcss/tailwind.css";
 import workWiuthUsBG from "/Images/Banners/workWiuthUsBG.webp";
@@ -7,6 +6,7 @@ import { NavLink } from "react-router-dom";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { FaRocket } from "react-icons/fa6";
 import { GiChaingun } from "react-icons/gi";
+import CommonHeader from "../components/CommonHeader";
 
 const CareerPage = () => {
   const {
@@ -42,7 +42,8 @@ const CareerPage = () => {
     {
       title: "Frontend Developer",
       location: "Remote",
-      description: "Work on the latest web technologies to build user-friendly interfaces.",
+      description:
+        "Work on the latest web technologies to build user-friendly interfaces.",
     },
     {
       title: "Backend Developer",
@@ -52,12 +53,14 @@ const CareerPage = () => {
     {
       title: "UI/UX Designer",
       location: "Remote",
-      description: "Design intuitive and engaging user experiences for our products.",
+      description:
+        "Design intuitive and engaging user experiences for our products.",
     },
     {
       title: "Project Manager",
       location: "Remote",
-      description: "Lead project teams to deliver high-quality software solutions.",
+      description:
+        "Lead project teams to deliver high-quality software solutions.",
     },
   ];
 
@@ -66,29 +69,33 @@ const CareerPage = () => {
     {
       title: "Web Development Intern",
       location: "Remote",
-      description: "Gain hands-on experience working on real-world projects under expert supervision.",
+      description:
+        "Gain hands-on experience working on real-world projects under expert supervision.",
     },
     {
       title: "App Development Intern",
       location: "Remote",
-      description: "Gain hands-on experience working on real-world projects under expert supervision.",
+      description:
+        "Gain hands-on experience working on real-world projects under expert supervision.",
     },
     {
       title: "UI/UX Design Intern",
       location: "Remote",
-      description: "Work on designing cutting-edge user interfaces with guidance from senior designers.",
+      description:
+        "Work on designing cutting-edge user interfaces with guidance from senior designers.",
     },
     {
       title: "Marketing Intern",
       location: "Remote",
-      description: "Assist in developing marketing campaigns and strategies to promote our products.",
+      description:
+        "Assist in developing marketing campaigns and strategies to promote our products.",
     },
   ];
 
   return (
     <div className=" bg-gray-50">
       {/* Background Image Section */}
-      <div
+      {/* <div
         className="relative h-[70vh] sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
         style={{
           backgroundImage: `url(${workWiuthUsBG})`,
@@ -102,14 +109,24 @@ const CareerPage = () => {
             Explore Exciting Career <br /> Opportunities with Us
           </h1>
         </div>
-      </div>
+      </div> */}
+      <CommonHeader
+        image={workWiuthUsBG}
+        text={
+          <>
+            Explore Exciting Career  Opportunities  <br /> with Us
+          </>
+        }
+      />
 
       {/* Features Section */}
       <div className="min-h-screen max-w-6xl 2xl:max-w-7xl mx-auto">
         <section className="py-12">
           <div className="text-center">
             <h1 className="text-5xl font-bold">Interested in our mission?</h1>
-            <p className="text-xl text-gray-700 mt-4">Help shape the future with us</p>
+            <p className="text-xl text-gray-700 mt-4">
+              Help shape the future with us
+            </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-4">
             {features.map((feature, index) => (
@@ -129,7 +146,9 @@ const CareerPage = () => {
 
         {/* Job Openings Section */}
         <section className="py-12">
-          <h2 className="text-5xl font-bold text-center mb-8">Open Positions</h2>
+          <h2 className="text-5xl font-bold text-center mb-8">
+            Open Positions
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {positions.map((position, index) => (
               <div
@@ -154,7 +173,9 @@ const CareerPage = () => {
 
         {/* Internship Openings Section */}
         <section className="py-12">
-          <h2 className="text-5xl font-bold text-center mb-8">Internship Openings</h2>
+          <h2 className="text-5xl font-bold text-center mb-8">
+            Internship Openings
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {internships.map((internship, index) => (
               <div

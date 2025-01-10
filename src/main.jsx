@@ -37,25 +37,33 @@ import BlogSix from "./Pages/Blogs/BlogSix.jsx";
 import BlogFour from "./Pages/Blogs/BlogFour.jsx";
 import HomePageUpdated from "./Pages/HomePageUpdated.jsx";
 
-
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route path="" element={<HomePageUpdated />} />
       <Route path="/about" element={<AboutUs />} />
       <Route path="all-services" element={<AllServices />} />
-      <Route path='all-services/view-service/:serviceid' element={<ViewServicesUpdated/>}/>
-      <Route path='all-services/view-industries/:serviceid' element={<IndustriesDetailedPage/>}/>
-      <Route path='all-services/view-research-and-development/:serviceid' element={<ResearchDetailedContent/>}/>
+      <Route
+        path="all-services/view-service/:serviceid"
+        element={<ViewServicesUpdated />}
+      />
+      <Route
+        path="all-services/view-industries/:serviceid"
+        element={<IndustriesDetailedPage />}
+      />
+      <Route
+        path="all-services/view-research-and-development/:serviceid"
+        element={<ResearchDetailedContent />}
+      />
       <Route path="all-projects" element={<AllProjects />} />
-      <Route path='view-project/:projectid' element={<ViewProject/>}/>
+      <Route path="view-project/:projectid" element={<ViewProject />} />
       <Route path="all-blogs" element={<AllBlogs />} />
-      <Route path='view-blog/1' element={<BlogOne/>}/>
-      <Route path='view-blog/2' element={<BlogTwo/>}/>
-      <Route path='view-blog/3' element={<BlogThree/>}/>
-      <Route path='view-blog/4' element={<BlogFour/>}/>
-      <Route path='view-blog/5' element={<BlogFive/>}/>
-      <Route path='view-blog/6' element={<BlogSix/>}/>
+      <Route path="view-blog/1" element={<BlogOne />} />
+      <Route path="view-blog/2" element={<BlogTwo />} />
+      <Route path="view-blog/3" element={<BlogThree />} />
+      <Route path="view-blog/4" element={<BlogFour />} />
+      <Route path="view-blog/5" element={<BlogFive />} />
+      <Route path="view-blog/6" element={<BlogSix />} />
       <Route path="all-members" element={<AllTeamMembers />} />
       <Route path="remote-resources" element={<RemoteResources />} />
       <Route path="careers" element={<Careers />} />
@@ -70,7 +78,7 @@ const router = createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Toaster/>
+    <Toaster />
     <RouterProvider router={router} />
   </React.StrictMode>
 );

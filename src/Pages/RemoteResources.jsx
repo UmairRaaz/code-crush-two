@@ -4,6 +4,7 @@ import remoteResourceImage from "/Images/Banners/remoteResourcesBg.webp";
 import axios from "axios";
 import toast from "react-hot-toast";
 import emailjs from "@emailjs/browser";
+import CommonHeader from "../components/CommonHeader";
 function RemoteResources() {
   const [showForm, setShowForm] = useState(false);
   const [expertiseFields, setExpertiseFields] = useState([{ id: 1 }]);
@@ -62,22 +63,7 @@ function RemoteResources() {
 
   return (
     <div className=" pb-20 min-h-screen bg-gray-100 ">
-      <div
-        className="relative h-[70vh] sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
-        style={{
-          backgroundImage: `url(${remoteResourceImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="absolute inset-0 bg-black opacity-60"></div>
-        <div className="relative z-10 flex items-center justify-center h-full">
-          <h1 className="text-white text-4xl text-center tracking-widest uppercase font-bold">
-            Remote Resources
-          </h1>
-        </div>
-      </div>
-
+      <CommonHeader text={"Remote Resources"} image={remoteResourceImage}/>
       <div className="md:w-[70%] mx-auto font-remoteResourceFont ">
         <h1 className="text-3xl pt-10 text-center mx-auto text-gray-700 md:text-5xl font-bold mb-8">
           We Provide On-Demand Remote Resources

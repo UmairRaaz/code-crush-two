@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 import { industriesDetailedContent } from "../Content/IndustriesContent";
 import { useParams } from "react-router-dom";
+import CommonHeader from "../components/CommonHeader";
 
 const IndustriesDetailedPage = () => {
   const { serviceid } = useParams();
@@ -31,23 +32,10 @@ const IndustriesDetailedPage = () => {
   }
 
   return (
-    <div className="py-10 pb-20 bg-gray-100">
+    <div className=" pb-10 bg-gray-100">
       {/* Banner Section */}
-      <div
-        className="relative h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
-        style={{
-          backgroundImage: `url(${data.banner})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="absolute inset-0 bg-black opacity-60"></div>
-        <div className="relative z-10 flex items-center justify-center h-full">
-          <h1 className="text-white text-4xl text-center tracking-widest uppercase font-bold">
-            {data.title}
-          </h1>
-        </div>
-      </div>
+
+      <CommonHeader text={data.title} image={data.banner}/>
       <div className="w-[90%] text-justify md:max-w:4xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl mx-auto mt-8 md:p-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 my-10">
           {data.images.map((image, index) => (

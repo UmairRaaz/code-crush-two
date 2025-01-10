@@ -4,25 +4,15 @@ import serviceBG from "/Images/Banners/serviceBG.png"
 import LineEffect from "../components/Buttons/LineEffect";
 import { industries, rAndDProjects, services } from "../Content/ServiceContent.jsx";
 import AllServiceCard from "../components/ServiceSection/AllServicesCard.jsx";
+import CommonHeader from "../components/CommonHeader.jsx";
 // console.log(industries)
 
 const AllServices = () => {
   const navigate = useNavigate();
+  
   return (
     <div className="mb-20 bg-white">
-      <div
-        className="relative h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[55vh] border"
-        style={{
-          backgroundImage: `url(${serviceBG})`,
-          backgroundSize: "contain",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="absolute inset-0 bg-black opacity-60"></div>
-        <div className="relative z-10 flex items-center justify-center h-full">
-          <h1 className="text-white text-4xl tracking-widest uppercase font-bold">Services</h1>
-        </div>
-      </div>
+      <CommonHeader image={serviceBG} text={"Services"}/>
       <h1 className="text-5xl pt-10 mb-6 font-bold text-center font-googleFonts text-gray-700">
         All Services
       </h1>

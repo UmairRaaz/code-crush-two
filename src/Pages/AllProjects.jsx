@@ -5,6 +5,7 @@ import projectBG from "/Images/Banners/projectBG.webp";
 import { useNavigate } from "react-router-dom";
 import LineEffect from "../components/Buttons/LineEffect";
 import { projects } from "../Content/ProjectContent/ProjectDeatils";
+import CommonHeader from "../components/CommonHeader";
 
 const categories = Object.keys(projects);
 
@@ -23,7 +24,7 @@ const AllProjects = () => {
 
   return (
     <div className="md:mb-20 mb-20 bg-white">
-      <div
+      {/* <div
         className="relative h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
         style={{
           backgroundImage: `url(${projectBG})`,
@@ -37,7 +38,8 @@ const AllProjects = () => {
             Projects
           </h1>
         </div>
-      </div>
+      </div> */}
+      <CommonHeader image={projectBG} text={"Projects"}/>
       <div className="w-[80%] mx-auto">
         <h1 className="text-5xl pt-10 mb-6 font-remoteResourceFont font-bold text-center  text-gray-700">
           All Projects

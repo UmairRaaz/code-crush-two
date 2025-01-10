@@ -76,7 +76,7 @@ const HeroUpdated = () => {
   const nextSlide = slidesContent[(currentSlide + 1) % slidesContent.length];
 
   return (
-    <div className="bg-white px-2 py-2">
+    <div className="bg-white px-2 py-1">
       <div
         className="h-[70vh] md:h-[100vh] w-[99%] rounded-3xl mx-auto overflow-hidden bg-cover bg-center flex flex-col justify-between relative transition-all duration-1000"
         style={{

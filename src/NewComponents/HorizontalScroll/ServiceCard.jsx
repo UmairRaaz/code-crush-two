@@ -1,13 +1,16 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const ServiceCard = ({ service }) => {
   const [hovered, setHovered] = useState(false);
-  console.log(service.hoverIcon)
+  console.log(service)
+  const navigate = useNavigate()
   return (
     <div
-      className={`bg-white h-full shadow-lg rounded-xl pb-6 overflow-hidden relative hover:scale-105 transition-transform duration-300 ease-in-out group`}
+      className={`bg-white cursor-pointer h-full shadow-lg rounded-xl pb-6 overflow-hidden relative hover:scale-105 transition-transform duration-300 ease-in-out group`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      onClick={() => navigate(service.link)}
     >
       {/* Image Container */}
       <div className="relative">

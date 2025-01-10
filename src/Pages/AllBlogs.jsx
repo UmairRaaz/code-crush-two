@@ -4,12 +4,13 @@ import servicepagebg from "/Images/Banners/servicepagebg.jpg";
 import BlogCard from "../components/BlogSection/BlogCard"
 import LineEffect from "../components/Buttons/LineEffect";
 import { blogsArray } from "../Content/Blogs/BlogContent";
+import CommonHeader from "../components/CommonHeader";
 
 const AllBlogs = () => {
 
   return (
     <div className=" mb-20 bg-white">
-      <div
+      {/* <div
         className="relative h-[70vh]  sm:h-[80vh] md:h-[50vh] lg:h-[90vh] xl:h-[80vh] 2xl:h-[60vh] border"
         style={{
           backgroundImage: `url(${servicepagebg})`,
@@ -21,7 +22,8 @@ const AllBlogs = () => {
         <div className="relative z-10 flex items-center justify-center h-full">
           <h1 className="text-white text-4xl tracking-widest uppercase font-bold">Blogs</h1>
         </div>
-      </div>
+      </div> */}
+      <CommonHeader image={servicepagebg} text={"Blogs"}/>
       <div className="bg-[#f4f5fa] min-h-screen ">
       <h1 className="text-5xl pt-10 mb-6 font-bold text-center font-googleFonts text-gray-700">
         All Blogs
